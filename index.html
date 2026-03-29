@@ -30,6 +30,7 @@
     <div class="dashboard-tabs">
         <button class="dash-tab active" data-dashboard="av">Autonomous Vehicles</button>
         <button class="dash-tab" data-dashboard="trucking">Trucking &amp; Bus</button>
+        <button class="dash-tab" data-dashboard="stocks">Stock Prices</button>
     </div>
 
     <!-- Filter bar -->
@@ -55,6 +56,9 @@
 
     <!-- News grid -->
     <div class="news-grid" id="newsGrid"></div>
+
+    <!-- Stock dashboard (hidden by default) -->
+    <div class="stocks-view" id="stocksView" style="display:none;"></div>
 
     <!-- Hover popup -->
     <div class="hover-popup" id="hoverPopup">
@@ -227,6 +231,7 @@
 
     <script src="data.js"></script>
     <script src="data_trucking.js"></script>
+    <script src="data_stocks.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -891,6 +891,196 @@ html, body {
     border-left: 2px solid var(--accent);
 }
 
+/* ── Stocks View ── */
+.stocks-view {
+    position: relative;
+    z-index: 5;
+    padding: 16px 24px;
+    height: calc(100vh - 182px);
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 16px;
+    align-content: start;
+}
+
+.stock-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.stock-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 24px rgba(0,229,255,0.1);
+    transform: translateY(-2px);
+}
+
+.stock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.stock-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.stock-ticker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    margin-top: 2px;
+}
+
+.stock-price-block {
+    text-align: right;
+}
+
+.stock-price {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.stock-change {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.stock-change.positive { color: #00ff88; }
+.stock-change.negative { color: #ff5252; }
+
+/* Sparkline */
+.stock-sparkline {
+    margin: 12px 0;
+    height: 50px;
+}
+
+.stock-sparkline svg {
+    width: 100%;
+    height: 50px;
+}
+
+/* Metrics grid */
+.stock-metrics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.metric {
+    background: rgba(30, 30, 53, 0.6);
+    border-radius: 6px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.metric-label {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+/* Change badges row */
+.stock-changes {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+}
+
+.change-badge {
+    flex: 1;
+    text-align: center;
+    padding: 5px 4px;
+    border-radius: 4px;
+    background: rgba(30, 30, 53, 0.6);
+}
+
+.change-badge-label {
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+}
+
+.change-badge-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 2px;
+}
+
+.change-badge-value.positive { color: #00ff88; }
+.change-badge-value.negative { color: #ff5252; }
+
+/* 52-week range bar */
+.range-bar {
+    margin-top: 12px;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+}
+
+.range-track {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    position: relative;
+}
+
+.range-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, #ff5252, #ffb74d, #00ff88);
+    position: absolute;
+    left: 0; top: 0;
+}
+
+.range-marker {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid var(--bg);
+    position: absolute;
+    top: -2px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 6px rgba(255,255,255,0.4);
+}
+
+.range-label-52w {
+    font-size: 8px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
 /* ── Responsive tweaks ── */
 @media (max-width: 1200px) {
     .bubble-title { font-size: 9px; -webkit-line-clamp: 2; }

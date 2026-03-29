@@ -100,12 +100,33 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 // ── Dashboard tab switching ──
+const stocksView = document.getElementById('stocksView');
+const filterBar = document.querySelector('.filter-bar');
+const timelineLabels = document.querySelector('.timeline-labels');
+
 document.querySelectorAll('.dash-tab').forEach(tab => {
     tab.addEventListener('click', () => {
         document.querySelectorAll('.dash-tab').forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         activeDashboard = tab.dataset.dashboard;
-        rebuildAll();
+
+        if (activeDashboard === 'stocks') {
+            // Hide news UI, show stocks
+            logoStrip.style.display = 'none';
+            newsGrid.style.display = 'none';
+            filterBar.style.display = 'none';
+            timelineLabels.style.display = 'none';
+            stocksView.style.display = '';
+            buildStocksView();
+        } else {
+            // Show news UI, hide stocks
+            logoStrip.style.display = '';
+            newsGrid.style.display = '';
+            filterBar.style.display = '';
+            timelineLabels.style.display = '';
+            stocksView.style.display = 'none';
+            rebuildAll();
+        }
     });
 });
 
@@ -530,3 +551,140 @@ refreshBtn.addEventListener('click', () => {
         setTimeout(() => window.location.reload(true), 500);
     });
 });
+
+// ── Stocks View ──
+function buildSparklineSVG(data, color, width = 300, height = 50) {
+    const min = Math.min(...data);
+    const max = Math.max(...data);
+    const range = max - min || 1;
+    const step = width / (data.length - 1);
+
+    const points = data.map((v, i) => `${i * step},${height - ((v - min) / range) * (height - 4) - 2}`).join(' ');
+    const gradId = 'g' + Math.random().toString(36).substr(2, 5);
+
+    // Area fill
+    const areaPoints = points + ` ${width},${height} 0,${height}`;
+
+    return `<svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="${gradId}" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="${color}" stop-opacity="0.3"/>
+                <stop offset="100%" stop-color="${color}" stop-opacity="0.02"/>
+            </linearGradient>
+        </defs>
+        <polygon points="${areaPoints}" fill="url(#${gradId})"/>
+        <polyline points="${points}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>`;
+}
+
+function formatChange(val) {
+    const cls = val >= 0 ? 'positive' : 'negative';
+    const sign = val >= 0 ? '+' : '';
+    return `<span class="change-badge-value ${cls}">${sign}${val.toFixed(1)}%</span>`;
+}
+
+function buildStocksView() {
+    stocksView.innerHTML = '';
+
+    stockData.forEach((stock, idx) => {
+        const changeClass = stock.change1d >= 0 ? 'positive' : 'negative';
+        const changeSign = stock.change1d >= 0 ? '+' : '';
+
+        // 52-week range position
+        const rangeSpan = stock.high52w - stock.low52w || 1;
+        const rangePct = ((stock.price - stock.low52w) / rangeSpan * 100).toFixed(1);
+
+        const card = document.createElement('div');
+        card.className = 'stock-card';
+        card.style.borderLeftColor = stock.color;
+        card.style.borderLeftWidth = '3px';
+
+        card.innerHTML = `
+            <div class="stock-header">
+                <div>
+                    <div class="stock-name" style="color:${stock.color}">${stock.name}</div>
+                    <div class="stock-ticker">${stock.ticker} · ${stock.exchange}</div>
+                </div>
+                <div class="stock-price-block">
+                    <div class="stock-price">${stock.currency === 'EUR' ? '€' : stock.currency === 'USD' ? '$' : stock.currency === 'INR' ? '₹' : ''}${stock.price.toLocaleString()}</div>
+                    <div class="stock-change ${changeClass}">${changeSign}${stock.change1d.toFixed(2)}%</div>
+                </div>
+            </div>
+
+            <div class="stock-sparkline">${buildSparklineSVG(stock.sparkline, stock.color)}</div>
+
+            <div class="stock-changes">
+                <div class="change-badge">
+                    <div class="change-badge-label">1D</div>
+                    ${formatChange(stock.change1d)}
+                </div>
+                <div class="change-badge">
+                    <div class="change-badge-label">1W</div>
+                    ${formatChange(stock.change1w)}
+                </div>
+                <div class="change-badge">
+                    <div class="change-badge-label">1M</div>
+                    ${formatChange(stock.change1m)}
+                </div>
+                <div class="change-badge">
+                    <div class="change-badge-label">YTD</div>
+                    ${formatChange(stock.changeYTD)}
+                </div>
+            </div>
+
+            <div class="stock-metrics">
+                <div class="metric">
+                    <div class="metric-label">Market Cap</div>
+                    <div class="metric-value">${stock.marketCap}</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">P/E Ratio</div>
+                    <div class="metric-value">${stock.peRatio.toFixed(1)}</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Fwd P/E</div>
+                    <div class="metric-value">${stock.forwardPE.toFixed(1)}</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">EPS</div>
+                    <div class="metric-value">${stock.eps.toFixed(2)}</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Div Yield</div>
+                    <div class="metric-value">${stock.dividend.toFixed(1)}%</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-label">Revenue</div>
+                    <div class="metric-value">${stock.revenue}</div>
+                </div>
+            </div>
+
+            <div class="range-bar">
+                <div class="range-label-52w">52-WEEK RANGE</div>
+                <div class="range-labels">
+                    <span>${stock.low52w.toLocaleString()}</span>
+                    <span>${stock.high52w.toLocaleString()}</span>
+                </div>
+                <div class="range-track">
+                    <div class="range-fill" style="width:100%"></div>
+                    <div class="range-marker" style="left:${rangePct}%"></div>
+                </div>
+            </div>
+        `;
+
+        card.addEventListener('click', () => {
+            window.open(stock.yahooUrl, '_blank');
+        });
+
+        // Stagger animation
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+        }, 100 + idx * 80);
+
+        stocksView.appendChild(card);
+    });
+}
