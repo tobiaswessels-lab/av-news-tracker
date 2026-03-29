@@ -29,6 +29,14 @@ const companies = [
         color: "#E31937",
         news: [
             {
+                date: "2026-03-04",
+                title: "Torc Robotics takes autonomous trucks into Michigan’s snow and ice",
+                body: "Torc Robotics is taking autonomous trucks into Michigan’s snow and ice for the first time. The Daimler Truck subsidiary expands public-road testing with its latest Freightliner Cascadia AV 3.0 chassis near Ann Arbor, moving beyond Sun Belt corridors on the path to 2027 commercialization.",
+                category: "launch",
+                tags: ["Torc","Robotics","takes"],
+                url: "https://www.freightwaves.com/news/torc-robotics-michigan-snow-ice-autonomous-trucks"
+            },
+            {
                 date: "2026-03-17",
                 title: "TORC and Daimler Expand Autonomous Truck Testing to Michigan",
                 body: "Torc Robotics and Daimler Truck expanded autonomous truck testing operations to public roads in Michigan using the latest-generation autonomous chassis based on the Freightliner Cascadia, marking significant growth beyond their Texas test corridors.",
@@ -170,6 +178,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-03-27",
+                title: "Waymo’s skyrocketing ridership in one chart",
+                body: "Waymo's weekly paid robotaxi trips have increased tenfold in less than two years.",
+                category: "tech",
+                tags: ["Waymos","skyrocketing","ridership"],
+                url: "https://techcrunch.com/2026/03/27/waymo-skyrocketing-ridership-in-one-chart/"
+            },
+            {
+                date: "2026-03-25",
+                title: "In a pinch, Waymo relies on cops and firefighters to move its robotaxis.",
+                body: "The company has a roadside assistance team that it dispatches to move vehicles when they get trapped. But sometimes Waymo needs emergency responders to actually get behind the wheel. TechCrunch got the 911 dispatches and incident reports from California:\n> “Highway patrol turned everyone around, but unfortunately our car is not able to turn around,” one of Waymo’s remote assistance workers told an area 911 dispatcher, according to a recording obtained by TechCrunch in a public records request. T",
+                category: "safety",
+                tags: ["pinch","Waymo","relies"],
+                url: "https://www.theverge.com/transportation/900857/in-a-pinch-waymo-relies-on-cops-and-firefighters-to-move-its-robotaxis"
+            },
+            {
+                date: "2026-03-25",
+                title: "‘No common sense’: Ride in a robotaxi shows the promise - and limits",
+                body: "As Waymo expands, experts say autonomous cars still struggle with the unpredictability and social norms of real-world driving",
+                category: "expansion",
+                tags: ["common","sense","Ride"],
+                url: "https://www.theglobeandmail.com/drive/mobility/article-no-common-sense-ride-in-a-robotaxi-shows-the-promise-and-limits-of/"
+            },
+            {
                 date: "2026-02-12",
                 title: "Waymo Begins Deploying Next-Gen Ojai Robotaxis",
                 body: "Waymo has started deploying its sixth-generation autonomous vehicle, codenamed Ojai, based on the Zeekr RT platform. The new robotaxis are designed for high-volume manufacturing and feature a streamlined sensor suite to extend Waymo's U.S. lead in autonomous ride-hailing.",
@@ -310,6 +342,30 @@ const companies = [
         name: "Zoox",
         color: "#FFD600",
         news: [
+            {
+                date: "2026-03-24",
+                title: "Zoox Continues Expanding Robotaxi Services",
+                body: "By Connor Hart\nZoox will expand its robotaxi service into new U.S. markets and grow operations in existing cities as it continues to scale its footprint.\nThe Amazon.com-owned company said...",
+                category: "expansion",
+                tags: ["Zoox","Continues","Expanding"],
+                url: "https://www.marketscreener.com/news/zoox-continues-expanding-robotaxi-services-ce7e5ed2d88ff227"
+            },
+            {
+                date: "2026-03-24",
+                title: "Amazon.com's Zoox Robotaxi Service Expands in San Francisco, Las Vegas",
+                body: "Amazon.com's self-driving unit Zoox said Tuesday that it will expand its robotaxi service in San Francisco, California and Las Vegas, Nevada.\nZoox said it is focusing on dense, high-demand...",
+                category: "expansion",
+                tags: ["Amazoncoms","Zoox","Robotaxi"],
+                url: "https://www.marketscreener.com/news/amazon-com-s-zoox-robotaxi-service-expands-in-san-francisco-las-vegas-ce7e5ed2d888f527"
+            },
+            {
+                date: "2026-03-24",
+                title: "Zoox to widen US robotaxi footprint with San Francisco, Vegas expansion",
+                body: "Zoox, Amazon's self-driving unit, said on Tuesday it will expand its robotaxi service in ​San Francisco and Las Vegas, and begin ‌testing its purpose-built robotaxis in Austin and Miami, marking its broadest push yet into the U.S. autonomous ride-hailing ​market.",
+                category: "launch",
+                tags: ["Zoox","widen","robotaxi"],
+                url: "https://www.reuters.com/technology/zoox-widen-us-robotaxi-footprint-with-san-francisco-vegas-expansion-2026-03-24/"
+            },
             {
                 date: "2026-03-24",
                 title: "Zoox to Debut Robotaxis in Austin and Miami",

@@ -19,6 +19,14 @@ const truckingCompanies = [
         color: "#00ADEF",
         news: [
             {
+                date: "2026-03-04",
+                title: "Torc Robotics takes autonomous trucks into Michigan’s snow and ice",
+                body: "Torc Robotics is taking autonomous trucks into Michigan’s snow and ice for the first time. The Daimler Truck subsidiary expands public-road testing with its latest Freightliner Cascadia AV 3.0 chassis near Ann Arbor, moving beyond Sun Belt corridors on the path to 2027 commercialization.",
+                category: "launch",
+                tags: ["Torc","Robotics","takes"],
+                url: "https://www.freightwaves.com/news/torc-robotics-michigan-snow-ice-autonomous-trucks"
+            },
+            {
                 date: "2026-03-12",
                 title: "Mercedes-Benz Trucks Expands eActros 600 Electric Portfolio",
                 body: "Mercedes-Benz Trucks announced an expanded portfolio of battery-electric trucks based on the eActros 600 platform, adding new configurations for distribution, construction, and long-haul applications across Europe.",
@@ -112,6 +120,30 @@ const truckingCompanies = [
         name: "PACCAR",
         color: "#C8102E",
         news: [
+            {
+                date: "2026-03-25",
+                title: "Houtzdale woman killed in 2-vehicle crash in Clearfield County",
+                body: "A 47-year-old Houtzdale woman was killed in a two-vehicle accident Wednesday in Clearfield County. According to state police, the victim was driving a 2005 Ford Escape south on Route 53, Crooked Sewer Road, about 1:57 p.m. when the vehicle crossed into the northbound lane of travel and struck a 2020 Peterbilt operated by a 39-year-old […]",
+                category: "safety",
+                tags: ["Houtzdale","woman","killed"],
+                url: "https://www.altoonamirror.com/news/local-news/2026/03/houtzdale-woman-killed-in-2-vehicle-crash-in-clearfield-county/"
+            },
+            {
+                date: "2026-03-15",
+                title: "Decisiv, PACCAR, Isuzu, Hino and KPIT Launch the SRM Alliance",
+                body: "Industry-wide initiative to collaborate on developing the next generation of service management technology",
+                category: "partnership",
+                tags: ["Decisiv","PACCAR","Isuzu"],
+                url: "https://www.manilatimes.net/2026/03/16/tmt-newswire/globenewswire/decisiv-paccar-isuzu-hino-and-kpit-launch-the-srm-alliance/2300333"
+            },
+            {
+                date: "2026-03-12",
+                title: "St. Maries man dies in crash",
+                body: "According to the Idaho State Police, the 65-year-old man was northbound in a 2025 Toyota Tacoma northbound when he failed to negotiate a curve and drove left of center. The vehicle struck a southbound 1990 Peterbilt semi-truck driven by a 48-year-old male from St. Regis, Mont.",
+                category: "safety",
+                tags: ["Maries","dies","crash"],
+                url: "https://cdapress.com/news/2026/mar/12/st-maries-man-dies-in-crash/"
+            },
             {
                 date: "2026-01-28",
                 title: "PACCAR Achieves Very Good Annual Revenues and Net Income",
