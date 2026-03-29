@@ -30,6 +30,7 @@
     <div class="dashboard-tabs">
         <button class="dash-tab active" data-dashboard="av">Autonomous Vehicles</button>
         <button class="dash-tab" data-dashboard="trucking">Trucking &amp; Bus</button>
+        <button class="dash-tab" data-dashboard="timeline">Timeline</button>
         <button class="dash-tab" data-dashboard="stocks">Stock Prices</button>
     </div>
 
@@ -56,6 +57,14 @@
 
     <!-- News grid -->
     <div class="news-grid" id="newsGrid"></div>
+
+    <!-- Timeline view (hidden by default) -->
+    <div class="timeline-view" id="timelineView" style="display:none;">
+        <div class="timeline-sidebar" id="timelineSidebar"></div>
+        <div class="timeline-scroll" id="timelineScroll">
+            <div class="timeline-canvas" id="timelineCanvas"></div>
+        </div>
+    </div>
 
     <!-- Stock dashboard (hidden by default) -->
     <div class="stocks-view" id="stocksView" style="display:none;"></div>

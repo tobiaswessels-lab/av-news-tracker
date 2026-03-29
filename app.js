@@ -101,8 +101,18 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 
 // ── Dashboard tab switching ──
 const stocksView = document.getElementById('stocksView');
+const timelineViewEl = document.getElementById('timelineView');
 const filterBar = document.querySelector('.filter-bar');
 const timelineLabels = document.querySelector('.timeline-labels');
+
+function showNewsMode() {
+    logoStrip.style.display = '';
+    newsGrid.style.display = '';
+    filterBar.style.display = '';
+    timelineLabels.style.display = '';
+    stocksView.style.display = 'none';
+    timelineViewEl.style.display = 'none';
+}
 
 document.querySelectorAll('.dash-tab').forEach(tab => {
     tab.addEventListener('click', () => {
@@ -111,20 +121,23 @@ document.querySelectorAll('.dash-tab').forEach(tab => {
         activeDashboard = tab.dataset.dashboard;
 
         if (activeDashboard === 'stocks') {
-            // Hide news UI, show stocks
             logoStrip.style.display = 'none';
             newsGrid.style.display = 'none';
             filterBar.style.display = 'none';
             timelineLabels.style.display = 'none';
+            timelineViewEl.style.display = 'none';
             stocksView.style.display = '';
             buildStocksView();
-        } else {
-            // Show news UI, hide stocks
-            logoStrip.style.display = '';
-            newsGrid.style.display = '';
-            filterBar.style.display = '';
-            timelineLabels.style.display = '';
+        } else if (activeDashboard === 'timeline') {
+            logoStrip.style.display = 'none';
+            newsGrid.style.display = 'none';
+            filterBar.style.display = 'none';
+            timelineLabels.style.display = 'none';
             stocksView.style.display = 'none';
+            timelineViewEl.style.display = '';
+            buildTimelineView();
+        } else {
+            showNewsMode();
             rebuildAll();
         }
     });
@@ -551,6 +564,185 @@ refreshBtn.addEventListener('click', () => {
         setTimeout(() => window.location.reload(true), 500);
     });
 });
+
+// ── Timeline View ──
+function buildTimelineView() {
+    const sidebar = document.getElementById('timelineSidebar');
+    const canvas = document.getElementById('timelineCanvas');
+    const scrollEl = document.getElementById('timelineScroll');
+    sidebar.innerHTML = '';
+    canvas.innerHTML = '';
+
+    // Use ALL AV companies (original order from data.js)
+    const allCompanies = companies;
+    const logos = logoSVGs;
+    const LANE_H = 72;
+    const HEADER_H = 40;
+
+    // Collect all dates to compute time range
+    let allDates = [];
+    allCompanies.forEach(c => c.news.forEach(n => allDates.push(new Date(n.date))));
+    const minDate = new Date(Math.min(...allDates));
+    const maxDate = new Date(Math.max(...allDates));
+
+    // Extend range by 1 month on each side for padding
+    const startDate = new Date(minDate.getFullYear(), minDate.getMonth(), 1);
+    const endDate = new Date(maxDate.getFullYear(), maxDate.getMonth() + 2, 1);
+
+    // Pixels per day — controls how wide the timeline is
+    const PX_PER_DAY = 8;
+    const totalDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+    const canvasWidth = totalDays * PX_PER_DAY;
+    canvas.style.width = canvasWidth + 'px';
+    canvas.style.height = (HEADER_H + allCompanies.length * LANE_H) + 'px';
+
+    function dateToX(dateStr) {
+        const d = new Date(dateStr);
+        const days = (d - startDate) / (1000 * 60 * 60 * 24);
+        return days * PX_PER_DAY;
+    }
+
+    // ── Draw month columns ──
+    let d = new Date(startDate);
+    let monthIdx = 0;
+    while (d < endDate) {
+        const nextMonth = new Date(d.getFullYear(), d.getMonth() + 1, 1);
+        const x = dateToX(d.toISOString());
+        const w = dateToX(nextMonth.toISOString()) - x;
+
+        const col = document.createElement('div');
+        col.className = 'tl-month-col';
+        col.style.left = x + 'px';
+        col.style.width = w + 'px';
+
+        const label = document.createElement('div');
+        label.className = 'tl-month-label';
+        label.textContent = d.toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
+        col.appendChild(label);
+
+        // Year divider
+        if (d.getMonth() === 0 && monthIdx > 0) {
+            const yearLine = document.createElement('div');
+            yearLine.className = 'tl-year-line';
+            yearLine.style.left = x + 'px';
+            canvas.appendChild(yearLine);
+
+            const yearLabel = document.createElement('div');
+            yearLabel.className = 'tl-year-label';
+            yearLabel.style.left = (x + 6) + 'px';
+            yearLabel.textContent = d.getFullYear();
+            canvas.appendChild(yearLabel);
+        }
+
+        canvas.appendChild(col);
+        d = nextMonth;
+        monthIdx++;
+    }
+
+    // ── Draw "NOW" line ──
+    const nowX = dateToX(new Date().toISOString());
+    const nowLine = document.createElement('div');
+    nowLine.className = 'tl-now-line';
+    nowLine.style.left = nowX + 'px';
+    const nowLabel = document.createElement('div');
+    nowLabel.className = 'tl-now-label';
+    nowLabel.textContent = 'TODAY';
+    nowLine.appendChild(nowLabel);
+    canvas.appendChild(nowLine);
+
+    // ── Draw lanes and events ──
+    allCompanies.forEach((company, laneIdx) => {
+        const laneY = HEADER_H + laneIdx * LANE_H;
+
+        // Sidebar item
+        const sideItem = document.createElement('div');
+        sideItem.className = 'tl-sidebar-item';
+        const logoHTML = logos[company.id] || '';
+        sideItem.innerHTML = logoHTML;
+        sidebar.appendChild(sideItem);
+
+        // Lane background
+        const lane = document.createElement('div');
+        lane.className = 'tl-lane';
+        lane.style.top = laneY + 'px';
+
+        const laneLine = document.createElement('div');
+        laneLine.className = 'tl-lane-line';
+        lane.appendChild(laneLine);
+        canvas.appendChild(lane);
+
+        // Events
+        company.news.forEach(item => {
+            const cat = categoryClasses[item.category] || categoryClasses.tech;
+            const x = dateToX(item.date);
+            const dateObj = new Date(item.date);
+            const dateStr = dateObj.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+            // Color mapping for the dot
+            const dotColors = {
+                launch: '#00e5ff', funding: '#7c4dff', partnership: '#ff6090',
+                tech: '#00ff88', regulation: '#ffb74d', expansion: '#64b5f6',
+                safety: '#ff8a65', awards: '#FFD700'
+            };
+            const color = dotColors[item.category] || '#00ff88';
+
+            const event = document.createElement('div');
+            event.className = 'tl-event';
+            event.style.left = x + 'px';
+            event.style.top = (laneY + LANE_H / 2) + 'px';
+            event.style.borderColor = color;
+            event.style.color = color;
+
+            // Tooltip
+            const tooltip = document.createElement('div');
+            tooltip.className = 'tl-event-tooltip';
+            tooltip.innerHTML = `
+                <div class="tl-tooltip-date">${dateStr}</div>
+                <div class="tl-tooltip-title">${item.title}</div>
+                <span class="tl-tooltip-tag ${cat.tag}">${item.category}</span>
+            `;
+            event.appendChild(tooltip);
+
+            // Flip tooltip if near top
+            if (laneIdx < 2) {
+                tooltip.style.bottom = 'auto';
+                tooltip.style.top = 'calc(100% + 8px)';
+            }
+
+            // Click to open modal
+            event.addEventListener('click', (e) => {
+                e.stopPropagation();
+                markAsRead(company.id, item.date);
+                openModal(company, item);
+            });
+
+            canvas.appendChild(event);
+        });
+    });
+
+    // ── Scroll to "now" ──
+    setTimeout(() => {
+        scrollEl.scrollLeft = Math.max(0, nowX - scrollEl.clientWidth / 2);
+    }, 100);
+
+    // ── Drag to scroll ──
+    let isDragging = false, startX, scrollLeft;
+    scrollEl.addEventListener('mousedown', (e) => {
+        if (e.target.closest('.tl-event')) return;
+        isDragging = true;
+        scrollEl.classList.add('grabbing');
+        startX = e.pageX - scrollEl.offsetLeft;
+        scrollLeft = scrollEl.scrollLeft;
+    });
+    scrollEl.addEventListener('mouseleave', () => { isDragging = false; scrollEl.classList.remove('grabbing'); });
+    scrollEl.addEventListener('mouseup', () => { isDragging = false; scrollEl.classList.remove('grabbing'); });
+    scrollEl.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - scrollEl.offsetLeft;
+        scrollEl.scrollLeft = scrollLeft - (x - startX) * 1.5;
+    });
+}
 
 // ── Stocks View ──
 function buildSparklineSVG(data, color, width = 300, height = 50) {

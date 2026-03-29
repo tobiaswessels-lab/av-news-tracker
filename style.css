@@ -891,6 +891,229 @@ html, body {
     border-left: 2px solid var(--accent);
 }
 
+/* ── Timeline View ── */
+.timeline-view {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    height: calc(100vh - 148px);
+    overflow: hidden;
+}
+
+.timeline-sidebar {
+    width: 130px;
+    min-width: 130px;
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px; /* align with first lane */
+}
+
+.tl-sidebar-item {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-bottom: 1px solid var(--border);
+    gap: 8px;
+}
+
+.tl-sidebar-item svg {
+    height: 20px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.tl-sidebar-name {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.timeline-scroll {
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    cursor: grab;
+}
+
+.timeline-scroll.grabbing {
+    cursor: grabbing;
+}
+
+.timeline-canvas {
+    position: relative;
+    height: 100%;
+    min-width: 100%;
+}
+
+/* Month columns */
+.tl-month-col {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid rgba(30, 30, 53, 0.4);
+}
+
+.tl-month-col:nth-child(even) {
+    background: rgba(30, 30, 53, 0.15);
+}
+
+.tl-month-label {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Year divider */
+.tl-year-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent);
+    opacity: 0.3;
+}
+
+.tl-year-label {
+    position: absolute;
+    top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: 2px;
+}
+
+/* Swim lanes */
+.tl-lane {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 72px;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Horizontal lane line */
+.tl-lane-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: var(--border);
+    opacity: 0.3;
+}
+
+/* Event node */
+.tl-event {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid;
+    background: var(--bg);
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.2s;
+}
+
+.tl-event:hover {
+    transform: translate(-50%, -50%) scale(1.6);
+    z-index: 20;
+    box-shadow: 0 0 16px currentColor;
+}
+
+/* Event tooltip on hover */
+.tl-event-tooltip {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #161628;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    width: 240px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 30;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.tl-event:hover .tl-event-tooltip {
+    opacity: 1;
+}
+
+.tl-tooltip-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--text-dim);
+    margin-bottom: 4px;
+}
+
+.tl-tooltip-title {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.tl-tooltip-tag {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 2px 6px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+/* "Now" marker */
+.tl-now-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ff6090;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(255,96,144,0.4);
+}
+
+.tl-now-label {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    font-weight: 700;
+    color: #ff6090;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+/* Bottom lanes alternate subtle color for readability */
+.tl-lane:nth-child(even) {
+    background: rgba(18, 18, 31, 0.4);
+}
+
 /* ── Stocks View ── */
 .stocks-view {
     position: relative;
