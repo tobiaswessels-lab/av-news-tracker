@@ -494,3 +494,39 @@ document.getElementById('archClose').addEventListener('click', () => {
 archOverlay.addEventListener('click', (e) => {
     if (e.target === archOverlay) archOverlay.classList.remove('active');
 });
+
+// ── Refresh Button ──
+const refreshBtn = document.getElementById('refreshBtn');
+refreshBtn.addEventListener('click', () => {
+    refreshBtn.classList.add('spinning');
+    refreshBtn.title = 'Fetching latest news...';
+
+    // Trigger the GitHub Actions workflow via API
+    fetch('https://api.github.com/repos/tobiaswessels-lab/av-news-tracker/actions/workflows/daily-news.yml/dispatches', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/vnd.github.v3+json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ ref: 'main' })
+    }).then(res => {
+        if (res.status === 204 || res.status === 200) {
+            refreshBtn.title = 'Fetching... will reload in 60s';
+            // Wait for the action to complete, then reload
+            setTimeout(() => {
+                refreshBtn.classList.remove('spinning');
+                refreshBtn.title = 'Fetch latest news';
+                window.location.reload(true);
+            }, 60000);
+        } else {
+            // If API trigger fails (needs auth), just do a hard reload
+            // to pick up any recently deployed changes
+            refreshBtn.title = 'Reloading...';
+            setTimeout(() => window.location.reload(true), 500);
+        }
+    }).catch(() => {
+        // Fallback: hard reload to get latest deployed data
+        refreshBtn.title = 'Reloading...';
+        setTimeout(() => window.location.reload(true), 500);
+    });
+});

@@ -810,6 +810,39 @@ html, body {
     border-top: 1px solid var(--border);
 }
 
+/* ── Refresh button ── */
+.refresh-btn {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refresh-btn:hover {
+    border-color: #00ff88;
+    color: #00ff88;
+    box-shadow: 0 0 10px rgba(0,255,136,0.2);
+}
+
+.refresh-btn.spinning {
+    animation: refresh-spin 1s linear infinite;
+    color: #00ff88;
+    border-color: #00ff88;
+}
+
+@keyframes refresh-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 /* ── Architecture button ── */
 .arch-btn {
     background: none;
