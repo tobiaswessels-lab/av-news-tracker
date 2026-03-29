@@ -94,16 +94,12 @@ html, body {
     color: var(--text);
 }
 
-.header h1 .globe {
-    font-size: 20px;
-    margin-left: 4px;
+.globe-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 6px;
+    vertical-align: middle;
     display: inline-block;
-    animation: spin-globe 8s linear infinite;
-}
-
-@keyframes spin-globe {
-    0% { transform: rotateY(0deg); }
-    100% { transform: rotateY(360deg); }
 }
 
 .header h1 .accent {
