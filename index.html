@@ -72,18 +72,19 @@
 
     <!-- Market share sunburst (hidden by default) -->
     <div class="marketshare-view" id="marketshareView" style="display:none;">
-        <div class="ms-toggle-bar">
-            <span class="ms-toggle-label">Inner ring:</span>
-            <button class="ms-toggle-btn active" data-mode="regions">Regions</button>
-            <button class="ms-toggle-btn" data-mode="companies">Companies</button>
-        </div>
         <div class="ms-layout">
-            <div class="ms-chart-box">
-                <svg viewBox="-1.2 -1.2 2.4 2.4" id="msSvg"></svg>
-                <div class="ms-center" id="msCenter">
-                    <div class="ms-cl-title">Global</div>
-                    <div class="ms-cl-big" id="msClBig">5 Regions</div>
-                    <div class="ms-cl-sub">hover for details</div>
+            <div class="ms-chart-col">
+                <div class="ms-toggle-bar">
+                    <button class="ms-toggle-btn active" data-mode="regions">By Region</button>
+                    <button class="ms-toggle-btn" data-mode="companies">By Company</button>
+                </div>
+                <div class="ms-chart-box">
+                    <svg viewBox="-1.2 -1.2 2.4 2.4" id="msSvg"></svg>
+                    <div class="ms-center" id="msCenter">
+                        <div class="ms-cl-title">Global</div>
+                        <div class="ms-cl-big" id="msClBig">5 Regions</div>
+                        <div class="ms-cl-sub">hover for details</div>
+                    </div>
                 </div>
             </div>
             <div class="ms-sidebar" id="msSidebar"></div>

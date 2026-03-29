@@ -1313,48 +1313,49 @@ html, body {
     padding: 20px 40px 48px;
 }
 
+.ms-chart-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .ms-toggle-bar {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-bottom: 16px;
+    gap: 4px;
+    margin-bottom: 14px;
     position: relative;
     z-index: 10;
-}
-
-.ms-toggle-label {
-    font-size: .75rem;
-    font-weight: 600;
-    color: var(--text-dim);
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-right: 4px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 999px;
+    padding: 3px;
 }
 
 .ms-toggle-btn {
-    padding: 7px 18px;
+    padding: 6px 20px;
     border-radius: 999px;
-    border: 1px solid rgba(255,255,255,.08);
-    background: rgba(255,255,255,.04);
+    border: none;
+    background: transparent;
     color: var(--text-dim);
-    font-size: .8rem;
+    font-size: .78rem;
     font-weight: 600;
     font-family: inherit;
     cursor: pointer;
     transition: all .3s ease;
+    letter-spacing: 0.3px;
 }
 
 .ms-toggle-btn:hover {
-    background: rgba(255,255,255,.08);
     color: #c4caeb;
 }
 
 .ms-toggle-btn.active {
     background: linear-gradient(135deg, #3b82f6, #8b5cf6);
     color: #fff;
-    border-color: transparent;
-    box-shadow: 0 3px 14px rgba(99,102,241,.35);
+    box-shadow: 0 2px 12px rgba(99,102,241,.4);
 }
 
 .ms-layout {
@@ -1371,7 +1372,6 @@ html, body {
     position: relative;
     width: 500px;
     height: 500px;
-    flex-shrink: 0;
 }
 
 .ms-chart-box svg {
