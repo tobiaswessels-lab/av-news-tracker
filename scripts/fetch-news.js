@@ -2,8 +2,8 @@
 /**
  * fetch-news.js — Daily news fetcher for Toby's Amazing News Network
  *
- * Queries GNews API for each company, deduplicates against existing data,
- * and prepends new articles to the top of the JSON data files.
+ * Queries GNews API for each company, deduplicates against existing articles,
+ * and injects new articles into the data JS files while preserving logos and structure.
  *
  * Usage:
  *   GNEWS_API_KEY=<key> node scripts/fetch-news.js
@@ -19,228 +19,168 @@ const https = require('https');
 const API_KEY = process.env.GNEWS_API_KEY;
 if (!API_KEY) {
     console.error('Error: GNEWS_API_KEY environment variable is required.');
-    console.error('Sign up for a free key at https://gnews.io');
     process.exit(1);
 }
 
+const DATA_DIR = path.join(__dirname, '..');
+
 // ── Company search queries ──
-const AV_QUERIES = [
-    { id: 'torc', query: '"TORC Robotics" OR "Torc autonomous"', category_hint: 'tech' },
-    { id: 'aurora', query: '"Aurora Innovation" autonomous truck', category_hint: 'tech' },
-    { id: 'helm', query: '"Helm.ai" OR "Helm AI" autonomous driving', category_hint: 'tech' },
-    { id: 'waymo', query: 'Waymo robotaxi', category_hint: 'launch' },
-    { id: 'mobileye', query: 'Mobileye autonomous SuperVision EyeQ', category_hint: 'tech' },
-    { id: 'wayve', query: 'Wayve autonomous driving AI', category_hint: 'tech' },
-    { id: 'zoox', query: 'Zoox Amazon robotaxi', category_hint: 'launch' },
-    { id: 'nuro', query: 'Nuro autonomous delivery OR robotaxi', category_hint: 'tech' },
-];
+const AV_QUERIES = {
+    torc: '"TORC Robotics" OR "Torc autonomous"',
+    aurora: '"Aurora Innovation" autonomous truck',
+    helm: '"Helm.ai" OR "Helm AI" autonomous',
+    waymo: 'Waymo robotaxi OR autonomous',
+    mobileye: 'Mobileye autonomous OR SuperVision OR EyeQ',
+    wayve: 'Wayve autonomous driving',
+    zoox: 'Zoox Amazon robotaxi',
+    nuro: 'Nuro autonomous delivery OR robotaxi',
+};
 
-const TRUCKING_QUERIES = [
-    { id: 'daimler', query: '"Daimler Truck" OR "Freightliner" electric autonomous', category_hint: 'tech' },
-    { id: 'traton', query: 'TRATON OR Scania OR "MAN truck" electric', category_hint: 'tech' },
-    { id: 'paccar', query: 'PACCAR OR Peterbilt OR Kenworth truck', category_hint: 'tech' },
-    { id: 'tata', query: '"Tata Motors" truck OR bus electric', category_hint: 'tech' },
-    { id: 'volvo', query: '"Volvo Trucks" OR "Volvo autonomous" electric', category_hint: 'tech' },
-];
+const TRUCKING_QUERIES = {
+    daimler: '"Daimler Truck" OR Freightliner electric OR autonomous',
+    traton: 'TRATON OR Scania OR "MAN truck"',
+    paccar: 'PACCAR OR Peterbilt OR Kenworth',
+    tata: '"Tata Motors" truck OR bus',
+    volvo: '"Volvo Trucks" electric OR autonomous',
+};
 
-// ── Category detection from title/description ──
-function detectCategory(title, description) {
-    const text = (title + ' ' + description).toLowerCase();
-    if (/funding|raises|invest|valuation|ipo|revenue|earnings|profit|billion|million.*round/i.test(text)) return 'funding';
-    if (/partner|deal|agreement|collaboration|joint|select|signs/i.test(text)) return 'partnership';
-    if (/launch|begin|start|deploy|open|commercial service|first ride/i.test(text)) return 'launch';
-    if (/expand|new city|new market|new route|enter|growth/i.test(text)) return 'expansion';
-    if (/safety|incident|crash|recall|investigation|driver-out/i.test(text)) return 'safety';
-    if (/regulat|permit|approv|license|nhtsa|dmv|certif/i.test(text)) return 'regulation';
+// ── Category detection ──
+function detectCategory(title, desc) {
+    const t = (title + ' ' + desc).toLowerCase();
+    if (/fund|raise|invest|valuation|ipo|revenue|earning|profit|billion.*round|million.*round/i.test(t)) return 'funding';
+    if (/partner|deal|agreement|collaborat|joint|select|sign/i.test(t)) return 'partnership';
+    if (/launch|begin|start|deploy|open.*service|first ride|commercial/i.test(t)) return 'launch';
+    if (/expand|new cit|new market|new route|enter.*market|growth/i.test(t)) return 'expansion';
+    if (/safety|incident|crash|recall|investigat|driver.out/i.test(t)) return 'safety';
+    if (/regulat|permit|approv|license|nhtsa|dmv|certif/i.test(t)) return 'regulation';
     return 'tech';
 }
 
-// ── Extract tags from title ──
-function extractTags(title, companyName) {
-    const words = title.replace(/[^a-zA-Z0-9\s]/g, '').split(/\s+/);
-    const stopwords = new Set(['the', 'a', 'an', 'and', 'or', 'for', 'in', 'on', 'to', 'of', 'is', 'its', 'as', 'with', 'by', 'at', 'from', 'new', 'has', 'will', 'be']);
-    const tags = words
-        .filter(w => w.length > 3 && !stopwords.has(w.toLowerCase()) && w.toLowerCase() !== companyName.toLowerCase())
+// ── Extract tags ──
+function extractTags(title) {
+    const stop = new Set(['the','for','and','with','from','that','this','has','its','are','was','will','been','have','more','than','into','also','over','after','about','just','new']);
+    return title.replace(/[^a-zA-Z0-9\s]/g, '').split(/\s+/)
+        .filter(w => w.length > 3 && !stop.has(w.toLowerCase()))
         .slice(0, 3);
-    return tags.length ? tags : ['Update'];
 }
 
 // ── Fetch from GNews API ──
-function fetchGNews(query, maxResults = 5) {
+function fetchGNews(query, max = 5) {
     return new Promise((resolve, reject) => {
-        const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=en&max=${maxResults}&sortby=publishedAt&apikey=${API_KEY}`;
-        https.get(url, (res) => {
+        const url = `https://gnews.io/api/v4/search?q=${encodeURIComponent(query)}&lang=en&max=${max}&sortby=publishedAt&apikey=${API_KEY}`;
+        https.get(url, res => {
             let data = '';
-            res.on('data', chunk => data += chunk);
+            res.on('data', c => data += c);
             res.on('end', () => {
                 try {
                     const json = JSON.parse(data);
-                    if (json.errors) {
-                        console.warn(`API warning for "${query}":`, json.errors);
-                        resolve([]);
-                    } else {
-                        resolve(json.articles || []);
-                    }
-                } catch (e) {
-                    reject(e);
-                }
+                    resolve(json.articles || []);
+                } catch (e) { resolve([]); }
             });
-        }).on('error', reject);
+        }).on('error', () => resolve([]));
     });
 }
 
-// ── Load existing data file ──
-function loadExistingData(filePath) {
+// ── Extract existing URLs from a data file to avoid duplicates ──
+function extractExistingUrls(filePath) {
+    const urls = new Set();
     try {
         const content = fs.readFileSync(filePath, 'utf-8');
-        // Extract the array from the JS file
-        const match = content.match(/const \w+ = (\[[\s\S]*\]);/);
-        if (match) {
-            return JSON.parse(match[1]);
-        }
-    } catch (e) {
-        console.warn(`Could not load ${filePath}:`, e.message);
-    }
-    return [];
-}
-
-// ── Get existing article URLs for deduplication ──
-function getExistingUrls(companies) {
-    const urls = new Set();
-    companies.forEach(c => {
-        if (c.news) c.news.forEach(n => urls.add(n.url));
-    });
+        const urlMatches = content.matchAll(/url:\s*"([^"]+)"/g);
+        for (const m of urlMatches) urls.add(m[1]);
+    } catch {}
     return urls;
 }
 
-// ── Process a set of companies ──
-async function processCompanies(queries, existingCompanies) {
-    const existingUrls = getExistingUrls(existingCompanies);
-    const updates = {};
+// ── Insert new articles into a data JS file ──
+function insertArticles(filePath, companyId, newArticles) {
+    let content = fs.readFileSync(filePath, 'utf-8');
 
-    for (const { id, query, category_hint } of queries) {
-        console.log(`  Fetching news for ${id}...`);
-        try {
-            const articles = await fetchGNews(query);
-            const newArticles = [];
-
-            for (const article of articles) {
-                if (existingUrls.has(article.url)) continue;
-
-                const newsItem = {
-                    date: article.publishedAt.split('T')[0],
-                    title: article.title.replace(/ - .*$/, '').trim(), // Remove source suffix
-                    body: article.description || article.content?.substring(0, 300) || '',
-                    category: detectCategory(article.title, article.description || ''),
-                    tags: extractTags(article.title, id),
-                    url: article.url
-                };
-                newArticles.push(newsItem);
-                existingUrls.add(article.url);
-            }
-
-            updates[id] = newArticles;
-            console.log(`    Found ${newArticles.length} new articles`);
-
-            // Rate limit: small delay between requests
-            await new Promise(r => setTimeout(r, 500));
-        } catch (e) {
-            console.error(`    Error fetching ${id}:`, e.message);
-            updates[id] = [];
-        }
+    // Find the news array for this company
+    // Pattern: id: "companyId",\n ... news: [\n
+    const idPattern = new RegExp(`id:\\s*"${companyId}"[\\s\\S]*?news:\\s*\\[`);
+    const match = content.match(idPattern);
+    if (!match) {
+        console.log(`    Could not find company "${companyId}" in file`);
+        return false;
     }
 
-    return updates;
-}
+    const insertPos = match.index + match[0].length;
 
-// ── Merge new articles into existing company data ──
-function mergeUpdates(existingCompanies, updates, maxPerCompany = 8) {
-    return existingCompanies.map(company => {
-        const newArticles = updates[company.id] || [];
-        if (newArticles.length === 0) return company;
+    // Build the new article entries as JS
+    const entries = newArticles.map(a => `
+            {
+                date: "${a.date}",
+                title: ${JSON.stringify(a.title)},
+                body: ${JSON.stringify(a.body)},
+                category: "${a.category}",
+                tags: ${JSON.stringify(a.tags)},
+                url: ${JSON.stringify(a.url)}
+            }`).join(',');
 
-        // Prepend new articles, keep max
-        const merged = [...newArticles, ...company.news].slice(0, maxPerCompany);
-        return { ...company, news: merged };
-    });
-}
+    // Insert after "news: ["
+    const before = content.substring(0, insertPos);
+    const after = content.substring(insertPos);
 
-// ── Write updated data file ──
-function writeDataFile(filePath, varName, logoVarName, logoObj, companies) {
-    const logoJSON = JSON.stringify(logoObj, null, 4);
-    const companiesJSON = JSON.stringify(companies, null, 4);
+    // Add comma after new entries if there are existing entries
+    const trimmedAfter = after.trimStart();
+    const needsComma = trimmedAfter.length > 0 && trimmedAfter[0] !== ']';
 
-    const content = `// Auto-updated: ${new Date().toISOString()}
-// Source: GNews API — https://gnews.io
-
-const ${logoVarName} = ${logoJSON};
-
-const ${varName} = ${companiesJSON};
-`;
+    content = before + entries + (needsComma && entries ? ',' : '') + after;
     fs.writeFileSync(filePath, content);
-    console.log(`  Written to ${filePath}`);
+    return true;
+}
+
+// ── Process all companies for a file ──
+async function processFile(filePath, queries) {
+    const existingUrls = extractExistingUrls(filePath);
+    let totalNew = 0;
+
+    for (const [companyId, query] of Object.entries(queries)) {
+        console.log(`  ${companyId}: searching...`);
+        const articles = await fetchGNews(query, 3);
+
+        const newArticles = articles
+            .filter(a => !existingUrls.has(a.url))
+            .map(a => ({
+                date: a.publishedAt.split('T')[0],
+                title: a.title.replace(/ - [^-]*$/, '').trim(),
+                body: (a.description || '').substring(0, 500),
+                category: detectCategory(a.title, a.description || ''),
+                tags: extractTags(a.title),
+                url: a.url
+            }));
+
+        if (newArticles.length > 0) {
+            insertArticles(filePath, companyId, newArticles);
+            newArticles.forEach(a => existingUrls.add(a.url));
+            console.log(`    +${newArticles.length} new articles`);
+            totalNew += newArticles.length;
+        } else {
+            console.log(`    no new articles`);
+        }
+
+        // Rate limit
+        await new Promise(r => setTimeout(r, 400));
+    }
+
+    return totalNew;
 }
 
 // ── Main ──
 async function main() {
-    const dataDir = path.join(__dirname, '..');
+    console.log("=== Toby's Amazing News Network — Daily Fetch ===\n");
 
-    console.log('=== Toby\'s Amazing News Network — Daily Fetch ===\n');
+    const avFile = path.join(DATA_DIR, 'data.js');
+    const truckFile = path.join(DATA_DIR, 'data_trucking.js');
 
-    // Load existing logos (we preserve these, they don't change)
-    const avDataPath = path.join(dataDir, 'data.js');
-    const truckDataPath = path.join(dataDir, 'data_trucking.js');
+    console.log('AV Companies:');
+    const avNew = await processFile(avFile, AV_QUERIES);
 
-    // Read logo objects from existing files
-    const avContent = fs.readFileSync(avDataPath, 'utf-8');
-    const truckContent = fs.readFileSync(truckDataPath, 'utf-8');
+    console.log('\nTrucking & Bus:');
+    const truckNew = await processFile(truckFile, TRUCKING_QUERIES);
 
-    let avLogos, truckLogos;
-    try {
-        const avLogoMatch = avContent.match(/const logoSVGs = ({[\s\S]*?});/);
-        avLogos = avLogoMatch ? eval('(' + avLogoMatch[1] + ')') : {};
-    } catch { avLogos = {}; }
-
-    try {
-        const truckLogoMatch = truckContent.match(/const truckingLogoSVGs = ({[\s\S]*?});/);
-        truckLogos = truckLogoMatch ? eval('(' + truckLogoMatch[1] + ')') : {};
-    } catch { truckLogos = {}; }
-
-    // Load existing company data
-    const existingAV = loadExistingData(avDataPath);
-    const existingTruck = loadExistingData(truckDataPath);
-
-    // Fetch new articles
-    console.log('Fetching AV company news...');
-    const avUpdates = await processCompanies(AV_QUERIES, existingAV);
-
-    console.log('\nFetching Trucking & Bus news...');
-    const truckUpdates = await processCompanies(TRUCKING_QUERIES, existingTruck);
-
-    // Merge
-    const updatedAV = mergeUpdates(existingAV, avUpdates);
-    const updatedTruck = mergeUpdates(existingTruck, truckUpdates);
-
-    // Write back — preserve the original file format with logos
-    // For AV data
-    const avLogoBlock = avContent.match(/const logoSVGs = {[\s\S]*?};/)?.[0] || 'const logoSVGs = {};';
-    const avOutput = `// Auto-updated: ${new Date().toISOString()}\n// Source: GNews API + manual curation\n\n${avLogoBlock}\n\nconst companies = ${JSON.stringify(updatedAV, null, 4)};\n`;
-    fs.writeFileSync(avDataPath, avOutput);
-    console.log(`\nWritten AV data to ${avDataPath}`);
-
-    // For trucking data
-    const truckLogoBlock = truckContent.match(/const truckingLogoSVGs = {[\s\S]*?};/)?.[0] || 'const truckingLogoSVGs = {};';
-    const truckOutput = `// Auto-updated: ${new Date().toISOString()}\n// Source: GNews API + manual curation\n\n${truckLogoBlock}\n\nconst truckingCompanies = ${JSON.stringify(updatedTruck, null, 4)};\n`;
-    fs.writeFileSync(truckDataPath, truckOutput);
-    console.log(`Written Trucking data to ${truckDataPath}`);
-
-    // Summary
-    const totalNew = Object.values(avUpdates).reduce((s, a) => s + a.length, 0)
-        + Object.values(truckUpdates).reduce((s, a) => s + a.length, 0);
-    console.log(`\n=== Done! ${totalNew} new articles added ===`);
+    console.log(`\n=== Done! ${avNew + truckNew} new articles total ===`);
 }
 
-main().catch(e => {
-    console.error('Fatal error:', e);
-    process.exit(1);
-});
+main().catch(e => { console.error('Fatal:', e); process.exit(1); });
