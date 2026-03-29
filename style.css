@@ -1319,6 +1319,8 @@ html, body {
     justify-content: center;
     gap: 8px;
     margin-bottom: 16px;
+    position: relative;
+    z-index: 10;
 }
 
 .ms-toggle-label {
