@@ -10,7 +10,8 @@ const categoryClasses = {
     tech: { tag: 'cat-tech', dot: 'dot-tech' },
     regulation: { tag: 'cat-regulation', dot: 'dot-regulation' },
     expansion: { tag: 'cat-expansion', dot: 'dot-expansion' },
-    safety: { tag: 'cat-safety', dot: 'dot-safety' }
+    safety: { tag: 'cat-safety', dot: 'dot-safety' },
+    awards: { tag: 'cat-awards', dot: 'dot-awards' }
 };
 
 // ── Read state persistence (localStorage) ──
@@ -82,7 +83,8 @@ const filterMap = {
     partnership: ['partnership'],
     funding: ['funding'],
     tech: ['tech', 'regulation'],
-    safety: ['safety']
+    safety: ['safety'],
+    awards: ['awards']
 };
 
 let activeFilter = 'all';

@@ -131,6 +131,30 @@ const companies = [
         color: "#1DE9B6",
         news: [
             {
+                date: "2025-11-19",
+                title: "Helm.ai Named to Deloitte Technology Fast 500 for Rapid Growth",
+                body: "Helm.ai was recognized on the 2025 Deloitte Technology Fast 500, the annual ranking of the fastest-growing North American technology companies. The award reflects Helm.ai's exceptional revenue growth driven by expanding OEM partnerships and its Deep Teaching AI platform.",
+                category: "awards",
+                tags: ["Deloitte Fast 500", "Growth", "Recognition"],
+                url: "https://www.deloitte.com/us/en/Industries/tmt/articles/fast500-winners.html"
+            },
+            {
+                date: "2025-09-10",
+                title: "Helm.ai Wins Two Awards at Tech.AD Detroit — A Conference First",
+                body: "Helm.ai became the first company to take home two awards at the Tech.AD Detroit conference, winning 'Most Innovative Use of AI & ML in Autonomous Vehicles' and the 'Overall Community Choice Award,' recognizing its leadership in AI-driven autonomous driving software.",
+                category: "awards",
+                tags: ["Tech.AD", "Double Win", "Innovation"],
+                url: "https://helm.ai/post/techad-awards"
+            },
+            {
+                date: "2025-06-15",
+                title: "Helm.ai Wins AI Development Solution of the Year 2025",
+                body: "Helm.ai received the AI Development Solution of the Year award in the Machine Learning, Small Company category, along with the 2025 Artificial Intelligence Excellence Award, recognizing the impact of its Deep Teaching methodology on the autonomous driving industry.",
+                category: "awards",
+                tags: ["AI Solution of Year", "ML Award", "Excellence"],
+                url: "https://helm.ai/about"
+            },
+            {
                 date: "2026-03-15",
                 title: "Helm.ai's Vision-Only AI Poised to Dominate Autonomous Driving",
                 body: "Industry analysts highlighted Helm.ai's vision-only approach as a potential paradigm shift in autonomous driving, noting the company's ability to achieve robust perception without expensive lidar sensors, making scalable ADAS accessible to mass-market vehicles.",

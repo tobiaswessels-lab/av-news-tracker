@@ -486,6 +486,9 @@ html, body {
 .dot-expansion { background: #64b5f6; box-shadow: 0 0 6px #64b5f6; }
 .dot-safety { background: #ff8a65; box-shadow: 0 0 6px #ff8a65; }
 
+.cat-awards { background: rgba(255,215,0,0.15); color: #FFD700; }
+.dot-awards { background: #FFD700; box-shadow: 0 0 6px #FFD700; }
+
 /* ── Modal ── */
 .modal-overlay {
     position: fixed;
