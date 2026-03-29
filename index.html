@@ -32,6 +32,7 @@
         <button class="dash-tab" data-dashboard="trucking">Trucking &amp; Bus</button>
         <button class="dash-tab" data-dashboard="timeline">Timeline</button>
         <button class="dash-tab" data-dashboard="stocks">Stock Prices</button>
+        <button class="dash-tab" data-dashboard="marketshare">Market Share</button>
     </div>
 
     <!-- Filter bar -->
@@ -68,6 +69,22 @@
 
     <!-- Stock dashboard (hidden by default) -->
     <div class="stocks-view" id="stocksView" style="display:none;"></div>
+
+    <!-- Market share sunburst (hidden by default) -->
+    <div class="marketshare-view" id="marketshareView" style="display:none;">
+        <div class="ms-layout">
+            <div class="ms-chart-box">
+                <svg viewBox="-1.2 -1.2 2.4 2.4" id="msSvg"></svg>
+                <div class="ms-center" id="msCenter">
+                    <div class="ms-cl-title">Global</div>
+                    <div class="ms-cl-big" id="msClBig">5 Regions</div>
+                    <div class="ms-cl-sub">hover for details</div>
+                </div>
+            </div>
+            <div class="ms-sidebar" id="msSidebar"></div>
+        </div>
+        <div class="ms-tip" id="msTip"></div>
+    </div>
 
     <!-- Hover popup -->
     <div class="hover-popup" id="hoverPopup">

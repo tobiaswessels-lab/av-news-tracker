@@ -102,8 +102,19 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 // ── Dashboard tab switching ──
 const stocksView = document.getElementById('stocksView');
 const timelineViewEl = document.getElementById('timelineView');
+const marketshareView = document.getElementById('marketshareView');
 const filterBar = document.querySelector('.filter-bar');
 const timelineLabels = document.querySelector('.timeline-labels');
+
+function hideAllViews() {
+    logoStrip.style.display = 'none';
+    newsGrid.style.display = 'none';
+    filterBar.style.display = 'none';
+    timelineLabels.style.display = 'none';
+    stocksView.style.display = 'none';
+    timelineViewEl.style.display = 'none';
+    marketshareView.style.display = 'none';
+}
 
 function showNewsMode() {
     logoStrip.style.display = '';
@@ -112,6 +123,7 @@ function showNewsMode() {
     timelineLabels.style.display = '';
     stocksView.style.display = 'none';
     timelineViewEl.style.display = 'none';
+    marketshareView.style.display = 'none';
 }
 
 document.querySelectorAll('.dash-tab').forEach(tab => {
@@ -121,21 +133,17 @@ document.querySelectorAll('.dash-tab').forEach(tab => {
         activeDashboard = tab.dataset.dashboard;
 
         if (activeDashboard === 'stocks') {
-            logoStrip.style.display = 'none';
-            newsGrid.style.display = 'none';
-            filterBar.style.display = 'none';
-            timelineLabels.style.display = 'none';
-            timelineViewEl.style.display = 'none';
+            hideAllViews();
             stocksView.style.display = '';
             buildStocksView();
         } else if (activeDashboard === 'timeline') {
-            logoStrip.style.display = 'none';
-            newsGrid.style.display = 'none';
-            filterBar.style.display = 'none';
-            timelineLabels.style.display = 'none';
-            stocksView.style.display = 'none';
+            hideAllViews();
             timelineViewEl.style.display = '';
             buildTimelineView();
+        } else if (activeDashboard === 'marketshare') {
+            hideAllViews();
+            marketshareView.style.display = '';
+            buildMarketShareView();
         } else {
             showNewsMode();
             rebuildAll();
@@ -878,5 +886,304 @@ function buildStocksView() {
         }, 100 + idx * 80);
 
         stocksView.appendChild(card);
+    });
+}
+
+/* =================================================================
+   MARKET SHARE SUNBURST
+   ================================================================= */
+let msBuilt = false;
+
+const MS_BRANDS = [
+    { id: 'daimler', name: 'Daimler Truck', color: '#3b82f6', grad: ['#2563eb','#60a5fa'] },
+    { id: 'volvo',   name: 'Volvo Trucks',  color: '#8b5cf6', grad: ['#7c3aed','#a78bfa'] },
+    { id: 'paccar',  name: 'Paccar',        color: '#f59e0b', grad: ['#d97706','#fbbf24'] },
+    { id: 'traton',  name: 'Traton',        color: '#10b981', grad: ['#059669','#34d399'] },
+    { id: 'tata',    name: 'Tata',          color: '#ef4444', grad: ['#dc2626','#f87171'] },
+];
+
+const MS_REGIONS = [
+    { id: 'europe',   name: 'Europe',              weight: 28, tint: '#6366f1',
+      shares: { daimler: 28, volvo: 24, paccar: 16, traton: 27, tata: 5 } },
+    { id: 'namerica', name: 'North America',        weight: 30, tint: '#3b82f6',
+      shares: { daimler: 30, volvo: 14, paccar: 32, traton: 12, tata: 12 } },
+    { id: 'asia',     name: 'Asia',                 weight: 24, tint: '#f472b6',
+      shares: { daimler: 10, volvo: 8, paccar: 5, traton: 7, tata: 70 } },
+    { id: 'samerica', name: 'South America',        weight: 10, tint: '#fbbf24',
+      shares: { daimler: 26, volvo: 20, paccar: 10, traton: 30, tata: 14 } },
+    { id: 'africa',   name: 'Africa & Middle East', weight: 8,  tint: '#34d399',
+      shares: { daimler: 24, volvo: 18, paccar: 8, traton: 20, tata: 30 } },
+];
+
+const msTotalWeight = MS_REGIONS.reduce((s, r) => s + r.weight, 0);
+const msGlobalShares = {};
+MS_BRANDS.forEach(b => {
+    msGlobalShares[b.id] = MS_REGIONS.reduce((s, r) => s + r.shares[b.id] * r.weight, 0) / msTotalWeight;
+});
+
+function buildMarketShareView() {
+    if (msBuilt) return;
+    msBuilt = true;
+
+    const TAU = Math.PI * 2;
+    const INNER_R1 = 0.34, OUTER_R1 = 0.58;
+    const INNER_R2 = 0.61, OUTER_R2 = 0.98;
+    const GAP_REGION = 0.018, GAP_BRAND = 0.006;
+    const NS = 'http://www.w3.org/2000/svg';
+
+    function polar(cx, cy, r, a) { return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) }; }
+
+    function arcPath(cx, cy, rO, rI, a0, a1) {
+        const sw = a1 - a0;
+        if (sw < 0.0008) return '';
+        const la = sw > Math.PI ? 1 : 0;
+        const p1 = polar(cx, cy, rO, a0), p2 = polar(cx, cy, rO, a1);
+        const p3 = polar(cx, cy, rI, a1), p4 = polar(cx, cy, rI, a0);
+        return `M${p1.x} ${p1.y} A${rO} ${rO} 0 ${la} 1 ${p2.x} ${p2.y} L${p3.x} ${p3.y} A${rI} ${rI} 0 ${la} 0 ${p4.x} ${p4.y}Z`;
+    }
+
+    // Compute slices
+    const regionSlices = [];
+    const brandSlices = [];
+    let cum = -Math.PI / 2;
+
+    MS_REGIONS.forEach((r, ri) => {
+        const rSpan = (r.weight / msTotalWeight) * TAU;
+        const ra0 = cum + GAP_REGION / 2;
+        const ra1 = cum + rSpan - GAP_REGION / 2;
+        regionSlices.push({ ri, a0: ra0, a1: ra1 });
+
+        let bcum = ra0;
+        const usable = ra1 - ra0;
+        MS_BRANDS.forEach((b, bi) => {
+            const bSpan = (r.shares[b.id] / 100) * usable;
+            brandSlices.push({ ri, bi, a0: bcum + GAP_BRAND / 2, a1: bcum + bSpan - GAP_BRAND / 2 });
+            bcum += bSpan;
+        });
+        cum += rSpan;
+    });
+
+    // SVG setup
+    const svg = document.getElementById('msSvg');
+    svg.innerHTML = '';
+
+    const defs = document.createElementNS(NS, 'defs');
+    MS_BRANDS.forEach(b => {
+        const lg = document.createElementNS(NS, 'linearGradient');
+        lg.id = `msg-${b.id}`;
+        lg.setAttribute('x1','0'); lg.setAttribute('y1','0');
+        lg.setAttribute('x2','1'); lg.setAttribute('y2','1');
+        [0,100].forEach((o, i) => {
+            const st = document.createElementNS(NS, 'stop');
+            st.setAttribute('offset', o + '%');
+            st.setAttribute('stop-color', b.grad[i]);
+            lg.appendChild(st);
+        });
+        defs.appendChild(lg);
+    });
+    svg.appendChild(defs);
+
+    // Region ring
+    const regionPaths = regionSlices.map(s => {
+        const p = document.createElementNS(NS, 'path');
+        p.setAttribute('fill', MS_REGIONS[s.ri].tint);
+        p.style.opacity = '0.35';
+        p.style.transition = 'opacity .3s, filter .3s';
+        p.style.cursor = 'pointer';
+        svg.appendChild(p);
+        return p;
+    });
+
+    // Brand ring
+    const brandPaths = brandSlices.map(s => {
+        const p = document.createElementNS(NS, 'path');
+        p.setAttribute('fill', `url(#msg-${MS_BRANDS[s.bi].id})`);
+        p.style.transition = 'opacity .3s, filter .3s';
+        p.style.cursor = 'pointer';
+        svg.appendChild(p);
+        return p;
+    });
+
+    // Region labels
+    const regionLabels = regionSlices.map((s, i) => {
+        const mid = (s.a0 + s.a1) / 2;
+        const lr = (INNER_R1 + OUTER_R1) / 2;
+        const pos = polar(0, 0, lr, mid);
+        const t = document.createElementNS(NS, 'text');
+        t.setAttribute('x', pos.x); t.setAttribute('y', pos.y);
+        t.setAttribute('text-anchor', 'middle');
+        t.setAttribute('dominant-baseline', 'central');
+        t.setAttribute('fill', '#fff');
+        t.setAttribute('font-size', '0.06');
+        t.setAttribute('font-weight', '700');
+        t.setAttribute('font-family', 'Inter, sans-serif');
+        t.setAttribute('pointer-events', 'none');
+        t.textContent = MS_REGIONS[i].name
+            .replace('North America', 'N. America')
+            .replace('South America', 'S. America')
+            .replace('Africa & Middle East', 'Africa & ME');
+        svg.appendChild(t);
+        return t;
+    });
+
+    // Intro animation
+    let progress = 0;
+    function animateIntro() {
+        progress += 0.025;
+        if (progress > 1) progress = 1;
+        const ease = 1 - Math.pow(1 - progress, 3);
+
+        regionSlices.forEach((s, i) => {
+            const a0 = -Math.PI / 2 + (s.a0 + Math.PI / 2) * ease;
+            const a1 = -Math.PI / 2 + (s.a1 + Math.PI / 2) * ease;
+            regionPaths[i].setAttribute('d', arcPath(0, 0, OUTER_R1, INNER_R1, a0, a1));
+        });
+
+        brandSlices.forEach((s, idx) => {
+            const a0 = -Math.PI / 2 + (s.a0 + Math.PI / 2) * ease;
+            const a1 = -Math.PI / 2 + (s.a1 + Math.PI / 2) * ease;
+            brandPaths[idx].setAttribute('d', arcPath(0, 0, OUTER_R2, INNER_R2, a0, a1));
+        });
+
+        regionSlices.forEach((s, i) => {
+            const a0a = -Math.PI / 2 + (s.a0 + Math.PI / 2) * ease;
+            const a1a = -Math.PI / 2 + (s.a1 + Math.PI / 2) * ease;
+            const mid = (a0a + a1a) / 2;
+            const pos = polar(0, 0, (INNER_R1 + OUTER_R1) / 2, mid);
+            regionLabels[i].setAttribute('x', pos.x);
+            regionLabels[i].setAttribute('y', pos.y);
+            regionLabels[i].style.opacity = ease;
+        });
+
+        if (progress < 1) requestAnimationFrame(animateIntro);
+    }
+    requestAnimationFrame(animateIntro);
+
+    // Hover state
+    let hlRegion = null, hlBrand = null;
+    const tip = document.getElementById('msTip');
+
+    function applyHL() {
+        regionPaths.forEach((p, i) => {
+            const ri = regionSlices[i].ri;
+            if (hlRegion === null && hlBrand === null) {
+                p.style.opacity = '0.35'; p.style.filter = '';
+            } else if (hlRegion === ri) {
+                p.style.opacity = '0.55'; p.style.filter = `drop-shadow(0 0 8px ${MS_REGIONS[ri].tint}60)`;
+            } else {
+                p.style.opacity = '0.15'; p.style.filter = '';
+            }
+        });
+
+        brandPaths.forEach((p, idx) => {
+            const { ri, bi } = brandSlices[idx];
+            if (hlRegion === null && hlBrand === null) {
+                p.style.opacity = '1'; p.style.filter = '';
+            } else if (hlBrand !== null && hlBrand === bi) {
+                p.style.opacity = '1'; p.style.filter = `drop-shadow(0 0 8px ${MS_BRANDS[bi].color}70)`;
+            } else if (hlRegion !== null && hlRegion === ri) {
+                p.style.opacity = '1'; p.style.filter = '';
+            } else {
+                p.style.opacity = '0.2'; p.style.filter = '';
+            }
+        });
+
+        const center = document.getElementById('msCenter');
+        if (hlRegion !== null) {
+            const r = MS_REGIONS[hlRegion];
+            center.querySelector('.ms-cl-title').textContent = r.name;
+            document.getElementById('msClBig').textContent = r.weight + '% of market';
+            center.querySelector('.ms-cl-sub').textContent = 'regional share';
+        } else if (hlBrand !== null) {
+            const b = MS_BRANDS[hlBrand];
+            center.querySelector('.ms-cl-title').textContent = b.name;
+            document.getElementById('msClBig').textContent = msGlobalShares[b.id].toFixed(1) + '%';
+            center.querySelector('.ms-cl-sub').textContent = 'global share';
+        } else {
+            center.querySelector('.ms-cl-title').textContent = 'Global';
+            document.getElementById('msClBig').textContent = '5 Regions';
+            center.querySelector('.ms-cl-sub').textContent = 'hover for details';
+        }
+
+        document.querySelectorAll('.ms-brand-row').forEach((r, i) => {
+            r.classList.toggle('hl', hlBrand === i);
+        });
+    }
+
+    // Region events
+    regionPaths.forEach((p, i) => {
+        p.addEventListener('mouseenter', () => { hlRegion = regionSlices[i].ri; hlBrand = null; applyHL(); });
+        p.addEventListener('mouseleave', () => { hlRegion = null; applyHL(); tip.classList.remove('show'); });
+        p.addEventListener('mousemove', e => {
+            const r = MS_REGIONS[regionSlices[i].ri];
+            let html = `<strong style="color:${r.tint}">${r.name}</strong> — ${r.weight}% of global market<br><br>`;
+            MS_BRANDS.forEach(b => {
+                html += `<span style="color:${b.grad[1]}">&#9679;</span> ${b.name}: <b>${r.shares[b.id]}%</b><br>`;
+            });
+            tip.innerHTML = html;
+            tip.style.left = (e.clientX + 18) + 'px';
+            tip.style.top = (e.clientY - 12) + 'px';
+            tip.classList.add('show');
+        });
+    });
+
+    // Brand events
+    brandPaths.forEach((p, idx) => {
+        const s = brandSlices[idx];
+        p.addEventListener('mouseenter', () => { hlBrand = s.bi; hlRegion = null; applyHL(); });
+        p.addEventListener('mouseleave', () => { hlBrand = null; applyHL(); tip.classList.remove('show'); });
+        p.addEventListener('mousemove', e => {
+            const b = MS_BRANDS[s.bi], r = MS_REGIONS[s.ri];
+            tip.innerHTML = `<strong style="color:${b.grad[1]}">${b.name}</strong><br>${r.name}: <b>${r.shares[b.id]}%</b><br><span style="color:var(--text-dim)">Global: ${msGlobalShares[b.id].toFixed(1)}%</span>`;
+            tip.style.left = (e.clientX + 18) + 'px';
+            tip.style.top = (e.clientY - 12) + 'px';
+            tip.classList.add('show');
+        });
+    });
+
+    marketshareView.addEventListener('mousemove', e => {
+        if (!e.target.closest('.ms-chart-box') && !e.target.closest('.ms-sidebar')) {
+            tip.classList.remove('show');
+            hlRegion = null; hlBrand = null; applyHL();
+        }
+    });
+
+    // Sidebar
+    const sb = document.getElementById('msSidebar');
+    sb.innerHTML = '';
+
+    const bTitle = document.createElement('h3');
+    bTitle.textContent = 'Companies';
+    sb.appendChild(bTitle);
+
+    MS_BRANDS.forEach((b, i) => {
+        const row = document.createElement('div');
+        row.className = 'ms-brand-row';
+        row.innerHTML = `
+            <div class="ms-brand-swatch" style="background:linear-gradient(135deg,${b.grad[0]},${b.grad[1]})"></div>
+            <div class="ms-brand-name">${b.name}</div>
+            <div class="ms-brand-pct" style="color:${b.grad[1]}">${msGlobalShares[b.id].toFixed(1)}%</div>
+        `;
+        row.addEventListener('mouseenter', () => { hlBrand = i; hlRegion = null; applyHL(); });
+        row.addEventListener('mouseleave', () => { hlBrand = null; applyHL(); });
+        sb.appendChild(row);
+    });
+
+    const rTitle = document.createElement('h3');
+    rTitle.textContent = 'Regions';
+    rTitle.style.marginTop = '12px';
+    sb.appendChild(rTitle);
+
+    MS_REGIONS.forEach((r, i) => {
+        const row = document.createElement('div');
+        row.className = 'ms-region-row';
+        row.innerHTML = `
+            <div class="ms-region-swatch" style="background:${r.tint}"></div>
+            <div class="ms-region-name">${r.name}</div>
+            <div class="ms-region-pct">${r.weight}%</div>
+        `;
+        row.addEventListener('mouseenter', () => { hlRegion = i; hlBrand = null; applyHL(); });
+        row.addEventListener('mouseleave', () => { hlRegion = null; applyHL(); });
+        sb.appendChild(row);
     });
 }
