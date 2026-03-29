@@ -923,7 +923,6 @@ MS_BRANDS.forEach(b => {
 
 function buildMarketShareView() {
     if (msBuilt) return;
-    msBuilt = true;
 
     const TAU = Math.PI * 2;
     const INNER_R1 = 0.34, OUTER_R1 = 0.58;
@@ -1186,4 +1185,6 @@ function buildMarketShareView() {
         row.addEventListener('mouseleave', () => { hlRegion = null; applyHL(); });
         sb.appendChild(row);
     });
+
+    msBuilt = true;
 }
