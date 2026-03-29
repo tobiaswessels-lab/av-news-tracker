@@ -893,6 +893,7 @@ function buildStocksView() {
    MARKET SHARE SUNBURST
    ================================================================= */
 let msBuilt = false;
+let msMode = 'regions'; // 'regions' or 'companies'
 
 const MS_BRANDS = [
     { id: 'daimler', name: 'Daimler Truck', color: '#3b82f6', grad: ['#2563eb','#60a5fa'] },
@@ -916,53 +917,82 @@ const MS_REGIONS = [
 ];
 
 const msTotalWeight = MS_REGIONS.reduce((s, r) => s + r.weight, 0);
+
+// Global shares per brand (weighted avg)
 const msGlobalShares = {};
 MS_BRANDS.forEach(b => {
     msGlobalShares[b.id] = MS_REGIONS.reduce((s, r) => s + r.shares[b.id] * r.weight, 0) / msTotalWeight;
+});
+
+// For company-first mode: each brand's regional breakdown
+// brandRegionWeight[bi][ri] = absolute contribution of region ri to brand bi
+const msBrandRegionWeight = MS_BRANDS.map(b => {
+    return MS_REGIONS.map(r => r.shares[b.id] * r.weight / msTotalWeight);
 });
 
 function buildMarketShareView() {
     if (msBuilt) return;
 
     const TAU = Math.PI * 2;
-    const INNER_R1 = 0.34, OUTER_R1 = 0.58;
-    const INNER_R2 = 0.61, OUTER_R2 = 0.98;
-    const GAP_REGION = 0.018, GAP_BRAND = 0.006;
+    const IR1 = 0.34, OR1 = 0.58;  // inner ring radii
+    const IR2 = 0.61, OR2 = 0.98;  // outer ring radii
+    const GAP1 = 0.018, GAP2 = 0.006;
     const NS = 'http://www.w3.org/2000/svg';
 
     function polar(cx, cy, r, a) { return { x: cx + r * Math.cos(a), y: cy + r * Math.sin(a) }; }
 
     function arcPath(cx, cy, rO, rI, a0, a1) {
         const sw = a1 - a0;
-        if (sw < 0.0008) return '';
+        if (sw < 0.001) return '';
         const la = sw > Math.PI ? 1 : 0;
         const p1 = polar(cx, cy, rO, a0), p2 = polar(cx, cy, rO, a1);
         const p3 = polar(cx, cy, rI, a1), p4 = polar(cx, cy, rI, a0);
         return `M${p1.x} ${p1.y} A${rO} ${rO} 0 ${la} 1 ${p2.x} ${p2.y} L${p3.x} ${p3.y} A${rI} ${rI} 0 ${la} 0 ${p4.x} ${p4.y}Z`;
     }
 
-    // Compute slices
-    const regionSlices = [];
-    const brandSlices = [];
-    let cum = -Math.PI / 2;
-
-    MS_REGIONS.forEach((r, ri) => {
-        const rSpan = (r.weight / msTotalWeight) * TAU;
-        const ra0 = cum + GAP_REGION / 2;
-        const ra1 = cum + rSpan - GAP_REGION / 2;
-        regionSlices.push({ ri, a0: ra0, a1: ra1 });
-
-        let bcum = ra0;
-        const usable = ra1 - ra0;
-        MS_BRANDS.forEach((b, bi) => {
-            const bSpan = (r.shares[b.id] / 100) * usable;
-            brandSlices.push({ ri, bi, a0: bcum + GAP_BRAND / 2, a1: bcum + bSpan - GAP_BRAND / 2 });
-            bcum += bSpan;
+    // ── Compute slices for both modes ──
+    function computeRegionFirst() {
+        const inner = [], outer = [];
+        let cum = -Math.PI / 2;
+        MS_REGIONS.forEach((r, ri) => {
+            const span = (r.weight / msTotalWeight) * TAU;
+            const a0 = cum + GAP1 / 2, a1 = cum + span - GAP1 / 2;
+            inner.push({ idx: ri, a0, a1, fill: r.tint, label: r.name.replace('North America','N. America').replace('South America','S. America').replace('Africa & Middle East','Africa & ME') });
+            let bc = a0;
+            const usable = a1 - a0;
+            MS_BRANDS.forEach((b, bi) => {
+                const bs = (r.shares[b.id] / 100) * usable;
+                outer.push({ innerIdx: ri, outerIdx: bi, a0: bc + GAP2 / 2, a1: bc + bs - GAP2 / 2, fill: `url(#msg-${b.id})` });
+                bc += bs;
+            });
+            cum += span;
         });
-        cum += rSpan;
-    });
+        return { inner, outer };
+    }
 
-    // SVG setup
+    function computeCompanyFirst() {
+        const inner = [], outer = [];
+        let cum = -Math.PI / 2;
+        MS_BRANDS.forEach((b, bi) => {
+            const gShare = msGlobalShares[b.id] / 100;
+            const span = gShare * TAU;
+            const a0 = cum + GAP1 / 2, a1 = cum + span - GAP1 / 2;
+            inner.push({ idx: bi, a0, a1, fill: `url(#msg-${b.id})`, label: b.name });
+            // Subdivide by regions proportional to brand's regional contributions
+            const total = msBrandRegionWeight[bi].reduce((s,v) => s+v, 0);
+            let rc = a0;
+            const usable = a1 - a0;
+            MS_REGIONS.forEach((r, ri) => {
+                const rs = (msBrandRegionWeight[bi][ri] / total) * usable;
+                outer.push({ innerIdx: bi, outerIdx: ri, a0: rc + GAP2 / 2, a1: rc + rs - GAP2 / 2, fill: r.tint });
+                rc += rs;
+            });
+            cum += span;
+        });
+        return { inner, outer };
+    }
+
+    // ── SVG setup (once) ──
     const svg = document.getElementById('msSvg');
     svg.innerHTML = '';
 
@@ -982,34 +1012,29 @@ function buildMarketShareView() {
     });
     svg.appendChild(defs);
 
-    // Region ring
-    const regionPaths = regionSlices.map(s => {
+    // Create max number of path elements we'll ever need
+    // Inner: max(5 regions, 5 brands) = 5
+    // Outer: 5 x 5 = 25
+    const MAX_INNER = 5, MAX_OUTER = 25;
+
+    const innerPaths = Array.from({ length: MAX_INNER }, () => {
         const p = document.createElementNS(NS, 'path');
-        p.setAttribute('fill', MS_REGIONS[s.ri].tint);
-        p.style.opacity = '0.35';
         p.style.transition = 'opacity .3s, filter .3s';
         p.style.cursor = 'pointer';
         svg.appendChild(p);
         return p;
     });
 
-    // Brand ring
-    const brandPaths = brandSlices.map(s => {
+    const outerPaths = Array.from({ length: MAX_OUTER }, () => {
         const p = document.createElementNS(NS, 'path');
-        p.setAttribute('fill', `url(#msg-${MS_BRANDS[s.bi].id})`);
         p.style.transition = 'opacity .3s, filter .3s';
         p.style.cursor = 'pointer';
         svg.appendChild(p);
         return p;
     });
 
-    // Region labels
-    const regionLabels = regionSlices.map((s, i) => {
-        const mid = (s.a0 + s.a1) / 2;
-        const lr = (INNER_R1 + OUTER_R1) / 2;
-        const pos = polar(0, 0, lr, mid);
+    const innerLabels = Array.from({ length: MAX_INNER }, () => {
         const t = document.createElementNS(NS, 'text');
-        t.setAttribute('x', pos.x); t.setAttribute('y', pos.y);
         t.setAttribute('text-anchor', 'middle');
         t.setAttribute('dominant-baseline', 'central');
         t.setAttribute('fill', '#fff');
@@ -1017,108 +1042,188 @@ function buildMarketShareView() {
         t.setAttribute('font-weight', '700');
         t.setAttribute('font-family', 'Inter, sans-serif');
         t.setAttribute('pointer-events', 'none');
-        t.textContent = MS_REGIONS[i].name
-            .replace('North America', 'N. America')
-            .replace('South America', 'S. America')
-            .replace('Africa & Middle East', 'Africa & ME');
         svg.appendChild(t);
         return t;
     });
 
-    // Intro animation
-    let progress = 0;
-    function animateIntro() {
-        progress += 0.025;
-        if (progress > 1) progress = 1;
-        const ease = 1 - Math.pow(1 - progress, 3);
+    // ── Animation state ──
+    let currentInner = [], currentOuter = [];
+    let targetInner = [], targetOuter = [];
+    let animId = null;
 
-        regionSlices.forEach((s, i) => {
-            const a0 = -Math.PI / 2 + (s.a0 + Math.PI / 2) * ease;
-            const a1 = -Math.PI / 2 + (s.a1 + Math.PI / 2) * ease;
-            regionPaths[i].setAttribute('d', arcPath(0, 0, OUTER_R1, INNER_R1, a0, a1));
-        });
+    function lerpAngle(a, b, t) { return a + (b - a) * t; }
 
-        brandSlices.forEach((s, idx) => {
-            const a0 = -Math.PI / 2 + (s.a0 + Math.PI / 2) * ease;
-            const a1 = -Math.PI / 2 + (s.a1 + Math.PI / 2) * ease;
-            brandPaths[idx].setAttribute('d', arcPath(0, 0, OUTER_R2, INNER_R2, a0, a1));
-        });
+    function setTargets(mode) {
+        const data = mode === 'regions' ? computeRegionFirst() : computeCompanyFirst();
+        targetInner = data.inner;
+        targetOuter = data.outer;
 
-        regionSlices.forEach((s, i) => {
-            const a0a = -Math.PI / 2 + (s.a0 + Math.PI / 2) * ease;
-            const a1a = -Math.PI / 2 + (s.a1 + Math.PI / 2) * ease;
-            const mid = (a0a + a1a) / 2;
-            const pos = polar(0, 0, (INNER_R1 + OUTER_R1) / 2, mid);
-            regionLabels[i].setAttribute('x', pos.x);
-            regionLabels[i].setAttribute('y', pos.y);
-            regionLabels[i].style.opacity = ease;
-        });
+        // Initialize current if first time
+        if (currentInner.length === 0) {
+            currentInner = targetInner.map(s => ({ ...s, a0: -Math.PI / 2, a1: -Math.PI / 2 }));
+            currentOuter = targetOuter.map(s => ({ ...s, a0: -Math.PI / 2, a1: -Math.PI / 2 }));
+        } else {
+            // Keep current positions, just update metadata (fill, label, idx)
+            while (currentInner.length < targetInner.length) currentInner.push({ ...targetInner[currentInner.length], a0: -Math.PI/2, a1: -Math.PI/2 });
+            while (currentOuter.length < targetOuter.length) currentOuter.push({ ...targetOuter[currentOuter.length], a0: -Math.PI/2, a1: -Math.PI/2 });
+            currentInner.forEach((c, i) => { if (targetInner[i]) { c.fill = targetInner[i].fill; c.label = targetInner[i].label; c.idx = targetInner[i].idx; c.innerIdx = targetInner[i].innerIdx; c.outerIdx = targetInner[i].outerIdx; } });
+            currentOuter.forEach((c, i) => { if (targetOuter[i]) { c.fill = targetOuter[i].fill; c.innerIdx = targetOuter[i].innerIdx; c.outerIdx = targetOuter[i].outerIdx; } });
+        }
 
-        if (progress < 1) requestAnimationFrame(animateIntro);
+        startAnim();
     }
-    requestAnimationFrame(animateIntro);
 
-    // Hover state
-    let hlRegion = null, hlBrand = null;
-    const tip = document.getElementById('msTip');
+    function startAnim() {
+        if (animId) cancelAnimationFrame(animId);
+        const speed = 0.06;
+        function tick() {
+            let done = true;
+            currentInner.forEach((c, i) => {
+                if (!targetInner[i]) return;
+                c.a0 = lerpAngle(c.a0, targetInner[i].a0, speed);
+                c.a1 = lerpAngle(c.a1, targetInner[i].a1, speed);
+                if (Math.abs(c.a0 - targetInner[i].a0) > 0.0005 || Math.abs(c.a1 - targetInner[i].a1) > 0.0005) done = false;
+            });
+            currentOuter.forEach((c, i) => {
+                if (!targetOuter[i]) return;
+                c.a0 = lerpAngle(c.a0, targetOuter[i].a0, speed);
+                c.a1 = lerpAngle(c.a1, targetOuter[i].a1, speed);
+                if (Math.abs(c.a0 - targetOuter[i].a0) > 0.0005 || Math.abs(c.a1 - targetOuter[i].a1) > 0.0005) done = false;
+            });
+            drawChart();
+            if (!done) animId = requestAnimationFrame(tick);
+        }
+        animId = requestAnimationFrame(tick);
+    }
 
-    function applyHL() {
-        regionPaths.forEach((p, i) => {
-            const ri = regionSlices[i].ri;
-            if (hlRegion === null && hlBrand === null) {
-                p.style.opacity = '0.35'; p.style.filter = '';
-            } else if (hlRegion === ri) {
-                p.style.opacity = '0.55'; p.style.filter = `drop-shadow(0 0 8px ${MS_REGIONS[ri].tint}60)`;
+    function drawChart() {
+        innerPaths.forEach((p, i) => {
+            if (i < currentInner.length && currentInner[i].a1 - currentInner[i].a0 > 0.001) {
+                const c = currentInner[i];
+                p.setAttribute('d', arcPath(0, 0, OR1, IR1, c.a0, c.a1));
+                p.setAttribute('fill', c.fill);
+                p.style.opacity = msMode === 'regions' ? '0.35' : '1';
+                p.style.display = '';
             } else {
-                p.style.opacity = '0.15'; p.style.filter = '';
+                p.style.display = 'none';
             }
         });
 
-        brandPaths.forEach((p, idx) => {
-            const { ri, bi } = brandSlices[idx];
-            if (hlRegion === null && hlBrand === null) {
-                p.style.opacity = '1'; p.style.filter = '';
-            } else if (hlBrand !== null && hlBrand === bi) {
-                p.style.opacity = '1'; p.style.filter = `drop-shadow(0 0 8px ${MS_BRANDS[bi].color}70)`;
-            } else if (hlRegion !== null && hlRegion === ri) {
+        outerPaths.forEach((p, i) => {
+            if (i < currentOuter.length && currentOuter[i].a1 - currentOuter[i].a0 > 0.001) {
+                const c = currentOuter[i];
+                p.setAttribute('d', arcPath(0, 0, OR2, IR2, c.a0, c.a1));
+                p.setAttribute('fill', c.fill);
+                p.style.opacity = msMode === 'companies' ? '0.55' : '1';
+                p.style.display = '';
+            } else {
+                p.style.display = 'none';
+            }
+        });
+
+        innerLabels.forEach((t, i) => {
+            if (i < currentInner.length && currentInner[i].a1 - currentInner[i].a0 > 0.15) {
+                const c = currentInner[i];
+                const mid = (c.a0 + c.a1) / 2;
+                const pos = polar(0, 0, (IR1 + OR1) / 2, mid);
+                t.setAttribute('x', pos.x);
+                t.setAttribute('y', pos.y);
+                t.textContent = c.label;
+                t.style.display = '';
+            } else {
+                t.style.display = 'none';
+            }
+        });
+    }
+
+    // ── Hover logic ──
+    let hlInner = null, hlOuter = null;
+    const tip = document.getElementById('msTip');
+
+    function applyHL() {
+        innerPaths.forEach((p, i) => {
+            if (i >= currentInner.length) return;
+            const baseOp = msMode === 'regions' ? 0.35 : 1;
+            if (hlInner === null && hlOuter === null) {
+                p.style.opacity = baseOp; p.style.filter = '';
+            } else if (hlInner === i) {
+                p.style.opacity = msMode === 'regions' ? '0.55' : '1';
+                const tint = msMode === 'regions' ? MS_REGIONS[i].tint : MS_BRANDS[i].color;
+                p.style.filter = `drop-shadow(0 0 8px ${tint}60)`;
+            } else {
+                p.style.opacity = msMode === 'regions' ? '0.15' : '0.25'; p.style.filter = '';
+            }
+        });
+
+        outerPaths.forEach((p, idx) => {
+            if (idx >= currentOuter.length) return;
+            const s = currentOuter[idx];
+            const baseOp = msMode === 'companies' ? 0.55 : 1;
+            if (hlInner === null && hlOuter === null) {
+                p.style.opacity = baseOp; p.style.filter = '';
+            } else if (hlOuter !== null && hlOuter === s.outerIdx) {
+                p.style.opacity = '1';
+                const tint = msMode === 'regions' ? MS_BRANDS[s.outerIdx].color : MS_REGIONS[s.outerIdx].tint;
+                p.style.filter = `drop-shadow(0 0 8px ${tint}70)`;
+            } else if (hlInner !== null && hlInner === s.innerIdx) {
                 p.style.opacity = '1'; p.style.filter = '';
             } else {
                 p.style.opacity = '0.2'; p.style.filter = '';
             }
         });
 
+        // Center label
         const center = document.getElementById('msCenter');
-        if (hlRegion !== null) {
-            const r = MS_REGIONS[hlRegion];
-            center.querySelector('.ms-cl-title').textContent = r.name;
-            document.getElementById('msClBig').textContent = r.weight + '% of market';
-            center.querySelector('.ms-cl-sub').textContent = 'regional share';
-        } else if (hlBrand !== null) {
-            const b = MS_BRANDS[hlBrand];
-            center.querySelector('.ms-cl-title').textContent = b.name;
-            document.getElementById('msClBig').textContent = msGlobalShares[b.id].toFixed(1) + '%';
-            center.querySelector('.ms-cl-sub').textContent = 'global share';
+        if (hlInner !== null) {
+            if (msMode === 'regions') {
+                const r = MS_REGIONS[hlInner];
+                center.querySelector('.ms-cl-title').textContent = r.name;
+                document.getElementById('msClBig').textContent = r.weight + '% of market';
+                center.querySelector('.ms-cl-sub').textContent = 'regional share';
+            } else {
+                const b = MS_BRANDS[hlInner];
+                center.querySelector('.ms-cl-title').textContent = b.name;
+                document.getElementById('msClBig').textContent = msGlobalShares[b.id].toFixed(1) + '%';
+                center.querySelector('.ms-cl-sub').textContent = 'global share';
+            }
+        } else if (hlOuter !== null) {
+            if (msMode === 'regions') {
+                const b = MS_BRANDS[hlOuter];
+                center.querySelector('.ms-cl-title').textContent = b.name;
+                document.getElementById('msClBig').textContent = msGlobalShares[b.id].toFixed(1) + '%';
+                center.querySelector('.ms-cl-sub').textContent = 'global share';
+            } else {
+                const r = MS_REGIONS[hlOuter];
+                center.querySelector('.ms-cl-title').textContent = r.name;
+                document.getElementById('msClBig').textContent = r.weight + '% of market';
+                center.querySelector('.ms-cl-sub').textContent = 'regional share';
+            }
         } else {
             center.querySelector('.ms-cl-title').textContent = 'Global';
-            document.getElementById('msClBig').textContent = '5 Regions';
+            document.getElementById('msClBig').textContent = msMode === 'regions' ? '5 Regions' : '5 Companies';
             center.querySelector('.ms-cl-sub').textContent = 'hover for details';
         }
-
-        document.querySelectorAll('.ms-brand-row').forEach((r, i) => {
-            r.classList.toggle('hl', hlBrand === i);
-        });
     }
 
-    // Region events
-    regionPaths.forEach((p, i) => {
-        p.addEventListener('mouseenter', () => { hlRegion = regionSlices[i].ri; hlBrand = null; applyHL(); });
-        p.addEventListener('mouseleave', () => { hlRegion = null; applyHL(); tip.classList.remove('show'); });
+    // Inner ring events
+    innerPaths.forEach((p, i) => {
+        p.addEventListener('mouseenter', () => { if (i < currentInner.length) { hlInner = i; hlOuter = null; applyHL(); } });
+        p.addEventListener('mouseleave', () => { hlInner = null; applyHL(); tip.classList.remove('show'); });
         p.addEventListener('mousemove', e => {
-            const r = MS_REGIONS[regionSlices[i].ri];
-            let html = `<strong style="color:${r.tint}">${r.name}</strong> — ${r.weight}% of global market<br><br>`;
-            MS_BRANDS.forEach(b => {
-                html += `<span style="color:${b.grad[1]}">&#9679;</span> ${b.name}: <b>${r.shares[b.id]}%</b><br>`;
-            });
+            if (i >= currentInner.length) return;
+            let html = '';
+            if (msMode === 'regions') {
+                const r = MS_REGIONS[i];
+                html = `<strong style="color:${r.tint}">${r.name}</strong> — ${r.weight}% of global market<br><br>`;
+                MS_BRANDS.forEach(b => { html += `<span style="color:${b.grad[1]}">&#9679;</span> ${b.name}: <b>${r.shares[b.id]}%</b><br>`; });
+            } else {
+                const b = MS_BRANDS[i];
+                html = `<strong style="color:${b.grad[1]}">${b.name}</strong> — ${msGlobalShares[b.id].toFixed(1)}% global<br><br>`;
+                MS_REGIONS.forEach((r, ri) => {
+                    const pct = (msBrandRegionWeight[i][ri] / msGlobalShares[b.id] * 100).toFixed(1);
+                    html += `<span style="color:${r.tint}">&#9679;</span> ${r.name}: <b>${pct}%</b><br>`;
+                });
+            }
             tip.innerHTML = html;
             tip.style.left = (e.clientX + 18) + 'px';
             tip.style.top = (e.clientY - 12) + 'px';
@@ -1126,14 +1231,25 @@ function buildMarketShareView() {
         });
     });
 
-    // Brand events
-    brandPaths.forEach((p, idx) => {
-        const s = brandSlices[idx];
-        p.addEventListener('mouseenter', () => { hlBrand = s.bi; hlRegion = null; applyHL(); });
-        p.addEventListener('mouseleave', () => { hlBrand = null; applyHL(); tip.classList.remove('show'); });
+    // Outer ring events
+    outerPaths.forEach((p, idx) => {
+        p.addEventListener('mouseenter', () => {
+            if (idx >= currentOuter.length) return;
+            hlOuter = currentOuter[idx].outerIdx; hlInner = null; applyHL();
+        });
+        p.addEventListener('mouseleave', () => { hlOuter = null; applyHL(); tip.classList.remove('show'); });
         p.addEventListener('mousemove', e => {
-            const b = MS_BRANDS[s.bi], r = MS_REGIONS[s.ri];
-            tip.innerHTML = `<strong style="color:${b.grad[1]}">${b.name}</strong><br>${r.name}: <b>${r.shares[b.id]}%</b><br><span style="color:var(--text-dim)">Global: ${msGlobalShares[b.id].toFixed(1)}%</span>`;
+            if (idx >= currentOuter.length) return;
+            const s = currentOuter[idx];
+            let html = '';
+            if (msMode === 'regions') {
+                const b = MS_BRANDS[s.outerIdx], r = MS_REGIONS[s.innerIdx];
+                html = `<strong style="color:${b.grad[1]}">${b.name}</strong><br>${r.name}: <b>${r.shares[b.id]}%</b><br><span style="color:var(--text-dim)">Global: ${msGlobalShares[b.id].toFixed(1)}%</span>`;
+            } else {
+                const r = MS_REGIONS[s.outerIdx], b = MS_BRANDS[s.innerIdx];
+                html = `<strong style="color:${r.tint}">${r.name}</strong><br>${b.name}: <b>${r.shares[b.id]}%</b> in ${r.name}`;
+            }
+            tip.innerHTML = html;
             tip.style.left = (e.clientX + 18) + 'px';
             tip.style.top = (e.clientY - 12) + 'px';
             tip.classList.add('show');
@@ -1143,48 +1259,75 @@ function buildMarketShareView() {
     marketshareView.addEventListener('mousemove', e => {
         if (!e.target.closest('.ms-chart-box') && !e.target.closest('.ms-sidebar')) {
             tip.classList.remove('show');
-            hlRegion = null; hlBrand = null; applyHL();
+            hlInner = null; hlOuter = null; applyHL();
         }
     });
 
-    // Sidebar
-    const sb = document.getElementById('msSidebar');
-    sb.innerHTML = '';
+    // ── Sidebar ──
+    function buildSidebar() {
+        const sb = document.getElementById('msSidebar');
+        sb.innerHTML = '';
 
-    const bTitle = document.createElement('h3');
-    bTitle.textContent = 'Companies';
-    sb.appendChild(bTitle);
+        const bTitle = document.createElement('h3');
+        bTitle.textContent = 'Companies';
+        sb.appendChild(bTitle);
 
-    MS_BRANDS.forEach((b, i) => {
-        const row = document.createElement('div');
-        row.className = 'ms-brand-row';
-        row.innerHTML = `
-            <div class="ms-brand-swatch" style="background:linear-gradient(135deg,${b.grad[0]},${b.grad[1]})"></div>
-            <div class="ms-brand-name">${b.name}</div>
-            <div class="ms-brand-pct" style="color:${b.grad[1]}">${msGlobalShares[b.id].toFixed(1)}%</div>
-        `;
-        row.addEventListener('mouseenter', () => { hlBrand = i; hlRegion = null; applyHL(); });
-        row.addEventListener('mouseleave', () => { hlBrand = null; applyHL(); });
-        sb.appendChild(row);
+        MS_BRANDS.forEach((b, i) => {
+            const row = document.createElement('div');
+            row.className = 'ms-brand-row';
+            row.innerHTML = `
+                <div class="ms-brand-swatch" style="background:linear-gradient(135deg,${b.grad[0]},${b.grad[1]})"></div>
+                <div class="ms-brand-name">${b.name}</div>
+                <div class="ms-brand-pct" style="color:${b.grad[1]}">${msGlobalShares[b.id].toFixed(1)}%</div>
+            `;
+            row.addEventListener('mouseenter', () => {
+                if (msMode === 'companies') { hlInner = i; hlOuter = null; }
+                else { hlOuter = i; hlInner = null; }
+                applyHL();
+            });
+            row.addEventListener('mouseleave', () => { hlInner = null; hlOuter = null; applyHL(); });
+            sb.appendChild(row);
+        });
+
+        const rTitle = document.createElement('h3');
+        rTitle.textContent = 'Regions';
+        rTitle.style.marginTop = '12px';
+        sb.appendChild(rTitle);
+
+        MS_REGIONS.forEach((r, i) => {
+            const row = document.createElement('div');
+            row.className = 'ms-region-row';
+            row.innerHTML = `
+                <div class="ms-region-swatch" style="background:${r.tint}"></div>
+                <div class="ms-region-name">${r.name}</div>
+                <div class="ms-region-pct">${r.weight}%</div>
+            `;
+            row.addEventListener('mouseenter', () => {
+                if (msMode === 'regions') { hlInner = i; hlOuter = null; }
+                else { hlOuter = i; hlInner = null; }
+                applyHL();
+            });
+            row.addEventListener('mouseleave', () => { hlInner = null; hlOuter = null; applyHL(); });
+            sb.appendChild(row);
+        });
+    }
+
+    // ── Toggle wiring ──
+    document.querySelectorAll('.ms-toggle-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const newMode = btn.dataset.mode;
+            if (newMode === msMode) return;
+            msMode = newMode;
+            document.querySelectorAll('.ms-toggle-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === msMode));
+            hlInner = null; hlOuter = null;
+            setTargets(msMode);
+            applyHL();
+        });
     });
 
-    const rTitle = document.createElement('h3');
-    rTitle.textContent = 'Regions';
-    rTitle.style.marginTop = '12px';
-    sb.appendChild(rTitle);
-
-    MS_REGIONS.forEach((r, i) => {
-        const row = document.createElement('div');
-        row.className = 'ms-region-row';
-        row.innerHTML = `
-            <div class="ms-region-swatch" style="background:${r.tint}"></div>
-            <div class="ms-region-name">${r.name}</div>
-            <div class="ms-region-pct">${r.weight}%</div>
-        `;
-        row.addEventListener('mouseenter', () => { hlRegion = i; hlBrand = null; applyHL(); });
-        row.addEventListener('mouseleave', () => { hlRegion = null; applyHL(); });
-        sb.appendChild(row);
-    });
+    // ── Init ──
+    setTargets(msMode);
+    buildSidebar();
 
     msBuilt = true;
 }

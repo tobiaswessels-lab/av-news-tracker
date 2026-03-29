@@ -1313,6 +1313,48 @@ html, body {
     padding: 20px 40px 48px;
 }
 
+.ms-toggle-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.ms-toggle-label {
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-right: 4px;
+}
+
+.ms-toggle-btn {
+    padding: 7px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,.08);
+    background: rgba(255,255,255,.04);
+    color: var(--text-dim);
+    font-size: .8rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.ms-toggle-btn:hover {
+    background: rgba(255,255,255,.08);
+    color: #c4caeb;
+}
+
+.ms-toggle-btn.active {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: #fff;
+    border-color: transparent;
+    box-shadow: 0 3px 14px rgba(99,102,241,.35);
+}
+
 .ms-layout {
     display: flex;
     align-items: flex-start;
