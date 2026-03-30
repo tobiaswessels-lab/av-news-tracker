@@ -15,7 +15,7 @@ const logoSVGs = {
 
     wayve: `<svg viewBox="0 0 90 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="23" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" font-weight="700" fill="#FF4081" letter-spacing="0.5">wayve</text></svg>`,
 
-    zoox: `<svg viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="23" font-family="Futura,Helvetica Neue,Arial,sans-serif" font-size="24" font-weight="700" fill="#FFD600" letter-spacing="1">zoox</text></svg>`,
+    kodiak: `<svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="22" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="800" fill="#FF6600" letter-spacing="0.5">KODIAK</text></svg>`,
 
 
     nuro: `<svg viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="23" font-family="Helvetica Neue,Arial,sans-serif" font-size="23" font-weight="700" fill="#00C853" letter-spacing="1">nuro</text></svg>`
@@ -362,73 +362,57 @@ const companies = [
         ]
     },
     {
-        id: "zoox",
-        name: "Zoox",
-        color: "#FFD600",
+        id: "kodiak",
+        name: "Kodiak Robotics",
+        color: "#FF6600",
         news: [
             {
-                date: "2026-03-24",
-                title: "Zoox Continues Expanding Robotaxi Services",
-                body: "By Connor Hart\nZoox will expand its robotaxi service into new U.S. markets and grow operations in existing cities as it continues to scale its footprint.\nThe Amazon.com-owned company said...",
-                category: "expansion",
-                tags: ["Zoox","Continues","Expanding"],
-                url: "https://www.marketscreener.com/news/zoox-continues-expanding-robotaxi-services-ce7e5ed2d88ff227"
+                date: "2026-03-16",
+                title: "Kodiak AI Scales Autonomous Trucking with NVIDIA Drive Hyperion",
+                body: "Kodiak AI announced that NVIDIA technology will help power its next-generation autonomous-driving solution, intending to accelerate deployment and scaling of driverless vehicles with the NVIDIA Drive Hyperion architecture.",
+                category: "tech",
+                tags: ["NVIDIA", "Hyperion", "Next-Gen"],
+                url: "https://roboticsandautomationnews.com/2026/03/16/kodiak-ai-scales-autonomous-driving-with-nvidia-drive-hyperion-platform/99742/"
             },
             {
-                date: "2026-03-24",
-                title: "Amazon.com's Zoox Robotaxi Service Expands in San Francisco, Las Vegas",
-                body: "Amazon.com's self-driving unit Zoox said Tuesday that it will expand its robotaxi service in San Francisco, California and Las Vegas, Nevada.\nZoox said it is focusing on dense, high-demand...",
-                category: "expansion",
-                tags: ["Amazoncoms","Zoox","Robotaxi"],
-                url: "https://www.marketscreener.com/news/amazon-com-s-zoox-robotaxi-service-expands-in-san-francisco-las-vegas-ce7e5ed2d888f527"
-            },
-            {
-                date: "2026-03-24",
-                title: "Zoox to widen US robotaxi footprint with San Francisco, Vegas expansion",
-                body: "Zoox, Amazon's self-driving unit, said on Tuesday it will expand its robotaxi service in ​San Francisco and Las Vegas, and begin ‌testing its purpose-built robotaxis in Austin and Miami, marking its broadest push yet into the U.S. autonomous ride-hailing ​market.",
-                category: "launch",
-                tags: ["Zoox","widen","robotaxi"],
-                url: "https://www.reuters.com/technology/zoox-widen-us-robotaxi-footprint-with-san-francisco-vegas-expansion-2026-03-24/"
-            },
-            {
-                date: "2026-03-24",
-                title: "Zoox to Debut Robotaxis in Austin and Miami",
-                body: "Amazon's Zoox announced plans to bring its purpose-built robotaxi to Austin and Miami later in 2026, while expanding its existing service areas in Las Vegas and San Francisco. The company will have 100 robotaxis on public roads once services scale.",
-                category: "expansion",
-                tags: ["Austin", "Miami", "100 Robotaxis"],
-                url: "https://www.cnbc.com/2026/03/24/amazon-zoox-robotaxi-rides-austin-miami.html"
-            },
-            {
-                date: "2026-03-11",
-                title: "Zoox Partners with Uber for Robotaxi Rides in Las Vegas",
-                body: "Zoox struck a multiyear partnership with Uber to make its robotaxis available through the Uber ride-hailing app, starting in Las Vegas this summer with plans for Los Angeles next year. The deal gives Zoox access to Uber's massive rider demand network.",
+                date: "2026-01-07",
+                title: "Kodiak and Bosch Partner to Scale Autonomous Trucking Hardware",
+                body: "Kodiak announced an agreement with Bosch to collaborate on and scale the manufacturing of a production-grade, redundant autonomous platform. A Kodiak Driver-powered autonomous truck was on display at CES 2026 in the Bosch booth.",
                 category: "partnership",
-                tags: ["Uber", "Las Vegas", "Ride-Hailing"],
-                url: "https://www.cnbc.com/2026/03/11/uber-amazon-zoox-partnership-robotaxi-demand.html"
+                tags: ["Bosch", "CES 2026", "Production"],
+                url: "https://kodiak.ai/news/kodiak-bosch-scale-autonomous-trucking-hardware"
             },
             {
-                date: "2025-12-08",
-                title: "Zoox to Start Charging for Robotaxi Rides in 2026",
-                body: "Zoox cofounder announced the company will begin charging fares for its driverless robotaxi rides in 2026, with a 'laser focus' on passenger transportation rather than deliveries. The purpose-built vehicle with no steering wheel seats four passengers facing each other.",
+                date: "2025-12-15",
+                title: "Kodiak AI Goes Public on Nasdaq, Valued at $2.5 Billion",
+                body: "Kodiak Robotics made its public debut on the Nasdaq exchange after combining with Ares Acquisition Corporation II, securing more than $275 million in funding. The company is valued at approximately $2.5 billion.",
+                category: "funding",
+                tags: ["Nasdaq", "IPO", "$2.5B Valuation"],
+                url: "https://finance.yahoo.com/news/kodiak-ai-now-public-company-140000722.html"
+            },
+            {
+                date: "2025-11-15",
+                title: "Kodiak Reaches 78% Autonomous Readiness for Long-Haul Trucking",
+                body: "Kodiak's ARM (Autonomous Readiness Maturity) for long-haul autonomous trucking reached 78%, with the company anticipating launching long-haul driverless operations in the second half of 2026.",
+                category: "tech",
+                tags: ["ARM 78%", "Long-Haul", "2026 Target"],
+                url: "https://kodiak.ai/news/best-of-2025"
+            },
+            {
+                date: "2025-09-30",
+                title: "Kodiak Deploys 20 Driverless Trucks with Over 3 Million Autonomous Miles",
+                body: "By end of 2025, the Kodiak Driver was deployed in 20 trucks with over 5,200 hours of paid driverless service and more than 3 million autonomous miles — making Kodiak the only company providing driverless service on customer-owned Class 8 trucks with no humans in the cab.",
                 category: "launch",
-                tags: ["Paid Rides", "2026 Launch", "Passengers"],
-                url: "https://fortune.com/2025/12/08/amazon-robotaxi-service-zoox-plans-fees-vegas-san-francisco/"
+                tags: ["20 Trucks", "3M Miles", "No Human in Cab"],
+                url: "https://kodiak.ai/news/best-of-2025"
             },
             {
-                date: "2025-09-15",
-                title: "Zoox Launches Driverless Robotaxi Service in Las Vegas",
-                body: "Amazon's Zoox officially launched its driverless robotaxi service in Las Vegas, becoming the first fully autonomous purpose-built vehicle — with no steering wheel or pedals — to operate commercially on public roads in the U.S.",
+                date: "2025-06-10",
+                title: "Roush Delivers First Kodiak Driver-Powered Autonomous Truck",
+                body: "Roush delivered the first Kodiak Driver-powered autonomous truck to a customer, with plans to scale production into the hundreds of trucks by end of 2026.",
                 category: "launch",
-                tags: ["Las Vegas", "No Steering Wheel", "First"],
-                url: "https://www.cnbc.com/2025/12/16/waymo-amazon-zoox-tesla-robotaxi-expansion.html"
-            },
-            {
-                date: "2025-04-08",
-                title: "Zoox Begins Robotaxi Testing in Los Angeles",
-                body: "Amazon's Zoox began testing its autonomous robotaxis on public roads in Los Angeles, marking the company's expansion to a third major metro area. The testing complements ongoing operations in San Francisco and Las Vegas.",
-                category: "expansion",
-                tags: ["Los Angeles", "Testing", "3rd City"],
-                url: "https://techcrunch.com/2025/04/08/amazons-zoox-begins-robotaxi-testing-in-los-angeles/"
+                tags: ["Roush", "First Delivery", "Scale-Up"],
+                url: "https://kodiak.ai/news/the-first-truck-was-delivered-to-kodiak-customer-a"
             }
         ]
     },

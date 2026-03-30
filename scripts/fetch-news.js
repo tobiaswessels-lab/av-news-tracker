@@ -32,7 +32,7 @@ const AV_QUERIES = {
     waymo: 'Waymo robotaxi OR autonomous',
     mobileye: 'Mobileye autonomous OR SuperVision OR EyeQ',
     wayve: 'Wayve autonomous driving',
-    zoox: 'Zoox Amazon robotaxi',
+    kodiak: 'Kodiak Robotics autonomous trucking',
     nuro: 'Nuro autonomous delivery OR robotaxi',
 };
 
