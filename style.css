@@ -907,7 +907,28 @@ html, body {
     border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
-    padding-top: 40px; /* align with first lane */
+    padding-top: 0;
+}
+
+.tl-reset-btn {
+    height: 40px;
+    flex-shrink: 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.tl-reset-btn:hover {
+    background: rgba(0, 229, 255, 0.1);
+    color: #fff;
 }
 
 .tl-sidebar-item {

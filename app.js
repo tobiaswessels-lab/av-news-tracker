@@ -581,6 +581,17 @@ function buildTimelineView() {
     sidebar.innerHTML = '';
     canvas.innerHTML = '';
 
+    // Reset button
+    const resetBtn = document.createElement('button');
+    resetBtn.className = 'tl-reset-btn';
+    resetBtn.textContent = 'Mark all unread';
+    resetBtn.title = 'Mark all articles as unread';
+    resetBtn.addEventListener('click', () => {
+        localStorage.removeItem(READ_KEY);
+        buildTimelineView();
+    });
+    sidebar.appendChild(resetBtn);
+
     // Use ALL AV companies (original order from data.js)
     const allCompanies = companies;
     const logos = logoSVGs;
