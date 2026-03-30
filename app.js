@@ -694,12 +694,14 @@ function buildTimelineView() {
             };
             const color = dotColors[item.category] || '#00ff88';
 
+            const read = isRead(company.id, item.date);
             const event = document.createElement('div');
-            event.className = 'tl-event';
+            event.className = 'tl-event' + (read ? ' tl-read' : '');
             event.style.left = x + 'px';
             event.style.top = (laneY + LANE_H / 2) + 'px';
             event.style.borderColor = color;
             event.style.color = color;
+            if (!read) event.style.backgroundColor = color;
 
             // Tooltip
             const tooltip = document.createElement('div');
@@ -721,6 +723,8 @@ function buildTimelineView() {
             event.addEventListener('click', (e) => {
                 e.stopPropagation();
                 markAsRead(company.id, item.date);
+                event.classList.add('tl-read');
+                event.style.backgroundColor = '';
                 openModal(company, item);
             });
 

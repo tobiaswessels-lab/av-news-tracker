@@ -1033,6 +1033,10 @@ html, body {
     transition: all 0.2s;
 }
 
+.tl-event.tl-read {
+    background: var(--bg) !important;
+}
+
 .tl-event:hover {
     transform: translate(-50%, -50%) scale(1.6);
     z-index: 20;
