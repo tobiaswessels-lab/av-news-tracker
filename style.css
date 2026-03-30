@@ -913,9 +913,10 @@ html, body {
 .tl-reset-btn {
     height: 40px;
     flex-shrink: 0;
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--border);
+    background: rgba(0, 229, 255, 0.08);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    margin: 6px 8px;
     color: var(--accent);
     font-family: 'JetBrains Mono', monospace;
     font-size: 9px;
@@ -927,7 +928,7 @@ html, body {
 }
 
 .tl-reset-btn:hover {
-    background: rgba(0, 229, 255, 0.1);
+    background: rgba(0, 229, 255, 0.2);
     color: #fff;
 }
 
