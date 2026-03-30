@@ -9,13 +9,13 @@ const logoSVGs = {
 
     aurora: `<svg viewBox="0 0 100 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 4 L4 26 L10 26 L16 14 L22 26 L28 26 Z" fill="#6C3FBF"/><text x="32" y="23" font-family="Helvetica Neue,Arial,sans-serif" font-size="17" font-weight="600" fill="#6C3FBF" letter-spacing="1">urora</text></svg>`,
 
-    torc: `<svg viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="22" font-family="Arial Black,Arial,sans-serif" font-size="22" font-weight="900" fill="#E31937" letter-spacing="2">TORC</text></svg>`,
+    torc: `<svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><image href="https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/games/approved/images/torc-logo-red.c4a1837769efb68c2b55bde373d65617f291a271.png" x="0" y="2" width="120" height="26" preserveAspectRatio="xMinYMid meet"/></svg>`,
 
     helm: `<svg viewBox="0 0 90 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="22" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Helm</text><text x="53" y="22" font-family="Helvetica Neue,Arial,sans-serif" font-size="20" font-weight="300" fill="#FFFFFF">.AI</text></svg>`,
 
     wayve: `<svg viewBox="0 0 90 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="23" font-family="Helvetica Neue,Arial,sans-serif" font-size="22" font-weight="700" fill="#FF4081" letter-spacing="0.5">wayve</text></svg>`,
 
-    kodiak: `<svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="22" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="800" fill="#FF6600" letter-spacing="0.5">KODIAK</text></svg>`,
+    kodiak: `<svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="22" font-family="Helvetica Neue,Arial,sans-serif" font-size="18" font-weight="800" fill="#E85D04" letter-spacing="0.5">KODIAK</text></svg>`,
 
 
     nuro: `<svg viewBox="0 0 80 30" xmlns="http://www.w3.org/2000/svg"><text x="4" y="23" font-family="Helvetica Neue,Arial,sans-serif" font-size="23" font-weight="700" fill="#00C853" letter-spacing="1">nuro</text></svg>`
@@ -364,7 +364,7 @@ const companies = [
     {
         id: "kodiak",
         name: "Kodiak Robotics",
-        color: "#FF6600",
+        color: "#E85D04",
         news: [
             {
                 date: "2026-03-16",
