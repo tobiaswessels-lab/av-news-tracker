@@ -192,6 +192,30 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-03-14",
+                title: "Tata Motors CV bags orders for 5,000 buses across India",
+                body: "MUMBAI, March 14 : Auto major Tata Motors Commercial Vehicles Ltd has informed in a regulatory filing to the stock exchanges that it has won a cumulative pan-India order of over 5,000 buses from multiple state transport undertakings. However, Tata Motors has not disclosed the exact value of these cumulative orders. These orders pertain to the delivery of more than 5,000 buses and bus chassis, spanning across various states in India. Each of the tenders was won through a competitive […]",
+                category: "launch",
+                tags: ["Tata","Motors","bags"],
+                url: "https://www.dailyexcelsior.com/tata-motors-cv-bags-orders-for-5000-buses-across-india/"
+            },
+            {
+                date: "2026-03-13",
+                title: "Tata Motors Secures 5000-Bus Supply Orders Across Indian States",
+                body: "Tata Motors has won orders to supply over 5000 buses from various state transport undertakings in India. The orders cover a range of passenger mobility solutions and were secured through competitive e-bidding. These buses will cater to both intercity and intracity transport needs.",
+                category: "tech",
+                tags: ["Tata","Motors","Secures"],
+                url: "https://www.devdiscourse.com/article/business/3837208-tata-motors-secures-5000-bus-supply-orders-across-indian-states"
+            },
+            {
+                date: "2026-03-13",
+                title: "Tata Motors Wins Orders For Over 5,000 Buses From State Transport Undertakings Across India",
+                body: "Tata Motors Limited has secured cumulative orders for more than 5,000 buses and bus chassis from several State Transport Undertakings across India. The vehicles will be supplied in phases following competitive e-bidding under the government procurement system.",
+                category: "tech",
+                tags: ["Tata","Motors","Wins"],
+                url: "https://www.freepressjournal.in/business/tata-motors-wins-orders-for-over-5000-buses-from-state-transport-undertakings-across-india"
+            },
+            {
                 date: "2025-12-05",
                 title: "Tata Motors Launches 17 Next-Gen Trucks Across Diesel and Electric",
                 body: "Tata Motors announced the launch of a new portfolio of 17 trucks across the 7-55 tonne range, marking one of its largest product introductions in the Indian commercial vehicle segment with growing focus on electrification.",

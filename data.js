@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-03-30",
+                title: "CEO Says Robotaxi Tech Will Eventually Be in Personal Cars",
+                body: "Waymo co-CEO Dmitri Dolgov said product lines will converge, where Waymo will have a ride-hailing service and apply its tech in personal cars.",
+                category: "tech",
+                tags: ["Says","Robotaxi","Tech"],
+                url: "https://www.businessinsider.com/waymo-ceo-dmitri-dolgov-robotaxi-technology-in-personal-cars-2026-3"
+            },
+            {
                 date: "2026-03-27",
                 title: "Waymo’s skyrocketing ridership in one chart",
                 body: "Waymo's weekly paid robotaxi trips have increased tenfold in less than two years.",
