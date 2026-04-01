@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-03-31",
+                title: "Robotaxi companies refuse to say how often their AVs need remote help",
+                body: "Aurora, May Mobility, Motional, Nuro, Tesla, Waymo, and Zoox all refused to cough up a number during Senator Ed Markey's recent investigation.",
+                category: "funding",
+                tags: ["Robotaxi","companies","refuse"],
+                url: "https://techcrunch.com/2026/03/31/robotaxi-companies-refuse-to-say-how-often-their-avs-need-remote-help/"
+            },
+            {
+                date: "2026-03-31",
+                title: "Waymo starts robotaxi services at San Antonio International Airport",
+                body: "It's the fourth airport Waymo is serving, adding to Phoenix Sky Harbor, San Francisco, and San Jose International airports.",
+                category: "launch",
+                tags: ["Waymo","starts","robotaxi"],
+                url: "https://techcrunch.com/2026/03/31/waymo-starts-robotaxi-services-at-san-antonio-international-airport/"
+            },
+            {
                 date: "2026-03-30",
                 title: "CEO Says Robotaxi Tech Will Eventually Be in Personal Cars",
                 body: "Waymo co-CEO Dmitri Dolgov said product lines will converge, where Waymo will have a ride-hailing service and apply its tech in personal cars.",
