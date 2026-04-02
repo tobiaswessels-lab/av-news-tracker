@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-01",
+                title: "Passengers stranded in moving traffic after robotaxi outage in China's Wuhan",
+                body: "More than 100 Baidu robotaxis stopped running in the Chinese city of Wuhan because of a system malfunction, leaving some passengers stranded in moving traffic. Reports started coming in around 9 p.m. on Tuesday night, with Chinese media saying police rescued some passengers. No one was hurt. Some people stepped out of the stationary vehicles on their own, while others stayed inside because their cars stopped in the middle lane of an elevated ring road. In San Francisco, many of Waymo’s self-driv",
+                category: "launch",
+                tags: ["Passengers","stranded","moving"],
+                url: "https://www.ajc.com/news/2026/04/passengers-stranded-in-moving-traffic-after-robotaxi-outage-in-chinas-wuhan/"
+            },
+            {
+                date: "2026-04-01",
+                title: "Waymo Is Quickly Expanding to More Cities. Everything to Know About the Robotaxi",
+                body: "Here's where the self-driving company operates and where it's headed soon.",
+                category: "expansion",
+                tags: ["Waymo","Quickly","Expanding"],
+                url: "https://www.cnet.com/roadshow/news/waymo-robotaxis-everything-to-know/"
+            },
+            {
                 date: "2026-03-31",
                 title: "Robotaxi companies refuse to say how often their AVs need remote help",
                 body: "Aurora, May Mobility, Motional, Nuro, Tesla, Waymo, and Zoox all refused to cough up a number during Senator Ed Markey's recent investigation.",
