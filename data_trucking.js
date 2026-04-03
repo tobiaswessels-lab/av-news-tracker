@@ -192,6 +192,22 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-03-31",
+                title: "How Tata Motors CV is transforming truck safety in India with ECE R29.03 compliance",
+                body: "Truck Safety Tata Motors CV India: Tata Motors CV is redefining truck safety in India by upgrading its entire lineup to ECE R29.03 standards. This global benchmark ensures stronger cabins and better crash protection, helping reduce accidents, protect drivers, and improve fleet efficiency on high-risk Indian highways.",
+                category: "safety",
+                tags: ["Tata","Motors","transforming"],
+                url: "https://zeenews.india.com/consumer-connect/how-tata-motors-cv-is-transforming-truck-safety-in-india-with-ece-r29-03-compliance-3032390.html"
+            },
+            {
+                date: "2026-03-30",
+                title: "Switch Mobility dethrones Tata Motors to top FY26 e",
+                body: "India's e-bus market grows 44%, with Switch and PMI leading as traditional manufacturers lose market share.",
+                category: "tech",
+                tags: ["Switch","Mobility","dethrones"],
+                url: "https://www.thehindubusinessline.com/companies/indias-e-bus-market-jumps-44-switch-pmi-lead/article70802571.ece"
+            },
+            {
                 date: "2026-03-14",
                 title: "Tata Motors CV bags orders for 5,000 buses across India",
                 body: "MUMBAI, March 14 : Auto major Tata Motors Commercial Vehicles Ltd has informed in a regulatory filing to the stock exchanges that it has won a cumulative pan-India order of over 5,000 buses from multiple state transport undertakings. However, Tata Motors has not disclosed the exact value of these cumulative orders. These orders pertain to the delivery of more than 5,000 buses and bus chassis, spanning across various states in India. Each of the tenders was won through a competitive […]",
