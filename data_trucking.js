@@ -74,6 +74,30 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-03-31",
+                title: "The TRATON GROUP and Applied Intuition Announce TRATON ONE OS, a Unified Software Platform for Improved Fleet Uptime Across TRATON's Four Global Brands",
+                body: "MUNICH and SUNNYVALE, Calif., April 1, 2026 /PRNewswire/ -- The TRATON GROUP and Applied Intuition, Inc., the leading physical AI company, today announced TRATON ONE OS, a next-generation software-defined vehicle platform that will power all new vehicles across TRATON's four brands: Scania, MAN, International and Volkswagen Truck & Bus. Building on more than a year of co-development, the two companies are deploying a single unified platform that's at the forefront of innovation to deliver benefi",
+                category: "launch",
+                tags: ["TRATON","GROUP","Applied"],
+                url: "https://www.manilatimes.net/2026/04/01/tmt-newswire/pr-newswire/the-traton-group-and-applied-intuition-announce-traton-one-os-a-unified-software-platform-for-improved-fleet-uptime-across-tratons-four-global-brands/2311932"
+            },
+            {
+                date: "2026-03-31",
+                title: "The TRATON GROUP and Applied Intuition Announce TRATON ONE OS, a Unified Software Platform for Improved Fleet Uptime Across TRATON's Four Global Brands",
+                body: "/PRNewswire/ -- The TRATON GROUP and Applied Intuition, Inc., the leading physical AI company, today announced TRATON ONE OS, a next-generation...",
+                category: "tech",
+                tags: ["TRATON","GROUP","Applied"],
+                url: "https://www.prnewswire.co.uk/news-releases/the-traton-group-and-applied-intuition-announce-traton-one-os-a-unified-software-platform-for-improved-fleet-uptime-across-tratons-four-global-brands-302729425.html"
+            },
+            {
+                date: "2026-03-11",
+                title: "TRATON SE (8TRA) Receives a Hold from Jefferies",
+                body: "Jefferies analyst Michael Aspinall maintained a Hold rating on TRATON SE yesterday and set a price target of €33.00.Claim 70% Off TipRanks Premi...",
+                category: "tech",
+                tags: ["TRATON","8TRA","Receives"],
+                url: "https://markets.businessinsider.com/news/stocks/traton-se-8tra-receives-a-hold-from-jefferies-1035917810"
+            },
+            {
                 date: "2026-03-05",
                 title: "TRATON GROUP Sees Robust Incoming Orders in Europe for 2025",
                 body: "Despite a weak market environment with total unit sales of 305,500 vehicles (down 9% YoY), TRATON reported robust incoming orders in Europe and an 86% increase in all-electric vehicle sales to 3,230 units.",

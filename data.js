@@ -360,6 +360,30 @@ const companies = [
         color: "#FF4081",
         news: [
             {
+                date: "2026-03-12",
+                title: "Uber, Wayve, and Nissan have robotaxi plans in Japan.",
+                body: "The companies aim to launch a pilot program in Tokyo by late 2026, allowing Uber riders to book robotaxis based on the Nissan Leaf EV, powered by Wayve’s autonomous driving tech. In its press release, Uber said:\n> “The announcement reinforces a shared ambition to scale safe, intelligent autonomous mobility globally, by combining Wayve’s AI technology, Nissan’s cutting-edge vehicles and Uber’s network, the partners aim to bring autonomous mobility to more cities.”",
+                category: "partnership",
+                tags: ["Uber","Wayve","Nissan"],
+                url: "https://www.theverge.com/transportation/893514/uber-wayve-and-nissan-have-robotaxi-plans-in-japan"
+            },
+            {
+                date: "2026-03-12",
+                title: "Uber plans Tokyo robotaxi trial with Nissan and Britain's Wayve",
+                body: "Uber announced Thursday its first robotaxi partnership in Japan, teaming up with Nissan and British artificial intelligence autonomous driving startup Wayve for a trial this year in Tokyo. Companies worldwide, from Alphabet subsidiary Waymo to Tesla and China's Apollo Go, are racing to roll out self-driving taxi services, although the…",
+                category: "partnership",
+                tags: ["Uber","plans","Tokyo"],
+                url: "https://japantoday.com/category/tech/uber-plans-tokyo-robotaxi-trial-with-nissan-and-britain's-wayve"
+            },
+            {
+                date: "2026-03-12",
+                title: "Uber plans Tokyo robotaxi trial with Nissan and Britain's Wayve",
+                body: "Uber announced Thursday its first robotaxi partnership in Japan, teaming up with Nissan and British artificial intelligence autonomous driving startup Wayve for a trial this year in Tokyo. Companies worldwide, from Alphabet subsidiary Waymo to Tesla and China's Apollo Go, are racing to roll out self-driving taxi services, although the…",
+                category: "partnership",
+                tags: ["Uber","plans","Tokyo"],
+                url: "https://japantoday.com/category/tech/uber-plans-tokyo-robotaxi-trial-with-nissan-and-britain%27s-wayve"
+            },
+            {
                 date: "2026-02-25",
                 title: "Wayve Raises $1.2B at $8.6B Valuation for Global Autonomy Platform",
                 body: "UK-based Wayve raised $1.2 billion in a Series D round at an $8.6 billion valuation, with total commitments of $1.5 billion from Microsoft, NVIDIA, Uber, Mercedes-Benz, Nissan, and Stellantis. The funding will deploy commercial robotaxi trials in 2026 and consumer autonomy software from 2027.",
@@ -461,6 +485,14 @@ const companies = [
         name: "Nuro",
         color: "#00C853",
         news: [
+            {
+                date: "2026-03-12",
+                title: "U.S. self-driving startup Nuro begins testing in Tokyo",
+                body: "While Tokyo is becoming a test bed for the world’s leading robotaxi ventures, Japan is lagging when it comes to regulatory framework for autonomous vehicles.",
+                category: "launch",
+                tags: ["selfdriving","startup","Nuro"],
+                url: "https://www.japantimes.co.jp/business/2026/03/12/companies/nuro-self-driving-tokyo/"
+            },
             {
                 date: "2026-01-06",
                 title: "Lucid, Nuro, and Uber Unveil Global Robotaxi at CES 2026",
