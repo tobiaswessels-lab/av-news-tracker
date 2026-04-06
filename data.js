@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-04",
+                title: "Waymo messes up pick up in Los Angeles drive-thru",
+                body: "Video shows the autonomous vehicle slowly creeping through the lane in the opposite direction.",
+                category: "tech",
+                tags: ["Waymo","messes","pick"],
+                url: "https://nypost.com/2026/04/04/lifestyle/waymo-messes-up-pick-up-in-los-angeles-drive-thru/"
+            },
+            {
+                date: "2026-04-04",
+                title: "Waymo in London: The ultimate test for autonomous driving",
+                body: "Google's robotaxi subsidiary Waymo ventures into Europe. It explores the limits of AI systems and city politics in London's narrow street maze.",
+                category: "tech",
+                tags: ["Waymo","London","ultimate"],
+                url: "https://www.heise.de/en/news/Waymo-in-London-The-ultimate-test-for-autonomous-driving-11245925.html"
+            },
+            {
                 date: "2026-04-01",
                 title: "Passengers stranded in moving traffic after robotaxi outage in China's Wuhan",
                 body: "More than 100 Baidu robotaxis stopped running in the Chinese city of Wuhan because of a system malfunction, leaving some passengers stranded in moving traffic. Reports started coming in around 9 p.m. on Tuesday night, with Chinese media saying police rescued some passengers. No one was hurt. Some people stepped out of the stationary vehicles on their own, while others stayed inside because their cars stopped in the middle lane of an elevated ring road. In San Francisco, many of Waymo’s self-driv",
