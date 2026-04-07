@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-06",
+                title: "The Next Battleground for Robotaxis",
+                body: "Waymo’s planned launch of robotaxis in London highlights both the transformative potential and unresolved economic challenges of autonomous mobility.",
+                category: "launch",
+                tags: ["Next","Battleground","Robotaxis"],
+                url: "https://oilprice.com/Energy/Energy-General/The-Next-Battleground-for-Robotaxis.html"
+            },
+            {
                 date: "2026-04-04",
                 title: "Waymo messes up pick up in Los Angeles drive-thru",
                 body: "Video shows the autonomous vehicle slowly creeping through the lane in the opposite direction.",
