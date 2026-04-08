@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-07",
+                title: "Waymo begins testing in Chicago as bill seeks to legalize autonomous vehicles",
+                body: "From Capitol News Illinois: A bill in the legislature would eventually allow driverless vehicles to operate in Illinois counties that have more than 1 million residents, plus Sangamon and three downstate jurisdictions. They could replace rideshare and taxi drivers",
+                category: "launch",
+                tags: ["Waymo","begins","testing"],
+                url: "https://www.shawlocal.com/news/2026/04/07/waymo-begins-testing-in-chicago-as-bill-seeks-to-legalize-autonomous-vehicles/"
+            },
+            {
+                date: "2026-04-07",
+                title: "Waymo Opens Driverless Rides to the Public in Nashville",
+                body: "Later this year, you'll be able to hail the robotaxi through the Lyft app as well.",
+                category: "tech",
+                tags: ["Waymo","Opens","Driverless"],
+                url: "https://www.cnet.com/roadshow/news/waymo-opens-driverless-rides-nashville/"
+            },
+            {
+                date: "2026-04-07",
+                title: "Alphabet's Waymo Ride Launches in Nashville",
+                body: "Alphabet's Waymo said Tuesday that it launched its autonomous ride-hailing service in Nashville, Tennessee.\nThe company said it is now offering fully autonomous rides in Nashville through its...",
+                category: "launch",
+                tags: ["Alphabets","Waymo","Ride"],
+                url: "https://www.marketscreener.com/news/alphabet-s-waymo-ride-launches-in-nashville-ce7e51d3de81f122"
+            },
+            {
                 date: "2026-04-06",
                 title: "The Next Battleground for Robotaxis",
                 body: "Waymo’s planned launch of robotaxis in London highlights both the transformative potential and unresolved economic challenges of autonomous mobility.",
