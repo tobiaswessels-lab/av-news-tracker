@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-09",
+                title: "California bill would require robotaxi companies to hire humans for emergencies",
+                body: "Waymo representatives sat in Sacramento as California's state Senate transportation committee passed a bill 7-2.",
+                category: "tech",
+                tags: ["California","bill","would"],
+                url: "https://www.mercurynews.com/2026/04/09/california-bill-would-require-robotaxi-companies-to-hire-humans-for-emergencies/"
+            },
+            {
+                date: "2026-04-08",
+                title: "California bill would require robotaxi companies to hire humans for emergencies",
+                body: "Waymo representatives sat in Sacramento as California's state Senate transportation committee passed a bill 7-2.",
+                category: "tech",
+                tags: ["California","bill","would"],
+                url: "https://www.ocregister.com/2026/04/08/california-bill-would-require-robotaxi-companies-to-hire-humans-for-emergencies/"
+            },
+            {
+                date: "2026-04-08",
+                title: "California bill would require robotaxi companies to hire humans for emergencies",
+                body: "Waymo representatives sat in Sacramento as California's state Senate transportation committee passed a bill 7-2.",
+                category: "tech",
+                tags: ["California","bill","would"],
+                url: "https://www.sandiegouniontribune.com/2026/04/08/california-bill-would-require-robotaxi-companies-to-hire-humans-for-emergencies/"
+            },
+            {
                 date: "2026-04-07",
                 title: "Waymo begins testing in Chicago as bill seeks to legalize autonomous vehicles",
                 body: "From Capitol News Illinois: A bill in the legislature would eventually allow driverless vehicles to operate in Illinois counties that have more than 1 million residents, plus Sangamon and three downstate jurisdictions. They could replace rideshare and taxi drivers",
