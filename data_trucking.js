@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-04-10",
+                title: "J.P. Morgan Reaffirms Their Hold Rating on TRATON SE (8TRA)",
+                body: "In a report released yesterday, Jose Asumendi from J.P. Morgan maintained a Hold rating on TRATON SE, with a price target of €30.00.Easter Sale ...",
+                category: "tech",
+                tags: ["Morgan","Reaffirms","Their"],
+                url: "https://markets.businessinsider.com/news/stocks/j-p-morgan-reaffirms-their-hold-rating-on-traton-se-8tra-1036009993"
+            },
+            {
                 date: "2026-03-31",
                 title: "The TRATON GROUP and Applied Intuition Announce TRATON ONE OS, a Unified Software Platform for Improved Fleet Uptime Across TRATON's Four Global Brands",
                 body: "MUNICH and SUNNYVALE, Calif., April 1, 2026 /PRNewswire/ -- The TRATON GROUP and Applied Intuition, Inc., the leading physical AI company, today announced TRATON ONE OS, a next-generation software-defined vehicle platform that will power all new vehicles across TRATON's four brands: Scania, MAN, International and Volkswagen Truck & Bus. Building on more than a year of co-development, the two companies are deploying a single unified platform that's at the forefront of innovation to deliver benefi",
@@ -215,6 +223,30 @@ const truckingCompanies = [
         name: "Tata Motors",
         color: "#486AAE",
         news: [
+            {
+                date: "2026-04-10",
+                title: "Tata Motors starts delivery of e-truck Prima E.55S to BillionE Mobility",
+                body: "Tata Motors has begun delivering its heavy-duty electric trucks, the Prima E.55S, to BillionE Mobility. The company also secured an order for 250 more electric prime movers. These trucks will support long-haul freight movement across several Indian states. This partnership aims to accelerate the adoption of electric logistics solutions for inter-city routes.",
+                category: "partnership",
+                tags: ["Tata","Motors","starts"],
+                url: "https://economictimes.indiatimes.com/industry/auto/lcv-hcv/tata-motors-starts-delivery-of-e-truck-prima-e-55s-to-billione-mobility/articleshow/130173392.cms"
+            },
+            {
+                date: "2026-04-10",
+                title: "Tata Motors starts delivery of e-truck Prima E.55S to BillionE Mobility",
+                body: "Tata Motors starts delivery of e-truck Prima E.55S to BillionE Mobility",
+                category: "launch",
+                tags: ["Tata","Motors","starts"],
+                url: "https://www.news18.com/agency-feeds/tata-motors-starts-delivery-of-e-truck-prima-e-55s-to-billione-mobility-10026568.html"
+            },
+            {
+                date: "2026-04-10",
+                title: "Tata Motors Revamps Freight with Electric Truck Rollout",
+                body: "Tata Motors has started delivering its Prima E.55S electric trucks to BillionE Mobility. With plans to supply 250 more, these trucks will operate across India's key freight corridors. The 450kWh battery-powered trucks feature a range of up to 350 km, supporting long-haul industrial goods transport.",
+                category: "launch",
+                tags: ["Tata","Motors","Revamps"],
+                url: "https://www.devdiscourse.com/article/business/3869549-tata-motors-revamps-freight-with-electric-truck-rollout"
+            },
             {
                 date: "2026-03-31",
                 title: "How Tata Motors CV is transforming truck safety in India with ECE R29.03 compliance",

@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-10",
+                title: "Alphabet's Tesla Robotaxi Rival Waymo Announces Partnership With Waze To Help Cities Fix Potholes",
+                body: "Waymo and Waze join hands to fix potholes in cities served by the company, providing real-time pothole data to authorities and users.",
+                category: "partnership",
+                tags: ["Alphabets","Tesla","Robotaxi"],
+                url: "https://www.benzinga.com/markets/tech/26/04/51749020/alphabets-tesla-robotaxi-rival-waymo-announces-partnership-with-waze-to-help-cities-fix-potholes"
+            },
+            {
                 date: "2026-04-09",
                 title: "California bill would require robotaxi companies to hire humans for emergencies",
                 body: "Waymo representatives sat in Sacramento as California's state Senate transportation committee passed a bill 7-2.",
