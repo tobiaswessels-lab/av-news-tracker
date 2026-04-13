@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-12",
+                title: "Waymo and Waze owned by Google parent Alphabet are teaming up to share information with American cities on …",
+                body: "Tech News News: The two Alphabet-owned companies have announced a pilot programme that will share road condition data with local governments, using Waymo’s robotaxi s.",
+                category: "tech",
+                tags: ["Waymo","Waze","owned"],
+                url: "https://timesofindia.indiatimes.com/technology/tech-news/waymo-and-waze-owned-by-google-parent-alphabet-are-teaming-up-to-share-information-with-american-cities-on-/articleshow/130204900.cms"
+            },
+            {
                 date: "2026-04-10",
                 title: "Alphabet's Tesla Robotaxi Rival Waymo Announces Partnership With Waze To Help Cities Fix Potholes",
                 body: "Waymo and Waze join hands to fix potholes in cities served by the company, providing real-time pothole data to authorities and users.",

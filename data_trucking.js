@@ -153,6 +153,22 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-04-12",
+                title: "Here's What to Expect From PACCAR’s Next Earnings Report",
+                body: "PACCAR is set to release its first-quarter results later this month, with analysts projecting a double-digit decline in earnings.",
+                category: "funding",
+                tags: ["Heres","What","Expect"],
+                url: "https://www.barchart.com/story/news/1262383/here-s-what-to-expect-from-paccars-next-earnings-report"
+            },
+            {
+                date: "2026-04-11",
+                title: "Two teens seriously injured in Montgomery County crash",
+                body: "COLUMBIA, Mo. (KMIZ) Two teenagers were hurt Friday night after a crash on Interstate 70 in Montgomery County. According to a Missouri State Highway Patrol crash report, a 22-year-old man from Grandview, Missouri, was driving a 2022 Kenworth T680 eastbound on I-70 and merged into the left lane shortly after 4 p.m. The tractor-trailer's towed",
+                category: "safety",
+                tags: ["teens","seriously","injured"],
+                url: "https://abc17news.com/news/montgomery/2026/04/11/two-teens-seriously-injured-in-montgomery-county-crash/"
+            },
+            {
                 date: "2026-03-25",
                 title: "Houtzdale woman killed in 2-vehicle crash in Clearfield County",
                 body: "A 47-year-old Houtzdale woman was killed in a two-vehicle accident Wednesday in Clearfield County. According to state police, the victim was driving a 2005 Ford Escape south on Route 53, Crooked Sewer Road, about 1:57 p.m. when the vehicle crossed into the northbound lane of travel and struck a 2020 Peterbilt operated by a 39-year-old […]",
