@@ -74,6 +74,22 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-04-13",
+                title: "Traton truck deliveries fall 6% in first quarter as US weakness persists",
+                body: "German truck manufacturer Traton reported a 6% drop ​in vehicle sales for the first quarter of ‌2026 on Monday, driven by a 21% decline in its U.S.-based International Motors brand.",
+                category: "tech",
+                tags: ["Traton","truck","deliveries"],
+                url: "https://www.reuters.com/business/traton-vehicle-sales-fall-6-first-quarter-2026-04-13/"
+            },
+            {
+                date: "2026-04-12",
+                title: "Kepler Capital Remains a Sell on TRATON SE (8TRA)",
+                body: "In a report released on April 10, Michael Raab from Kepler Capital maintained a Sell rating on TRATON SE, with a price target of €27.00. The co...",
+                category: "tech",
+                tags: ["Kepler","Capital","Remains"],
+                url: "https://markets.businessinsider.com/news/stocks/kepler-capital-remains-a-sell-on-traton-se-8tra-1036013355"
+            },
+            {
                 date: "2026-04-10",
                 title: "J.P. Morgan Reaffirms Their Hold Rating on TRATON SE (8TRA)",
                 body: "In a report released yesterday, Jose Asumendi from J.P. Morgan maintained a Hold rating on TRATON SE, with a price target of €30.00.Easter Sale ...",
