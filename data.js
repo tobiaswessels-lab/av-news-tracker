@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-14",
+                title: "London gets closer to its first robotaxi service as Waymo begins testing",
+                body: "Waymo's commercial service will eventually follow testing if the U.K. government approves.",
+                category: "launch",
+                tags: ["London","gets","closer"],
+                url: "https://techcrunch.com/2026/04/14/london-gets-closer-to-its-first-robotaxi-service-as-waymo-begins-testing/"
+            },
+            {
                 date: "2026-04-12",
                 title: "Waymo and Waze owned by Google parent Alphabet are teaming up to share information with American cities on …",
                 body: "Tech News News: The two Alphabet-owned companies have announced a pilot programme that will share road condition data with local governments, using Waymo’s robotaxi s.",
