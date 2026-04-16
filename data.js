@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-15",
+                title: "Waymo launches robotaxi testing in London, advancing toward first major international rollout",
+                body: "Waymo has begun testing autonomous vehicles in London as it prepares for a potential 2026 robotaxi launch, expanding its global self-driving trials beyond the US",
+                category: "launch",
+                tags: ["Waymo","launches","robotaxi"],
+                url: "https://www.firstpost.com/tech/waymo-launches-robotaxi-testing-in-london-advancing-toward-first-major-international-rollout-14000896.html"
+            },
+            {
+                date: "2026-04-15",
+                title: "Wayve raises $60M from chip giants Qualcomm, AMD, Arm to challenge Waymo with mapless autonomous driving AI",
+                body: "Wayve just pulled more of the semiconductor world into its orbit—and it’s not a vanity move. The London-based autonomous driving startup said Wednesday it secured $60 million in fresh backing from Qualcomm, AMD, and Arm Holdings, adding three of the industry’s most influential chipmakers to a cap table that already includes Nvidia. The new investment",
+                category: "funding",
+                tags: ["Wayve","raises","chip"],
+                url: "https://techstartups.com/2026/04/15/wayve-raises-60m-from-chip-giants-qualcomm-amd-arm-to-challenge-waymo-with-mapless-autonomous-driving-ai/"
+            },
+            {
+                date: "2026-04-15",
+                title: "Mamdani's Waymo Ban Is the Wrong Way to Regulate Robotaxis",
+                body: "A few years ago, I sat around with friends debating when human-driven cars would no longer be allowed on the island of Manhattan. Not whether autonomous vehicles would take over. Instead, it’s autonomous vehicles that have been effectively banned from the island of Manhattan.",
+                category: "regulation",
+                tags: ["Mamdanis","Waymo","Wrong"],
+                url: "https://www.bloomberg.com/opinion/articles/2026-04-15/waymo-s-ban-in-manhattan-shows-how-not-to-regulate-autonomous-vehicles"
+            },
+            {
                 date: "2026-04-14",
                 title: "London gets closer to its first robotaxi service as Waymo begins testing",
                 body: "Waymo's commercial service will eventually follow testing if the U.K. government approves.",

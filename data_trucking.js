@@ -367,6 +367,22 @@ const truckingCompanies = [
         color: "#003057",
         news: [
             {
+                date: "2026-04-14",
+                title: "Volvo launches new electric trucks",
+                body: "/PRNewswire/ -- Volvo Trucks is a global leader in the electric segment with one of the largest electric truck line-ups in the industry. The company can now...",
+                category: "launch",
+                tags: ["Volvo","launches","electric"],
+                url: "https://www.prnewswire.co.uk/news-releases/volvo-launches-new-electric-trucks--with-ranges-up-to-700-km-302741395.html"
+            },
+            {
+                date: "2026-04-14",
+                title: "Volvo launches electric truck with 700 km range",
+                body: "Volvo Trucks is launching the FH Aero Electric featuring an e-axle and a range of up to 700 km, alongside updated FH, FM, and FMX Electric models offering ranges of up to 470 km, according to a press...",
+                category: "launch",
+                tags: ["Volvo","launches","electric"],
+                url: "https://www.marketscreener.com/news/volvo-launches-electric-truck-with-700-km-range-ce7e50ded181f72c"
+            },
+            {
                 date: "2026-01-15",
                 title: "Volvo Repeats as Europe's Heavy-Truck Market Leader in 2025",
                 body: "Volvo Trucks maintained its position as the market leader for heavy trucks in Europe throughout 2025, with strong demand for both diesel and electric models across the continent.",
