@@ -203,6 +203,14 @@ const companies = [
         news: [
             {
                 date: "2026-04-15",
+                title: "Waymo is taking steps to get its robotaxis on Toronto streets. But roadblocks await",
+                body: "The autonomous taxi operator Waymo appears to be taking steps to break into the Canadian market, eyeing Toronto as a new testing ground for its self-driving fleet. But it may face technological, political and environmental roadblocks — including the harsh reality of Canadian winters — as it seeks to expand north.",
+                category: "expansion",
+                tags: ["Waymo","taking","steps"],
+                url: "https://www.cbc.ca/news/business/waymo-ontario-self-driving-cars-9.7163535"
+            },
+            {
+                date: "2026-04-15",
                 title: "Waymo launches robotaxi testing in London, advancing toward first major international rollout",
                 body: "Waymo has begun testing autonomous vehicles in London as it prepares for a potential 2026 robotaxi launch, expanding its global self-driving trials beyond the US",
                 category: "launch",
