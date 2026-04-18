@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-04-17",
+                title: "Scania Commercial Vehicles opens corporate office in Bengaluru",
+                body: "Narasapura Regional Product Centre continues to operate with full capabilities as Swedish firm strengthens customer support and talent pool in India",
+                category: "launch",
+                tags: ["Scania","Commercial","Vehicles"],
+                url: "https://www.thehindubusinessline.com/companies/scania-commercial-vehicles-opens-corporate-office-in-bengaluru/article70874663.ece"
+            },
+            {
                 date: "2026-04-13",
                 title: "Traton truck deliveries fall 6% in first quarter as US weakness persists",
                 body: "German truck manufacturer Traton reported a 6% drop ​in vehicle sales for the first quarter of ‌2026 on Monday, driven by a 21% decline in its U.S.-based International Motors brand.",

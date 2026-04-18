@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-17",
+                title: "Tesla: The Stock Market’s Valuation Laws Don’t Apply Here (Rating Upgrade) (NASDAQ:TSLA)",
+                body: "Tesla's risks include stronger robotaxi execution from Waymo and Baidu, EV price pressure from BYD, and capital intensity during scaling. Learn more about TSLA stock here.",
+                category: "funding",
+                tags: ["Tesla","Stock","Markets"],
+                url: "https://seekingalpha.com/article/4891659-tesla-stock-market-valuation-laws-dont-apply-here-rating-upgrade"
+            },
+            {
                 date: "2026-04-15",
                 title: "Waymo is taking steps to get its robotaxis on Toronto streets. But roadblocks await",
                 body: "The autonomous taxi operator Waymo appears to be taking steps to break into the Canadian market, eyeing Toronto as a new testing ground for its self-driving fleet. But it may face technological, political and environmental roadblocks — including the harsh reality of Canadian winters — as it seeks to expand north.",
