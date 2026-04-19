@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-04-18",
+                title: "Kepler Capital Keeps Their Sell Rating on TRATON SE (8TRA)",
+                body: "In a report released on April 16, Michael Raab from Kepler Capital maintained a Sell rating on TRATON SE, with a price target of €25.00. The co...",
+                category: "tech",
+                tags: ["Kepler","Capital","Keeps"],
+                url: "https://markets.businessinsider.com/news/stocks/kepler-capital-keeps-their-sell-rating-on-traton-se-8tra-1036035127"
+            },
+            {
                 date: "2026-04-17",
                 title: "Scania Commercial Vehicles opens corporate office in Bengaluru",
                 body: "Narasapura Regional Product Centre continues to operate with full capabilities as Swedish firm strengthens customer support and talent pool in India",
