@@ -272,6 +272,30 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-04-15",
+                title: "Tata Motors bets on flexible powertrain production lines even as EV bus momentum grows",
+                body: "Tata Motors is avoiding dedicated EV bus production lines, opting for flexible manufacturing to respond to shifting demand across diesel, CNG and electric buses in a tender-driven market.",
+                category: "tech",
+                tags: ["Tata","Motors","bets"],
+                url: "https://www.livemint.com/companies/news/tata-motors-flexible-powertrain-production-lines-ev-bus-11776255452172.html"
+            },
+            {
+                date: "2026-04-15",
+                title: "Tata Group To Double Presence In Uttar Pradesh As State Emerges Manufacturing Hub",
+                body: "Tata Group Chairman N Chandrasekaran said the conglomerate will more than double its presence in Uttar Pradesh, citing strong policy support and infrastructure growth. Speaking at Tata Motors’ one-millionth bus rollout in Lucknow, he said the plant could reach 20 lakh vehicles in 5 years, as UP emerges a key manufacturing and export hub.",
+                category: "expansion",
+                tags: ["Tata","Group","Double"],
+                url: "https://www.freepressjournal.in/business/tata-group-to-double-presence-in-uttar-pradesh-as-state-emerges-manufacturing-hub"
+            },
+            {
+                date: "2026-04-15",
+                title: "External elements should not interfere in companies’ internal matters: Yogi Adityanath",
+                body: "While participating at an event of Tata Motors’ Lucknow where he flagged off the one-millionth bus from the Tata Motors' facility, CM Yogi stressed over the int",
+                category: "tech",
+                tags: ["External","elements","should"],
+                url: "https://www.newindianexpress.com/states/uttar-pradesh/2026/Apr/15/external-elements-should-not-interfere-in-companies-internal-matters-yogi-adityanath"
+            },
+            {
                 date: "2026-04-10",
                 title: "Tata Motors starts delivery of e-truck Prima E.55S to BillionE Mobility",
                 body: "Tata Motors has begun delivering its heavy-duty electric trucks, the Prima E.55S, to BillionE Mobility. The company also secured an order for 250 more electric prime movers. These trucks will support long-haul freight movement across several Indian states. This partnership aims to accelerate the adoption of electric logistics solutions for inter-city routes.",

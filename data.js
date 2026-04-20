@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-19",
+                title: "Tesla's robotaxis come to Dallas, Houston as Musk's vision takes shape",
+                body: "Tesla's move comes as the robotaxi business has regained momentum with Alphabet'ss Waymo and Amazon's Zoox speeding up expansion.",
+                category: "tech",
+                tags: ["Teslas","robotaxis","come"],
+                url: "https://www.dallasnews.com/business/technology/article/tesla-s-robotaxis-come-dallas-houston-musk-s-22214695.php"
+            },
+            {
                 date: "2026-04-17",
                 title: "Tesla: The Stock Market’s Valuation Laws Don’t Apply Here (Rating Upgrade) (NASDAQ:TSLA)",
                 body: "Tesla's risks include stronger robotaxi execution from Waymo and Baidu, EV price pressure from BYD, and capital intensity during scaling. Learn more about TSLA stock here.",
@@ -495,6 +503,22 @@ const companies = [
         name: "Wayve",
         color: "#FF4081",
         news: [
+            {
+                date: "2026-04-15",
+                title: "Wayve lands AMD, Arm and Qualcomm cash as UK self-driving push gathers pace",
+                body: "British autonomous driving firm Wayve has secured a further $60m (£44.2m) from chip giants AMD, Arm and Qualcomm Ventures",
+                category: "tech",
+                tags: ["Wayve","lands","Qualcomm"],
+                url: "https://www.cityam.com/wayve-lands-amd-arm-and-qualcomm-cash-as-uk-self-driving-push-gathers-pace/"
+            },
+            {
+                date: "2026-04-15",
+                title: "Wayve bags AMD, Arm and Qualcomm cash as AV push accelerates",
+                body: "British autonomous driving firm Wayve has secured $60m from chip giants AMD, Arm, and Qualcomm Ventures, amid its AI driving push",
+                category: "tech",
+                tags: ["Wayve","bags","Qualcomm"],
+                url: "https://www.cityam.com/wayve-bags-amd-arm-and-qualcomm-cash-as-av-push-accelerates/"
+            },
             {
                 date: "2026-03-12",
                 title: "Uber, Wayve, and Nissan have robotaxi plans in Japan.",
