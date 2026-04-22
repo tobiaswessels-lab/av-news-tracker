@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-21",
+                title: "Exclusive: Startup Humble debuts autonomous truck targeting $900 billion U.S. freight industry",
+                body: "Built by veterans of Tesla, Waymo, and Otto, Humble’s approach challenges how autonomous trucking has been done so far.",
+                category: "launch",
+                tags: ["Exclusive","Startup","Humble"],
+                url: "https://fortune.com/2026/04/21/exclusive-humble-freight-autonomous-truck-eclipse-trucking/"
+            },
+            {
                 date: "2026-04-19",
                 title: "Tesla's robotaxis come to Dallas, Houston as Musk's vision takes shape",
                 body: "Tesla's move comes as the robotaxi business has regained momentum with Alphabet'ss Waymo and Amazon's Zoox speeding up expansion.",
