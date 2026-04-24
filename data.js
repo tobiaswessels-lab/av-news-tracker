@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-23",
+                title: "Tesla’s First-Mover Edge Is Slipping-And Waymo Is Closing In",
+                body: "Waymo's scaling robotaxi fleet could challenge Tesla's first-mover edge as commercialization—not tech—defines the next phase of autonomy.",
+                category: "launch",
+                tags: ["Teslas","FirstMover","Edge"],
+                url: "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/04/52006552/teslas-first-mover-edge-is-slipping-and-waymo-is-closing-in"
+            },
+            {
+                date: "2026-04-22",
+                title: "Waymo: Where it’s available, upcoming cities, and new features [April 2026]",
+                body: "Waymo autonomous vehicles date back to Google’s self-driving car project that started in 2009. As of today, you can get...",
+                category: "launch",
+                tags: ["Waymo","Where","available"],
+                url: "https://9to5google.com/2026/04/22/waymo-new-cities-features/"
+            },
+            {
                 date: "2026-04-21",
                 title: "Exclusive: Startup Humble debuts autonomous truck targeting $900 billion U.S. freight industry",
                 body: "Built by veterans of Tesla, Waymo, and Otto, Humble’s approach challenges how autonomous trucking has been done so far.",

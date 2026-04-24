@@ -407,6 +407,14 @@ const truckingCompanies = [
         color: "#003057",
         news: [
             {
+                date: "2026-04-19",
+                title: "Volvo launches new electric trucks",
+                body: "Volvo Trucks keeps pushing the boundaries for electric truck transport. With the launch of its new electric trucks with improved performance, flexibil...",
+                category: "launch",
+                tags: ["Volvo","launches","electric"],
+                url: "https://itwire.com/science-news/automotive/volvo-launches-new-electric-trucks-%e2%80%93-with-ranges-up-to-700-km.html"
+            },
+            {
                 date: "2026-04-14",
                 title: "Volvo launches new electric trucks",
                 body: "/PRNewswire/ -- Volvo Trucks is a global leader in the electric segment with one of the largest electric truck line-ups in the industry. The company can now...",
