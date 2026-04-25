@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-24",
+                title: "Waymo robotaxi drives through police cordon set up after London stabbing",
+                body: "A Waymo robotaxi drove into a police cordon in Harlesden, west London, on Wednesday, during investigation into a double stabbing.",
+                category: "funding",
+                tags: ["Waymo","robotaxi","drives"],
+                url: "https://metro.co.uk/2026/04/24/waymo-robotaxi-drives-police-cordon-set-london-stabbing-28101112/"
+            },
+            {
                 date: "2026-04-23",
                 title: "Tesla’s First-Mover Edge Is Slipping-And Waymo Is Closing In",
                 body: "Waymo's scaling robotaxi fleet could challenge Tesla's first-mover edge as commercialization—not tech—defines the next phase of autonomy.",
