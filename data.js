@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-25",
+                title: "Waymo Robotaxi Service Paused in San Antonio After Vehicle Swept Away by Floodwaters",
+                body: "Waymo, the automated self-driving taxi service and subsidiary of Alphabet Inc., paused operations in the Alamo City after one of its unoccupied driverless vehicles was swept away in a low-water crossing on Monday night. The service has yet to resume during the busy “Fiesta” celebration period in San Antonio. | Border / Cartel Chronicles",
+                category: "tech",
+                tags: ["Waymo","Robotaxi","Service"],
+                url: "https://www.breitbart.com/politics/2026/04/25/waymo-robotaxi-service-paused-in-san-antonio-after-vehicle-swept-away-by-floodwaters/"
+            },
+            {
+                date: "2026-04-25",
+                title: "Waymo Robotaxi Service Paused in San Antonio After Vehicle Swept Away by Floodwaters",
+                body: "Waymo, the automated self-driving taxi service and subsidiary of Alphabet Inc., paused operations in the Alamo City after one of its unoccupied driverless vehicles was swept away in a low-water crossing on Monday night. The service has yet to resume during the busy “Fiesta” celebration period in San Antonio. | Border / Cartel Chronicles",
+                category: "tech",
+                tags: ["Waymo","Robotaxi","Service"],
+                url: "https://www.breitbart.com/border/2026/04/25/waymo-robotaxi-service-paused-in-san-antonio-after-vehicle-swept-away-by-floodwaters/"
+            },
+            {
                 date: "2026-04-24",
                 title: "Waymo robotaxi drives through police cordon set up after London stabbing",
                 body: "A Waymo robotaxi drove into a police cordon in Harlesden, west London, on Wednesday, during investigation into a double stabbing.",
