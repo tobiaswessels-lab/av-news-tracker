@@ -185,6 +185,22 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-04-28",
+                title: "Paccar raises quarterly dividend to 35c per share from 33c",
+                body: "Paccar’s (PCAR) board of directors approved an increase in the regular quarterly cash dividend from 33c per share to 35c per share. The dividend...",
+                category: "funding",
+                tags: ["Paccar","raises","quarterly"],
+                url: "https://markets.businessinsider.com/news/stocks/paccar-raises-quarterly-dividend-to-35c-per-share-from-33c-1036075034"
+            },
+            {
+                date: "2026-04-28",
+                title: "PACCAR's revenue falls on tepid demand for new trucks",
+                body: "April 28 - PACCAR posted a decline in first-quarter revenue on Tuesday, weighed by soft demand for new trucks as the industry struggles to emerge from a prolonged period of over-capacity.\n...",
+                category: "funding",
+                tags: ["PACCARs","revenue","falls"],
+                url: "https://www.marketscreener.com/news/paccar-s-revenue-falls-on-tepid-demand-for-new-trucks-ce7f59d2dd8cf222"
+            },
+            {
                 date: "2026-04-12",
                 title: "Here's What to Expect From PACCAR’s Next Earnings Report",
                 body: "PACCAR is set to release its first-quarter results later this month, with analysts projecting a double-digit decline in earnings.",

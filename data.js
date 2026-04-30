@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-04-29",
+                title: "Waymo Eyes Portland for Robotaxi Expansion, With Testing Already Underway",
+                body: "You may soon see the self-driving robotaxis​ in Oregon's City of Roses.",
+                category: "tech",
+                tags: ["Waymo","Eyes","Portland"],
+                url: "https://www.cnet.com/roadshow/news/waymo-portland-oregon-robotaxi-expansion-driver-technology/"
+            },
+            {
+                date: "2026-04-29",
+                title: "Waymo teams up with Waze to spot potholes faster",
+                body: "Waymo and Waze are partnering to detect potholes in real time using robotaxi sensors, helping cities in San Francisco, Los Angeles, Phoenix, Austin and Atlanta respond faster.",
+                category: "partnership",
+                tags: ["Waymo","teams","Waze"],
+                url: "https://www.foxnews.com/tech/waymo-teams-waze-spot-potholes-faster"
+            },
+            {
+                date: "2026-04-28",
+                title: "Tesla: Disastrous Robotaxi Checkup",
+                body: "Tesla's robotaxi rollout is stalling amid hardware/software limits, rising capex, and Waymo pressure. Click here to find out why TSLA is a Sell.",
+                category: "tech",
+                tags: ["Tesla","Disastrous","Robotaxi"],
+                url: "https://seekingalpha.com/article/4894479-tesla-disastrous-robotaxi-checkup"
+            },
+            {
                 date: "2026-04-25",
                 title: "Waymo Robotaxi Service Paused in San Antonio After Vehicle Swept Away by Floodwaters",
                 body: "Waymo, the automated self-driving taxi service and subsidiary of Alphabet Inc., paused operations in the Alamo City after one of its unoccupied driverless vehicles was swept away in a low-water crossing on Monday night. The service has yet to resume during the busy “Fiesta” celebration period in San Antonio. | Border / Cartel Chronicles",
