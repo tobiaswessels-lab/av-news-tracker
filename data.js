@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-02",
+                title: "Waymo leaves passenger at California Airport without luggage",
+                body: "A Bay Area businessman’s first ride in a driverless Waymo turned into an airport nightmare when the robotaxi allegedly sped off with his luggage still locked in the trunk.",
+                category: "launch",
+                tags: ["Waymo","leaves","passenger"],
+                url: "https://nypost.com/2026/05/01/us-news/waymo-leaves-passenger-at-california-airport-without-luggage/"
+            },
+            {
+                date: "2026-05-01",
+                title: "Robotaxi Boom Row: How Waymo and Tesla Are Racing to Dominate US Streets",
+                body: "The robotaxi industry in the United States is experiencing rapid growth, with numerous companies launching or planning driverless ride services in various cities. , US News, Times Now",
+                category: "launch",
+                tags: ["Robotaxi","Boom","Waymo"],
+                url: "https://www.timesnownews.com/world/us/us-news/robotaxi-boom-row-how-waymo-and-tesla-are-racing-to-dominate-us-streets-article-154219663"
+            },
+            {
                 date: "2026-04-29",
                 title: "Waymo Eyes Portland for Robotaxi Expansion, With Testing Already Underway",
                 body: "You may soon see the self-driving robotaxis​ in Oregon's City of Roses.",

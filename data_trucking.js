@@ -74,6 +74,22 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-04-29",
+                title: "Truckmaker Traton sees increase in first quarter orders",
+                body: "Volkswagen's truck unit Traton\non Wednesday reported an 18% rise in first-quarter\norders to 87,400 vehicles as demand in the United States\nrecovered.\nCEO Christian Levin cited an 80%...",
+                category: "tech",
+                tags: ["Truckmaker","Traton","sees"],
+                url: "https://www.marketscreener.com/news/truckmaker-traton-sees-increase-in-first-quarter-orders-ce7f59d3dc8ff020"
+            },
+            {
+                date: "2026-04-29",
+                title: "Truckmaker Traton sees increase in first quarter orders",
+                body: "Volkswagen's truck unit Traton on Wednesday reported an 18% rise in first-quarter orders to 87,400 vehicles as demand in the United States recovered. \nAdjusted operating profit fell by...",
+                category: "funding",
+                tags: ["Truckmaker","Traton","sees"],
+                url: "https://www.marketscreener.com/news/truckmaker-traton-sees-increase-in-first-quarter-orders-ce7f59d3dd88f723"
+            },
+            {
                 date: "2026-04-18",
                 title: "Kepler Capital Keeps Their Sell Rating on TRATON SE (8TRA)",
                 body: "In a report released on April 16, Michael Raab from Kepler Capital maintained a Sell rating on TRATON SE, with a price target of €25.00. The co...",
