@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-04",
+                title: "Tesla's Robotaxi Opportunity Is Dead In Light Of Waymo's Dominance",
+                body: "Tesla stock is rated a \"Strong Sell\" as its robotaxi efforts trail Waymo’s scale and safety data, risking further underperformance. Learn more about TSLA here.",
+                category: "safety",
+                tags: ["Teslas","Robotaxi","Opportunity"],
+                url: "https://seekingalpha.com/article/4898008-teslas-robotaxi-opportunity-is-dead-in-light-of-waymos-dominance"
+            },
+            {
+                date: "2026-05-04",
+                title: "Autonomous Vehicle Funding Hits $19 Billion, With Most Going to Waymo",
+                body: "The Autonomous Vehicle sector saw the largest capital backing its seen in more than 10 years, but the money concentrated toward fewer companies.",
+                category: "funding",
+                tags: ["Autonomous","Vehicle","Funding"],
+                url: "https://www.businessinsider.com/autonomous-vehicle-industry-funding-cycles-vc-deals-waymo-robotaxis-2026-5"
+            },
+            {
                 date: "2026-05-02",
                 title: "Waymo leaves passenger at California Airport without luggage",
                 body: "A Bay Area businessman’s first ride in a driverless Waymo turned into an airport nightmare when the robotaxi allegedly sped off with his luggage still locked in the trunk.",
