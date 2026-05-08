@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-07",
+                title: "Operational Leverage",
+                body: "Investor Gary Black believes Uber could lead the Robotaxi sector ahead of Tesla and Waymo, due to Uber's large user base.",
+                category: "funding",
+                tags: ["Operational","Leverage"],
+                url: "https://www.benzinga.com/markets/tech/26/05/52358734/gary-black-thinks-ubers-operational-leverage-could-boost-robotaxi-efforts-vs-tesla-waymo-there-will-be-no-reason"
+            },
+            {
                 date: "2026-05-04",
                 title: "Tesla's Robotaxi Opportunity Is Dead In Light Of Waymo's Dominance",
                 body: "Tesla stock is rated a \"Strong Sell\" as its robotaxi efforts trail Waymo’s scale and safety data, risking further underperformance. Learn more about TSLA here.",
