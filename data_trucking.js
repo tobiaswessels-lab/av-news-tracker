@@ -201,6 +201,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-05-07",
+                title: "PACCAR Stock: Analyst Estimates & Ratings",
+                body: "PACCAR has underperformed the broader market over the past year, yet Wall Street analysts maintain a moderately optimistic outlook about the stock’s prospects.",
+                category: "tech",
+                tags: ["PACCAR","Stock","Analyst"],
+                url: "https://www.barchart.com/story/news/1771508/paccar-stock-analyst-estimates-ratings"
+            },
+            {
                 date: "2026-04-28",
                 title: "Paccar raises quarterly dividend to 35c per share from 33c",
                 body: "Paccar’s (PCAR) board of directors approved an increase in the regular quarterly cash dividend from 33c per share to 35c per share. The dividend...",
