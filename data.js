@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-08",
+                title: "Uber Sold Its AV Unit; Now It's The Industry's Gatekeeper",
+                body: "Uber shifts to a tech-agnostic, capital-light autonomous strategy via $10B partnerships with Waymo, Baidu & more—see what it means for UBER. Click to read.",
+                category: "partnership",
+                tags: ["Uber","Sold","Unit"],
+                url: "https://seekingalpha.com/article/4901609-uber-sold-its-av-unit-now-its-the-industrys-gatekeeper"
+            },
+            {
                 date: "2026-05-07",
                 title: "Operational Leverage",
                 body: "Investor Gary Black believes Uber could lead the Robotaxi sector ahead of Tesla and Waymo, due to Uber's large user base.",
