@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-11",
+                title: "Boy racers? No, it’s self-driving cars keeping us up at night",
+                body: "Waymo’s autonomous Jaguars are being tested in London — but residents are being driven to distraction by attempts to reverse out of a cul-de-sac in Shoreditch",
+                category: "tech",
+                tags: ["racers","selfdriving","cars"],
+                url: "https://www.thetimes.com/uk/london/article/self-driving-cars-shoreditch-waymo-7ss7nrw2n"
+            },
+            {
+                date: "2026-05-11",
+                title: "Robotaxi drives off from airport with passenger's suitcase",
+                body: "Waymo passenger Di Jin says a robotaxi drove off with his suitcase at San José airport. The company eventually agreed to cover shipping after he pushed back.",
+                category: "tech",
+                tags: ["Robotaxi","drives","airport"],
+                url: "https://www.foxnews.com/tech/robotaxi-drives-off-from-airport-passengers-suitcase"
+            },
+            {
                 date: "2026-05-08",
                 title: "Uber Sold Its AV Unit; Now It's The Industry's Gatekeeper",
                 body: "Uber shifts to a tech-agnostic, capital-light autonomous strategy via $10B partnerships with Waymo, Baidu & more—see what it means for UBER. Click to read.",
