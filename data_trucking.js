@@ -447,6 +447,14 @@ const truckingCompanies = [
         color: "#003057",
         news: [
             {
+                date: "2026-05-12",
+                title: "Volvo Trucks announces global product launch",
+                body: "GOTHENBURG, Sweden, May 12, 2026 /PRNewswire/ -- Volvo Trucks is launching the results of a multi-billion SEK investment in technologies that will strengthen its global product offers and competitiveness for years to come.   Volvo Trucks has launched a new heavy-duty electric truck with a range of up to 700 km on one charge. It recharges its batteries from 20%-80% in 50 minutes. Volvo is also introducing an upgraded range of electric truck models that will enable more transport segments and oper",
+                category: "funding",
+                tags: ["Volvo","Trucks","announces"],
+                url: "https://www.manilatimes.net/2026/05/12/tmt-newswire/pr-newswire/volvo-trucks-announces-global-product-launch-a-range-of-new-powertrains-to-reduce-co2-emissions-and-accelerate-decarbonization/2341367"
+            },
+            {
                 date: "2026-04-19",
                 title: "Volvo launches new electric trucks",
                 body: "Volvo Trucks keeps pushing the boundaries for electric truck transport. With the launch of its new electric trucks with improved performance, flexibil...",

@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-12",
+                title: "Waymo recalls nearly 3,800 robotaxis after software flaw allowed vehicles to drive into floodwater",
+                body: "Waymo issued a safety recall of about 3,800 autonomous vehicles due to a software defect that could allow robotaxis to drive into floodwaters. (AP Photo)",
+                category: "safety",
+                tags: ["Waymo","recalls","nearly"],
+                url: "https://www.wltx.com/article/news/nation-world/waymo-recalls-robotaxis-software-flaw-allowed-vehicles-to-drive-into-floodwater/507-f4a92f83-4cda-4393-9807-fe1b460fc894"
+            },
+            {
+                date: "2026-05-12",
+                title: "Activists and City Council want Waymo stopped in Philadelphia until concerns are answered",
+                body: "City Council is trying to asses how autonomous rideshare cars might affect Philadelphia and what they can do about it.",
+                category: "tech",
+                tags: ["Activists","City","Council"],
+                url: "https://www.inquirer.com/transportation/waymo-driverless-taxi-rideshare-city-council-20260512.html"
+            },
+            {
+                date: "2026-05-12",
+                title: "Waymo recalls robotaxis after vehicle drove on flooded road",
+                body: "Waymo is recalling thousands of robotaxis to fix a software issue that could cause the autonomous vehicles to drive on flooded roads.",
+                category: "safety",
+                tags: ["Waymo","recalls","robotaxis"],
+                url: "https://www.mercurynews.com/2026/05/12/waymo-recalls-robotaxis-after-vehicle-drove-on-flooded-road/"
+            },
+            {
                 date: "2026-05-11",
                 title: "Boy racers? No, it’s self-driving cars keeping us up at night",
                 body: "Waymo’s autonomous Jaguars are being tested in London — but residents are being driven to distraction by attempts to reverse out of a cul-de-sac in Shoreditch",
