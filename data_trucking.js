@@ -312,6 +312,30 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-05-13",
+                title: "Tata Motors holds back truck price hikes despite surge in input costs",
+                body: "Tata Motors decides to absorb rising commodity costs, maintaining truck prices to support growth amid inflationary pressures.",
+                category: "expansion",
+                tags: ["Tata","Motors","holds"],
+                url: "https://www.thehindubusinessline.com/companies/tata-motors-holds-back-truck-price-hikes-despite-surge-in-input-costs/article70974526.ece"
+            },
+            {
+                date: "2026-05-13",
+                title: "Eka, PMI outpace incumbents Tata Motors, Ashok Leyland in e-bus tender yet again",
+                body: "Startups Eka Mobility and PMI Electro Mobility are beating giants like Tata Motors and Ashok Leyland in India’s e-bus tenders, riding the government’s electrification push and rising demand for electric public transport.",
+                category: "launch",
+                tags: ["outpace","incumbents","Tata"],
+                url: "https://www.livemint.com/auto-news/eka-mobility-pmi-outpace-tata-motors-ashok-leyland-in-e-bus-tender-11778671302099.html"
+            },
+            {
+                date: "2026-05-12",
+                title: "Can Tata Motors' CV business deliver a profit surprise in Q4 as truck demand picks up?",
+                body: "Tata Motors' commercial vehicle business is poised for a strong March quarter, with analysts anticipating healthy volume growth and margin expansion. This recovery is driven by a significant pickup in fleet replacement demand and improved freight activity, reflecting a broader upturn in the domestic trucking cycle.",
+                category: "funding",
+                tags: ["Tata","Motors","business"],
+                url: "https://economictimes.indiatimes.com/markets/stocks/news/can-tata-motors-cv-business-deliver-a-profit-surprise-in-q4-as-truck-demand-picks-up/articleshow/131027658.cms"
+            },
+            {
                 date: "2026-04-15",
                 title: "Tata Motors bets on flexible powertrain production lines even as EV bus momentum grows",
                 body: "Tata Motors is avoiding dedicated EV bus production lines, opting for flexible manufacturing to respond to shifting demand across diesel, CNG and electric buses in a tender-driven market.",

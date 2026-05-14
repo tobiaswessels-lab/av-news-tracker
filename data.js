@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-13",
+                title: "Cathie Wood Remains Bullish About Tesla’s Robotaxi. TSLA Stock Is Waiting for a Financial Trigger Higher.",
+                body: "The celebrity fund manager believes that Robotaxi will stay ahead of Waymo.",
+                category: "funding",
+                tags: ["Cathie","Wood","Remains"],
+                url: "https://www.barchart.com/story/news/1911815/cathie-wood-remains-bullish-about-teslas-robotaxi-tsla-stock-is-waiting-for-a-financial-trigger-higher"
+            },
+            {
+                date: "2026-05-13",
+                title: "Regional: Waymo Issued Voluntary Recall Notice For Software After Self-Driving Car Drove Into Flood Water",
+                body: "The autonomous ride company Waymo voluntarily recalled its entire fleet's software last month after one of the vehicles drove into a flooded lane in San Antonio, Texas.",
+                category: "safety",
+                tags: ["Regional","Waymo","Issued"],
+                url: "https://www.sfgate.com/news/bayarea/article/regional-waymo-issued-voluntary-recall-notice-22257942.php"
+            },
+            {
+                date: "2026-05-13",
+                title: "Waymo recalls thousands of autonomous vehicles following safety incident",
+                body: "Nearly 3,800 Waymo vehicles have been recalled after a defect was identified that may cause autonomous cars to slow down but not fully stop in dangerous conditions",
+                category: "safety",
+                tags: ["Waymo","recalls","thousands"],
+                url: "https://www.foxbusiness.com/lifestyle/waymo-recalls-massive-autonomous-fleet-incident-flags-major-safety-issue"
+            },
+            {
                 date: "2026-05-12",
                 title: "Waymo recalls nearly 3,800 robotaxis after software flaw allowed vehicles to drive into floodwater",
                 body: "Waymo issued a safety recall of about 3,800 autonomous vehicles due to a software defect that could allow robotaxis to drive into floodwaters. (AP Photo)",
