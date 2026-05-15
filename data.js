@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-14",
+                title: "Waymo recalls 3,791 autonomous taxis over flood risk defect",
+                body: "Waymo recalled 3,791 self-driving vehicles after a defect was found that causes them to enter flooded roads.",
+                category: "safety",
+                tags: ["Waymo","recalls","3791"],
+                url: "https://www.dailycamera.com/2026/05/14/waymo-recalls-autonomous-taxis-software-defect-flooded-roadways/"
+            },
+            {
+                date: "2026-05-14",
+                title: "Waymo recalls 3,791 autonomous taxis over flood risk defect",
+                body: "Waymo recalled 3,791 self-driving vehicles after a defect was found that causes them to enter flooded roads.",
+                category: "safety",
+                tags: ["Waymo","recalls","3791"],
+                url: "https://www.courant.com/2026/05/14/waymo-recalls-autonomous-taxis-software-defect-flooded-roadways/"
+            },
+            {
+                date: "2026-05-14",
+                title: "Waymo recalls 3,791 autonomous taxis over flood risk defect",
+                body: "Waymo recalled 3,791 self-driving vehicles after a defect was found that causes them to enter flooded roads.",
+                category: "safety",
+                tags: ["Waymo","recalls","3791"],
+                url: "https://www.pilotonline.com/2026/05/14/waymo-recalls-autonomous-taxis-software-defect-flooded-roadways/"
+            },
+            {
                 date: "2026-05-13",
                 title: "Cathie Wood Remains Bullish About Tesla’s Robotaxi. TSLA Stock Is Waiting for a Financial Trigger Higher.",
                 body: "The celebrity fund manager believes that Robotaxi will stay ahead of Waymo.",
