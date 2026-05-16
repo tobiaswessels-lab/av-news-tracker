@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-15",
+                title: "Uber-Waymo Partnership On The Rocks? Exec Shares 'Scary' SF Robotaxi Moment, Slam AV Rollout",
+                body: "Uber's partnership with Waymo could reportedly be facing issues as Uber executives advocate for hyrbid approach to ride-hailing.",
+                category: "partnership",
+                tags: ["UberWaymo","Partnership","Rocks"],
+                url: "https://www.benzinga.com/markets/tech/26/05/52589747/uber-waymo-partnership-on-the-rocks-exec-shares-scary-sf-robotaxi-moment-slam-av-rollout"
+            },
+            {
+                date: "2026-05-15",
+                title: "Dallas residents raise safety concerns as Waymo expands",
+                body: "Viral videos, neighborhood complaints, and a recent software recall are prompting new scrutiny of autonomous vehicles operating across the city.",
+                category: "funding",
+                tags: ["Dallas","residents","raise"],
+                url: "https://www.cbsnews.com/texas/news/waymo-dallas-safety-concerns-robotaxi-complaints-recall/"
+            },
+            {
                 date: "2026-05-14",
                 title: "Waymo recalls 3,791 autonomous taxis over flood risk defect",
                 body: "Waymo recalled 3,791 self-driving vehicles after a defect was found that causes them to enter flooded roads.",
