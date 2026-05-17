@@ -201,6 +201,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-05-15",
+                title: "Man seriously hurt in Boone County semi-truck crash",
+                body: "COLUMBIA, Mo. (KMIZ) A 47-year-old Mountain View man was seriously hurt after a semi-truck crash in Boone County just before 6 p.m. Thursday. According to a crash report from the Missouri State Highway Patrol, the man was driving a 2007 Kenworth W900 on Route UU and Gillespie Bridge Road when he failed to navigate a",
+                category: "safety",
+                tags: ["seriously","hurt","Boone"],
+                url: "https://abc17news.com/news/top-stories/2026/05/15/man-seriously-hurt-in-boone-county-semi-truck-crash/"
+            },
+            {
                 date: "2026-05-07",
                 title: "PACCAR Stock: Analyst Estimates & Ratings",
                 body: "PACCAR has underperformed the broader market over the past year, yet Wall Street analysts maintain a moderately optimistic outlook about the stock’s prospects.",
