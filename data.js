@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-17",
+                title: "Weekend Round-Up: Li Auto's New SUV, Chinese Automakers Eye Europe, Waymo's Robotaxi Recall And Trump's S",
+                body: "Auto roundup highlighted Li Auto's SUV launch, Chinese EV expansion into Europe, Waymo's robotaxi recall and U.S. concerns over Chinese EVs.",
+                category: "launch",
+                tags: ["Weekend","RoundUp","Autos"],
+                url: "https://www.benzinga.com/markets/tech/26/05/52624803/weekend-round-up-li-autos-new-suv-chinese-automakers-eye-europe-waymos-robotaxi-recall-and-trumps-stance-on-chinese-evs"
+            },
+            {
+                date: "2026-05-17",
+                title: "Robotaxi Rebellion: 50 Waymo Self-Driving Cars Circle Atlanta Neighborhood for Hours at a Time",
+                body: "Approximately 50 autonomous Waymo robotaxis have been circling a residential cul-de-sac in northwest Atlanta for hours at a time, raising safety concerns among local families and disrupting daily life in the quiet neighborhood.",
+                category: "safety",
+                tags: ["Robotaxi","Rebellion","Waymo"],
+                url: "https://www.breitbart.com/tech/2026/05/17/robotaxi-rebellion-50-waymo-self-driving-cars-circle-atlanta-neighborhood-for-hours-at-a-time/"
+            },
+            {
                 date: "2026-05-15",
                 title: "Uber-Waymo Partnership On The Rocks? Exec Shares 'Scary' SF Robotaxi Moment, Slam AV Rollout",
                 body: "Uber's partnership with Waymo could reportedly be facing issues as Uber executives advocate for hyrbid approach to ride-hailing.",
@@ -869,6 +885,30 @@ const companies = [
         name: "Nuro",
         color: "#00C853",
         news: [
+            {
+                date: "2026-05-16",
+                title: "Lucid's Robotaxi Ambitions Advance As Executive Takes First Ride In Uber-Nuro Partnership Vehicle",
+                body: "Lucid's robotaxi partnership with Uber and Nuro moved closer to launch after executive Nick Twork shared his first autonomous ride experience.",
+                category: "partnership",
+                tags: ["Lucids","Robotaxi","Ambitions"],
+                url: "https://www.benzinga.com/markets/equities/26/05/52623047/lucids-robotaxi-ambitions-advance-as-executive-takes-first-ride-in-uber-nuro-partnership-vehicle"
+            },
+            {
+                date: "2026-05-08",
+                title: "Nuro Secures California Driverless Permit as Tesla (TSLA) Robotaxis Remain Supervised",
+                body: "Autonomous vehicle startup Nuro has secured two important California permits that move its Lucid (LCID) Gravity robotaxi program with Uber (UBER...",
+                category: "launch",
+                tags: ["Nuro","Secures","California"],
+                url: "https://markets.businessinsider.com/news/stocks/nuro-secures-california-driverless-permit-as-tesla-tsla-robotaxis-remain-supervised-1036132231"
+            },
+            {
+                date: "2026-05-07",
+                title: "California Driverless Permit Approval Pushes Nuro Closer to Uber Robotaxi Launch",
+                body: "The California Department of Motor Vehicles has modified Nuro‘s existing driverless autonomous vehicle permit to authorize testing of Lucid…",
+                category: "launch",
+                tags: ["California","Driverless","Permit"],
+                url: "https://www.business2community.com/business-news/california-driverless-permit-nuro-uber-robotaxi/"
+            },
             {
                 date: "2026-03-12",
                 title: "U.S. self-driving startup Nuro begins testing in Tokyo",
