@@ -203,6 +203,14 @@ const companies = [
         news: [
             {
                 date: "2026-05-17",
+                title: "Robotaxi Rebellion: 50 Waymo Self-Driving Cars Circle Atlanta Neighborhood for Hours at a Time",
+                body: "Approximately 50 autonomous Waymo robotaxis have been circling a residential cul-de-sac in northwest Atlanta for hours at a time, raising safety concerns among local families and disrupting daily life in the quiet neighborhood.",
+                category: "safety",
+                tags: ["Robotaxi","Rebellion","Waymo"],
+                url: "https://www.breitbart.com/politics/2026/05/17/robotaxi-rebellion-50-waymo-self-driving-cars-circle-atlanta-neighborhood-for-hours-at-a-time/"
+            },
+            {
+                date: "2026-05-17",
                 title: "Weekend Round-Up: Li Auto's New SUV, Chinese Automakers Eye Europe, Waymo's Robotaxi Recall And Trump's S",
                 body: "Auto roundup highlighted Li Auto's SUV launch, Chinese EV expansion into Europe, Waymo's robotaxi recall and U.S. concerns over Chinese EVs.",
                 category: "launch",
