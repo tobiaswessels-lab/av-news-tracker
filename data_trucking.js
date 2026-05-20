@@ -201,6 +201,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-05-17",
+                title: "Bank of America Securities Remains a Buy on Paccar (PCAR)",
+                body: "Bank of America Securities analyst Michael Feniger maintained a Buy rating on Paccar on May 15. The company’s shares closed last Friday at $110....",
+                category: "tech",
+                tags: ["Bank","America","Securities"],
+                url: "https://markets.businessinsider.com/news/stocks/bank-of-america-securities-remains-a-buy-on-paccar-pcar-1036166579"
+            },
+            {
                 date: "2026-05-15",
                 title: "Man seriously hurt in Boone County semi-truck crash",
                 body: "COLUMBIA, Mo. (KMIZ) A 47-year-old Mountain View man was seriously hurt after a semi-truck crash in Boone County just before 6 p.m. Thursday. According to a crash report from the Missouri State Highway Patrol, the man was driving a 2007 Kenworth W900 on Route UU and Gillespie Bridge Road when he failed to navigate a",
