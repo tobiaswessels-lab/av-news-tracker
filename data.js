@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-21",
+                title: "Alphabet's Waymo Pauses Services in Atlanta Due to Flooding",
+                body: "Alphabet's Waymo has paused its robotaxi services in Atlanta, Georgia due to flooding, TechCrunch reported Thursday, citing the company.\nWaymo has also halted services in San Antonio, Texas,...",
+                category: "tech",
+                tags: ["Alphabets","Waymo","Pauses"],
+                url: "https://www.marketscreener.com/news/alphabet-s-waymo-pauses-services-in-atlanta-due-to-flooding-ce7f5adede81ff25"
+            },
+            {
+                date: "2026-05-21",
+                title: "Alphabet's Waymo Pauses Services in Atlanta Due to Flooding",
+                body: "Alphabet's Waymo has paused its robotaxi services in Atlanta, Georgia due to flooding, TechCrunch reported Thursday, citing the company.\nWaymo has also halted services in San Antonio, Texas,...",
+                category: "tech",
+                tags: ["Alphabets","Waymo","Pauses"],
+                url: "https://www.marketscreener.com/news/alphabet-s-waymo-pauses-services-in-atlanta-due-to-flooding-ce7f5adede8df323"
+            },
+            {
+                date: "2026-05-21",
+                title: "Waymo Pauses Atlanta Services as Robotaxis End Up Driving Into Floodwaters",
+                body: "Waymo’s robotaxi fleet is facing safety and reliability concerns, with incidents involving floods, traffic violations, and accidents prompting recalls, investigations, and service pauses.",
+                category: "funding",
+                tags: ["Waymo","Pauses","Atlanta"],
+                url: "https://www.firstpost.com/tech/waymo-pauses-atlanta-services-as-robotaxis-end-up-driving-into-floodwaters-14013794.html"
+            },
+            {
                 date: "2026-05-17",
                 title: "Robotaxi Rebellion: 50 Waymo Self-Driving Cars Circle Atlanta Neighborhood for Hours at a Time",
                 body: "Approximately 50 autonomous Waymo robotaxis have been circling a residential cul-de-sac in northwest Atlanta for hours at a time, raising safety concerns among local families and disrupting daily life in the quiet neighborhood.",
