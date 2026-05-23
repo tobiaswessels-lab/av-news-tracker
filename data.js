@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-22",
+                title: "Waymo suspends robotaxi service in Dallas",
+                body: "Waymo has paused autonomous vehicle operations in Dallas, Austin, Houston, and San Antonio following safety incidents and a software recall related to flooded roads.",
+                category: "safety",
+                tags: ["Waymo","suspends","robotaxi"],
+                url: "https://www.fox4news.com/news/waymo-suspends-robotaxi-service-dallas"
+            },
+            {
+                date: "2026-05-22",
+                title: "Waymo takes multi-city pause over flood concerns, halts freeway access",
+                body: "The autonomous vehicle unit of Alphabet Inc. said on Thursday it has halted service in Atlanta, Austin, Dallas and Houston amid severe weather.",
+                category: "tech",
+                tags: ["Waymo","takes","multicity"],
+                url: "https://www.mercurynews.com/2026/05/22/waymo-takes-multi-city-pause-on-floods-halts-freeway-access/"
+            },
+            {
+                date: "2026-05-22",
+                title: "Waymo suspends freeway rides, pauses Atlanta operations amid safety fixes",
+                body: "Alphabet’s Waymo said on Thursday it has suspended its robotaxi service on freeways in the United States and paused its operations in Atlanta, Georgia as it updates software to improve performance around construction zones and flooded roadways",
+                category: "safety",
+                tags: ["Waymo","suspends","freeway"],
+                url: "https://www.nbcnews.com/tech/tech-news/waymo-suspends-freeway-rides-pauses-atlanta-operations-safety-fixes-rcna346510"
+            },
+            {
                 date: "2026-05-21",
                 title: "Alphabet's Waymo Pauses Services in Atlanta Due to Flooding",
                 body: "Alphabet's Waymo has paused its robotaxi services in Atlanta, Georgia due to flooding, TechCrunch reported Thursday, citing the company.\nWaymo has also halted services in San Antonio, Texas,...",
@@ -775,6 +799,22 @@ const companies = [
         name: "Wayve",
         color: "#FF4081",
         news: [
+            {
+                date: "2026-05-21",
+                title: "Jeep, Ram, and Dodge Vehicles Could Soon Come Equipped With Wayve’s Self-Driving Tech",
+                body: "Stellantis announced a new partnership with UK autonomous driving startup Wayve.",
+                category: "partnership",
+                tags: ["Jeep","Dodge","Vehicles"],
+                url: "https://gizmodo.com/jeep-ram-and-dodge-vehicles-could-soon-come-equipped-with-wayves-self-driving-tech-2000762218"
+            },
+            {
+                date: "2026-05-21",
+                title: "Stellantis, Wayve target 2028 driver-assist launch",
+                body: "Stellantis and British autonomous driving startup Wayve said on Thursday they had formed a strategic partnership to bring Wayve's artificial intelligence driving software into the carmaker's STLA...",
+                category: "partnership",
+                tags: ["Stellantis","Wayve","target"],
+                url: "https://www.marketscreener.com/news/stellantis-wayve-target-2028-driver-assist-launch-ce7f5adedd80f522"
+            },
             {
                 date: "2026-04-15",
                 title: "Wayve lands AMD, Arm and Qualcomm cash as UK self-driving push gathers pace",
