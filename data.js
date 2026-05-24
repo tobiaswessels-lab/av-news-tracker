@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-23",
+                title: "Waymo's self-driving cars are getting stuck in floods",
+                body: "Waymo has suspended its robotaxi service in two US cities after two of its self-driving cars became stuck on flooded roads following heavy rainfall, the Google sister company said.",
+                category: "tech",
+                tags: ["Waymos","selfdriving","cars"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/05/23/waymo039s-self-driving-cars-are-getting-stuck-in-floods"
+            },
+            {
                 date: "2026-05-22",
                 title: "Waymo suspends robotaxi service in Dallas",
                 body: "Waymo has paused autonomous vehicle operations in Dallas, Austin, Houston, and San Antonio following safety incidents and a software recall related to flooded roads.",
