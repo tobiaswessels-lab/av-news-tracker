@@ -202,6 +202,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-24",
+                title: "Why Nuro thinks being a robotaxi ‘second mover’ gives it an advantage",
+                body: "Nuro cofounder and co-CEO Dave Ferguson says his company may be a “second mover” in robotaxis, but it can still get ahead by learning from Waymo’s mistakes.",
+                category: "funding",
+                tags: ["Nuro","thinks","being"],
+                url: "https://www.theverge.com/transportation/936126/nuro-robotaxi-dave-ferguson-interview-uber-lucid-waymo"
+            },
+            {
                 date: "2026-05-23",
                 title: "Waymo's self-driving cars are getting stuck in floods",
                 body: "Waymo has suspended its robotaxi service in two US cities after two of its self-driving cars became stuck on flooded roads following heavy rainfall, the Google sister company said.",
