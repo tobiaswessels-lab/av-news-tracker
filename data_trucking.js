@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-05-25",
+                title: "I happily pay 40% tax in Sweden and after 7 years here’s why I don’t want to return to India",
+                body: "She moved to Sweden as a dependent spouse with no network, no Swedish language skills and no job. Seven years later, Chandrika is a Solution Architect at Scania and a mother of two raising her family in Stockholm.",
+                category: "tech",
+                tags: ["happily","Sweden","years"],
+                url: "https://www.financialexpress.com/world-news/nri/i-happily-pay-40-tax-in-sweden-and-after-7-years-heres-why-i-dont-want-to-return-to-india/4247457/"
+            },
+            {
                 date: "2026-04-29",
                 title: "Truckmaker Traton sees increase in first quarter orders",
                 body: "Volkswagen's truck unit Traton\non Wednesday reported an 18% rise in first-quarter\norders to 87,400 vehicles as demand in the United States\nrecovered.\nCEO Christian Levin cited an 80%...",

@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-25",
+                title: "Waymo's Bumpy Month: Rides Suspended Amid Roadway Challenges",
+                body: "Waymo temporarily suspended rider service in six cities and paused highway rides as the company works to improve its autonomous-driving software.",
+                category: "tech",
+                tags: ["Waymos","Bumpy","Month"],
+                url: "https://www.businessinsider.com/waymo-robotaxi-service-interruptions-pauses-suspensions-freeway-flooded-roads-2026-5"
+            },
+            {
+                date: "2026-05-25",
+                title: "Driverless Hazard: Waymo Pauses Service as Robotaxis Drive into Flood Waters",
+                body: "Waymo has extended service suspensions to four cities after its autonomous vehicles repeatedly encountered difficulties navigating heavy rain and flooded roadways, an issue that led to a software recall earlier this month.",
+                category: "safety",
+                tags: ["Driverless","Hazard","Waymo"],
+                url: "https://www.breitbart.com/tech/2026/05/25/driverless-hazard-waymo-pauses-service-as-robotaxis-drive-into-flood-waters/"
+            },
+            {
                 date: "2026-05-24",
                 title: "Why Nuro thinks being a robotaxi ‘second mover’ gives it an advantage",
                 body: "Nuro cofounder and co-CEO Dave Ferguson says his company may be a “second mover” in robotaxis, but it can still get ahead by learning from Waymo’s mistakes.",
