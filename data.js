@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-26",
+                title: "Waymo pauses freeway rides in San Francisco, Los Angeles over safety",
+                body: "In a letter to the NHTSA, Waymo confirmed it was addressing software in its vehicles that sometimes allowed the robotaxi to enter flooded roadways.",
+                category: "safety",
+                tags: ["Waymo","pauses","freeway"],
+                url: "https://www.vcstar.com/story/news/california/2026/05/26/waymo-suspends-all-freeway-rides-including-san-francisco-and-los-angeles-due-to-safety-concerns/90261233007/"
+            },
+            {
+                date: "2026-05-26",
+                title: "Waymo Robotaxi's surprise age checks spark fresh concerns over rider privacy and data use",
+                body: "A viral Waymo age-verification incident has sparked fresh concerns over surveillance, privacy and data collection in autonomous robotaxi services",
+                category: "safety",
+                tags: ["Waymo","Robotaxis","surprise"],
+                url: "https://www.firstpost.com/auto/waymo-robotaxis-surprise-age-checks-spark-fresh-concerns-over-rider-privacy-and-data-use-14015558.html"
+            },
+            {
                 date: "2026-05-25",
                 title: "Waymo's Bumpy Month: Rides Suspended Amid Roadway Challenges",
                 body: "Waymo temporarily suspended rider service in six cities and paused highway rides as the company works to improve its autonomous-driving software.",
