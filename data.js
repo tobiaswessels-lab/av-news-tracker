@@ -202,6 +202,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-27",
+                title: "Waymo suspends robotaxi service in 6 cities after floodwater incidents",
+                body: "Waymo temporarily suspended robotaxi service in six United States cities after severe storms and flooding created safety concerns.",
+                category: "safety",
+                tags: ["Waymo","suspends","robotaxi"],
+                url: "https://www.upi.com/Top_News/US/2026/05/27/waymo-floodwaters/6531779913851/"
+            },
+            {
+                date: "2026-05-27",
+                title: "Dallas didn’t volunteer to be Waymo’s test track",
+                body: "Autonomous vehicles aren’t ready for public roads. Recent incident with Waymo shows why,",
+                category: "safety",
+                tags: ["Dallas","didnt","volunteer"],
+                url: "https://www.dallasnews.com/opinion/commentary/article/waymo-dallas-incidents-autonomous-vehicles-22266718.php"
+            },
+            {
                 date: "2026-05-26",
                 title: "Waymo pauses freeway rides in San Francisco, Los Angeles over safety",
                 body: "In a letter to the NHTSA, Waymo confirmed it was addressing software in its vehicles that sometimes allowed the robotaxi to enter flooded roadways.",
