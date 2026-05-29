@@ -202,6 +202,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-28",
+                title: "Self-driving service Waymo launches testing in Northern Virginia",
+                body: "Waymo has confirmed it is testing its autonomous ride-hailing vehicles in Northern Virginia.While fully driverless vehicles are currently illegal in the state,",
+                category: "launch",
+                tags: ["Selfdriving","service","Waymo"],
+                url: "https://wjla.com/news/local/waymo-self-driving-testing-automatic-northern-virginia-mapping-driverless"
+            },
+            {
+                date: "2026-05-28",
+                title: "Waymo's new Ojai robotaxi looks like it was made for the future, and it's got a brain upgrade, too",
+                body: "Waymo’s Ojai robotaxi blends futuristic design with a strong focus on accessibility and next-gen autonomy. Early riders are about to get a taste, while a much bigger rollout is already taking shape.",
+                category: "partnership",
+                tags: ["Waymos","Ojai","robotaxi"],
+                url: "https://www.digitaltrends.com/cars/waymos-new-ojai-robotaxi-looks-like-it-was-made-for-the-future-and-its-got-a-brain-upgrade-too/"
+            },
+            {
+                date: "2026-05-28",
+                title: "Waymo opens cheaper Ojai robotaxi built by China's Geely",
+                body: "Waymo's new Ojai robotaxi cuts sensors by 42% and costs $75,000 less than the Jaguar I-PACE. Built by Geely's Zeekr in China, it launches in three US cities.",
+                category: "launch",
+                tags: ["Waymo","opens","cheaper"],
+                url: "https://thenextweb.com/news/waymo-ojai-robotaxi-geely-sixth-generation-fleet-cost"
+            },
+            {
                 date: "2026-05-27",
                 title: "Waymo suspends robotaxi service in 6 cities after floodwater incidents",
                 body: "Waymo temporarily suspended robotaxi service in six United States cities after severe storms and flooding created safety concerns.",
