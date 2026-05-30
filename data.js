@@ -29,6 +29,14 @@ const companies = [
         color: "#E31937",
         news: [
             {
+                date: "2026-05-28",
+                title: "Torc Robotics and Mila team up on physical AI for autonomous trucks",
+                body: "Torc Robotics and Mila advance physical AI for autonomous trucks. Torc is now Mila's only autonomous trucking company with dedicated research space in Montreal.",
+                category: "tech",
+                tags: ["Torc","Robotics","Mila"],
+                url: "https://www.freightwaves.com/news/torc-robotics-mila-partnership-physical-ai-autonomous-trucks"
+            },
+            {
                 date: "2026-03-04",
                 title: "Torc Robotics takes autonomous trucks into Michigan’s snow and ice",
                 body: "Torc Robotics is taking autonomous trucks into Michigan’s snow and ice for the first time. The Daimler Truck subsidiary expands public-road testing with its latest Freightliner Cascadia AV 3.0 chassis near Ann Arbor, moving beyond Sun Belt corridors on the path to 2027 commercialization.",
@@ -201,6 +209,30 @@ const companies = [
         name: "Waymo",
         color: "#4285F4",
         news: [
+            {
+                date: "2026-05-29",
+                title: "20 seconds of terror: California couple's self-driving robotaxi speeds through construction zone, company offers $120 in free rides",
+                body: "US News: A California couple had the most harrowing 20 seconds of their life when their self-driving Waymo robotaxi went haywire and began speeding through a h.",
+                category: "tech",
+                tags: ["seconds","terror","California"],
+                url: "https://timesofindia.indiatimes.com/world/us/20-seconds-of-terror-california-couples-self-driving-speeds-through-construction-zone-company-offers-120-in-free-rides/articleshow/131394487.cms"
+            },
+            {
+                date: "2026-05-29",
+                title: "Tesla’s robotaxi dreams lag far behind Waymo",
+                body: "esla Inc. has just 42 vehicles operating as robotaxis in Texas almost a year after Elon Musk launched the service, a small fraction of the fleet commanded by rival Waymo.",
+                category: "launch",
+                tags: ["Teslas","robotaxi","dreams"],
+                url: "https://www.latimes.com/business/story/2026-05-29/teslas-robotaxi-dreams-lag-far-behind-waymo"
+            },
+            {
+                date: "2026-05-29",
+                title: "Waymo to deploy robotaxi built with Zeekr to expand public rides",
+                body: "Alphabet Inc.’s Waymo unit will deploy a new autonomous vehicle designed specifically for robotaxi use, offering public rides in California and Arizona without human supervision.",
+                category: "partnership",
+                tags: ["Waymo","deploy","robotaxi"],
+                url: "https://www.mercurynews.com/2026/05/29/waymo-to-deploy-robotaxi-built-with-zeekr-to-expand-public-rides/"
+            },
             {
                 date: "2026-05-28",
                 title: "Self-driving service Waymo launches testing in Northern Virginia",
