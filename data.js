@@ -211,6 +211,22 @@ const companies = [
         news: [
             {
                 date: "2026-05-29",
+                title: "Tesla reveals its Texas robotaxi fleet is dwarfed by Waymo’s",
+                body: "Tesla Inc. has just 42 vehicles operating as robotaxis in Texas almost a year after Elon Musk launched the service, a small fraction of the fleet commanded by rival Waymo.",
+                category: "launch",
+                tags: ["Tesla","reveals","Texas"],
+                url: "https://www.ocregister.com/2026/05/29/tesla-reveals-its-texas-robotaxi-fleet-is-dwarfed-by-waymos/"
+            },
+            {
+                date: "2026-05-29",
+                title: "Waymo to deploy robotaxi built with Zeekr to expand public rides",
+                body: "Alphabet Inc.’s Waymo unit will deploy a new autonomous vehicle designed specifically for robotaxi use, offering public rides in California and Arizona without human supervision.",
+                category: "partnership",
+                tags: ["Waymo","deploy","robotaxi"],
+                url: "https://www.ocregister.com/2026/05/29/waymo-to-deploy-robotaxi-built-with-zeekr-to-expand-public-rides/"
+            },
+            {
+                date: "2026-05-29",
                 title: "20 seconds of terror: California couple's self-driving robotaxi speeds through construction zone, company offers $120 in free rides",
                 body: "US News: A California couple had the most harrowing 20 seconds of their life when their self-driving Waymo robotaxi went haywire and began speeding through a h.",
                 category: "tech",
