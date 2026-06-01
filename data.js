@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-05-31",
+                title: "Waymo Suspends Freeway Service After Robotaxi Speeds Through Construction Lane With Riders Inside",
+                body: "A Waymo robotaxi carrying passengers reportedly sped through a construction zone and failed to stop immediately, prompting safety concerns",
+                category: "safety",
+                tags: ["Waymo","Suspends","Freeway"],
+                url: "https://www.firstpost.com/auto/waymo-suspends-freeway-service-after-robotaxi-speeds-through-construction-lane-with-riders-inside-14017235.html"
+            },
+            {
+                date: "2026-05-31",
+                title: "Meet the Waymo Ojai: A robotaxi minivan that could be a gamechanger",
+                body: "Waymo rolls out Ojai electric robotaxi with 6th-gen self-driving tech—roomier, cheaper, better in rain/snow.",
+                category: "tech",
+                tags: ["Meet","Waymo","Ojai"],
+                url: "https://seekingalpha.com/news/4598470-meet-the-waymo-ojai-a-robotaxi-minivan-that-could-be-a-gamechanger"
+            },
+            {
                 date: "2026-05-29",
                 title: "Tesla reveals its Texas robotaxi fleet is dwarfed by Waymo’s",
                 body: "Tesla Inc. has just 42 vehicles operating as robotaxis in Texas almost a year after Elon Musk launched the service, a small fraction of the fleet commanded by rival Waymo.",
