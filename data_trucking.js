@@ -336,6 +336,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-05-31",
+                title: "Commercial vehicle makers strengthen non-core business to ride out 'cyclical' bumps",
+                body: "India's commercial vehicle makers are diversifying beyond truck sales to stabilize revenue. Companies like Tata Motors, Ashok Leyland, and VECV are seeing significant growth in spare parts, financing, and fleet services. This strategic shift aims to create recurring income streams, mitigating the impact of the market's cyclical nature and economic fluctuations.",
+                category: "funding",
+                tags: ["Commercial","vehicle","makers"],
+                url: "https://economictimes.indiatimes.com/industry/auto/lcv-hcv/commercial-vehicle-makers-strengthen-non-core-business-to-ride-out-cyclical-bumps/articleshow/131428972.cms"
+            },
+            {
                 date: "2026-05-13",
                 title: "Tata Motors holds back truck price hikes despite surge in input costs",
                 body: "Tata Motors decides to absorb rising commodity costs, maintaining truck prices to support growth amid inflationary pressures.",

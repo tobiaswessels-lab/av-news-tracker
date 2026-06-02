@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-01",
+                title: "Illinois rideshare drivers win union rights as Waymo plan on hold",
+                body: "The Illinois General Assembly approved legislation that could soon allow Uber and Lyft drivers to collectively bargain with the companies, while lawmakers couldn't OK another bill that would have authorized autonomous vehicle pilot programs in the state.",
+                category: "regulation",
+                tags: ["Illinois","rideshare","drivers"],
+                url: "https://www.chicagotribune.com/2026/06/01/illinois-rideshare-unionization-waymo-legislation/"
+            },
+            {
+                date: "2026-06-01",
+                title: "Waymo driverless cars are the future, like it or not",
+                body: "For many of you, the driverless future can't come fast enough. For others, it feels far too soon. Here's what readers said about autonomous vehicles.",
+                category: "tech",
+                tags: ["Waymo","driverless","cars"],
+                url: "https://www.usatoday.com/story/opinion/voices/2026/06/01/waymo-future-rideshare-uber-lyft/90280956007/"
+            },
+            {
                 date: "2026-05-31",
                 title: "Waymo Suspends Freeway Service After Robotaxi Speeds Through Construction Lane With Riders Inside",
                 body: "A Waymo robotaxi carrying passengers reportedly sped through a construction zone and failed to stop immediately, prompting safety concerns",
