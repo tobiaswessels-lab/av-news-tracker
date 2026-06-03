@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-02",
+                title: "How do you teach a robotaxi London? Waymo explains",
+                body: "Alphabet-owned Waymo says everything from pub crowds to emergency services forms part of the preparation for its planned London launch",
+                category: "launch",
+                tags: ["teach","robotaxi","London"],
+                url: "https://www.cityam.com/how-do-you-teach-a-robotaxi-london-waymo-explains/"
+            },
+            {
+                date: "2026-06-02",
+                title: "Would you ride in Waymo's new Ojai robotaxi?",
+                body: "Waymo's new Ojai robotaxi features a spacious cabin with extra legroom, adaptive screens and accessibility features. Free rides launch soon in select cities.",
+                category: "partnership",
+                tags: ["Would","ride","Waymos"],
+                url: "https://www.foxnews.com/tech/would-you-ride-waymo-new-ojai-robotaxi"
+            },
+            {
                 date: "2026-06-01",
                 title: "Illinois rideshare drivers win union rights as Waymo plan on hold",
                 body: "The Illinois General Assembly approved legislation that could soon allow Uber and Lyft drivers to collectively bargain with the companies, while lawmakers couldn't OK another bill that would have authorized autonomous vehicle pilot programs in the state.",
