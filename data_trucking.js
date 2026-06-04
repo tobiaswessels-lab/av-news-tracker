@@ -336,6 +336,22 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-06-03",
+                title: "Tata Intra V40 CNG pickup launched: Gets 110-litre CNG tank!",
+                body: "News News: Tata Motors commercial vehicles today announced the launch of the new Intra V40 pickup truck. The latest addition to the company’s small commercial ve.",
+                category: "launch",
+                tags: ["Tata","Intra","pickup"],
+                url: "https://timesofindia.indiatimes.com/auto/news/tata-intra-v40-cng-pickup-launched-gets-110-litre-cng-tank/articleshow/131480488.cms"
+            },
+            {
+                date: "2026-06-03",
+                title: "Tata Intra V40 CNG pickup launched: Gets 110-litre CNG tank!",
+                body: "Cars News: Tata Motors commercial vehicles today announced the launch of the new Intra V40 pickup truck. The latest addition to the company’s small commercial ve.",
+                category: "launch",
+                tags: ["Tata","Intra","pickup"],
+                url: "https://timesofindia.indiatimes.com/auto/cars/tata-intra-v40-cng-pickup-launched-gets-110-litre-cng-tank/articleshow/131480536.cms"
+            },
+            {
                 date: "2026-05-31",
                 title: "Commercial vehicle makers strengthen non-core business to ride out 'cyclical' bumps",
                 body: "India's commercial vehicle makers are diversifying beyond truck sales to stabilize revenue. Companies like Tata Motors, Ashok Leyland, and VECV are seeing significant growth in spare parts, financing, and fleet services. This strategic shift aims to create recurring income streams, mitigating the impact of the market's cyclical nature and economic fluctuations.",
