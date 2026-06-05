@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-04",
+                title: "Waymo turns old robotaxi batteries into solar power storage systems",
+                body: "Waymo will repurpose retired robotaxi batteries for solar energy storage, helping strengthen power grids in California and Texas.",
+                category: "tech",
+                tags: ["Waymo","turns","robotaxi"],
+                url: "https://interestingengineering.com/energy/waymo-robotaxi-batteries-solar-storage"
+            },
+            {
+                date: "2026-06-04",
+                title: "Police Have Yet To Catch A Thief Who Used A Waymo To Steal Yoga Clothes",
+                body: "Believe it or not, this is not the first robotaxi-assisted theft.",
+                category: "tech",
+                tags: ["Police","Catch","Thief"],
+                url: "https://www.engadget.com/2187705/police-have-yet-to-catch-a-thief-who-used-a-waymo-to-steal-yoga-clothes/"
+            },
+            {
+                date: "2026-06-04",
+                title: "SF yoga studio break-in used Waymo; suspect not identified",
+                body: "San Francisco police probe a rare case of a burglary suspect using a Waymo robotaxi as a getaway car, but privacy limits leave the case unsolved.",
+                category: "tech",
+                tags: ["yoga","studio","breakin"],
+                url: "https://www.vcstar.com/story/news/nation/california/2026/06/04/sf-waymo-burglary-unsolved-yoga-studio-breakin/90406059007/"
+            },
+            {
                 date: "2026-06-02",
                 title: "How do you teach a robotaxi London? Waymo explains",
                 body: "Alphabet-owned Waymo says everything from pub crowds to emergency services forms part of the preparation for its planned London launch",
