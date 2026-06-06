@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-05",
+                title: "Waymo’s Old EV Batteries Will Now Help Support the Power Grid in California and Texas",
+                body: "The robotaxi company has partnered with B2U Storage Solutions to repurpose its retired batteries.",
+                category: "partnership",
+                tags: ["Waymos","Batteries","Help"],
+                url: "https://gizmodo.com/waymos-old-ev-batteries-will-now-help-support-the-power-grid-in-california-and-texas-2000767768"
+            },
+            {
+                date: "2026-06-04",
+                title: "Waymo blocks Dallas road as first responders rush to explosion",
+                body: "Newly released body camera video shows a Dallas County deputy constable forced to manually drive an empty autonomous Waymo vehicle that was blocking emergency crews following a fatal natural gas apartment explosion.",
+                category: "tech",
+                tags: ["Waymo","blocks","Dallas"],
+                url: "https://www.fox4news.com/news/waymo-blocks-dallas-first-responders-after-explosion"
+            },
+            {
                 date: "2026-06-04",
                 title: "Waymo turns old robotaxi batteries into solar power storage systems",
                 body: "Waymo will repurpose retired robotaxi batteries for solar energy storage, helping strengthen power grids in California and Texas.",
