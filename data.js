@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-06",
+                title: "How do you teach a robotaxi to drive in London? Waymo explains",
+                body: "The robotaxi giant has been testing in London since last autumn - their introduction has not been without controversy",
+                category: "tech",
+                tags: ["teach","robotaxi","drive"],
+                url: "https://www.mylondon.news/news/transport/how-you-teach-robotaxi-drive-34055017"
+            },
+            {
                 date: "2026-06-05",
                 title: "Waymo’s Old EV Batteries Will Now Help Support the Power Grid in California and Texas",
                 body: "The robotaxi company has partnered with B2U Storage Solutions to repurpose its retired batteries.",
