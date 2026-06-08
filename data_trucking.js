@@ -336,6 +336,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-06-07",
+                title: "Tata Motors CV redraws strategy to reduce dependence on truck cycle: Chandrasekaran",
+                body: "Tata Motors CV revamps strategy, focusing on software, services, and clean mobility to reduce truck cycle dependency amid global disruptions.",
+                category: "tech",
+                tags: ["Tata","Motors","redraws"],
+                url: "https://www.thehindubusinessline.com/companies/tata-motors-cv-redraws-strategy-to-reduce-dependence-on-truck-cycle-chandrasekaran/article71072841.ece"
+            },
+            {
                 date: "2026-06-03",
                 title: "Tata Intra V40 CNG pickup launched: Gets 110-litre CNG tank!",
                 body: "News News: Tata Motors commercial vehicles today announced the launch of the new Intra V40 pickup truck. The latest addition to the company’s small commercial ve.",
