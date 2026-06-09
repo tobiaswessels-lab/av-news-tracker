@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-08",
+                title: "Uber, Wayve and Waymo are headed towards a robotaxi showdown in London",
+                body: "Uber customers in the UK can now join an interest list to increase their chances of being matched with a Wayve robotaxi.",
+                category: "tech",
+                tags: ["Uber","Wayve","Waymo"],
+                url: "https://techcrunch.com/2026/06/08/uber-wayve-and-waymo-are-headed-towards-a-robotaxi-showdown-in-london/"
+            },
+            {
                 date: "2026-06-06",
                 title: "How do you teach a robotaxi to drive in London? Waymo explains",
                 body: "The robotaxi giant has been testing in London since last autumn - their introduction has not been without controversy",
