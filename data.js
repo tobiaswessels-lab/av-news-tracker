@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-09",
+                title: "A thief used a Waymo as a getaway car. Six months later, police still have no suspect",
+                body: "In January, a burglar used a Waymo robotaxi as a getaway vehicle after breaking into a Hot 8 Yoga studio in the Marina District. The theft itself...",
+                category: "tech",
+                tags: ["thief","used","Waymo"],
+                url: "https://www.techspot.com/news/112689-thief-used-waymo-getaway-car-six-months-later.html"
+            },
+            {
                 date: "2026-06-08",
                 title: "Uber, Wayve and Waymo are headed towards a robotaxi showdown in London",
                 body: "Uber customers in the UK can now join an interest list to increase their chances of being matched with a Wayve robotaxi.",

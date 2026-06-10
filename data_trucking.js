@@ -337,6 +337,14 @@ const truckingCompanies = [
         news: [
             {
                 date: "2026-06-07",
+                title: "Clean-air push puts Tata Motors’ scrappage network in the spotlight",
+                body: "Clean-air push boosts Tata Motors’ Re.Wi.Re scrappage network: 11 RVSFs across 10 states, 1.9 lakh vehicles/year capacity, as NCR truck-bus scheme expands.",
+                category: "expansion",
+                tags: ["Cleanair","push","puts"],
+                url: "https://timesofindia.indiatimes.com/city/chennai/clean-air-push-puts-tata-motors-scrappage-network-in-the-spotlight/articleshow/131573078.cms"
+            },
+            {
+                date: "2026-06-07",
                 title: "Tata Motors CV redraws strategy to reduce dependence on truck cycle: Chandrasekaran",
                 body: "Tata Motors CV revamps strategy, focusing on software, services, and clean mobility to reduce truck cycle dependency amid global disruptions.",
                 category: "tech",
