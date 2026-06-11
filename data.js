@@ -211,6 +211,14 @@ const companies = [
         news: [
             {
                 date: "2026-06-09",
+                title: "The Apple Car Is Dead, and Waymo Just Bought Its Gravesite",
+                body: "The robotaxi company paid $220 million for the former proving ground where Apple tested its now dead self-driving car project.",
+                category: "funding",
+                tags: ["Apple","Dead","Waymo"],
+                url: "https://gizmodo.com/the-apple-car-is-dead-and-waymo-just-bought-its-gravesite-2000769695"
+            },
+            {
+                date: "2026-06-09",
                 title: "A thief used a Waymo as a getaway car. Six months later, police still have no suspect",
                 body: "In January, a burglar used a Waymo robotaxi as a getaway vehicle after breaking into a Hot 8 Yoga studio in the Marina District. The theft itself...",
                 category: "tech",
