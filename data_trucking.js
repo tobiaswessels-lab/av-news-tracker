@@ -336,6 +336,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-06-10",
+                title: "Nomura sees 5% boost in truck demand from Rs 9,590 cr Delhi-NCR scrappage scheme",
+                body: "The Centre approves a Rs 9,590 crore Delhi-NCR vehicle scrappage scheme to reduce pollution, boost truck demand by up to 5%, and benefit makers like Tata Motors, Ashok Leyland, and Eicher Motors.",
+                category: "regulation",
+                tags: ["Nomura","sees","boost"],
+                url: "https://www.financialexpress.com/business/industry-nomura-sees-5-boost-in-truck-demand-from-rs-9590-cr-delhi-ncr-scrappage-scheme-4263838/"
+            },
+            {
                 date: "2026-06-07",
                 title: "Clean-air push puts Tata Motors’ scrappage network in the spotlight",
                 body: "Clean-air push boosts Tata Motors’ Re.Wi.Re scrappage network: 11 RVSFs across 10 states, 1.9 lakh vehicles/year capacity, as NCR truck-bus scheme expands.",

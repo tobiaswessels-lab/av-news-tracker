@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-11",
+                title: "Waymo launches a $29.99/month subscription for its most frequent robotaxi riders",
+                body: "Waymo Premier gives power users priority matching, free cancellations, and 10% loyalty credits. It's invite-only in SF, LA, and Phoenix to start.",
+                category: "launch",
+                tags: ["Waymo","launches","2999month"],
+                url: "https://thenextweb.com/news/waymo-premier-subscription-29-99-robotaxi"
+            },
+            {
+                date: "2026-06-11",
+                title: "Alphabet's Waymo Launches $30 Invite-Only Monthly Membership Program",
+                body: "Alphabet's robotaxi unit Waymo is launching an invite-only membership program that promises priority bookings and other perks for $30 per month, the company said Thursday.\nThe program, called...",
+                category: "launch",
+                tags: ["Alphabets","Waymo","Launches"],
+                url: "https://www.marketscreener.com/news/alphabet-s-waymo-launches-30-invite-only-monthly-membership-program-ce7f5cd8dd8dfe25"
+            },
+            {
+                date: "2026-06-11",
+                title: "Waymo Debuts $30 Invite-Only Membership With Cash Back, Faster Pickups",
+                body: "Waymo, Alphabet Inc.’s robotaxi unit, is introducing a $30 monthly membership program that promises faster pickup times and credits toward future rides, among other perks aimed at its most frequent users.",
+                category: "tech",
+                tags: ["Waymo","Debuts","InviteOnly"],
+                url: "https://www.bloomberg.com/news/articles/2026-06-11/waymo-debuts-invite-only-30-monthly-membership-with-cash-back-faster-pickups"
+            },
+            {
                 date: "2026-06-09",
                 title: "The Apple Car Is Dead, and Waymo Just Bought Its Gravesite",
                 body: "The robotaxi company paid $220 million for the former proving ground where Apple tested its now dead self-driving car project.",
