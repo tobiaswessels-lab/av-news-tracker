@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-12",
+                title: "Waymo Is Charging $29.99 A Month For Faster Robotaxi Pickups",
+                body: "Waymo introduces new subscription tier for Robotaxi service, offering quicker pickups, early access to new markets, and other perks.",
+                category: "expansion",
+                tags: ["Waymo","Charging","2999"],
+                url: "https://www.benzinga.com/markets/tech/26/06/53159659/waymo-is-charging-29-99-a-month-for-faster-robotaxi-pickups-heres-what-subscribers-get"
+            },
+            {
                 date: "2026-06-11",
                 title: "Waymo launches a $29.99/month subscription for its most frequent robotaxi riders",
                 body: "Waymo Premier gives power users priority matching, free cancellations, and 10% loyalty credits. It's invite-only in SF, LA, and Phoenix to start.",
