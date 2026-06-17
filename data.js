@@ -1088,6 +1088,14 @@ const companies = [
         color: "#FF4081",
         news: [
             {
+                date: "2026-06-09",
+                title: "Uber and Wayve open waitlist for London robotaxis",
+                body: "Uber is partnering with British autonomous driving firm Wayve, whose technology has been tested on London’s streets since 2018.",
+                category: "partnership",
+                tags: ["Uber","Wayve","open"],
+                url: "https://www.cityam.com/uber-and-wayve-open-waitlist-for-london-robotaxis/"
+            },
+            {
                 date: "2026-05-21",
                 title: "Jeep, Ram, and Dodge Vehicles Could Soon Come Equipped With Wayve’s Self-Driving Tech",
                 body: "Stellantis announced a new partnership with UK autonomous driving startup Wayve.",
