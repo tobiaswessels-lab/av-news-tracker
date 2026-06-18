@@ -209,6 +209,30 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-06-17",
+                title: "Ashland woman seriously hurt in Boone County crash",
+                body: "COLUMBIA, Mo. (KMIZ) A 38-year-old Ashland woman was seriously hurt in a crash, south of Ashland in Boone County, just after 3:30 p.m. Tuesday. According to a Missouri State Highway Patrol crash report, the crash happened on Highway 63, just north of Gilmore Lane. A 2025 Peterbilt 548, driven by a 25-year-old Columbia man, had",
+                category: "safety",
+                tags: ["Ashland","woman","seriously"],
+                url: "https://abc17news.com/news/top-stories/2026/06/17/ashland-woman-seriously-hurt-in-boone-county-crash/"
+            },
+            {
+                date: "2026-06-14",
+                title: "Mack Vs Peterbilt: What's The Difference Between These Semi-Trucks?",
+                body: "Mack trucks are primarily designed for jobs in the logging and trash collection industries, while Peterbilts are more geared towards long-haul cargo transport.",
+                category: "partnership",
+                tags: ["Mack","Peterbilt","Whats"],
+                url: "https://www.slashgear.com/2191423/mack-vs-peterbilt-semi-truck-whats-the-difference-how-they-compare/"
+            },
+            {
+                date: "2026-06-12",
+                title: "Two taken to hospital after five-vehicle pileup in Boone County",
+                body: "COLUMBIA, Mo. (KMIZ) A five-vehicle crash on Interstate 70 in Boone County caused traffic backups late Thursday. According to a Missouri State Highway Patrol crash report, the crash happened around 9:30 p.m. at the 121-mile marker in the westbound lanes. Four cars were stuck in traffic due to a lane closure when a 2026 Peterbilt",
+                category: "safety",
+                tags: ["taken","hospital","fivevehicle"],
+                url: "https://abc17news.com/news/top-stories/2026/06/12/two-taken-to-hospital-after-five-vehicle-pileup-in-boone-county/"
+            },
+            {
                 date: "2026-05-17",
                 title: "Bank of America Securities Remains a Buy on Paccar (PCAR)",
                 body: "Bank of America Securities analyst Michael Feniger maintained a Buy rating on Paccar on May 15. The company’s shares closed last Friday at $110....",

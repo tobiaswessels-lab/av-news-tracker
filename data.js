@@ -1041,6 +1041,22 @@ const companies = [
         color: "#00A1E0",
         news: [
             {
+                date: "2026-06-16",
+                title: "Mobileye Looks to Launch U.S. Robotaxi Business in U.S. Next Year",
+                body: "By Robb M. Stewart\nIntel's Mobileye autonomous driving arm aims to launch a robotaxi business in the U.S. next year.\nMobileye said Tuesday it plans to expand its activities beyond supplying...",
+                category: "launch",
+                tags: ["Mobileye","Looks","Launch"],
+                url: "https://www.marketscreener.com/news/mobileye-looks-to-launch-u-s-robotaxi-business-in-u-s-next-year-ce7f5cdfdd8df520"
+            },
+            {
+                date: "2026-06-16",
+                title: "Mobileye Plans to Set Up Vertically Integrated Robotaxi Business; Shares Up Pre-Bell",
+                body: "Mobileye Global plans full ownership of an autonomous ride-hailing business, expanding its robotaxi activities beyond supplying self-driving technology, the company said Tuesday.\nMobileye plans to...",
+                category: "expansion",
+                tags: ["Mobileye","Plans","Vertically"],
+                url: "https://www.marketscreener.com/news/mobileye-plans-to-set-up-vertically-integrated-robotaxi-business-shares-up-pre-bell-ce7f5cdfda81f22d"
+            },
+            {
                 date: "2026-02-10",
                 title: "Mahindra Selects Mobileye SuperVision for Next-Gen Models",
                 body: "Mahindra & Mahindra has selected Mobileye's SuperVision and Surround ADAS for at least six upcoming models, with production expected to begin in 2027. Both solutions will be powered by Mobileye's EyeQ6 High system-on-chip.",
