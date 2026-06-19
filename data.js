@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-18",
+                title: "Waymo Issues Another Recall, This Time Over Highway Construction Zones",
+                body: "The robotaxi company issues a recall on 3,871 vehicles that could make incorrect decisions while driving in highway construction zones.",
+                category: "safety",
+                tags: ["Waymo","Issues","Another"],
+                url: "https://www.cnet.com/roadshow/news/waymo-recall-highway-construction-zones/"
+            },
+            {
+                date: "2026-06-18",
+                title: "Waymo recalls robotaxi fleet after construction-zone freeway incidents",
+                body: "Waymo recalls nearly 4,000 robotaxis after vehicles entered closed freeway construction zones, prompting a software update and freeway-service pause.",
+                category: "safety",
+                tags: ["Waymo","recalls","robotaxi"],
+                url: "https://www.foxbusiness.com/lifestyle/waymo-recalls-nearly-4000-robotaxis-after-cars-enter-freeway-work-zones"
+            },
+            {
+                date: "2026-06-18",
+                title: "Waymo recalls nearly 4,000 robotaxis after construction zone incidents",
+                body: "Waymo, a leading robotaxi company, has recalled almost 4,000 driverless cars. This action follows incidents where vehicles entered highway construction zones. The company is developing a software fix. This is Waymo's sixth recall. The robotaxis continue to operate on other roads. Waymo plans global expansion despite these challenges.",
+                category: "safety",
+                tags: ["Waymo","recalls","nearly"],
+                url: "https://economictimes.indiatimes.com/tech/technology/waymo-recalls-nearly-4000-robotaxis-after-construction-zone-incidents/articleshow/131837001.cms"
+            },
+            {
                 date: "2026-06-12",
                 title: "Waymo Is Charging $29.99 A Month For Faster Robotaxi Pickups",
                 body: "Waymo introduces new subscription tier for Robotaxi service, offering quicker pickups, early access to new markets, and other perks.",

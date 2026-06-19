@@ -360,6 +360,30 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-06-18",
+                title: "Tata’s latest CV price hike tests industry discipline as fleet operators turn cautious",
+                body: "Tata Motors’ recent commercial vehicle price hike pressures the truck industry, prompting cautious responses from fleet operators and competitors.",
+                category: "launch",
+                tags: ["Tatas","latest","price"],
+                url: "https://www.thehindubusinessline.com/companies/tatas-latest-cv-price-hike-tests-industry-discipline-as-fleet-operators-turn-cautious/article71117727.ece"
+            },
+            {
+                date: "2026-06-18",
+                title: "Tata Motors signs MoU with government for Delhi",
+                body: "Tata Motors has signed an MoU with the Ministry of Road Transport and Highways to participate in the Government of India’s truck and bus replacement scheme for Delhi-NCR. The company will offer an 8% discount on eligible vehicles under the programme, while beneficiaries will also receive a 5% interest subvention, fuel vouchers for five years, motor vehicle tax concessions of up to 100% for 10 years, and registration fee waivers.",
+                category: "partnership",
+                tags: ["Tata","Motors","signs"],
+                url: "https://www.cnbctv18.com/market/stocks/tata-motors-share-price-signs-mou-with-government-for-delhi-ncr-truck-bus-replacement-scheme-19928203.htm"
+            },
+            {
+                date: "2026-06-18",
+                title: "Tata Motors joins Centre's ₹9,585 crore Delhi NCR fleet modernisation scheme, offers 8% discount on new CVs",
+                body: "Earlier this week, Ashok Leyland and Switch Mobility also signed agreements with the government to participate in the programme. According to the government, the three manufacturers together account for around half of India's truck and bus market.",
+                category: "partnership",
+                tags: ["Tata","Motors","joins"],
+                url: "https://www.businesstoday.in/auto/story/tata-motors-joins-centres-rs9585-crore-delhi-ncr-fleet-modernisation-scheme-offers-8-discount-on-new-cvs-537911-2026-06-18"
+            },
+            {
                 date: "2026-06-10",
                 title: "Nomura sees 5% boost in truck demand from Rs 9,590 cr Delhi-NCR scrappage scheme",
                 body: "The Centre approves a Rs 9,590 crore Delhi-NCR vehicle scrappage scheme to reduce pollution, boost truck demand by up to 5%, and benefit makers like Tata Motors, Ashok Leyland, and Eicher Motors.",
