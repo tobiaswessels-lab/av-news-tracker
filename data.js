@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-19",
+                title: "Waymo recalls nearly 4,000 robotaxis after construction zone incidents",
+                body: "Waymo, the subsidiary of Google parent Alphabet and US robotaxi leader, has recalled nearly 4,000 of its driverless cars after several incidents in which its robotaxis entered closed-off highway construction zones.",
+                category: "safety",
+                tags: ["Waymo","recalls","nearly"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/06/19/waymo-recalls-nearly-4000-robotaxis-after-construction-zone-incidents"
+            },
+            {
+                date: "2026-06-18",
+                title: "Waymo recalls nearly 4,000 robotaxis after cars enter freeway work zones",
+                body: "Waymo has paused freeway robotaxi operations and recalled nearly 4,000 vehicles after more than a dozen incidents involving autonomous cars entering closed",
+                category: "safety",
+                tags: ["Waymo","recalls","nearly"],
+                url: "https://www.newsbreak.com/fox-business-1600402/4719153776250-waymo-recalls-nearly-4-000-robotaxis-after-cars-enter-freeway-work-zones"
+            },
+            {
                 date: "2026-06-18",
                 title: "Waymo Issues Another Recall, This Time Over Highway Construction Zones",
                 body: "The robotaxi company issues a recall on 3,871 vehicles that could make incorrect decisions while driving in highway construction zones.",
