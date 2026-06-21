@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-20",
+                title: "Google's Waymo Recalls 4,000 Robotaxis After Incidents of Driving into Construction Zones at High Speeds",
+                body: "Self-driving vehicle company Waymo has issued a recall affecting 3,871 autonomous robotaxis after a software defect caused vehicles to enter active highway construction zones at high speeds.",
+                category: "safety",
+                tags: ["Googles","Waymo","Recalls"],
+                url: "https://www.breitbart.com/politics/2026/06/20/googles-waymo-recalls-4000-robotaxis-after-incidents-of-driving-into-construction-zones-at-high-speeds/"
+            },
+            {
+                date: "2026-06-20",
+                title: "Google's Waymo Recalls 4,000 Robotaxis After Incidents of Driving into Construction Zones at High Speeds",
+                body: "Self-driving vehicle company Waymo has issued a recall affecting 3,871 autonomous robotaxis after a software defect caused vehicles to enter active highway construction zones at high speeds.",
+                category: "safety",
+                tags: ["Googles","Waymo","Recalls"],
+                url: "https://www.breitbart.com/tech/2026/06/20/googles-waymo-recalls-4000-robotaxis-after-incidents-of-driving-into-construction-zones-at-high-speeds/"
+            },
+            {
                 date: "2026-06-19",
                 title: "Waymo recalls nearly 4,000 robotaxis after construction zone incidents",
                 body: "Waymo, the subsidiary of Google parent Alphabet and US robotaxi leader, has recalled nearly 4,000 of its driverless cars after several incidents in which its robotaxis entered closed-off highway construction zones.",
