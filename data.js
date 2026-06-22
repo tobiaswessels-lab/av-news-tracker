@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-21",
+                title: "Waymo recalls entire Robotaxi fleet after cars repeatedly enter active construction zones",
+                body: "Waymo has voluntarily recalled 3,871 vehicles after 13 documented incidents of driverless cars entering active freeway construction zones at speed. The recall addresses a software defect in the 5th-generation Automated Driving System that fails to recognize construction zone barriers. Incidents occurred in Phoenix, Arizona and San Francisco, California between April and May 2026. No collisions […]",
+                category: "safety",
+                tags: ["Waymo","recalls","entire"],
+                url: "https://www.naturalnews.com/2026-06-21-waymo-recalls-robotaxi-fleet-cars-enter-construction-zones.html"
+            },
+            {
                 date: "2026-06-20",
                 title: "Google's Waymo Recalls 4,000 Robotaxis After Incidents of Driving into Construction Zones at High Speeds",
                 body: "Self-driving vehicle company Waymo has issued a recall affecting 3,871 autonomous robotaxis after a software defect caused vehicles to enter active highway construction zones at high speeds.",
