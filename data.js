@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-22",
+                title: "Alphabet-Owned Waymo Crushes Tesla (TSLA) in Autonomous Car Race, Says Ross Gerber",
+                body: "Ross Gerber, co-founder, President, and CEO of Gerber Kawasaki, a wealth management firm, has strongly supported Waymo, the self-driving taxi se...",
+                category: "tech",
+                tags: ["AlphabetOwned","Waymo","Crushes"],
+                url: "https://markets.businessinsider.com/news/stocks/alphabet-owned-waymo-crushes-tesla-tsla-in-autonomous-car-race-says-ross-gerber-1036267073"
+            },
+            {
                 date: "2026-06-21",
                 title: "Waymo recalls entire Robotaxi fleet after cars repeatedly enter active construction zones",
                 body: "Waymo has voluntarily recalled 3,871 vehicles after 13 documented incidents of driverless cars entering active freeway construction zones at speed. The recall addresses a software defect in the 5th-generation Automated Driving System that fails to recognize construction zone barriers. Incidents occurred in Phoenix, Arizona and San Francisco, California between April and May 2026. No collisions […]",
