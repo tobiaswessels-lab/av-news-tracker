@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-25",
+                title: "Waymo opens it up to everyone in Nashville.",
+                body: "The Alphabet-owned company was previously only giving rides to people on its interest list. Now it will be open to anyone who downloads the Waymo app. The robotaxi operator says its also testing out rides to Nashville International Airport, and hopes to begin offering service soon. And coming later this year, Waymo will be an option in the Lyft app in Nashville.\n[Link: Now everyone can ride in Nashville | https://waymo.com/blog/shorts/nashville-june2026/ | Waymo]",
+                category: "launch",
+                tags: ["Waymo","opens","everyone"],
+                url: "https://www.theverge.com/transportation/957194/waymo-opens-it-up-to-everyone-in-nashville"
+            },
+            {
+                date: "2026-06-25",
+                title: "Watch as furious London private hire drivers told to pipe down in rowdy City Hall robotaxi meeting",
+                body: "The London Assembly's Transport Committee heard from Waymo and Wayve who talked up safety while being heckled",
+                category: "safety",
+                tags: ["Watch","furious","London"],
+                url: "https://www.mylondon.news/news/transport/london-robotaxis-private-hire-drivers-34182177"
+            },
+            {
+                date: "2026-06-25",
+                title: "US Moves to Drop Brake Pedal Rule for Driverless Vehicles, Easing Robotaxi Path",
+                body: "The US Department of Transportation is moving to scrap requirements for brake pedals in driverless vehicles, a step that could clear the way for companies including Waymo and Tesla Inc. to put more robotaxis on American roads.",
+                category: "tech",
+                tags: ["Moves","Drop","Brake"],
+                url: "https://www.bloomberg.com/news/articles/2026-06-25/us-set-to-end-brake-pedal-requirement-for-driverless-vehicles"
+            },
+            {
                 date: "2026-06-22",
                 title: "Alphabet-Owned Waymo Crushes Tesla (TSLA) in Autonomous Car Race, Says Ross Gerber",
                 body: "Ross Gerber, co-founder, President, and CEO of Gerber Kawasaki, a wealth management firm, has strongly supported Waymo, the self-driving taxi se...",
