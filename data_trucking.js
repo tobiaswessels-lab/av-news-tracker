@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-06-27",
+                title: "Jefferies Sticks to Their Hold Rating for TRATON SE (8TRA)",
+                body: "Jefferies analyst Michael Aspinall maintained a Hold rating on TRATON SE yesterday. The company’s shares closed yesterday at €31.94.TipRanks' Pr...",
+                category: "tech",
+                tags: ["Jefferies","Sticks","Their"],
+                url: "https://markets.businessinsider.com/news/stocks/jefferies-sticks-to-their-hold-rating-for-traton-se-8tra-1036280855"
+            },
+            {
                 date: "2026-05-25",
                 title: "I happily pay 40% tax in Sweden and after 7 years here’s why I don’t want to return to India",
                 body: "She moved to Sweden as a dependent spouse with no network, no Swedish language skills and no job. Seven years later, Chandrika is a Solution Architect at Scania and a mother of two raising her family in Stockholm.",

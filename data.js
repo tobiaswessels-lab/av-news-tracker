@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-28",
+                title: "Editorial: Illinois and Chicago should move fast on Waymo approval",
+                body: "Waymo wants to come to Chicago. Given how many lives these autonomous robotaxis would save, the city should smooth its way.",
+                category: "regulation",
+                tags: ["Editorial","Illinois","Chicago"],
+                url: "https://www.chicagotribune.com/2026/06/28/editorial-illinois-and-chicago-should-move-fast-on-waymo-approval/"
+            },
+            {
+                date: "2026-06-28",
+                title: "Inside the race to bring driverless taxis to Australia",
+                body: "Waymo leads the pack but Tesla is also pushing to go ‘autonomous at scale’, new documents reveal. ‘High-level’ approaches are a long way from a trial, though.",
+                category: "tech",
+                tags: ["Inside","race","bring"],
+                url: "https://www.afr.com/politics/inside-the-race-to-bring-driverless-taxis-to-australia-20260625-p609yr"
+            },
+            {
+                date: "2026-06-26",
+                title: "Fox News AI Newsletter: Waymo's robotaxi recall",
+                body: "Waymo recalls robotaxis and the United States Senate debates artificial intelligence in classrooms in this Fox News AI Newsletter roundup.",
+                category: "safety",
+                tags: ["News","Newsletter","Waymos"],
+                url: "https://www.foxnews.com/tech/ai-newsletter-waymos-robotaxi-recall"
+            },
+            {
                 date: "2026-06-25",
                 title: "Waymo opens it up to everyone in Nashville.",
                 body: "The Alphabet-owned company was previously only giving rides to people on its interest list. Now it will be open to anyone who downloads the Waymo app. The robotaxi operator says its also testing out rides to Nashville International Airport, and hopes to begin offering service soon. And coming later this year, Waymo will be an option in the Lyft app in Nashville.\n[Link: Now everyone can ride in Nashville | https://waymo.com/blog/shorts/nashville-june2026/ | Waymo]",
