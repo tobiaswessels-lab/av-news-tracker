@@ -1390,6 +1390,14 @@ const companies = [
         color: "#00C853",
         news: [
             {
+                date: "2026-06-17",
+                title: "Lucid Eyes Robotaxi Growth With Uber-Nuro Partnership",
+                body: "Lucid shares announced a 2027 Houston robotaxi launch with Uber and Nuro, using Gravity SUVs and Level 4 autonomous technology for scalable mobility services.",
+                category: "partnership",
+                tags: ["Lucid","Eyes","Robotaxi"],
+                url: "https://www.benzinga.com/markets/mid-cap/26/06/53256633/lucid-eyes-robotaxi-growth-with-uber-nuro-partnership"
+            },
+            {
                 date: "2026-05-16",
                 title: "Lucid's Robotaxi Ambitions Advance As Executive Takes First Ride In Uber-Nuro Partnership Vehicle",
                 body: "Lucid's robotaxi partnership with Uber and Nuro moved closer to launch after executive Nick Twork shared his first autonomous ride experience.",
