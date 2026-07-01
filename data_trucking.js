@@ -217,6 +217,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-06-29",
+                title: "Bernstein Sticks to Its Buy Rating for Paccar (PCAR)",
+                body: "In a report released today, Chad Dillard from Bernstein maintained a Buy rating on Paccar, with a price target of $138.00.End of Quarter Sale - ...",
+                category: "tech",
+                tags: ["Bernstein","Sticks","Rating"],
+                url: "https://markets.businessinsider.com/news/stocks/bernstein-sticks-to-its-buy-rating-for-paccar-pcar-1036281627"
+            },
+            {
                 date: "2026-06-17",
                 title: "Ashland woman seriously hurt in Boone County crash",
                 body: "COLUMBIA, Mo. (KMIZ) A 38-year-old Ashland woman was seriously hurt in a crash, south of Ashland in Boone County, just after 3:30 p.m. Tuesday. According to a Missouri State Highway Patrol crash report, the crash happened on Highway 63, just north of Gilmore Lane. A 2025 Peterbilt 548, driven by a 25-year-old Columbia man, had",
