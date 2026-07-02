@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-06-30",
+                title: "Uber, Waymo end robotaxi partnership in Phoenix",
+                body: "Under ‌the ⁠partnership struck ⁠in 2023, Uber had integrated Waymo's autonomous ​vehicles into its ride-hailing and food delivery platforms.",
+                category: "partnership",
+                tags: ["Uber","Waymo","robotaxi"],
+                url: "https://economictimes.indiatimes.com/tech/technology/uber-waymo-end-robotaxi-partnership-in-phoenix/articleshow/132091438.cms"
+            },
+            {
+                date: "2026-06-30",
+                title: "Tesla's Robotaxi Math Doesn't Work With Human Safety Drivers, Gary Black Says",
+                body: "Gary Black says Tesla Robotaxis with human safety drivers cost more than rivals Alphabet-backed Waymo, Baidu's Apollo Go, and Amazon's Zoox.",
+                category: "safety",
+                tags: ["Teslas","Robotaxi","Math"],
+                url: "https://www.benzinga.com/markets/tech/26/06/60178839/teslas-robotaxi-math-doesnt-work-with-human-safety-drivers-gary-black-says"
+            },
+            {
+                date: "2026-06-30",
+                title: "Uber, Waymo end robotaxi partnership in Phoenix",
+                body: "June ⁠29 (Reuters) - Uber and Alphabet's Waymo have ⁠ended their self-driving partnership in Phoenix, Arizona, ‌as the ride-hailing giant prepares to launch a new autonomous vehicle collaboration in the city.",
+                category: "partnership",
+                tags: ["Uber","Waymo","robotaxi"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/06/30/uber-waymo-end-robotaxi-partnership-in-phoenix-"
+            },
+            {
                 date: "2026-06-28",
                 title: "Editorial: Illinois and Chicago should move fast on Waymo approval",
                 body: "Waymo wants to come to Chicago. Given how many lives these autonomous robotaxis would save, the city should smooth its way.",
