@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-03",
+                title: "Tesla (TSLA) Launches Robotaxi Battle with Google’s Waymo in Florida",
+                body: "Electric vehicle giant Tesla (TSLA) has finally expanded its robotaxi service beyond Texas and California. On Friday, the company announced that...",
+                category: "launch",
+                tags: ["Tesla","TSLA","Launches"],
+                url: "https://markets.businessinsider.com/news/stocks/tesla-tsla-launches-robotaxi-battle-with-google-s-waymo-in-florida-1036297712"
+            },
+            {
                 date: "2026-06-30",
                 title: "Uber, Waymo end robotaxi partnership in Phoenix",
                 body: "Under ‌the ⁠partnership struck ⁠in 2023, Uber had integrated Waymo's autonomous ​vehicles into its ride-hailing and food delivery platforms.",
