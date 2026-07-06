@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-05",
+                title: "Waymo drives through exploding fireworks in San Francisco",
+                body: "A Fourth of July robotaxi ride in San Francisco turned terrifying after a Waymo vehicle appeared to drive directly through an exploding firework while its passengers watched in horror.",
+                category: "tech",
+                tags: ["Waymo","drives","through"],
+                url: "https://nypost.com/2026/07/05/us-news/waymo-drives-through-exploding-fireworks-in-san-francisco/"
+            },
+            {
+                date: "2026-07-05",
+                title: "'I'm one of the first to use a space",
+                body: "EXCLUSIVE: Alex Mitchell says his experience in the controversial Waymo robotaxi surprised him - but is the UK ready for the autonomous cars ahead of a rumoured September arrival?",
+                category: "tech",
+                tags: ["first","space"],
+                url: "https://www.mirror.co.uk/news/uk-news/waymo-london-taxi-uber-travel-37378184"
+            },
+            {
                 date: "2026-07-03",
                 title: "Tesla (TSLA) Launches Robotaxi Battle with Google’s Waymo in Florida",
                 body: "Electric vehicle giant Tesla (TSLA) has finally expanded its robotaxi service beyond Texas and California. On Friday, the company announced that...",
