@@ -1272,6 +1272,30 @@ const companies = [
         color: "#FF4081",
         news: [
             {
+                date: "2026-07-01",
+                title: "Wayve courts automakers with AI driving system that learns like humans",
+                body: "July 1 (Reuters) - Autonomous-driving startup Wayve is riding a tide of ⁠investor interest.",
+                category: "funding",
+                tags: ["Wayve","courts","automakers"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/07/01/wayve-courts-automakers-with-ai-driving-system-that-learns-like-humans"
+            },
+            {
+                date: "2026-07-01",
+                title: "Wayve courts automakers with AI driving system that learns like humans",
+                body: "Wayve, a London-based innovator, is transforming the landscape of autonomous driving with its cutting-edge AI-driven machine learning framework that garners impressive investment interest. Unlike conventional strategies, Wayve's model emulates human judgment, converting sensor inputs into real-time driving choices. This forward-thinking technology, also embraced by Tesla, aspires for seamless integration across various vehicle types and urban settings, ensuring quick adaptability even in intrica",
+                category: "funding",
+                tags: ["Wayve","courts","automakers"],
+                url: "https://economictimes.indiatimes.com/tech/artificial-intelligence/wayve-courts-automakers-with-ai-driving-system-that-learns-like-humans/articleshow/132112344.cms"
+            },
+            {
+                date: "2026-07-01",
+                title: "Wayve courts automakers with AI driving system that learns like humans",
+                body: "Autonomous-driving startup Wayve is riding a tide of investor interest. \nThe London-based company has pulled in $2.8 billion from a roster of investors and strategic partners that...",
+                category: "funding",
+                tags: ["Wayve","courts","automakers"],
+                url: "https://www.marketscreener.com/news/wayve-courts-automakers-with-ai-driving-system-that-learns-like-humans-ce7f5fddd18ff124"
+            },
+            {
                 date: "2026-06-09",
                 title: "Uber and Wayve open waitlist for London robotaxis",
                 body: "Uber is partnering with British autonomous driving firm Wayve, whose technology has been tested on London’s streets since 2018.",

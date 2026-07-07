@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-07-06",
+                title: "TRATON SE (8TRA) Receives a Hold from J.P. Morgan",
+                body: "J.P. Morgan analyst Jose Asumendi maintained a Hold rating on TRATON SE today and set a price target of €30.00.4th of July Sale - 70% Off Unlock...",
+                category: "tech",
+                tags: ["TRATON","8TRA","Receives"],
+                url: "https://markets.businessinsider.com/news/stocks/traton-se-8tra-receives-a-hold-from-j-p-morgan-1036301467"
+            },
+            {
                 date: "2026-06-27",
                 title: "Jefferies Sticks to Their Hold Rating for TRATON SE (8TRA)",
                 body: "Jefferies analyst Michael Aspinall maintained a Hold rating on TRATON SE yesterday. The company’s shares closed yesterday at €31.94.TipRanks' Pr...",
@@ -216,6 +224,14 @@ const truckingCompanies = [
         name: "PACCAR",
         color: "#C8102E",
         news: [
+            {
+                date: "2026-07-03",
+                title: "What to Expect From PACCAR’s Q2 2026 Earnings Report",
+                body: "PACCAR is scheduled to report its second-quarter results later this month, with analysts expecting a modest single-digit decline in earnings.",
+                category: "funding",
+                tags: ["What","Expect","PACCARs"],
+                url: "https://www.barchart.com/story/news/3113950/what-to-expect-from-paccars-q2-2026-earnings-report"
+            },
             {
                 date: "2026-06-29",
                 title: "Bernstein Sticks to Its Buy Rating for Paccar (PCAR)",
