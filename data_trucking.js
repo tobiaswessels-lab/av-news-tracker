@@ -392,6 +392,22 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-07-07",
+                title: "E-bus efficiency drops by nearly 40% within 3 years",
+                body: "as city continues its ambitious transition toward sustainable green urban mobility, the performance lifecycle of early-generation electric buses has come under close technical scrutiny. a section of the city’s eco-friendly fleet delivered by tata motors limited, consisting of 40 smart electric buses during the 2022-23 fiscal period, is currently experiencing nearly 40 per cent efficiency drop with in just three years of its operation, prompting calls for comprehensive engineering reviews. tata m",
+                category: "tech",
+                tags: ["Ebus","efficiency","drops"],
+                url: "https://www.thehitavada.com/Encyc/2026/7/7/e-bus-efficiency-drops-by-nearly-40-within-3-years.html"
+            },
+            {
+                date: "2026-07-07",
+                title: "E-bus efficiency drops by nearly 40% within 3 years",
+                body: "as city continues its ambitious transition toward sustainable green urban mobility, the performance lifecycle of early-generation electric buses has come under close technical scrutiny. a section of the city’s eco-friendly fleet delivered by tata motors limited, consisting of 40 smart electric buses during the 2022-23 fiscal period, is currently experiencing nearly 40 per cent efficiency drop with in just three years of its operation, prompting calls for comprehensive engineering reviews. tata m",
+                category: "tech",
+                tags: ["Ebus","efficiency","drops"],
+                url: "https://www.thehitavada.com//Encyc/2026/7/7/e-bus-efficiency-drops-by-nearly-40-within-3-years.html"
+            },
+            {
                 date: "2026-06-18",
                 title: "Tata’s latest CV price hike tests industry discipline as fleet operators turn cautious",
                 body: "Tata Motors’ recent commercial vehicle price hike pressures the truck industry, prompting cautious responses from fleet operators and competitors.",
