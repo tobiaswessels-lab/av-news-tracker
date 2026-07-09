@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-08",
+                title: "Waymo Will Soon Go Fully Autonomous In Four More Cities",
+                body: "Waymo will ditch human supervisors in San Diego, Las Vegas, Tampa and Denver.",
+                category: "tech",
+                tags: ["Waymo","Soon","Fully"],
+                url: "https://www.engadget.com/2210677/waymo-will-soon-go-fully-autonomous-in-four-more-cities/"
+            },
+            {
+                date: "2026-07-08",
+                title: "Waymo to roll out driverless vehicles in 4 new US cities ahead of public launch; key details here",
+                body: "Waymo driverless vehicles are expanding to Denver, Las Vegas, San Diego and Tampa as the robotaxi company prepares for a wider public rollout later this year.",
+                category: "launch",
+                tags: ["Waymo","roll","driverless"],
+                url: "https://www.hindustantimes.com/world-news/us-news/waymo-to-roll-out-driverless-vehicles-in-4-new-us-cities-ahead-of-public-launch-101783522848883.html"
+            },
+            {
+                date: "2026-07-08",
+                title: "Two teens learn the hard way not to do toy gun drivebys from a Waymo",
+                body: "The robotaxi stopped, called 911, and waited for the San Mateo Police to show up.",
+                category: "tech",
+                tags: ["teens","learn","hard"],
+                url: "https://arstechnica.com/cars/2026/07/two-teens-learn-the-hard-way-not-to-do-toy-gun-drivebys-from-a-waymo/"
+            },
+            {
                 date: "2026-07-05",
                 title: "Waymo drives through exploding fireworks in San Francisco",
                 body: "A Fourth of July robotaxi ride in San Francisco turned terrifying after a Waymo vehicle appeared to drive directly through an exploding firework while its passengers watched in horror.",

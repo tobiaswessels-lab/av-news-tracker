@@ -225,6 +225,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-07-07",
+                title: "Truist Financial Reaffirms Their Hold Rating on Paccar (PCAR)",
+                body: "Truist Financial analyst Jamie Cook maintained a Hold rating on Paccar yesterday and set a price target of $131.00.4th of July Sale - 70% Off Un...",
+                category: "tech",
+                tags: ["Truist","Financial","Reaffirms"],
+                url: "https://markets.businessinsider.com/news/stocks/truist-financial-reaffirms-their-hold-rating-on-paccar-pcar-1036302493"
+            },
+            {
                 date: "2026-07-03",
                 title: "What to Expect From PACCAR’s Q2 2026 Earnings Report",
                 body: "PACCAR is scheduled to report its second-quarter results later this month, with analysts expecting a modest single-digit decline in earnings.",
