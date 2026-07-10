@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-09",
+                title: "Waymo is starting robotaxi service in San Diego",
+                body: "The autonomous ride hailing company Waymo is expanding its services to four new cities including San Diego.",
+                category: "launch",
+                tags: ["Waymo","starting","robotaxi"],
+                url: "https://www.latimes.com/business/story/2026-07-09/waymo-is-expanding-robotaxi-service-to-san-diego"
+            },
+            {
+                date: "2026-07-09",
+                title: "A Waymo called the cops on two joyriding teens",
+                body: "A Waymo robotaxi called police on two teens drinking and shooting toy guns, as the company fights a California holdup over who can ride its cars.",
+                category: "tech",
+                tags: ["Waymo","called","cops"],
+                url: "https://thenextweb.com/news/waymo-calls-police-teens-drinking-orbeez-san-mateo"
+            },
+            {
+                date: "2026-07-09",
+                title: "Two teenagers used a Waymo robotaxi for a prank in California, then the self-driving car pulled over and waited for police",
+                body: "Tech News News: A Waymo robotaxi in California became part of a police response after two teenagers allegedly used the self-driving vehicle while drinking alcohol and.",
+                category: "tech",
+                tags: ["teenagers","used","Waymo"],
+                url: "https://timesofindia.indiatimes.com/technology/tech-news/two-teenagers-used-a-waymo-robotaxi-for-a-prank-in-california-then-the-self-driving-car-pulled-over-and-waited-for-police/articleshow/132290370.cms"
+            },
+            {
                 date: "2026-07-08",
                 title: "Waymo Will Soon Go Fully Autonomous In Four More Cities",
                 body: "Waymo will ditch human supervisors in San Diego, Las Vegas, Tampa and Denver.",
