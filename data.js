@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-12",
+                title: "Denver commuters remain split on Waymo",
+                body: "The autonomous, AI-powered vehicle service announced on July 8 that driverless rides will begin “in a matter of weeks\" on a limited scale.",
+                category: "launch",
+                tags: ["Denver","commuters","remain"],
+                url: "https://www.westword.com/opinion/denver-commuters-split-waymo-cars-debut-40909390/"
+            },
+            {
                 date: "2026-07-09",
                 title: "Waymo is starting robotaxi service in San Diego",
                 body: "The autonomous ride hailing company Waymo is expanding its services to four new cities including San Diego.",
