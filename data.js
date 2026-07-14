@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-13",
+                title: "Waymo runs into an obstacle in DC: Uber.",
+                body: "Waymo is lobbying for a bill that would legalize robotaxis in the District of Columbia. Uber opposes the bill, arguing it would displace human drivers. The bill was up for debate during a marathon hearing today (I just checked; it’s still going), but don’t expect a vote any time soon. As TechCrunch notes, the bill is exposing fractures in the Waymo-Uber relationship that could deepen as more big cities confront similar debates.\n[Link: Uber’s robotaxi lobbying effort puts it on a collision course",
+                category: "tech",
+                tags: ["Waymo","runs","obstacle"],
+                url: "https://www.theverge.com/transportation/964934/waymo-runs-into-an-obstacle-in-dc-uber"
+            },
+            {
+                date: "2026-07-13",
+                title: "Tesla Robotaxi Miami launch comes with limits",
+                body: "Tesla robotaxi service launches in Miami with a limited service area covering parts of West Miami, Doral and Sweetwater, competing with Waymo and Zoox.",
+                category: "launch",
+                tags: ["Tesla","Robotaxi","Miami"],
+                url: "https://www.foxnews.com/tech/tesla-robotaxi-miami-launch-comes-limits"
+            },
+            {
+                date: "2026-07-13",
+                title: "Waymo will fake mechanical problems if they catch you doing dumb stuff.",
+                body: "Two teenagers who were drinking alcohol and shooting a toy gun out the window of their Waymo were arrested last week after being tricked by a remote operator into thinking the vehicle had mechanical problems. Until recently, the debate around Waymo’s remote operators has mostly centered on where they are located, here in the US or overseas? Now we also have to contend with duplicitous remote operators snitching you out to the cops. (But really, don’t shoot water pellets out of your robotaxi. Tha",
+                category: "tech",
+                tags: ["Waymo","fake","mechanical"],
+                url: "https://www.theverge.com/transportation/964647/waymo-will-fake-mechanical-problems-if-they-catch-you-doing-dumb-stuff"
+            },
+            {
                 date: "2026-07-12",
                 title: "Denver commuters remain split on Waymo",
                 body: "The autonomous, AI-powered vehicle service announced on July 8 that driverless rides will begin “in a matter of weeks\" on a limited scale.",
