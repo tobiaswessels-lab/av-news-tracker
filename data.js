@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-15",
+                title: "Robotaxi passengers are falling asleep, spilling food, and even giving birth during their rides.",
+                body: "Bloomberg has the details on some of the gnarlier aspects of a driverless car service, including finding blood, puke, and fecal matter in the vehicles. Emergency responders have received almost 100 calls about passengers falling asleep in their Waymos, and then failing to wake up at their destination. This story reminds me of one I helped report nearly six years ago about Waymo contractors discovering hypodermic needles in the cars. The more things change…\n[Link: Robotaxi Riders Are Falling Asle",
+                category: "tech",
+                tags: ["Robotaxi","passengers","falling"],
+                url: "https://www.theverge.com/transportation/966108/robotaxi-passengers-are-falling-asleep-spilling-food-and-even-giving-birth-during-their-rides"
+            },
+            {
                 date: "2026-07-13",
                 title: "Waymo runs into an obstacle in DC: Uber.",
                 body: "Waymo is lobbying for a bill that would legalize robotaxis in the District of Columbia. Uber opposes the bill, arguing it would displace human drivers. The bill was up for debate during a marathon hearing today (I just checked; it’s still going), but don’t expect a vote any time soon. As TechCrunch notes, the bill is exposing fractures in the Waymo-Uber relationship that could deepen as more big cities confront similar debates.\n[Link: Uber’s robotaxi lobbying effort puts it on a collision course",
