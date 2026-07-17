@@ -225,6 +225,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-07-09",
+                title: "PACCAR Is Raising the DEF Limp-Mode Speed From 5 MPH to 25 MPH. It Is Part of the Biggest Rollback of Diesel Emissions Enforcement in Years.",
+                body: "For any owner-operator who has ever been stranded on the shoulder of an interstate at 5 miles per hour because a sensor decided the diesel exhaust fluid",
+                category: "tech",
+                tags: ["PACCAR","Raising","LimpMode"],
+                url: "https://www.freightwaves.com/news/paccar-is-raising-the-def-limp-mode-speed-from-5-mph-to-25-mph-it-is-part-of-the-biggest-rollback-of-diesel-emissions-enforcement-in-years"
+            },
+            {
                 date: "2026-07-07",
                 title: "Truist Financial Reaffirms Their Hold Rating on Paccar (PCAR)",
                 body: "Truist Financial analyst Jamie Cook maintained a Hold rating on Paccar yesterday and set a price target of $131.00.4th of July Sale - 70% Off Un...",

@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-14",
+                title: "Waymo's July 4 chaos in San Francisco raises new questions about how robotaxis can work at scale",
+                body: "After its vehicles stalled and worsened gridlock near the fireworks celebration, city officials say they still lack the tools and data needed to manage autonomous fleets during major events.",
+                category: "funding",
+                tags: ["Waymos","July","chaos"],
+                url: "https://www.fastcompany.com/91572671/waymo-july-4-chaos-san-francisco"
+            },
+            {
                 date: "2026-07-15",
                 title: "Robotaxi passengers are falling asleep, spilling food, and even giving birth during their rides.",
                 body: "Bloomberg has the details on some of the gnarlier aspects of a driverless car service, including finding blood, puke, and fecal matter in the vehicles. Emergency responders have received almost 100 calls about passengers falling asleep in their Waymos, and then failing to wake up at their destination. This story reminds me of one I helped report nearly six years ago about Waymo contractors discovering hypodermic needles in the cars. The more things change…\n[Link: Robotaxi Riders Are Falling Asle",
