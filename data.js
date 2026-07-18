@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-17",
+                title: "San Francisco Mayor Calls for Stricter Robotaxi Rules After Waymo Traffic Chaos: Report",
+                body: "SF Mayor demands stricter framework for AVs following incidents and disruptions caused by Waymo robotaxis on Fourth of July.",
+                category: "safety",
+                tags: ["Francisco","Mayor","Calls"],
+                url: "https://www.benzinga.com/markets/tech/26/07/60517671/san-francisco-mayor-calls-for-stricter-robotaxi-rules-after-waymo-traffic-chaos-report"
+            },
+            {
+                date: "2026-07-16",
+                title: "San Francisco mayor pushes for tougher rules after the Waymo traffic fiasco",
+                body: "In the wake of a massive hours-long gridlock event, San Francisco mayor Daniel Lurie has told state regulators it's time to put more requirements on robotaxi operators like Waymo.",
+                category: "regulation",
+                tags: ["Francisco","mayor","pushes"],
+                url: "https://techcrunch.com/2026/07/16/san-francisco-mayor-pushes-for-tougher-rules-after-the-waymo-traffic-fiasco/"
+            },
+            {
                 date: "2026-07-14",
                 title: "Waymo's July 4 chaos in San Francisco raises new questions about how robotaxis can work at scale",
                 body: "After its vehicles stalled and worsened gridlock near the fireworks celebration, city officials say they still lack the tools and data needed to manage autonomous fleets during major events.",
