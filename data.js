@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-18",
+                title: "San Francisco Power Outage Sparks Confusion After System Wrongly Warns of Mass Blackout",
+                body: "A power outage hit about 9,400 PG&E customers in San Francisco Saturday morning, but a system glitch mistakenly alerted roughly 120,000 customers that they had lost power. The outage also forced Waymo to pause its robotaxi service after traffic signals went dark. , US Buzz, Times Now",
+                category: "partnership",
+                tags: ["Francisco","Power","Outage"],
+                url: "https://www.timesnownews.com/world/us/us-buzz/san-francisco-power-outage-sparks-confusion-after-system-wrongly-warns-of-mass-blackout-article-155131252"
+            },
+            {
                 date: "2026-07-17",
                 title: "San Francisco Mayor Calls for Stricter Robotaxi Rules After Waymo Traffic Chaos: Report",
                 body: "SF Mayor demands stricter framework for AVs following incidents and disruptions caused by Waymo robotaxis on Fourth of July.",
