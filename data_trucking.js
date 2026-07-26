@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-07-25",
+                title: "Man, 21, dies after horror crash between car and lorry in Moray as police launch probe",
+                body: "The driver of a Renault Clio was killed in the collision with a Scania lorry in Aberlour.",
+                category: "launch",
+                tags: ["dies","horror","crash"],
+                url: "https://www.dailyrecord.co.uk/news/scottish-news/man-21-dies-after-horror-37476240"
+            },
+            {
                 date: "2026-07-06",
                 title: "TRATON SE (8TRA) Receives a Hold from J.P. Morgan",
                 body: "J.P. Morgan analyst Jose Asumendi maintained a Hold rating on TRATON SE today and set a price target of €30.00.4th of July Sale - 70% Off Unlock...",

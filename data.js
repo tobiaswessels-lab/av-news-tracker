@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-25",
+                title: "Waymo to end Uber exclusivity in Austin and Atlanta, launching its own app in January 2028",
+                body: "Waymo will launch its own app in Austin and Atlanta in January 2028, ending exclusivity with Uber and freeing both to pursue competing robotaxi strategies",
+                category: "launch",
+                tags: ["Waymo","Uber","exclusivity"],
+                url: "https://thenextweb.com/news/waymo-uber-exclusivity-ends-austin-atlanta-robotaxi"
+            },
+            {
+                date: "2026-07-25",
+                title: "Waymo, Uber partnership on the rocks amid operational clashes",
+                body: "Waymo is reportedly seeking to exit its collaboration with Uber, planning to launch its own robotaxi service in Austin and Atlanta by January 2028.",
+                category: "partnership",
+                tags: ["Waymo","Uber","partnership"],
+                url: "https://www.newsbytesapp.com/news/auto/waymo-considers-ending-uber-partnership/story"
+            },
+            {
+                date: "2026-07-24",
+                title: "Waymo explores ending Uber partnership, Financial Times reports",
+                body: "Alphabet's robotaxi firm Waymo is considering ending its partnership with Uber due to a ​souring relationship between the companies, the Financial ‌Times reported on Friday, citing people familiar with the matter.",
+                category: "partnership",
+                tags: ["Waymo","explores","ending"],
+                url: "https://www.reuters.com/business/waymo-explores-ending-uber-partnership-financial-times-reports-2026-07-24/"
+            },
+            {
                 date: "2026-07-18",
                 title: "San Francisco Power Outage Sparks Confusion After System Wrongly Warns of Mass Blackout",
                 body: "A power outage hit about 9,400 PG&E customers in San Francisco Saturday morning, but a system glitch mistakenly alerted roughly 120,000 customers that they had lost power. The outage also forced Waymo to pause its robotaxi service after traffic signals went dark. , US Buzz, Times Now",
