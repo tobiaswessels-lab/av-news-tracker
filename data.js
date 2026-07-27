@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-26",
+                title: "Google’s Waymo signals end to Uber deal as companies clash over safety, dirty cars",
+                body: "Tech News News: Google's sister company and autonomous vehicle unit, Waymo, is reportedly exploring options to exit its partnership with Uber, signaling a deepening r.",
+                category: "partnership",
+                tags: ["Googles","Waymo","signals"],
+                url: "https://timesofindia.indiatimes.com/technology/tech-news/googles-waymo-signals-end-to-uber-deal-as-companies-clash-over-safety-dirty-cars/articleshow/132639448.cms"
+            },
+            {
                 date: "2026-07-25",
                 title: "Waymo to end Uber exclusivity in Austin and Atlanta, launching its own app in January 2028",
                 body: "Waymo will launch its own app in Austin and Atlanta in January 2028, ending exclusivity with Uber and freeing both to pursue competing robotaxi strategies",
