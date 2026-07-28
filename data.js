@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-27",
+                title: "Waymo’s driverless cars keep getting parking tickets in Austin, and humans aren’t the only ones complaining",
+                body: "Waymo’s Austin robotaxis have received 83 parking citations worth $9,325, exposing how repeated curbside mistakes can become a larger operational problem when they spread across an autonomous fleet.",
+                category: "tech",
+                tags: ["Waymos","driverless","cars"],
+                url: "https://www.digitaltrends.com/cars/waymos-driverless-cars-keep-getting-parking-tickets-in-austin-and-humans-arent-the-only-ones-complaining/"
+            },
+            {
                 date: "2026-07-26",
                 title: "Google’s Waymo signals end to Uber deal as companies clash over safety, dirty cars",
                 body: "Tech News News: Google's sister company and autonomous vehicle unit, Waymo, is reportedly exploring options to exit its partnership with Uber, signaling a deepening r.",

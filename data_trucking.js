@@ -233,6 +233,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-07-27",
+                title: "Harrisburg student’s mother files wrongful death lawsuit against father's employer",
+                body: "COLUMBIA, Mo. (KMIZ) The mother of a Harrisburg student who was killed in a crash last month in Iowa has filed a lawsuit against the youth’s father’s employer. Robert Orton, 14, was killed on June 3 when a 2015 Kenworth truck driven by Michael Orton, 38, of Palmyra, Missouri, crossed tracks in front of a",
+                category: "safety",
+                tags: ["Harrisburg","students","mother"],
+                url: "https://abc17news.com/news/boone/2026/07/27/harrisburg-students-mother-files-wrongful-death-lawsuit-against-fathers-employer/"
+            },
+            {
                 date: "2026-07-09",
                 title: "PACCAR Is Raising the DEF Limp-Mode Speed From 5 MPH to 25 MPH. It Is Part of the Biggest Rollback of Diesel Emissions Enforcement in Years.",
                 body: "For any owner-operator who has ever been stranded on the shoulder of an interstate at 5 miles per hour because a sensor decided the diesel exhaust fluid",
