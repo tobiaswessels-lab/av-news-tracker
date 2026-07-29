@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-28",
+                title: "Waymo, robotaxi operators face fresh scrutiny over emergency response failures",
+                body: "Rep. Kevin Mullin (D-California ) has proposed bill would direct federal regulators to establish minimum national safety standards for autonomous vehicle operators — action that follows a series of incidents in which robotaxis blocked fire trucks and impeded emergency responders.",
+                category: "safety",
+                tags: ["Waymo","robotaxi","operators"],
+                url: "https://techcrunch.com/2026/07/28/waymo-robotaxi-operators-face-fresh-scrutiny-over-emergency-response-failures/"
+            },
+            {
+                date: "2026-07-28",
+                title: "Waymo robotaxis crashed 68% less often than human drivers in independent safety study",
+                body: "Over roughly 50 million autonomous miles, Waymo recorded 1.28 crashes per million miles traveled, compared with 4.06 for human drivers. That works out to a 68% lower...",
+                category: "safety",
+                tags: ["Waymo","robotaxis","crashed"],
+                url: "https://www.techspot.com/news/113263-waymo-robotaxis-crashed-68-less-often-than-human.html"
+            },
+            {
+                date: "2026-07-28",
+                title: "Lyft and Baidu’s robotaxis hit the streets of London.",
+                body: "The vehicles will operate with safety drivers, but are built for fully driverless operations, the companies say. After the UK opened the door for autonomous ridehail vehicles, several companies have indicated they intend to launch in London, including Uber, Wayve, and Waymo. Lyft and Baidu’s vehicles will stick to the neighborhood of Brent for their initial testing.\n[Image: https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/Freenow-by-Lyft-x-Baidu-Apollo-Go.jpg?quality=90&strip=all",
+                category: "launch",
+                tags: ["Lyft","Baidus","robotaxis"],
+                url: "https://www.theverge.com/transportation/970727/lyft-and-baidus-robotaxis-hit-the-streets-of-london"
+            },
+            {
                 date: "2026-07-27",
                 title: "Waymo’s driverless cars keep getting parking tickets in Austin, and humans aren’t the only ones complaining",
                 body: "Waymo’s Austin robotaxis have received 83 parking citations worth $9,325, exposing how repeated curbside mistakes can become a larger operational problem when they spread across an autonomous fleet.",
