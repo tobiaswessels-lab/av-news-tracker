@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-29",
+                title: "Sacramento Waymo rollout expected next month as city prepares for driverless vehicles",
+                body: "The expected rollout comes amid new attention on federal oversight of autonomous vehicles and how first responders navigate around them during emergencies.",
+                category: "tech",
+                tags: ["Sacramento","Waymo","rollout"],
+                url: "https://www.cbsnews.com/sacramento/news/when-will-waymo-start-in-sacramento/"
+            },
+            {
+                date: "2026-07-29",
+                title: "Yet another Robotaxi test is underway in London",
+                body: "Several firms, including Uber using Wayve robotaxis and separately Waymo, want to carry passengers from as soon as this year",
+                category: "tech",
+                tags: ["another","Robotaxi","test"],
+                url: "https://www.mylondon.news/news/transport/yet-another-robotaxi-test-underway-34369429"
+            },
+            {
+                date: "2026-07-29",
+                title: "Waymo faces fresh scrutiny for blocking emergency responders",
+                body: "Waymo and other robotaxi operators face growing regulatory pressure over failures in autonomous vehicle interactions with emergency responders.",
+                category: "regulation",
+                tags: ["Waymo","faces","fresh"],
+                url: "https://www.newsbytesapp.com/news/auto/waymo-other-robotaxi-firms-face-scrutiny-over-emergency-responder-interactions/story"
+            },
+            {
                 date: "2026-07-28",
                 title: "Waymo, robotaxi operators face fresh scrutiny over emergency response failures",
                 body: "Rep. Kevin Mullin (D-California ) has proposed bill would direct federal regulators to establish minimum national safety standards for autonomous vehicle operators — action that follows a series of incidents in which robotaxis blocked fire trucks and impeded emergency responders.",
