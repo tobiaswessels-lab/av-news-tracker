@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-30",
+                title: "Some robotaxis approved to operate without steering wheels and losing the brake pedal could be next",
+                body: "Federal regulators are clearing the way for robotaxis to operate without steering wheels or eventually even brake pedals. Amazon's fully autonomous Zoox vehicles got approval Thursday to begin charging customers for rides in the specially designed cars that feature four inward-facing seats once they secure state and local approval. Zoox has already been offering free rides in Las Vegas and San Francisco since last fall. The National Highway Traffic Safety Administration proposed a rule last mont",
+                category: "partnership",
+                tags: ["Some","robotaxis","approved"],
+                url: "https://www.ajc.com/news/2026/07/some-robotaxis-approved-to-operate-without-steering-wheels-and-losing-the-brake-pedal-could-be-next/"
+            },
+            {
+                date: "2026-07-29",
+                title: "Waymo wants your next robotaxi ride to feel less like a taxi and more like your living room",
+                body: "Waymo has unveiled its Ojai in-car experience, adding Google Gemini, adaptive multi-screen controls and a redesigned interface to make future robotaxi rides more personal.",
+                category: "partnership",
+                tags: ["Waymo","wants","your"],
+                url: "https://www.digitaltrends.com/cars/waymo-wants-your-next-robotaxi-ride-to-feel-less-like-a-taxi-and-more-like-your-living-room/"
+            },
+            {
+                date: "2026-07-29",
+                title: "Waymo Santa Monica charging stations ordered closed overnight",
+                body: "A judge ordered Waymo to stop overnight use of Santa Monica charging stations following complaints that the autonomous vehicle company’s round-the-clock operation is besieging nearby residents with noise, light and traffic.",
+                category: "tech",
+                tags: ["Waymo","Santa","Monica"],
+                url: "https://www.latimes.com/california/story/2026-07-29/waymo-santa-monica-charging-stations-ordered-closed-overnight-for-now"
+            },
+            {
                 date: "2026-07-29",
                 title: "Sacramento Waymo rollout expected next month as city prepares for driverless vehicles",
                 body: "The expected rollout comes amid new attention on federal oversight of autonomous vehicles and how first responders navigate around them during emergencies.",
@@ -1479,6 +1503,14 @@ const companies = [
         name: "Wayve",
         color: "#FF4081",
         news: [
+            {
+                date: "2026-07-30",
+                title: "LSEG boss hails ‘growing momentum’ of Pisces as profit soars",
+                body: "Autonomous driving startup Wayve became one of the first companies to use LSEG's Pisces venue for its employee secondary share sale",
+                category: "funding",
+                tags: ["LSEG","boss","hails"],
+                url: "https://www.cityam.com/lseg-boss-hails-growing-momentum-of-pisces-as-profit-soars/"
+            },
             {
                 date: "2026-07-01",
                 title: "Wayve courts automakers with AI driving system that learns like humans",
