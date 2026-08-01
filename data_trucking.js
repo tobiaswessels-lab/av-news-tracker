@@ -233,6 +233,30 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-07-29",
+                title: "PACCAR Q2 profit climbs as class 8 truck demand firms",
+                body: "PACCAR delivered fewer trucks in the second quarter and still earned more money. Constrained freight capacity, firmer rates, and an aging fleet explain the math.",
+                category: "funding",
+                tags: ["PACCAR","profit","climbs"],
+                url: "https://www.freightwaves.com/news/paccar-class-8-truck-demand"
+            },
+            {
+                date: "2026-07-28",
+                title: "PACCAR (PCAR) Earnings Beat Q2 Estimates Despite Revenue Miss",
+                body: "PACCAR (NASDAQ: PCAR) reported Q2 earnings of $1.43 per stock, beating consensus estimates, while quarterly sales reached $6.997 billion.",
+                category: "funding",
+                tags: ["PACCAR","PCAR","Earnings"],
+                url: "https://www.benzinga.com/markets/earnings/26/07/60731847/paccar-pcar-earnings-beat-q2-estimates-despite-revenue-miss"
+            },
+            {
+                date: "2026-07-28",
+                title: "Paccar Rolls Out of Class 8 Downturn as Parts Provides Steady Growth",
+                body: "Morningstar is an investment research company offering mutual fund, ETF, and stock analysis, ratings, and data, and portfolio tools. Discover actionable insights today.",
+                category: "funding",
+                tags: ["Paccar","Rolls","Class"],
+                url: "https://www.morningstar.com/company-reports/1490790-paccar-rolls-out-of-class-8-downturn-as-parts-provides-steady-growth"
+            },
+            {
                 date: "2026-07-27",
                 title: "Harrisburg student’s mother files wrongful death lawsuit against father's employer",
                 body: "COLUMBIA, Mo. (KMIZ) The mother of a Harrisburg student who was killed in a crash last month in Iowa has filed a lawsuit against the youth’s father’s employer. Robert Orton, 14, was killed on June 3 when a 2015 Kenworth truck driven by Michael Orton, 38, of Palmyra, Missouri, crossed tracks in front of a",

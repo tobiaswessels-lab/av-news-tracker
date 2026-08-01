@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-07-31",
+                title: "US regulator advances rules for steering wheel-free autonomous cars",
+                body: "Federal regulators are allowing robotaxis to operate without steering wheels and potentially brake pedals. Amazon's Zoox vehicles received approval to charge customers for rides in Las Vegas. The National Highway Traffic Safety Administration is updating rules for autonomous vehicle technology. Concerns about safety data and reporting standards for robotaxis remain. The robotaxi industry is rapidly expanding nationwide with companies like Waymo and Tesla.",
+                category: "expansion",
+                tags: ["regulator","advances","rules"],
+                url: "https://economictimes.indiatimes.com/news/international/business/us-regulator-advances-rules-for-steering-wheel-free-autonomous-cars/articleshow/132753366.cms"
+            },
+            {
+                date: "2026-07-30",
+                title: "Amazon’s Zoox wins first U.S. approval for paid robotaxis without human controls",
+                body: "Along with Zoox, others, such as Tesla and Alphabet’s Waymo, are racing to expand autonomous ride-hailing services in the U.S.",
+                category: "expansion",
+                tags: ["Amazons","Zoox","wins"],
+                url: "https://www.nbcnews.com/tech/tech-news/amazons-zoox-wins-first-us-approval-paid-robotaxis-human-controls-rcna590106"
+            },
+            {
                 date: "2026-07-30",
                 title: "Some robotaxis approved to operate without steering wheels and losing the brake pedal could be next",
                 body: "Federal regulators are clearing the way for robotaxis to operate without steering wheels or eventually even brake pedals. Amazon's fully autonomous Zoox vehicles got approval Thursday to begin charging customers for rides in the specially designed cars that feature four inward-facing seats once they secure state and local approval. Zoox has already been offering free rides in Las Vegas and San Francisco since last fall. The National Highway Traffic Safety Administration proposed a rule last mont",
