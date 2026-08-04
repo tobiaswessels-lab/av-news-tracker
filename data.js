@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-02",
+                title: "Americans Can’t Buy Chinese EVs. Waymo Is Importing Thousands",
+                body: "The U.S. has used tariffs and security rules to keep Chinese cars off dealer lots. Alphabet’s robotaxi company appears to be buying them by the boatload.",
+                category: "partnership",
+                tags: ["Americans","Cant","Chinese"],
+                url: "https://www.forbes.com/sites/alanohnsman/2026/08/02/americans-cant-buy-chinese-evs-waymo-is-importing-thousands/"
+            },
+            {
+                date: "2026-08-01",
+                title: "Inside Uber-Waymo rift, there's a battle over AVs in nation's capital",
+                body: "Uber and Waymo are increasingly at odds about the autonomous future, including in a labor battle over mass AV deployment in Washington, D.C.",
+                category: "launch",
+                tags: ["Inside","UberWaymo","rift"],
+                url: "https://www.cnbc.com/2026/08/01/uber-waymo-autonomous-vehicle-regulation.html"
+            },
+            {
+                date: "2026-08-01",
+                title: "After noise complaints, judge orders Waymo to stop overnight charging in Santa Monica",
+                body: "Autonomous vehicle giant disturbs residents' sleep.",
+                category: "tech",
+                tags: ["noise","complaints","judge"],
+                url: "https://arstechnica.com/tech-policy/2026/08/after-noise-complaints-judge-orders-waymo-to-stop-overnight-charging-in-santa-monica/"
+            },
+            {
                 date: "2026-07-31",
                 title: "US regulator advances rules for steering wheel-free autonomous cars",
                 body: "Federal regulators are allowing robotaxis to operate without steering wheels and potentially brake pedals. Amazon's Zoox vehicles received approval to charge customers for rides in Las Vegas. The National Highway Traffic Safety Administration is updating rules for autonomous vehicle technology. Concerns about safety data and reporting standards for robotaxis remain. The robotaxi industry is rapidly expanding nationwide with companies like Waymo and Tesla.",
