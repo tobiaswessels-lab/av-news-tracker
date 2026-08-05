@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-04",
+                title: "Uber Earnings Prediction Market Preview: What Will Dara Khosrowshahi Say?",
+                body: "Kalshi traders bet on what Uber's earnings call reveals: Delivery Hero at 85%, Waymo at 81%, and the robotaxi program priced at just 59%.",
+                category: "funding",
+                tags: ["Uber","Earnings","Prediction"],
+                url: "https://www.benzinga.com/markets/prediction-markets/26/08/60924809/uber-earnings-prediction-market-preview-what-will-dara-khosrowshahi-say-2"
+            },
+            {
+                date: "2026-08-04",
+                title: "Waymo Robotaxi Crash Rate 68% Lower Than Human Drivers, Study Finds",
+                body: "ZeroHedge - On a long enough timeline, the survival rate for everyone drops to zero",
+                category: "safety",
+                tags: ["Waymo","Robotaxi","Crash"],
+                url: "https://www.zerohedge.com/technology/waymo-robotaxi-crash-rate-68-lower-human-drivers-study-finds"
+            },
+            {
+                date: "2026-08-04",
+                title: "Waymo rift leaves Uber’s robotaxi ambitions on shaky ground",
+                body: "The breakdown of Uber Technologies Inc.’s robotaxi partnership with Alphabet Inc.’s Waymo is looming large over the ride-hailing giant’s quarterly results, as investors grow anxious about the stock that has lagged the broader market this year.",
+                category: "funding",
+                tags: ["Waymo","rift","leaves"],
+                url: "https://www.latimes.com/business/story/2026-08-04/waymo-rift-leaves-ubers-robotaxi-ambitions-on-shaky-ground"
+            },
+            {
                 date: "2026-08-02",
                 title: "Americans Can’t Buy Chinese EVs. Waymo Is Importing Thousands",
                 body: "The U.S. has used tariffs and security rules to keep Chinese cars off dealer lots. Alphabet’s robotaxi company appears to be buying them by the boatload.",
