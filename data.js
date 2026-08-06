@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-05",
+                title: "Uber CEO brushes off reports of a Waymo break-up",
+                body: "Uber CEO Dara Khosrowshahi dismissed reports that his company’s partnership with Waymo was fraying, saying the robotaxi deal remains “strong.”",
+                category: "partnership",
+                tags: ["Uber","brushes","reports"],
+                url: "https://www.theverge.com/transportation/975651/uber-ceo-earnings-waymo-partnership"
+            },
+            {
+                date: "2026-08-05",
+                title: "Moove raises $250m at a $2.1bn valuation to run robotaxi fleets",
+                body: "Moove, once an African car-financing startup, has raised $250m at a $2.1bn valuation to build the fleet infrastructure behind Uber and Waymo’s autonomous cars.",
+                category: "funding",
+                tags: ["Moove","raises","250m"],
+                url: "https://thenextweb.com/news/moove-250m-series-c-2-1bn-autonomous-mobility"
+            },
+            {
+                date: "2026-08-05",
+                title: "Philly take note: Waymo robotaxis don't do well in real emergencies",
+                body: "The pattern that is emerging is that problems that should have been caught during testing are instead being confronted when the autonomous vehicles have already been deployed.",
+                category: "launch",
+                tags: ["Philly","take","note"],
+                url: "https://www.inquirer.com/opinion/commentary/waymo-robotaxis-philadelphia-performance-realtime-emergencies-20260805.html"
+            },
+            {
                 date: "2026-08-04",
                 title: "Uber Earnings Prediction Market Preview: What Will Dara Khosrowshahi Say?",
                 body: "Kalshi traders bet on what Uber's earnings call reveals: Delivery Hero at 85%, Waymo at 81%, and the robotaxi program priced at just 59%.",
@@ -1567,6 +1591,14 @@ const companies = [
         name: "Wayve",
         color: "#FF4081",
         news: [
+            {
+                date: "2026-08-05",
+                title: "‘Leicester Square, please guv’: Self-driving taxis cleared for London streets ‘later this summer’",
+                body: "Wayve Uber wins first minicab licence for autonomous cabs from TfL but vehicles will have a safety driver (at first)",
+                category: "safety",
+                tags: ["Leicester","Square","please"],
+                url: "https://www.theguardian.com/technology/2026/aug/05/self-driving-taxis-approved-london-summer-2026-wayve-uber"
+            },
             {
                 date: "2026-07-30",
                 title: "LSEG boss hails ‘growing momentum’ of Pisces as profit soars",
