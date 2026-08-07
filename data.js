@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-06",
+                title: "Gary Black Says Uber, Not Tesla or Waymo, Has the Best Shot at Bringing Robotaxis to the Masses",
+                body: "Gary Black backs Uber as the leader in autonomous driving and Robotaxi race as Uber delivers mixed Q2 earnings",
+                category: "funding",
+                tags: ["Gary","Black","Says"],
+                url: "https://www.benzinga.com/markets/tech/26/08/60985118/gary-black-says-uber-not-tesla-or-waymo-has-the-best-shot-at-bringing-robotaxis-to-the-masses"
+            },
+            {
+                date: "2026-08-05",
+                title: "Uber doubles down on robotaxi plans",
+                body: "Uber Technologies on Wednesday outlined plans to spend more than US$10 billion on robotaxis over the coming years and said Waymo remained an important partner despite reports that the Alphabet unit was considering ending their alliance.",
+                category: "partnership",
+                tags: ["Uber","doubles","down"],
+                url: "https://www.bnnbloomberg.ca/business/company-news/2026/08/05/uber-forecasts-weak-quarterly-profit-doubles-down-on-robotaxi-investment-plans/"
+            },
+            {
                 date: "2026-08-05",
                 title: "Uber CEO brushes off reports of a Waymo break-up",
                 body: "Uber CEO Dara Khosrowshahi dismissed reports that his company’s partnership with Waymo was fraying, saying the robotaxi deal remains “strong.”",
