@@ -211,6 +211,14 @@ const companies = [
         news: [
             {
                 date: "2026-08-06",
+                title: "Waymo CEO says camera-only self-driving systems can’t support fully autonomous driving systems, and after testing multiple robotaxis, I have to agree",
+                body: "Waymo co-CEO Dmitri Dolgov laid out reasons why Lidar and radar are required",
+                category: "tech",
+                tags: ["Waymo","says","cameraonly"],
+                url: "https://www.techradar.com/vehicle-tech/hybrid-electric-vehicles/waymo-ceo-says-camera-only-self-driving-systems-cant-support-fully-autonomous-driving-systems-and-after-testing-multiple-robotaxis-i-have-to-agree"
+            },
+            {
+                date: "2026-08-06",
                 title: "Gary Black Says Uber, Not Tesla or Waymo, Has the Best Shot at Bringing Robotaxis to the Masses",
                 body: "Gary Black backs Uber as the leader in autonomous driving and Robotaxi race as Uber delivers mixed Q2 earnings",
                 category: "funding",
