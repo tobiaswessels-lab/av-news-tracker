@@ -233,6 +233,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-08-05",
+                title: "PACCAR Stock: Is Wall Street Bullish or Bearish?",
+                body: "Despite its strong outperformance over the past year, analysts remain moderately optimistic about PACCAR's future growth prospects.",
+                category: "expansion",
+                tags: ["PACCAR","Stock","Wall"],
+                url: "https://www.barchart.com/story/news/3664112/paccar-stock-is-wall-street-bullish-or-bearish"
+            },
+            {
                 date: "2026-07-29",
                 title: "PACCAR Q2 profit climbs as class 8 truck demand firms",
                 body: "PACCAR delivered fewer trucks in the second quarter and still earned more money. Constrained freight capacity, firmer rates, and an aging fleet explain the math.",
