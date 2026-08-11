@@ -456,6 +456,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-08-10",
+                title: "Maharashtra Showcases 55-Tonne Electric Trucks, Pushes Green Commercial Transport",
+                body: "Maharashtra showcased Tata Motors’ battery-electric truck range from 7 to 55 tonnes, with Transport Minister Pratap Sarnaik calling it a step towards sustainable commercial transport. The trucks, developed by Indian engineers in Pune, offer up to around 350 km range and fast charging. The state said EV adoption could reduce emissions and operating costs.",
+                category: "launch",
+                tags: ["Maharashtra","Showcases","55Tonne"],
+                url: "https://www.freepressjournal.in/mumbai/maharashtra-showcases-55-tonne-electric-trucks-pushes-green-commercial-transport"
+            },
+            {
                 date: "2026-07-07",
                 title: "E-bus efficiency drops by nearly 40% within 3 years",
                 body: "as city continues its ambitious transition toward sustainable green urban mobility, the performance lifecycle of early-generation electric buses has come under close technical scrutiny. a section of the city’s eco-friendly fleet delivered by tata motors limited, consisting of 40 smart electric buses during the 2022-23 fiscal period, is currently experiencing nearly 40 per cent efficiency drop with in just three years of its operation, prompting calls for comprehensive engineering reviews. tata m",

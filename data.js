@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-10",
+                title: "A man was killed after being struck by an SUV driver and then thrown into the path of a Waymo.",
+                body: "According to local reports, the man was crossing the street outside a crosswalk in Dallas when he was hit by an SUV driver, causing him to be thrown into a driverless Waymo vehicles. On the surface, the crash sounds similar to one that eventually took down Cruise’s robotaxi business. In that instance, the Cruise vehicle failed to immediately pull, dragging the person for 20 feet. In this case, the victim struck the left rear of the Waymo vehicle.\n[Link: Dallas pedestrian dies after being struck ",
+                category: "safety",
+                tags: ["killed","being","struck"],
+                url: "https://www.theverge.com/transportation/977473/a-man-was-killed-after-being-struck-by-an-suv-driver-and-then-thrown-into-the-path-of-a-waymo"
+            },
+            {
                 date: "2026-08-06",
                 title: "Waymo CEO says camera-only self-driving systems can’t support fully autonomous driving systems, and after testing multiple robotaxis, I have to agree",
                 body: "Waymo co-CEO Dmitri Dolgov laid out reasons why Lidar and radar are required",
