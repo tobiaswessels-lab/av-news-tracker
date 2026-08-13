@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-08-11",
+                title: "Poland to build 45 heavy recovery vehicles for Sweden on Scania chassis",
+                body: "What new recovery vehicle can do",
+                category: "tech",
+                tags: ["Poland","build","heavy"],
+                url: "https://www.europesays.com/3187701/"
+            },
+            {
                 date: "2026-07-25",
                 title: "Man, 21, dies after horror crash between car and lorry in Moray as police launch probe",
                 body: "The driver of a Renault Clio was killed in the collision with a Scania lorry in Aberlour.",

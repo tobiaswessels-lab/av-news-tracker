@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-11",
+                title: "VIDEO: Fleets of New Tesla and Waymo Robotaxis Spotted",
+                body: "Tesla is testing its two-door Cybercab robotaxi while Waymo is preparing to deploy more purpose-built Ojai robotaxis for its commercial service.",
+                category: "launch",
+                tags: ["VIDEO","Fleets","Tesla"],
+                url: "https://www.businessinsider.com/tesla-waymo-robotaxi-race-cybercab-ojai-production-status-video-2026-8"
+            },
+            {
+                date: "2026-08-07",
+                title: "Is Tesla poised to enter the San Diego robotaxi business?",
+                body: "Multiple sightings of distinctive gold-colored Tesla prototypes fuel speculation that Tesla may soon compete with Waymo.",
+                category: "tech",
+                tags: ["Tesla","poised","enter"],
+                url: "https://www.sandiegouniontribune.com/2026/08/07/is-tesla-poised-to-enter-the-san-diego-robotaxi-business/"
+            },
+            {
                 date: "2026-08-10",
                 title: "A man was killed after being struck by an SUV driver and then thrown into the path of a Waymo.",
                 body: "According to local reports, the man was crossing the street outside a crosswalk in Dallas when he was hit by an SUV driver, causing him to be thrown into a driverless Waymo vehicles. On the surface, the crash sounds similar to one that eventually took down Cruise’s robotaxi business. In that instance, the Cruise vehicle failed to immediately pull, dragging the person for 20 feet. In this case, the victim struck the left rear of the Waymo vehicle.\n[Link: Dallas pedestrian dies after being struck ",
