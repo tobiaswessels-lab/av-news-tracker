@@ -464,6 +464,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-08-12",
+                title: "Tata Motors beats West Asia blues as Q1 profit surges 83% to ₹2,556 crore",
+                body: "Consolidated revenue jumped 19% to ₹20,667 crore as robust truck demand and market share gains helped the automaker offset rising input costs and a delayed $4.4-billion Iveco deal.",
+                category: "funding",
+                tags: ["Tata","Motors","beats"],
+                url: "https://www.livemint.com/auto-news/tata-motors-beats-west-asia-blues-as-q1-profit-surges-commercial-vehicle-maker-11786543128668.html"
+            },
+            {
                 date: "2026-08-10",
                 title: "Maharashtra Showcases 55-Tonne Electric Trucks, Pushes Green Commercial Transport",
                 body: "Maharashtra showcased Tata Motors’ battery-electric truck range from 7 to 55 tonnes, with Transport Minister Pratap Sarnaik calling it a step towards sustainable commercial transport. The trucks, developed by Indian engineers in Pune, offer up to around 350 km range and fast charging. The state said EV adoption could reduce emissions and operating costs.",
