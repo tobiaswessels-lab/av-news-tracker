@@ -464,6 +464,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-08-14",
+                title: "Mahindra looks to plug gaps in its commercial vehicle push",
+                body: "Mahindra is using the merged SML Mahindra entity and two new truck engines to break into heavier commercial vehicle segments and challenge Tata Motors and Ashok Leyland. The company is targeting 20% CV market share within a decade while treading carefully on subsidised electric buses.",
+                category: "launch",
+                tags: ["Mahindra","looks","plug"],
+                url: "https://www.livemint.com/companies/mahindra-looks-to-plug-gaps-in-its-commercial-vehicle-push-11786706958796.html"
+            },
+            {
                 date: "2026-08-12",
                 title: "Tata Motors beats West Asia blues as Q1 profit surges 83% to ₹2,556 crore",
                 body: "Consolidated revenue jumped 19% to ₹20,667 crore as robust truck demand and market share gains helped the automaker offset rising input costs and a delayed $4.4-billion Iveco deal.",

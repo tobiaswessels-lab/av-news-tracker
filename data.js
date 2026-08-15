@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-13",
+                title: "Tesla: The Moonshot Premium Is Dead As Waymo And China Pull Away",
+                body: "Tesla, Inc. is priced for robotaxi and robotics dominance, but Waymo and China lead. Click for this TSLA update and see why I am bearish on the stock.",
+                category: "tech",
+                tags: ["Tesla","Moonshot","Premium"],
+                url: "https://seekingalpha.com/article/4936395-tesla-the-moonshot-premium-is-dead-as-waymo-and-china-pull-away"
+            },
+            {
+                date: "2026-08-13",
+                title: "Waymo expands service to these metro Phoenix neighborhoods",
+                body: "During the past six years, the autonomous vehicle company has gone through several expansions. The latest will be in the East Valley.",
+                category: "expansion",
+                tags: ["Waymo","expands","service"],
+                url: "https://www.azcentral.com/story/money/business/tech/2026/08/13/waymo-expands-service-to-these-east-valley-neighborhoods/91276638007/"
+            },
+            {
                 date: "2026-08-11",
                 title: "VIDEO: Fleets of New Tesla and Waymo Robotaxis Spotted",
                 body: "Tesla is testing its two-door Cybercab robotaxi while Waymo is preparing to deploy more purpose-built Ojai robotaxis for its commercial service.",
@@ -1639,6 +1655,14 @@ const companies = [
         name: "Wayve",
         color: "#FF4081",
         news: [
+            {
+                date: "2026-08-06",
+                title: "TfL greenlights Wayve's autonomous vehicles in the City",
+                body: "Transport for London (TfL) has granted British autonomous driving firm Wayve a licence to operate their cars in the City, a move which will see robotaxis will make their first appearance in London later this year.",
+                category: "tech",
+                tags: ["greenlights","Wayves","autonomous"],
+                url: "https://www.cityam.com/tfl-greenlights-wayves-autonomous-vehicles-in-the-city/"
+            },
             {
                 date: "2026-08-05",
                 title: "‘Leicester Square, please guv’: Self-driving taxis cleared for London streets ‘later this summer’",
