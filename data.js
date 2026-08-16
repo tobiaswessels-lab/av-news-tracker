@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-14",
+                title: "Waymo gets green light for major California robotaxi expansion",
+                body: "Waymo has received approval to expand its driverless ride-hailing service across California, including Los Angeles, the Bay Area, Sacramento and San Diego.",
+                category: "expansion",
+                tags: ["Waymo","gets","green"],
+                url: "https://nypost.com/2026/08/14/business/waymo-gets-green-light-for-major-california-robotaxi-expansion/"
+            },
+            {
+                date: "2026-08-14",
+                title: "Waymo announces big CA service expansion across Bay Area, Los Angeles and more",
+                body: "Waymo announced that the CPUC approved expanding its autonomous vehicle rideshare services across the San Francisco Bay Area, Los Angeles and beyond.",
+                category: "expansion",
+                tags: ["Waymo","announces","service"],
+                url: "https://abc7.com/post/waymo-announces-big-california-service-expansion-bay-area-los-angeles-more/19679378/"
+            },
+            {
+                date: "2026-08-14",
+                title: "Waymo is coming to more of California.",
+                body: "Waymo has received regulatory approval in the state to “expand” its autonomous ride-hailing service “across the SF Bay Area and LA” and bring it to Sacramento and San Diego, the company said on Friday. The approved expansion covers “most of the state’s population,” Electrek reports.\nThe expansion will be “gradual and guided by our safety framework,” according to Waymo.",
+                category: "expansion",
+                tags: ["Waymo","coming","California"],
+                url: "https://www.theverge.com/transportation/980589/waymo-is-coming-to-more-of-california"
+            },
+            {
                 date: "2026-08-13",
                 title: "Tesla: The Moonshot Premium Is Dead As Waymo And China Pull Away",
                 body: "Tesla, Inc. is priced for robotaxi and robotics dominance, but Waymo and China lead. Click for this TSLA update and see why I am bearish on the stock.",
