@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-16",
+                title: "Projected Robotaxi Growth By Company; I Rate Waymo A Buy (GOOG) (GOOGL)",
+                body: "Waymo leads autonomous ride-hailing toward $10B revenue by 2030; Zoox/Uber follow as Tesla lags. Click for more on GOOGL stock.",
+                category: "funding",
+                tags: ["Projected","Robotaxi","Growth"],
+                url: "https://seekingalpha.com/article/4937133-projected-robotaxi-autonomous-ride-hailing-growth-by-company-i-rate-waymo-buy"
+            },
+            {
+                date: "2026-08-16",
+                title: "Waymo gets CPUC approval to expand robotaxi service in California",
+                body: "Waymo received approval to expand its robotaxi service across the San Francisco Bay Area and Los Angeles while bringing self-driving rides to Sacramento and San Diego.",
+                category: "expansion",
+                tags: ["Waymo","gets","CPUC"],
+                url: "https://www.foxbusiness.com/technology/waymo-gets-regulatory-approval-scale-up-robotaxi-service-across-california-enter-2-new-markets"
+            },
+            {
                 date: "2026-08-14",
                 title: "Waymo gets green light for major California robotaxi expansion",
                 body: "Waymo has received approval to expand its driverless ride-hailing service across California, including Los Angeles, the Bay Area, Sacramento and San Diego.",
