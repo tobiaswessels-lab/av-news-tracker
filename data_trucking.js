@@ -464,6 +464,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-08-17",
+                title: "India’s truck market is defying the odds. 2 stocks to watch",
+                body: "The quarterly results of Tata Motors and Ashok Leyland highlight strong commercial vehicle sales growth and profitability despite rising input costs and global economic challenges, signaling sector resilience.",
+                category: "funding",
+                tags: ["Indias","truck","market"],
+                url: "https://www.financialexpress.com/market/stock-insights/indias-truck-market-is-defying-the-odds-2-stocks-to-watch/4319841/"
+            },
+            {
                 date: "2026-08-14",
                 title: "Mahindra looks to plug gaps in its commercial vehicle push",
                 body: "Mahindra is using the merged SML Mahindra entity and two new truck engines to break into heavier commercial vehicle segments and challenge Tata Motors and Ashok Leyland. The company is targeting 20% CV market share within a decade while treading carefully on subsidised electric buses.",
