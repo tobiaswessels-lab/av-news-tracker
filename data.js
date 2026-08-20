@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-19",
+                title: "Waymo robotaxis approved to expand across 18 California counties",
+                body: "Waymo received state approval to expand its autonomous ride-hailing service across 18 California counties, paving the way for gradual growth into dozens of new cities.",
+                category: "expansion",
+                tags: ["Waymo","robotaxis","approved"],
+                url: "https://www.vcstar.com/story/news/nation/california/2026/08/19/waymo-robotaxis-approved-to-expand-across-18-california-counties/91370808007/"
+            },
+            {
+                date: "2026-08-17",
+                title: "driving cars. Now, Waymo veterans are building autonomous construction equipment.",
+                body: "Bedrock Robotics said its excavators equipped with its autonomous AI system are working without human operators on three sites in Texas and Nevada.",
+                category: "tech",
+                tags: ["driving","cars","Waymo"],
+                url: "https://www.newsbreak.com/business-insider-562169/4833754587610-first-came-self-driving-cars-now-waymo-veterans-are-building-autonomous-construction-equipment"
+            },
+            {
                 date: "2026-08-16",
                 title: "Projected Robotaxi Growth By Company; I Rate Waymo A Buy (GOOG) (GOOGL)",
                 body: "Waymo leads autonomous ride-hailing toward $10B revenue by 2030; Zoox/Uber follow as Tesla lags. Click for more on GOOGL stock.",
