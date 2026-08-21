@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-20",
+                title: "Waymo rolls out custom chip for robotaxis as Alphabet expands AI chip push",
+                body: "Alphabet’s Waymo has developed a custom AI chip for its latest robotaxis, aiming to improve autonomous driving performance while reducing its reliance on third-party chipmakers such as Nvidia.",
+                category: "expansion",
+                tags: ["Waymo","rolls","custom"],
+                url: "https://www.moneycontrol.com/news/business/waymo-rolls-out-custom-chip-for-robotaxis-as-alphabet-expands-ai-chip-push-14011754.html"
+            },
+            {
+                date: "2026-08-20",
+                title: "Waymo built its own robotaxi chip and published its supplier list",
+                body: "Waymo published its robotaxi compute architecture, a custom 5nm chip and its seven suppliers. Nvidia and AMD are still on the list.",
+                category: "tech",
+                tags: ["Waymo","built","robotaxi"],
+                url: "https://thenextweb.com/news/waymo-custom-chip-robotaxi-tsmc-ojai"
+            },
+            {
+                date: "2026-08-19",
+                title: "Waymo's cheaper, next-gen robotaxi is now open to all riders in these three cities",
+                body: "The next-generation robotaxi, called the Waymo Ojai, is central to the company's push towards mass scale, and eventually, profitability.",
+                category: "funding",
+                tags: ["Waymos","cheaper","nextgen"],
+                url: "https://techcrunch.com/2026/08/19/waymos-cheaper-next-gen-robotaxi-is-now-open-to-all-riders-in-these-three-cities/"
+            },
+            {
                 date: "2026-08-19",
                 title: "Waymo robotaxis approved to expand across 18 California counties",
                 body: "Waymo received state approval to expand its autonomous ride-hailing service across 18 California counties, paving the way for gradual growth into dozens of new cities.",
