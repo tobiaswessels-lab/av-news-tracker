@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-21",
+                title: "Las Vegas is about to become robotaxi city.",
+                body: "Nevada’s transportation authority unanimously approved permits for Tesla, Waymo, and Uber, paving the way for up 7,000 robotaxis to flood the streets of Clark County over the next 12 months, TechCrunch reports. Tesla received approval for 5,000 robotaxis — though the company’s reps said they’d be thrilled if they get to 2,500 — while Waymo and Uber were authorized for 1,000 each. Amazon’s Zoox already has a permit for 100 robotaxis in the city. The vote positions Las Vegas as the next major robo",
+                category: "regulation",
+                tags: ["Vegas","become","robotaxi"],
+                url: "https://www.theverge.com/transportation/983197/las-vegas-is-about-to-become-robotaxi-city"
+            },
+            {
+                date: "2026-08-21",
+                title: "Waymo doubles spending on lobbying in robotaxi battle with Uber",
+                body: "Alphabet-owned company is seeking to persuade US regulators to clear a path for fully autonomous taxi services.",
+                category: "regulation",
+                tags: ["Waymo","doubles","spending"],
+                url: "https://arstechnica.com/cars/2026/08/waymo-doubles-spending-on-lobbying-in-robotaxi-battle-with-uber/"
+            },
+            {
+                date: "2026-08-21",
+                title: "Tesla, Waymo, Uber Get Las Vegas Robotaxi Permits; See Their Fleet Size",
+                body: "Nevada regulators voted Thursday to approve Las Vegas robotaxi permits for Tesla, Uber and Google's Waymo. They'll join Amazon's Zoox.",
+                category: "regulation",
+                tags: ["Tesla","Waymo","Uber"],
+                url: "https://www.investors.com/news/tesla-waymo-uber-robotaxi-las-vegas-self-driving-cars-tech-stocks/"
+            },
+            {
                 date: "2026-08-20",
                 title: "Waymo rolls out custom chip for robotaxis as Alphabet expands AI chip push",
                 body: "Alphabet’s Waymo has developed a custom AI chip for its latest robotaxis, aiming to improve autonomous driving performance while reducing its reliance on third-party chipmakers such as Nvidia.",
