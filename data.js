@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-24",
+                title: "Robotaxis are real now",
+                body: "Robotaxi companies like Waymo and Zoox are running into obstacles in an increasing number of cities as the fight to shape the rules over driverless operations intensifies.",
+                category: "tech",
+                tags: ["Robotaxis","real","pushback"],
+                url: "https://www.theverge.com/transportation/983765/robotaxi-waymo-zoox-tesla-rules-pushback-nhtsa"
+            },
+            {
+                date: "2026-08-23",
+                title: "TechCrunch Mobility: The custom chip driving Waymo’s robotaxi ambitions",
+                body: "Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.",
+                category: "tech",
+                tags: ["TechCrunch","Mobility","custom"],
+                url: "https://techcrunch.com/2026/08/23/techcrunch-mobility-the-custom-chip-driving-waymos-robotaxi-ambitions/"
+            },
+            {
+                date: "2026-08-23",
+                title: "Tesla gears up to launch Cybercab ‘robotaxi’ with no steering wheel or pedals",
+                body: "NEW YORK, Aug 23 — Electric vehicle-maker Tesla is teasing the upcoming debut of its self-driving robotaxi, dubbed “Cybercab,” to compete with the likes of Uber and Waymo.The...",
+                category: "launch",
+                tags: ["Tesla","gears","launch"],
+                url: "https://www.malaymail.com/news/money/2026/08/23/tesla-gears-up-to-launch-cybercab-robotaxi-with-no-steering-wheel-or-pedals/232360"
+            },
+            {
                 date: "2026-08-21",
                 title: "Las Vegas is about to become robotaxi city.",
                 body: "Nevada’s transportation authority unanimously approved permits for Tesla, Waymo, and Uber, paving the way for up 7,000 robotaxis to flood the streets of Clark County over the next 12 months, TechCrunch reports. Tesla received approval for 5,000 robotaxis — though the company’s reps said they’d be thrilled if they get to 2,500 — while Waymo and Uber were authorized for 1,000 each. Amazon’s Zoox already has a permit for 100 robotaxis in the city. The vote positions Las Vegas as the next major robo",
