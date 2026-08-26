@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-25",
+                title: "Waymo robotaxis are headed to Munich",
+                body: "Germany's autonomous vehicle regulations have made it a hotspot for autonomous vehicle testing and eventual commercial robotaxi deployment.",
+                category: "launch",
+                tags: ["Waymo","robotaxis","headed"],
+                url: "https://techcrunch.com/2026/08/25/waymo-robotaxis-are-headed-to-munich/"
+            },
+            {
+                date: "2026-08-25",
+                title: "Waymo to launch robotaxi in Germany in 2027",
+                body: "Waymo has been the biggest robotaxi player in the U.S., and has announced plans to enter the UK, Japan and now Germany.",
+                category: "launch",
+                tags: ["Waymo","launch","robotaxi"],
+                url: "https://www.cnbc.com/2026/08/25/waymo-robotaxi-germany-2027.html"
+            },
+            {
+                date: "2026-08-25",
+                title: "Waymo to begin testing autonomous vehicles in Munich",
+                body: "Aug 25 (Reuters) - Self-driving ⁠technology company Waymo said on Tuesday it ⁠would begin testing its autonomous vehicles in ‌Munich in the coming weeks, laying the groundwork for a commercial ride-hailing service in Germany that it aims to launch ​toward the end of 2027.",
+                category: "launch",
+                tags: ["Waymo","begin","testing"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/08/25/waymo-to-begin-testing-autonomous-vehicles-in-munich"
+            },
+            {
                 date: "2026-08-24",
                 title: "Robotaxis are real now",
                 body: "Robotaxi companies like Waymo and Zoox are running into obstacles in an increasing number of cities as the fight to shape the rules over driverless operations intensifies.",
