@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-26",
+                title: "Waymo picks Munich for first EU robotaxi service, eyes 2027 launch",
+                body: "Waymo plans to launch driverless ride-hailing in Munich by late 2027, making Germany its first European Union market as it expands beyond 11 US cities with paid robotaxi trips.",
+                category: "launch",
+                tags: ["Waymo","picks","Munich"],
+                url: "https://www.cnbctv18.com/auto/waymo-picks-munich-for-first-eu-robotaxi-service-eyes-2027-launch-19977144.htm"
+            },
+            {
                 date: "2026-08-25",
                 title: "Waymo robotaxis are headed to Munich",
                 body: "Germany's autonomous vehicle regulations have made it a hotspot for autonomous vehicle testing and eventual commercial robotaxi deployment.",
