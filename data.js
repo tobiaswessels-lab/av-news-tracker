@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-28",
+                title: "Amazon Takes on Waymo and Tesla With Massive Robotaxi Launch in San Francisco. What That Means for AMZN Stock.",
+                body: "Amazon-backed Zoox is launching robotaxis in San Francisco, taking on Waymo and Tesla as the ride-hailing market races toward $514 billion by 2031.",
+                category: "launch",
+                tags: ["Amazon","Takes","Waymo"],
+                url: "https://www.barchart.com/story/news/4324112/amazon-takes-on-waymo-and-tesla-with-massive-robotaxi-launch-in-san-francisco-what-that-means-for-amzn-stock"
+            },
+            {
+                date: "2026-08-28",
+                title: "Waymo in Munich: Could autonomous vehicles make Europe's roads safer?",
+                body: "Waymo is bringing driverless taxis to Munich, its third city outside the US, as data suggests autonomous vehicles are far safer than human drivers.",
+                category: "tech",
+                tags: ["Waymo","Munich","Could"],
+                url: "https://www.euronews.com/next/2026/08/28/waymo-in-munich-could-autonomous-vehicles-make-europes-roads-safer"
+            },
+            {
+                date: "2026-08-27",
+                title: "In a swipe at Tesla, Waymo says ‘cameras… aren’t enough’",
+                body: "Waymo took multiple swipes at Tesla in a new blog post that outlined why the robotaxi company believes that lidar and HD maps are necessary.",
+                category: "tech",
+                tags: ["swipe","Tesla","Waymo"],
+                url: "https://www.theverge.com/transportation/985503/waymo-tesla-lidar-camera-robotaxi-cybercab-musk"
+            },
+            {
                 date: "2026-08-26",
                 title: "Waymo picks Munich for first EU robotaxi service, eyes 2027 launch",
                 body: "Waymo plans to launch driverless ride-hailing in Munich by late 2027, making Germany its first European Union market as it expands beyond 11 US cities with paid robotaxi trips.",
