@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-08-29",
+                title: "What happens if the Waymo computer fails?",
+                body: "Waymo reveals its robotaxi computer system with dual redundant processors, backup braking and steering designed to keep the autonomous vehicle safe if hardware fails.",
+                category: "partnership",
+                tags: ["What","happens","Waymo"],
+                url: "https://www.foxnews.com/tech/what-happens-waymo-computer-fails"
+            },
+            {
                 date: "2026-08-28",
                 title: "Amazon Takes on Waymo and Tesla With Massive Robotaxi Launch in San Francisco. What That Means for AMZN Stock.",
                 body: "Amazon-backed Zoox is launching robotaxis in San Francisco, taking on Waymo and Tesla as the ride-hailing market races toward $514 billion by 2031.",
