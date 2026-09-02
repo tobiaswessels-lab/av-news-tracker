@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-01",
+                title: "Robotaxi company Waymo to map Cincinnati and Northern Kentucky",
+                body: "Waymo, the self-driving taxi service, is mapping downtown Cincinnati and surrounding areas, including Northern Kentucky, officials said Sept. 1.",
+                category: "tech",
+                tags: ["Robotaxi","company","Waymo"],
+                url: "https://www.cincinnati.com/story/news/2026/09/01/robotaxi-company-waymo-to-map-cincinnati-and-northern-kentucky/91569086007/"
+            },
+            {
+                date: "2026-09-01",
+                title: "Waymo Expands Robotaxi Service to 3 More U.S. Cities as Zoox and Tesla Race to Catch Up",
+                body: "Waymo is widening the gap with its robotaxi rivals. Alphabet’s autonomous driving company is launching driverless rides for customers in San Diego, Tampa, and Denver, bringing commercial operations to Colorado for the first time. The move comes as Amazon-owned Zoox prepares to test in two more cities and Tesla gets ready to reveal new details",
+                category: "launch",
+                tags: ["Waymo","Expands","Robotaxi"],
+                url: "https://techstartups.com/2026/09/01/waymo-expands-robotaxi-service-to-3-more-u-s-cities-as-zoox-and-tesla-race-to-catch-up/"
+            },
+            {
+                date: "2026-09-01",
+                title: "Waymo goes on offense ahead of Tesla's Cybercab launch",
+                body: "Waymo argued that fully autonomous vehicles aren't possible without using a mix of sensors and warned that pure end-to-end AI systems aren't safe enough.",
+                category: "launch",
+                tags: ["Waymo","goes","offense"],
+                url: "https://techcrunch.com/2026/09/01/waymo-goes-on-offense-ahead-of-teslas-cybercab-launch/"
+            },
+            {
                 date: "2026-08-29",
                 title: "What happens if the Waymo computer fails?",
                 body: "Waymo reveals its robotaxi computer system with dual redundant processors, backup braking and steering designed to keep the autonomous vehicle safe if hardware fails.",

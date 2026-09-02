@@ -464,6 +464,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-09-01",
+                title: "Tata Motors CV sales rise 49% in August, beat estimates",
+                body: "Total CV sales reached 44,411 units in August 2026, a 49% YoY increase. Performance beat market estimates of 38,800 units by a significant margin. International business surged 227% YoY to 7,792 units. Domestic sales grew 33% YoY to 36,619 units. HCV truck sales rose 42% while ILMCV trucks grew 20%.",
+                category: "partnership",
+                tags: ["Tata","Motors","sales"],
+                url: "https://scanx.trade/stock-market-news/companies/tata-motors-commercial-vehicle-sales-rise-49-august-2026/49789677"
+            },
+            {
                 date: "2026-08-17",
                 title: "India’s truck market is defying the odds. 2 stocks to watch",
                 body: "The quarterly results of Tata Motors and Ashok Leyland highlight strong commercial vehicle sales growth and profitability despite rising input costs and global economic challenges, signaling sector resilience.",
