@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-02",
+                title: "Waymo expands driverless robotaxi service to 3 major US cities",
+                body: "Waymo announced it is gradually opening driverless rides to users in Denver, San Diego and Tampa after tens of thousands signed up for access.",
+                category: "partnership",
+                tags: ["Waymo","expands","driverless"],
+                url: "https://www.foxbusiness.com/lifestyle/waymo-expands-driverless-robotaxi-service-3-major-us-cities"
+            },
+            {
+                date: "2026-09-02",
+                title: "Waymo is a magnet for parking tickets.",
+                body: "The robotaxi company has accrued more than 8,300 violations in San Francisco since January 2025, according to records obtained by Gazetteer. On average, that’s about 103 tickets a week. Most of the violations appear to be for parking in locations reserved for tour buses, obstructing traffic, or blocking bike lanes.\n[Link: Waymo has been slapped with more than 8,300 parking tickets since January 2025 | https://sf.gazetteer.co/waymo-has-been-slapped-with-more-than-8300-parking-tickets-since-januar",
+                category: "tech",
+                tags: ["Waymo","magnet","parking"],
+                url: "https://www.theverge.com/transportation/988737/waymo-is-a-magnet-for-parking-tickets"
+            },
+            {
+                date: "2026-09-02",
+                title: "Who leaves a pig head in the back of a Waymo?",
+                body: "Scratch that: who leaves two pig heads in the back of a Waymo? Throw-up, leftover joints, even the occasional doo-doo — I can understand how some of these things can be left behind for the robotaxi cleaner. But pig heads?\n[Link: Cleaning Up Poop: The Human Labor Behind Waymo | https://bayareacurrent.com/theres-a-lot-of-cleaning-up-poop-a-depot-worker-on-the-human-labor-behind-waymos-autonomous-vehicles/ | Bay Area Current]",
+                category: "partnership",
+                tags: ["leaves","head","back"],
+                url: "https://www.theverge.com/transportation/988562/who-leaves-a-pig-head-in-the-back-of-a-waymo"
+            },
+            {
                 date: "2026-09-01",
                 title: "Robotaxi company Waymo to map Cincinnati and Northern Kentucky",
                 body: "Waymo, the self-driving taxi service, is mapping downtown Cincinnati and surrounding areas, including Northern Kentucky, officials said Sept. 1.",
