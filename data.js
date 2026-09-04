@@ -1896,6 +1896,30 @@ const companies = [
         color: "#FF4081",
         news: [
             {
+                date: "2026-09-03",
+                title: "Londoners can hail a limited Uber Wayve robotaxi after new trial starts",
+                body: "Uber customers can now ride Wayve self-driving robotaxis in London as part of a trial using electric Ford Mustang Mach-E autonomous vehicles.",
+                category: "launch",
+                tags: ["Londoners","hail","limited"],
+                url: "https://metro.co.uk/2026/09/03/londoners-can-hail-a-limited-uber-wayve-robotaxi-new-trial-starts-29527627/"
+            },
+            {
+                date: "2026-09-03",
+                title: "Wayve, Uber Launch London’s 1st Self-Driving Taxis With Human Safety Drivers",
+                body: "Wayve and Uber have launched London’s first self-driving taxi fleet, with human safety drivers supervising the vehicles. Passengers booking UberX, Uber Electric or Uber Comfort may be matched with an autonomous Ford Mustang Mach-E at no extra cost. The rollout is part of plans to expand Wayve-powered vehicles across 12 global markets.",
+                category: "launch",
+                tags: ["Wayve","Uber","Launch"],
+                url: "https://www.freepressjournal.in/business/wayve-uber-launch-londons-1st-self-driving-taxis-with-human-safety-drivers"
+            },
+            {
+                date: "2026-09-03",
+                title: "Uber's robotaxis hit London streets",
+                body: "Uber has introduced autonomous rides in London through a partnership with Wayve, featuring Ford Mustang Mach-E vehicles equipped with self-driving technology.",
+                category: "partnership",
+                tags: ["Ubers","robotaxis","London"],
+                url: "https://www.newsbytesapp.com/news/auto/uber-launches-robotaxis-in-london/story"
+            },
+            {
                 date: "2026-08-06",
                 title: "TfL greenlights Wayve's autonomous vehicles in the City",
                 body: "Transport for London (TfL) has granted British autonomous driving firm Wayve a licence to operate their cars in the City, a move which will see robotaxis will make their first appearance in London later this year.",

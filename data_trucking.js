@@ -241,6 +241,30 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-09-01",
+                title: "Greensboro NC crash leaves 4-year-old critically injured",
+                body: "The driver of the Kenworth sustained a minor injury and did not go to the hospital.",
+                category: "safety",
+                tags: ["Greensboro","crash","leaves"],
+                url: "https://greensboro.com/news/local/crime-courts/article_192e3f8a-35d8-4832-8c7d-025927299cb3.html"
+            },
+            {
+                date: "2026-08-11",
+                title: "CBP finds $1.17M in cocaine after inspecting bell pepper truck at Texas border",
+                body: "A Kenworth hauling bell peppers drew additional scrutiny at a Texas border crossing, where CBP officers uncovered 16 packages of cocaine.",
+                category: "tech",
+                tags: ["finds","117M","cocaine"],
+                url: "https://www.freightwaves.com/news/cbp-finds-1-17m-in-cocaine-after-inspecting-bell-pepper-truck-at-texas-border"
+            },
+            {
+                date: "2026-08-06",
+                title: "PACCAR recalls 5,919 trucks over electrical defect",
+                body: "Oil in a fuse box triggered a PACCAR truck recall of 5,919 new Kenworths and Peterbilts. See which models, what can fail, and how to get the free fix.",
+                category: "safety",
+                tags: ["PACCAR","recalls","5919"],
+                url: "https://www.freightwaves.com/news/paccar-truck-recall-electrical-defect"
+            },
+            {
                 date: "2026-08-05",
                 title: "PACCAR Stock: Is Wall Street Bullish or Bearish?",
                 body: "Despite its strong outperformance over the past year, analysts remain moderately optimistic about PACCAR's future growth prospects.",
