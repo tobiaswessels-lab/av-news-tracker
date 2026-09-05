@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-04",
+                title: "Tesla Cybercab finally hits the roads after two-year wait — but I’m not convinced its driverless cars will catch Waymo, whatever the Robotaxi data says",
+                body: "Quiet launch event sees Cybercab join the public fleet",
+                category: "launch",
+                tags: ["Tesla","Cybercab","finally"],
+                url: "https://www.techradar.com/vehicle-tech/hybrid-electric-vehicles/tesla-cybercab-finally-hits-the-roads-after-two-year-wait-but-im-not-convinced-its-driverless-cars-will-catch-waymo-whatever-the-robotaxi-data-says"
+            },
+            {
+                date: "2026-09-04",
+                title: "Tesla’s wildest ride yet: Musk puts steering-wheel-free Cybercabs on Austin streets, daring Americans to let go",
+                body: "Elon Musks Tesla has begun testing a new generation of Cybercabs on Austin streets that have neither steering wheels nor brake pedals, placing full control in the autonomous system. The rollout is a major test of Teslas robotaxi ambitions as the company faces public scepticism, regulatory scrutiny and fierce competition from Waymo.",
+                category: "regulation",
+                tags: ["Teslas","wildest","ride"],
+                url: "https://economictimes.indiatimes.com/news/international/global-trends/teslas-wildest-ride-yet-musk-puts-steering-wheel-free-cybercabs-on-austin-streets-daring-americans-to-let-go/articleshow/133754080.cms"
+            },
+            {
+                date: "2026-09-04",
+                title: "Tesla’s Cybercab hits Austin streets, taking aim at Uber and Waymo",
+                body: "TEXAS, Sept 4 — Electric-vehicle maker Tesla announced the debut of its self-driving robotaxi, dubbed “Cybercab,” yesterday in a bid to compete with the likes of Uber and...",
+                category: "tech",
+                tags: ["Teslas","Cybercab","hits"],
+                url: "https://www.malaymail.com/news/tech-gadgets/2026/09/04/teslas-cybercab-hits-austin-streets-taking-aim-at-uber-and-waymo/233874"
+            },
+            {
                 date: "2026-09-02",
                 title: "Waymo expands driverless robotaxi service to 3 major US cities",
                 body: "Waymo announced it is gradually opening driverless rides to users in Denver, San Diego and Tampa after tens of thousands signed up for access.",
