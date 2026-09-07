@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-05",
+                title: "Waymo's expanding autonomous robotaxi service has supporters",
+                body: "Your morning catch-up: Waymo is expanding, L.A.'s famed Pershing Square is renamed after Biddy Mason and more big stories.",
+                category: "expansion",
+                tags: ["Waymos","expanding","autonomous"],
+                url: "https://www.latimes.com/california/newsletter/2026-09-05/waymos-expanding-autonomous-robotaxi-service-has-supporters-cheeing-its-expansion"
+            },
+            {
                 date: "2026-09-04",
                 title: "Tesla Cybercab finally hits the roads after two-year wait — but I’m not convinced its driverless cars will catch Waymo, whatever the Robotaxi data says",
                 body: "Quiet launch event sees Cybercab join the public fleet",
