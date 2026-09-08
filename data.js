@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-07",
+                title: "Waymo And Zoox Robotaxi Test Drivers Left Injured From Self-Driving Cars",
+                body: "As the world of self-driving cars and robotaxis continues to expand, Waymo and Zoox test drivers have been left with injuries due to hard braking events.",
+                category: "expansion",
+                tags: ["Waymo","Zoox","Robotaxi"],
+                url: "https://www.bgr.com/2250421/robotaxi-waymo-zoox-test-drive-problem-injuries/"
+            },
+            {
                 date: "2026-09-05",
                 title: "Waymo's expanding autonomous robotaxi service has supporters",
                 body: "Your morning catch-up: Waymo is expanding, L.A.'s famed Pershing Square is renamed after Biddy Mason and more big stories.",

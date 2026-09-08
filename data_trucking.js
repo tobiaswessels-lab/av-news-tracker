@@ -488,6 +488,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-09-04",
+                title: "Chinese truckmakers are charging ahead in India’s EV race. Indian rivals want the rules changed",
+                body: "Chinese truckmakers Sany and Foton are gaining ground in India’s electric heavy truck market, helped by low import duties, prompting Tata Motors and other local players to seek a tariff rethink.",
+                category: "tech",
+                tags: ["Chinese","truckmakers","charging"],
+                url: "https://www.livemint.com/auto-news/sany-foton-tata-motors-ashok-leyland-montra-electric-energy-in-motion-eim-electric-trucks-electric-truck-tractor-11788450603818.html"
+            },
+            {
                 date: "2026-09-01",
                 title: "Tata Motors CV sales rise 49% in August, beat estimates",
                 body: "Total CV sales reached 44,411 units in August 2026, a 49% YoY increase. Performance beat market estimates of 38,800 units by a significant margin. International business surged 227% YoY to 7,792 units. Domestic sales grew 33% YoY to 36,619 units. HCV truck sales rose 42% while ILMCV trucks grew 20%.",
