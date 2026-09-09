@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-08",
+                title: "Pony.ai CEO James Peng thinks robotaxis will be widespread within five years",
+                body: "While Waymo dominates the robotaxi conversation in the U.S., Chinese robotaxi firms like Pony.ai are gaining ground almost everywhere else.",
+                category: "tech",
+                tags: ["Ponyai","James","Peng"],
+                url: "https://fortune.com/2026/09/08/pony-ai-ceo-robotaxis-five-years/"
+            },
+            {
                 date: "2026-09-07",
                 title: "Waymo And Zoox Robotaxi Test Drivers Left Injured From Self-Driving Cars",
                 body: "As the world of self-driving cars and robotaxis continues to expand, Waymo and Zoox test drivers have been left with injuries due to hard braking events.",
