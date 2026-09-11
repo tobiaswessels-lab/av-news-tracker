@@ -488,6 +488,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-09-10",
+                title: "Indore Experts, Bus Operators Come Under One Roof For Better Service",
+                body: "The summit will gather private bus operators, policymakers, transport experts, state transport undertakings (STUs), and tech leaders. Participating industry players include Tata Motors, EKA Mobility, Volvo-Eicher, Switch Mobility, Greencell Mobility, Rapido, Chalo Mobility, Amnex, IOCL, and SBI.",
+                category: "tech",
+                tags: ["Indore","Experts","Operators"],
+                url: "https://www.freepressjournal.in/bhopal/indore-experts-bus-operators-come-under-one-roof-for-better-service"
+            },
+            {
                 date: "2026-09-04",
                 title: "Chinese truckmakers are charging ahead in India’s EV race. Indian rivals want the rules changed",
                 body: "Chinese truckmakers Sany and Foton are gaining ground in India’s electric heavy truck market, helped by low import duties, prompting Tata Motors and other local players to seek a tariff rethink.",
