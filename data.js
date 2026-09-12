@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-11",
+                title: "Tesla Cybercabs turn up in NYC.",
+                body: "Miami is looking like the next market for Elon Musk’s steering-wheel-less autonomous vehicles. But a few of the gold two-seaters were spotted in New York City — albeit with steering wheels and human safety monitors driving manually. It’s likely just a marketing maneuver, since fully autonomous vehicles are prohibited in New York. Governor Kathy Hochul recently reversed a decision to allow Waymo to deploy its vehicles outside the city after pushback from labor groups.\n[Link: Autonomous Tesla Cybe",
+                category: "launch",
+                tags: ["Tesla","Cybercabs","turn"],
+                url: "https://www.theverge.com/transportation/994206/tesla-cybercabs-turn-up-in-nyc"
+            },
+            {
+                date: "2026-09-11",
+                title: "Zoox is taking on Waymo in San Francisco with free rides and a very different robotaxi",
+                body: "San Francisco has become one of the industry's key test markets, but it has also exposed the risks of deploying autonomous vehicles in dense city traffic. Cruise...",
+                category: "launch",
+                tags: ["Zoox","taking","Waymo"],
+                url: "https://www.techspot.com/news/113819-zoox-taking-waymo-san-francisco-free-rides-different.html"
+            },
+            {
+                date: "2026-09-10",
+                title: "LiDAR's Falling Costs Challenge Tesla's Robotaxi Valuation, Consider TSLQ",
+                body: "Tesla, Inc. looks overvalued as FSD/robotics hype outpaces margins and cash flow amid Waymo competition. Click for more on TSLA and TSLQ.",
+                category: "funding",
+                tags: ["LiDARs","Falling","Costs"],
+                url: "https://seekingalpha.com/article/4945028-lidar-falling-costs-challenge-tesla-robotaxi-valuation-consider-tslq"
+            },
+            {
                 date: "2026-09-08",
                 title: "Pony.ai CEO James Peng thinks robotaxis will be widespread within five years",
                 body: "While Waymo dominates the robotaxi conversation in the U.S., Chinese robotaxi firms like Pony.ai are gaining ground almost everywhere else.",
