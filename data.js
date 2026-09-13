@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-12",
+                title: "Juveniles riding in Waymo arrested after police find a 'ghost gun'",
+                body: "Two young people riding in an autonomous vehicle were arrested in San Francisco after authorities allegedly found them in possession of an illegal “ghost gun.”",
+                category: "tech",
+                tags: ["Juveniles","riding","Waymo"],
+                url: "https://www.latimes.com/california/story/2026-09-12/juveniles-riding-in-waymo-arrested-after-police-find-ghost-gun"
+            },
+            {
                 date: "2026-09-11",
                 title: "Tesla Cybercabs turn up in NYC.",
                 body: "Miami is looking like the next market for Elon Musk’s steering-wheel-less autonomous vehicles. But a few of the gold two-seaters were spotted in New York City — albeit with steering wheels and human safety monitors driving manually. It’s likely just a marketing maneuver, since fully autonomous vehicles are prohibited in New York. Governor Kathy Hochul recently reversed a decision to allow Waymo to deploy its vehicles outside the city after pushback from labor groups.\n[Link: Autonomous Tesla Cybe",
