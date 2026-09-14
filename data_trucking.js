@@ -488,6 +488,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-09-13",
+                title: "MSRTC to bolster Mumbai lifeline with 5,000 new ‘Lal Pari’ buses; tendering complete",
+                body: "MSRTC completes tender for 5,000 new ‘Lal Pari’ buses to replace ageing fleet across Maharashtra, including Mumbai; Tata Motors lowest bidder; e-bus shift next.",
+                category: "tech",
+                tags: ["MSRTC","bolster","Mumbai"],
+                url: "https://timesofindia.indiatimes.com/city/mumbai/msrtc-to-bolster-mumbai-lifeline-with-5000-new-lal-pari-buses-tendering-complete/articleshow/134215519.cms"
+            },
+            {
                 date: "2026-09-10",
                 title: "Indore Experts, Bus Operators Come Under One Roof For Better Service",
                 body: "The summit will gather private bus operators, policymakers, transport experts, state transport undertakings (STUs), and tech leaders. Participating industry players include Tata Motors, EKA Mobility, Volvo-Eicher, Switch Mobility, Greencell Mobility, Rapido, Chalo Mobility, Amnex, IOCL, and SBI.",

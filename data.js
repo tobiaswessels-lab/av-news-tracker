@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-13",
+                title: "Waymo pulls over, calls cops on riders with a ghost gun",
+                body: "Your robotaxi can and will snitch on you.",
+                category: "tech",
+                tags: ["Waymo","pulls","calls"],
+                url: "https://www.theverge.com/transportation/994405/waymo-pulls-over-calls-cops-on-riders-with-a-ghost-gun"
+            },
+            {
+                date: "2026-09-12",
+                title: "Waymo pulls over, calls police on juvenile riders who had 'ghost gun,' authorities say",
+                body: "LOS ANGELES — Two young people riding in an autonomous vehicle were arrested in San Francisco after authorities allegedly found them in possession of an illegal \"ghost gun.\" San Francisco Police Department did not identify the operator of the autonomous vehicle, but a Waymo spokesperson confirmed to the Los Angeles Times that the incident involved one of its cars. The company pulled the car ...",
+                category: "safety",
+                tags: ["Waymo","pulls","calls"],
+                url: "https://www.spokesman.com/stories/2026/sep/12/waymo-pulls-over-calls-police-on-juvenile-riders-w/"
+            },
+            {
                 date: "2026-09-12",
                 title: "Juveniles riding in Waymo arrested after police find a 'ghost gun'",
                 body: "Two young people riding in an autonomous vehicle were arrested in San Francisco after authorities allegedly found them in possession of an illegal “ghost gun.”",
