@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-14",
+                title: "Waymo's Robotaxis Are Now Available In Las Vegas",
+                body: "Waymo's fully autonomous rides will initially serve those around the city’s main strip.",
+                category: "tech",
+                tags: ["Waymos","Robotaxis","Available"],
+                url: "https://www.engadget.com/2257970/waymo-robotaxis-are-now-available-in-las-vegas/"
+            },
+            {
+                date: "2026-09-14",
+                title: "Waymo to bring autonomous ride-hailing to Las Vegas",
+                body: "Sept 14 (Reuters) - Alphabet's ⁠self-driving unit Waymo said on Monday it will ⁠offer rides to the general public in Las Vegas, ‌marking its first foray into Nevada, as it expands its robotaxi service in more U.S. states.",
+                category: "expansion",
+                tags: ["Waymo","bring","autonomous"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/09/15/waymo-to-bring-autonomous-ride-hailing-to-las-vegas"
+            },
+            {
+                date: "2026-09-14",
+                title: "Waymo opens robotaxi service in Las Vegas",
+                body: "Las Vegas will be Waymo's 15th commercial robotaxi market.",
+                category: "launch",
+                tags: ["Waymo","opens","robotaxi"],
+                url: "https://techcrunch.com/2026/09/14/waymo-opens-robotaxi-service-in-las-vegas/"
+            },
+            {
                 date: "2026-09-13",
                 title: "Waymo pulls over, calls cops on riders with a ghost gun",
                 body: "Your robotaxi can and will snitch on you.",
