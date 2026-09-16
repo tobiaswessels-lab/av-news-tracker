@@ -74,6 +74,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-09-14",
+                title: "Jefferies Sticks to Its Hold Rating for TRATON SE (8TRA)",
+                body: "Jefferies analyst Michael Aspinall maintained a Hold rating on TRATON SE today and set a price target of €35.00. According to TipRanks, Aspinall...",
+                category: "tech",
+                tags: ["Jefferies","Sticks","Hold"],
+                url: "https://markets.businessinsider.com/news/stocks/jefferies-sticks-to-its-hold-rating-for-traton-se-8tra-1036545109"
+            },
+            {
                 date: "2026-08-11",
                 title: "Poland to build 45 heavy recovery vehicles for Sweden on Scania chassis",
                 body: "What new recovery vehicle can do",

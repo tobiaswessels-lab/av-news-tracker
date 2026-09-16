@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-15",
+                title: "Waymo says it will launch in Japan in 2027.",
+                body: "The robotaxi company is partnering with taxi operator Nihon Kotsu and ride hailing app GO to offer on demand, 24/7 self-driving rides through both the Waymo and GO apps in 2027. Waymo has been testing its vehicles in Tokyo since 2025, but this is the first time it’s put an official date on the launch of its commercial robotaxi service. The company is eyeing additional overseas markets, including London and Munich.\n[Link: Opening our doors to Tokyo riders in 2027 with Nihon Kotsu and GO | https:/",
+                category: "partnership",
+                tags: ["Waymo","says","launch"],
+                url: "https://www.theverge.com/transportation/995408/waymo-says-it-will-launch-in-japan-in-2027"
+            },
+            {
+                date: "2026-09-15",
+                title: "Waymo, Japanese partners target driverless taxi service in Tokyo in 2027",
+                body: "TOKYO, Sept 15 (Reuters) - Alphabet's ⁠autonomous driving unit Waymo, Japanese taxi app operator ⁠GO and taxi company Nihon Kotsu said on ‌Tuesday they aim to launch Japan's first fully autonomous commercial taxi service in Tokyo in 2027.",
+                category: "partnership",
+                tags: ["Waymo","Japanese","partners"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/09/15/waymo-japanese-partners-target-driverless-taxi-service-in-tokyo-in-2027"
+            },
+            {
+                date: "2026-09-15",
+                title: "Waymo to start Tokyo robotaxi service next year in Asia push",
+                body: "Autonomous driving was long seen as a pipe dream in Japan, where the streets are narrow and crowded, and regulation is notoriously strict.",
+                category: "launch",
+                tags: ["Waymo","start","Tokyo"],
+                url: "https://www.japantimes.co.jp/business/2026/09/15/companies/waymo-tokyo-robotaxi-launch/"
+            },
+            {
                 date: "2026-09-14",
                 title: "Waymo's Robotaxis Are Now Available In Las Vegas",
                 body: "Waymo's fully autonomous rides will initially serve those around the city’s main strip.",
