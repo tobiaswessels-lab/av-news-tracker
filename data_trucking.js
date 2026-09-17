@@ -19,6 +19,14 @@ const truckingCompanies = [
         color: "#00ADEF",
         news: [
             {
+                date: "2026-09-16",
+                title: "Karin Rådström is steering Daimler Truck in a new direction as the world’s biggest truckmaker faces a growing challenge from China",
+                body: "Chinese rivals are gaining ground as Europe’s shift to electric trucks accelerates.",
+                category: "tech",
+                tags: ["Karin","Rdstrm","steering"],
+                url: "https://fortune.com/2026/09/16/karin-radstrom-daimler-truck-worlds-biggest-truckmaker-growing-challenge-china/"
+            },
+            {
                 date: "2026-03-04",
                 title: "Torc Robotics takes autonomous trucks into Michigan’s snow and ice",
                 body: "Torc Robotics is taking autonomous trucks into Michigan’s snow and ice for the first time. The Daimler Truck subsidiary expands public-road testing with its latest Freightliner Cascadia AV 3.0 chassis near Ann Arbor, moving beyond Sun Belt corridors on the path to 2027 commercialization.",
@@ -806,6 +814,22 @@ const truckingCompanies = [
         name: "Volvo Trucks",
         color: "#003057",
         news: [
+            {
+                date: "2026-09-15",
+                title: "Volvo Trucks electric range wins 'International Truck of the Year 2027' award",
+                body: "/PRNewswire/ -- Volvo Trucks has received the prestigious industry award for its full electric range. This is the company's eighth win, and the second time...",
+                category: "tech",
+                tags: ["Volvo","Trucks","electric"],
+                url: "https://www.prnewswire.co.uk/news-releases/volvo-trucks-electric-range-wins-international-truck-of-the-year-2027-award-302878563.html"
+            },
+            {
+                date: "2026-09-14",
+                title: "Volvo Trucks launches new 80-tonne electric truck with longer range",
+                body: "/PRNewswire/ -- Volvo Trucks is once again raising the bar for electric truck transport. The company launches an electric truck with longer range that can...",
+                category: "launch",
+                tags: ["Volvo","Trucks","launches"],
+                url: "https://www.prnewswire.co.uk/news-releases/volvo-trucks-launches-new-80-tonne-electric-truck-with-longer-range-302877434.html"
+            },
             {
                 date: "2026-05-12",
                 title: "Volvo Trucks announces global product launch",

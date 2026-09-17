@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-16",
+                title: "Former Waymo CFO jumps to self-driving startup Wayve",
+                body: "Elisa de Martel, who left her position as chief financial officer at Alphabet's autonomous vehicle company Waymo in January, will be based out of Silicon Valley.",
+                category: "launch",
+                tags: ["Former","Waymo","jumps"],
+                url: "https://techcrunch.com/2026/09/16/former-waymo-cfo-jumps-to-self-driving-startup-wayve/"
+            },
+            {
+                date: "2026-09-16",
+                title: "Waymo in Minneapolis: City council considers ordinance that could ban driverless rideshares",
+                body: "Waymo has been testing its autonomous vehicles in Minneapolis for months, eyeing a launch in the city. Now, a proposed Minneapolis City Council ordinance could complicate those plans.",
+                category: "launch",
+                tags: ["Waymo","Minneapolis","City"],
+                url: "https://www.fox9.com/news/waymo-minneapolis-city-council-considers-ordinance-could-ban-driverless-rideshares"
+            },
+            {
+                date: "2026-09-16",
+                title: "Waymo Is Scaling Robotaxis. But Consumer Cars Could Be The Real Prize.",
+                body: "Google stock could gain as Waymo expands robotaxi, improves economics and explores licensing AV driving technology for consumer cars.",
+                category: "expansion",
+                tags: ["Waymo","Scaling","Robotaxis"],
+                url: "https://www.investors.com/news/technology/google-stock-waymo-robotaxi-auto-makers-licensing/"
+            },
+            {
                 date: "2026-09-15",
                 title: "Waymo says it will launch in Japan in 2027.",
                 body: "The robotaxi company is partnering with taxi operator Nihon Kotsu and ride hailing app GO to offer on demand, 24/7 self-driving rides through both the Waymo and GO apps in 2027. Waymo has been testing its vehicles in Tokyo since 2025, but this is the first time it’s put an official date on the launch of its commercial robotaxi service. The company is eyeing additional overseas markets, including London and Munich.\n[Link: Opening our doors to Tokyo riders in 2027 with Nihon Kotsu and GO | https:/",
