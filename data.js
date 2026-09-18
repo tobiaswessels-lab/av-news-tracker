@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-17",
+                title: "Video shows Waymo autonomous car blocking Phoenix traffic in flood",
+                body: "A video shows a Waymo driverless taxi trapped in an \"AI loop\" while trying to navigate a flooded road in Phoenix, holding up local traffic.",
+                category: "tech",
+                tags: ["Video","shows","Waymo"],
+                url: "https://www.foxbusiness.com/technology/video-shows-waymo-driverless-vehicle-stuck-ai-loop-flooded-phoenix-street"
+            },
+            {
+                date: "2026-09-17",
+                title: "Your robotaxi might be a narc",
+                body: "Waymo called the cops on two passengers after detecting a gun in the vehicle. The incident raises questions about the limits of privacy inside an autonomous vehicle.",
+                category: "funding",
+                tags: ["Your","robotaxi","might"],
+                url: "https://www.theverge.com/transportation/996863/robotaxi-waymo-police-privacy-surveillance"
+            },
+            {
                 date: "2026-09-16",
                 title: "Former Waymo CFO jumps to self-driving startup Wayve",
                 body: "Elisa de Martel, who left her position as chief financial officer at Alphabet's autonomous vehicle company Waymo in January, will be based out of Silicon Valley.",
@@ -2301,6 +2317,14 @@ const companies = [
         name: "Nuro",
         color: "#00C853",
         news: [
+            {
+                date: "2026-09-17",
+                title: "Lucid scores another robotaxi deal.",
+                body: "The EV company announced plans to sell 25,000 vehicles to Estonia-based mobility company Bolt for a robotaxi service in Europe. The robotaxi will be based on Lucid’s upcoming midsized Cosmos vehicle and will be Level 4 capable. This is Lucid’s second major robotaxi deal, after announcing plans to deploy 20,000 vehicles with Uber and Nuro in the US. With Lucid burning cash and facing heavy market pressure, these types of deals are a possible bridge to a more secure financial future.\n[Link: Lucid ",
+                category: "partnership",
+                tags: ["Lucid","scores","another"],
+                url: "https://www.theverge.com/transportation/996904/lucid-scores-another-robotaxi-deal"
+            },
             {
                 date: "2026-06-17",
                 title: "Lucid Eyes Robotaxi Growth With Uber-Nuro Partnership",
