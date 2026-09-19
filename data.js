@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-18",
+                title: "Alphabet’s Waymo to deploy fully autonomous ride‑hailing service in Singapore in 2028",
+                body: "SINGAPORE, Sept 18 — Alphabet’s autonomous‑driving company Waymo said today it will launch a fully driverless ride‑hailing service in Singapore in 2028, marking its first...",
+                category: "launch",
+                tags: ["Alphabets","Waymo","deploy"],
+                url: "https://www.malaymail.com/news/singapore/2026/09/18/alphabets-waymo-to-deploy-fully-autonomous-ridehailing-service-in-singapore-in-2028/235681"
+            },
+            {
+                date: "2026-09-18",
+                title: "Alphabet-owned Waymo to launch autonomous ride-hailing service in Singapore by 2028",
+                body: "Waymo says its first vehicles are expected to arrive in Singapore in the coming months.",
+                category: "launch",
+                tags: ["Alphabetowned","Waymo","launch"],
+                url: "https://www.channelnewsasia.com/singapore/autonomous-vehicle-av-waymo-transport-6393631"
+            },
+            {
+                date: "2026-09-18",
+                title: "Waymo to bring autonomous ride-hailing to Singapore in 2028",
+                body: "SINGAPORE, Sept 18 (Reuters) - ⁠Alphabet's autonomous driving unit Waymo will roll ⁠out its autonomous all-electric ride-hailing service in Singapore by ‌2028, Waymo announced on Friday, marking its first entry into Southeast Asia.",
+                category: "tech",
+                tags: ["Waymo","bring","autonomous"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/09/18/waymo-to-bring-autonomous-ride-hailing-to-singapore-in-2028"
+            },
+            {
                 date: "2026-09-17",
                 title: "Video shows Waymo autonomous car blocking Phoenix traffic in flood",
                 body: "A video shows a Waymo driverless taxi trapped in an \"AI loop\" while trying to navigate a flooded road in Phoenix, holding up local traffic.",
