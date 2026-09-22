@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-20",
+                title: "Group pushes to bring driverless Waymos to NY after anti-robotaxi study falls flat",
+                body: "A new nonprofit is pushing to bring driverless robotaxies like Waymo to the Empire State after a study that aimed to prove the vehicles were dangerous fell...",
+                category: "funding",
+                tags: ["Group","pushes","bring"],
+                url: "https://nypost.com/2026/09/20/us-news/group-pushes-to-bring-driverless-waymos-to-ny-after-anti-robotaxi-study-falls-flat/"
+            },
+            {
                 date: "2026-09-18",
                 title: "Alphabet’s Waymo to deploy fully autonomous ride‑hailing service in Singapore in 2028",
                 body: "SINGAPORE, Sept 18 — Alphabet’s autonomous‑driving company Waymo said today it will launch a fully driverless ride‑hailing service in Singapore in 2028, marking its first...",
