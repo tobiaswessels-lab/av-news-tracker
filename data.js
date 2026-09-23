@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-22",
+                title: "Vendors Stunned as Driverless Waymo Goes Rogue at Market",
+                body: "The robotaxi dodged barricades and ignored signs as it drove through the upscale South Pearl Street Farmers Market.",
+                category: "partnership",
+                tags: ["Vendors","Stunned","Driverless"],
+                url: "https://www.thedailybeast.com/vendors-stunned-as-driverless-waymo-goes-rogue-at-market-in-denver/"
+            },
+            {
+                date: "2026-09-22",
+                title: "Waymo's latest expansion strategy: teenagers",
+                body: "Waymo is opening its robotaxi service to teenagers aged 13 to 17 in Nashville, its second city the offer rides to minors.",
+                category: "launch",
+                tags: ["Waymos","latest","expansion"],
+                url: "https://techcrunch.com/2026/09/22/waymos-latest-expansion-strategy-teenagers/"
+            },
+            {
+                date: "2026-09-22",
+                title: "Robotaxis Aren't Always A Smooth Ride",
+                body: "Waymo, Xoox and Tesla are in the process of expanding their robotaxi offerings, but some riders have experienced sudden stops, wrong turns and crashes.",
+                category: "expansion",
+                tags: ["Robotaxis","Arent","Always"],
+                url: "https://www.engadget.com/2262080/robotaxi-what-passengers-should-look-out-for/"
+            },
+            {
                 date: "2026-09-20",
                 title: "Group pushes to bring driverless Waymos to NY after anti-robotaxi study falls flat",
                 body: "A new nonprofit is pushing to bring driverless robotaxies like Waymo to the Empire State after a study that aimed to prove the vehicles were dangerous fell...",
