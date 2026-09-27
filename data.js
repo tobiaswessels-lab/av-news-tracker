@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-09-26",
+                title: "Waymo Self-Driving Taxi Review | Making peace with autonomous driving technology",
+                body: "Waymo is a game changer for short, inner-city rides where accessibility and women’s safety are priorities.",
+                category: "safety",
+                tags: ["Waymo","SelfDriving","Taxi"],
+                url: "https://www.thehindu.com/sci-tech/technology/waymo-self-driving-taxi-review-making-peace-with-autonomous-driving-technology/article71507319.ece"
+            },
+            {
                 date: "2026-09-22",
                 title: "Vendors Stunned as Driverless Waymo Goes Rogue at Market",
                 body: "The robotaxi dodged barricades and ignored signs as it drove through the upscale South Pearl Street Farmers Market.",
