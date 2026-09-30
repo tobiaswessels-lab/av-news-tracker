@@ -504,6 +504,22 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-09-29",
+                title: "Tata Motors CV arm acquires 26% stake in Hyderabad-based e-mobility company, stock in red",
+                body: "Tata Motors has acquired a 26% stake in Mateshwari E-Smart Mobility for ₹2,60,000, making it an associate company. This investment aims to enhance Tata Motors' operations in electric bus tenders, reflecting a strategic expansion in the electric mobility sector.",
+                category: "funding",
+                tags: ["Tata","Motors","acquires"],
+                url: "https://www.livemint.com/market/stock-market-news/ata-motors-cv-arm-acquires-26-stake-in-hyderabad-based-e-mobility-company-stock-in-red-check-details-11790667389617.html"
+            },
+            {
+                date: "2026-09-29",
+                title: "Tata Motors subsidiary acquires 26% stake in e-mobility company for Rs 2.6 lakh",
+                body: "The investment will support Tata Motors’ electric bus operations and maintenance business in Telangana",
+                category: "funding",
+                tags: ["Tata","Motors","subsidiary"],
+                url: "https://www.moneycontrol.com/automobile/tata-motors-subsidiary-acquires-26-stake-in-e-mobility-company-for-rs-2-6-lakh-article-14040790.html"
+            },
+            {
                 date: "2026-09-13",
                 title: "MSRTC to bolster Mumbai lifeline with 5,000 new ‘Lal Pari’ buses; tendering complete",
                 body: "MSRTC completes tender for 5,000 new ‘Lal Pari’ buses to replace ageing fleet across Maharashtra, including Mumbai; Tata Motors lowest bidder; e-bus shift next.",
