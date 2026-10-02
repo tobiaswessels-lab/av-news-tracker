@@ -82,6 +82,14 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-10-01",
+                title: "PlusAI targets year-end close on $800M Texas Ventures SPAC",
+                body: "PlusAI expects its $800M Texas Ventures SPAC to close by year-end, bringing up to $300M as it targets a 2027 launch of driverless trucks with TRATON.",
+                category: "launch",
+                tags: ["PlusAI","targets","yearend"],
+                url: "https://www.freightwaves.com/news/plusai-texas-ventures-spac-close"
+            },
+            {
                 date: "2026-09-14",
                 title: "Jefferies Sticks to Its Hold Rating for TRATON SE (8TRA)",
                 body: "Jefferies analyst Michael Aspinall maintained a Hold rating on TRATON SE today and set a price target of €35.00. According to TipRanks, Aspinall...",
