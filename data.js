@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-02",
+                title: "Minneapolis Mayor on robotaxi regulation veto: ‘Doesn’t make sense’",
+                body: "One day after the Minneapolis City Council approved an ordinance that would require autonomous vehicles – such as ones run by Waymo – to have a person in them while operating, Minneapolis Mayor Jacob Frey spoke with FOX 9's All Day to explains why he's vetoing the increased regulations.",
+                category: "regulation",
+                tags: ["Minneapolis","Mayor","robotaxi"],
+                url: "https://www.fox9.com/news/minneapolis-mayor-robotaxi-regulation-veto-doesnt-make-sense-oct-2-2026"
+            },
+            {
+                date: "2026-10-02",
+                title: "Switzerland’s first robotaxi takes to the road",
+                body: "Passengers in Zurich’s Furttal valley can now book rides in self-driving cars. The pilot scheme, called Iamo, is Switzerland’s first robotaxi service open to the public, according to the canton.\nhttps://www.youtube.com/watch?v=s1chjYM98UM&t=27s\nThree electric self-driving cars are operating between around 100 designated stops in Boppelsen, Dänikon, Hüttikon and Otelfingen, four municipalities in the canton of Zurich.\nHow does it work?\nPassengers must download the Iamo app, whose name stands for ",
+                category: "funding",
+                tags: ["Switzerlands","first","robotaxi"],
+                url: "https://lenews.ch/2026/10/02/switzerlands-first-robotaxi-takes-to-the-road/"
+            },
+            {
+                date: "2026-10-02",
+                title: "Lyft Launches Depot for Waymo Self-Driving Cars in Nashville",
+                body: "Flexdrive, Lyft's arm, launches a Nashville depot for Waymo's self-driving cars, enhancing robotaxi maintenance and job opportunities.",
+                category: "launch",
+                tags: ["Lyft","Launches","Depot"],
+                url: "https://www.businessinsider.com/lyft-opens-depot-waymo-self-driving-cars-nashville-2026-10"
+            },
+            {
                 date: "2026-09-26",
                 title: "Waymo Self-Driving Taxi Review | Making peace with autonomous driving technology",
                 body: "Waymo is a game changer for short, inner-city rides where accessibility and women’s safety are priorities.",
