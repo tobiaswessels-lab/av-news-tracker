@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-03",
+                title: "Minneapolis council member mocked for saying Waymo is killing cats",
+                body: "Minneapolis city council member Jason Chavez claims Waymo autonomous vehicles are killing cats, urging a human operator mandate. Mayor Jacob Frey plans to veto the ordinance.",
+                category: "tech",
+                tags: ["Minneapolis","council","member"],
+                url: "https://www.foxnews.com/politics/blue-state-councilman-mocked-claiming-self-driving-cars-murdering-pets-hide-your-cats"
+            },
+            {
                 date: "2026-10-02",
                 title: "Minneapolis Mayor on robotaxi regulation veto: ‘Doesn’t make sense’",
                 body: "One day after the Minneapolis City Council approved an ordinance that would require autonomous vehicles – such as ones run by Waymo – to have a person in them while operating, Minneapolis Mayor Jacob Frey spoke with FOX 9's All Day to explains why he's vetoing the increased regulations.",
