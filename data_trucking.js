@@ -512,6 +512,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-10-01",
+                title: "41% revenue growth, 30.8% ROCE: This Tata-backed smallcap could be a backdoor EV play",
+                body: "What if India’s electric-bus opportunity has a backdoor play? One Tata Motors-backed bus-body maker grew revenue 41% in FY26, sold a record 9,328 buses and lifted operating margins to around 9%, while ROCE rose to 30.8%. Higher-tonnage buses, more capacity and electric-bus development could drive the next phase of growth, but heavy dependence on Tata Motors and a sharp fall in Q1 FY27 margins make volumes, mix and profitability key to watch.",
+                category: "funding",
+                tags: ["revenue","growth","ROCE"],
+                url: "https://www.financialexpress.com/market/stock-insights/41-revenue-growth-30-8-roce-this-tata-backed-smallcap-could-be-a-backdoor-ev-play/4351859/"
+            },
+            {
                 date: "2026-09-29",
                 title: "Tata Motors CV arm acquires 26% stake in Hyderabad-based e-mobility company, stock in red",
                 body: "Tata Motors has acquired a 26% stake in Mateshwari E-Smart Mobility for ₹2,60,000, making it an associate company. This investment aims to enhance Tata Motors' operations in electric bus tenders, reflecting a strategic expansion in the electric mobility sector.",
