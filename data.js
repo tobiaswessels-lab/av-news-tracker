@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-05",
+                title: "L.A. has more driverless cars, and more crashes. A look at the data",
+                body: "As the robotaxi race heats up across the country, key players including Waymo, Zoox and Tesla claim their technology is safer than human drivers.",
+                category: "safety",
+                tags: ["driverless","cars","crashes"],
+                url: "https://www.latimes.com/business/story/2026-10-05/la-has-more-driverless-cars-more-crashes-look-at-data"
+            },
+            {
+                date: "2026-10-05",
+                title: "Elon Musk admits that Tesla Robotaxis have a 'cat problem'; and one which Google’s Waymo does not ‘agree’ with",
+                body: "Elon Musk has acknowledged that Tesla’s Robotaxi service is struggling to operate late into the night because its vehicles have trouble spotting small",
+                category: "tech",
+                tags: ["Elon","Musk","admits"],
+                url: "https://timesofindia.indiatimes.com/technology/tech-news/elon-musk-admits-that-tesla-robotaxis-have-a-cat-problem-and-one-which-googles-waymo-does-not-agree-with/articleshow/134684762.cms"
+            },
+            {
                 date: "2026-10-03",
                 title: "Minneapolis council member mocked for saying Waymo is killing cats",
                 body: "Minneapolis city council member Jason Chavez claims Waymo autonomous vehicles are killing cats, urging a human operator mandate. Mayor Jacob Frey plans to veto the ordinance.",

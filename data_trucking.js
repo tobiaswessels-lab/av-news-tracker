@@ -82,6 +82,22 @@ const truckingCompanies = [
         color: "#003366",
         news: [
             {
+                date: "2026-10-05",
+                title: "EU rejects €26 million state aid to MAN truck manufacturer",
+                body: "Read more about EU rejects €26 million state aid to MAN truck manufacturer on Devdiscourse",
+                category: "tech",
+                tags: ["rejects","million","state"],
+                url: "https://www.devdiscourse.com/article/international/3987143-eu-rejects-26-million-state-aid-to-man-truck-manufacturer"
+            },
+            {
+                date: "2026-10-05",
+                title: "Ames PD recovers 77-year-old man, truck from pond near El Patio",
+                body: "The body of Ames resident Zondai Muyengwa, 77, was pulled from a pond near Perfect Games on Sunday after his truck was found fully submerged.",
+                category: "tech",
+                tags: ["Ames","recovers","77yearold"],
+                url: "https://www.amestrib.com/story/news/accident/2026/10/05/investigation-underway-after-police-pull-ames-man-truck-from-pond/92101618007/"
+            },
+            {
                 date: "2026-10-01",
                 title: "PlusAI targets year-end close on $800M Texas Ventures SPAC",
                 body: "PlusAI expects its $800M Texas Ventures SPAC to close by year-end, bringing up to $300M as it targets a 2027 launch of driverless trucks with TRATON.",
