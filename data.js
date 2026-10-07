@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-06",
+                title: "App drivers rally against Robotaxi expansion in DC",
+                body: "Dozens of Uber drivers, union workers and faith leaders gathered Tuesday outside the John Wilson Building to rally against a proposal that would bring Waymo and other autonomous driving services to the city.",
+                category: "tech",
+                tags: ["drivers","rally","against"],
+                url: "https://wtop.com/dc/2026/10/app-drivers-rally-against-robotaxi-expansion-in-dc/"
+            },
+            {
+                date: "2026-10-06",
+                title: "Waymo starts driverless rides in Detroit; public service planned",
+                body: "Waymo has started fully autonomous rides in Detroit but isn't ready to open its robotaxi service to the public yet.",
+                category: "launch",
+                tags: ["Waymo","starts","driverless"],
+                url: "https://www.freep.com/story/money/cars/2026/10/06/waymo-detroit-autonomous-drives/92122630007/"
+            },
+            {
+                date: "2026-10-06",
+                title: "Waymo begins fully autonomous driving in Detroit -- what to know",
+                body: "If you spot a Waymo in Detroit without a human driver behind the wheel, there’s no need to panic — the robotaxi service has officially rolled out fully autonomous driving in the city on Tuesday.",
+                category: "launch",
+                tags: ["Waymo","begins","fully"],
+                url: "https://www.clickondetroit.com/news/local/2026/10/06/waymo-begins-fully-autonomous-driving-in-detroit-what-to-know/"
+            },
+            {
                 date: "2026-10-05",
                 title: "L.A. has more driverless cars, and more crashes. A look at the data",
                 body: "As the robotaxi race heats up across the country, key players including Waymo, Zoox and Tesla claim their technology is safer than human drivers.",
