@@ -19,6 +19,22 @@ const truckingCompanies = [
         color: "#00ADEF",
         news: [
             {
+                date: "2026-10-02",
+                title: "Daimler Truck maps what it takes to scale electric trucks",
+                body: "Daimler Truck says Europe needs megawatt chargers, hydrogen stations built for trucks and CO2 tolls to scale e-trucks. Dachser details its grid limits.",
+                category: "tech",
+                tags: ["Daimler","Truck","maps"],
+                url: "https://www.freightwaves.com/news/daimler-truck-scale-electric-trucks-europe"
+            },
+            {
+                date: "2026-09-30",
+                title: "Daimler Truck’s bet on owning the entire autonomous truck system",
+                body: "Daimler Truck CEO Karin Rådström says owning the truck, the sensor integration and Torc's virtual driver sets it apart ahead of driver-out runs this year",
+                category: "safety",
+                tags: ["Daimler","Trucks","owning"],
+                url: "https://www.freightwaves.com/news/daimler-truck-torc-autonomous-system"
+            },
+            {
                 date: "2026-09-16",
                 title: "Karin Rådström is steering Daimler Truck in a new direction as the world’s biggest truckmaker faces a growing challenge from China",
                 body: "Chinese rivals are gaining ground as Europe’s shift to electric trucks accelerates.",

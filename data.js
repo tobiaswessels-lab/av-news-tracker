@@ -2216,6 +2216,14 @@ const companies = [
         color: "#FF4081",
         news: [
             {
+                date: "2026-10-04",
+                title: "Autonomous driving: VW works with Wayve instead of Nvidia",
+                body: "The British startup Wayve has secured VW’s contract for autonomous driving technologies. It beat out Nvidia and also cooperates with Mercedes.",
+                category: "launch",
+                tags: ["Autonomous","driving","works"],
+                url: "https://www.heise.de/en/news/Autonomous-driving-VW-works-with-Wayve-instead-of-Nvidia-11475414.html"
+            },
+            {
                 date: "2026-09-03",
                 title: "Londoners can hail a limited Uber Wayve robotaxi after new trial starts",
                 body: "Uber customers can now ride Wayve self-driving robotaxis in London as part of a trial using electric Ford Mustang Mach-E autonomous vehicles.",
