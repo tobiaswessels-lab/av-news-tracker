@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-08",
+                title: "Waymo closes a $5bn loan, its first debt deal, to fund robotaxi growth",
+                body: "Pimco, Blackstone and Sixth Street led the $5bn Waymo loan, its first debt deal. Bloomberg reported it priced at 5.25 points over the benchmark.",
+                category: "funding",
+                tags: ["Waymo","closes","loan"],
+                url: "https://thenextweb.com/news/waymo-loan-5bn-first-debt-financing-pimco-blackstone"
+            },
+            {
+                date: "2026-10-08",
+                title: "Alphabet's Waymo secures $5 billion term loan to accelerate expansion",
+                body: "Oct 8 (Reuters) - ⁠Alphabet's self-driving unit Waymo ⁠on Thursday said it has ‌closed a $5 billion term loan, marking the company's first debt financing ​as it looks ⁠to expand its ⁠autonomous ride-hailing service across the ⁠US and ‌the world.",
+                category: "expansion",
+                tags: ["Alphabets","Waymo","secures"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/10/08/alphabet039s-waymo-secures-5-billion-term-loan-to-accelerate-expansion"
+            },
+            {
+                date: "2026-10-08",
+                title: "Alphabet's Waymo secures $5 billion term loan to accelerate expansion",
+                body: "Alphabet's self-driving unit Waymo on Thursday said it has closed a $5 billion term loan, marking the company's first debt financing as it looks to expand its autonomous ride-hailing service across...",
+                category: "expansion",
+                tags: ["Alphabets","Waymo","secures"],
+                url: "https://www.marketscreener.com/news/alphabet-s-waymo-secures-5-billion-term-loan-to-accelerate-expansion-ce785ddfdb81f623"
+            },
+            {
                 date: "2026-10-06",
                 title: "App drivers rally against Robotaxi expansion in DC",
                 body: "Dozens of Uber drivers, union workers and faith leaders gathered Tuesday outside the John Wilson Building to rally against a proposal that would bring Waymo and other autonomous driving services to the city.",

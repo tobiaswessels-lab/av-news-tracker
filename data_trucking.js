@@ -19,6 +19,14 @@ const truckingCompanies = [
         color: "#00ADEF",
         news: [
             {
+                date: "2026-10-08",
+                title: "Daimler Truck accelerates, but leaves EVs on the sidelines",
+                body: "Daimler Truck's Q3 sales jumped 26%, driven by a rebound in the North American market. An encouraging recovery for the German manufacturer, which nevertheless contrasts with a 28% drop in electric...",
+                category: "tech",
+                tags: ["Daimler","Truck","accelerates"],
+                url: "https://www.marketscreener.com/news/daimler-truck-accelerates-but-leaves-evs-on-the-sidelines-ce785ddfdb8bf52d"
+            },
+            {
                 date: "2026-10-02",
                 title: "Daimler Truck maps what it takes to scale electric trucks",
                 body: "Daimler Truck says Europe needs megawatt chargers, hydrogen stations built for trucks and CO2 tolls to scale e-trucks. Dachser details its grid limits.",
