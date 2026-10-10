@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-09",
+                title: "St. Paul City Council president seeks rules around Waymo",
+                body: "If and when Waymo comes to the capital city, the driverless \"robotaxi\" car network may find way more regulations than it counted on.",
+                category: "regulation",
+                tags: ["Paul","City","Council"],
+                url: "https://www.twincities.com/2026/10/09/st-paul-council-rules-waymo/"
+            },
+            {
                 date: "2026-10-08",
                 title: "Waymo closes a $5bn loan, its first debt deal, to fund robotaxi growth",
                 body: "Pimco, Blackstone and Sixth Street led the $5bn Waymo loan, its first debt deal. Bloomberg reported it priced at 5.25 points over the benchmark.",
