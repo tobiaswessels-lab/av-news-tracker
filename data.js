@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-10",
+                title: "Waymo robotaxi bill in DC sparks union workers' protest over jobs",
+                body: "Waymo robotaxis in Washington, D.C., face pushback from union workers and rideshare drivers who say driverless cars will eliminate jobs and hurt their communities.",
+                category: "tech",
+                tags: ["Waymo","robotaxi","bill"],
+                url: "https://www.foxnews.com/politics/workers-erupt-over-dc-plan-bring-robotaxis-city-streets-this-bulls"
+            },
+            {
                 date: "2026-10-09",
                 title: "St. Paul City Council president seeks rules around Waymo",
                 body: "If and when Waymo comes to the capital city, the driverless \"robotaxi\" car network may find way more regulations than it counted on.",

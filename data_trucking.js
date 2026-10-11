@@ -552,6 +552,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-10-10",
+                title: "Tata Motors raises Iveco takeover offer price to 14.40 euro per share",
+                body: "NEW DELHI, Oct 10:  Tata Motors Ltd said it has increased the takeover offer price for Italian truck maker Iveco Group NV by 0.30 euro per share to 14.40 euro per share, citing delay in authorisation process. In 2025, Tata...",
+                category: "funding",
+                tags: ["Tata","Motors","raises"],
+                url: "https://www.dailyexcelsior.com/tata-motors-raises-iveco-takeover-offer-price-to-14-40-euro-per-share/"
+            },
+            {
                 date: "2026-10-01",
                 title: "41% revenue growth, 30.8% ROCE: This Tata-backed smallcap could be a backdoor EV play",
                 body: "What if India’s electric-bus opportunity has a backdoor play? One Tata Motors-backed bus-body maker grew revenue 41% in FY26, sold a record 9,328 buses and lifted operating margins to around 9%, while ROCE rose to 30.8%. Higher-tonnage buses, more capacity and electric-bus development could drive the next phase of growth, but heavy dependence on Tata Motors and a sharp fall in Q1 FY27 margins make volumes, mix and profitability key to watch.",
