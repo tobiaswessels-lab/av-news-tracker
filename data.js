@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-11",
+                title: "Waymo makes case for robotaxi safety citing its data, including in Atlanta",
+                body: "Driverless vehicles can be unnerving, but Waymo's research says its cars have a better safety record than human drivers.",
+                category: "safety",
+                tags: ["Waymo","makes","case"],
+                url: "https://www.ajc.com/news/2026/10/waymo-safety-study-atlanta/"
+            },
+            {
                 date: "2026-10-10",
                 title: "Waymo robotaxi bill in DC sparks union workers' protest over jobs",
                 body: "Waymo robotaxis in Washington, D.C., face pushback from union workers and rideshare drivers who say driverless cars will eliminate jobs and hurt their communities.",
