@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-12",
+                title: "Elon Musk Calls Waymo Robotaxis 'Pet Destroyers' Says Tesla Has a Fix",
+                body: "Elon Musk took a dig at Waymo's spate of collisions with stray animals and said that Tesla Robotaxi figured out how to avoid running over pets.",
+                category: "tech",
+                tags: ["Elon","Musk","Calls"],
+                url: "https://www.businessinsider.com/elon-musk-tesla-robotaxi-waymo-rival-pet-destroyers-2026-10"
+            },
+            {
                 date: "2026-10-11",
                 title: "Waymo makes case for robotaxi safety citing its data, including in Atlanta",
                 body: "Driverless vehicles can be unnerving, but Waymo's research says its cars have a better safety record than human drivers.",
@@ -2263,6 +2271,22 @@ const companies = [
         name: "Wayve",
         color: "#FF4081",
         news: [
+            {
+                date: "2026-10-09",
+                title: "Stellantis CEO says Wayve tie-up can cut self-driving costs, development time",
+                body: "TURIN, Oct 9 (Reuters) - Stellantis CEO Antonio ⁠Filosa said on Friday the automaker's partnership with British startup Wayve could help ⁠slash development times and costs for advanced driver-assistance systems as carmakers race to bring ‌autonomous features to market.",
+                category: "partnership",
+                tags: ["Stellantis","says","Wayve"],
+                url: "https://www.thestar.com.my/tech/tech-news/2026/10/09/stellantis-ceo-says-wayve-tie-up-can-cut-self-driving-costs-development-time"
+            },
+            {
+                date: "2026-10-09",
+                title: "Stellantis CEO says Wayve tie-up can cut self-driving costs, development time",
+                body: "Stellantis CEO Antonio Filosa said on Friday the automaker's partnership with British startup Wayve could help slash development times and costs for advanced driver-assistance systems as ​carmakers race to bring autonomous features to market.",
+                category: "partnership",
+                tags: ["Stellantis","says","Wayve"],
+                url: "https://www.reuters.com/business/autos-transportation/stellantis-ceo-says-wayve-tie-up-can-cut-self-driving-costs-development-time-2026-10-09/"
+            },
             {
                 date: "2026-10-04",
                 title: "Autonomous driving: VW works with Wayve instead of Nvidia",
