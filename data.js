@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-13",
+                title: "Elon Musk accuses Waymo cars of being pet destroyers in robotaxi dig",
+                body: "Elon Musk accused Waymo cars of being \"pet destroyers\" while touting a Tesla robotaxi update designed to detect animals in tough nighttime driving conditions.",
+                category: "partnership",
+                tags: ["Elon","Musk","accuses"],
+                url: "https://www.foxbusiness.com/fox-news-tech/elon-musk-calls-waymo-cars-pet-destroyers-robotaxi-rivals-clash-over-safety"
+            },
+            {
                 date: "2026-10-12",
                 title: "Elon Musk Calls Waymo Robotaxis 'Pet Destroyers' Says Tesla Has a Fix",
                 body: "Elon Musk took a dig at Waymo's spate of collisions with stray animals and said that Tesla Robotaxi figured out how to avoid running over pets.",
