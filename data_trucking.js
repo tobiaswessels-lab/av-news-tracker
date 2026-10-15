@@ -305,6 +305,30 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-10-02",
+                title: "Trump touts truck tariffs at Peterbilt plant in Texas",
+                body: "President Donald Trump told Peterbilt workers in Denton on Thursday that tariffs and regulatory rollbacks are helping reverse years of heavy-truck manufacturing moving outside the U.S.",
+                category: "regulation",
+                tags: ["Trump","touts","truck"],
+                url: "https://www.freightwaves.com/news/trump-touts-truck-tariffs-at-peterbilt-plant-in-texas"
+            },
+            {
+                date: "2026-10-02",
+                title: "Trump boasts about his mobility at rally: ‘I can go ramp, I can go stair’",
+                body: "President Trump claimed that former President Biden ‘could never find the stairs’ during speech at the Peterbilt Motors Company plant in Denton, Texas",
+                category: "tech",
+                tags: ["Trump","boasts","mobility"],
+                url: "https://www.independent.co.uk/news/world/americas/us-politics/trump-stair-ramp-obama-biden-mobility-b3060446.html"
+            },
+            {
+                date: "2026-10-02",
+                title: "Trump says tariffs bringing factories back to US",
+                body: "US President Donald Trump credited his tariff policies with reviving American manufacturing and boosting exports during a visit to Texas. He highlighted job growth at Peterbilt and argued that regulatory rollbacks further lower truck production costs.",
+                category: "expansion",
+                tags: ["Trump","says","tariffs"],
+                url: "https://www.devdiscourse.com/article/international/3985439-trump-says-tariffs-bringing-factories-back-to-us"
+            },
+            {
                 date: "2026-09-01",
                 title: "Greensboro NC crash leaves 4-year-old critically injured",
                 body: "The driver of the Kenworth sustained a minor injury and did not go to the hospital.",
@@ -894,6 +918,14 @@ const truckingCompanies = [
         name: "Volvo Trucks",
         color: "#003057",
         news: [
+            {
+                date: "2026-10-06",
+                title: "Waabi takes its autonomous truck pitch beyond truckload",
+                body: "Volvo and Waabi start their first customer hauls for Warp's LTL network in Texas. Waabi COO Lior Ron says driverless Volvo trucks are on track for 2027",
+                category: "launch",
+                tags: ["Waabi","takes","autonomous"],
+                url: "https://www.freightwaves.com/news/waabi-volvo-warp-autonomous-ltl-customer-operations"
+            },
             {
                 date: "2026-09-15",
                 title: "Volvo Trucks electric range wins 'International Truck of the Year 2027' award",
