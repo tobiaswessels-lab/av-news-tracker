@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-15",
+                title: "Driverless rideshares: Minneapolis City Council fails to override mayor's ordinance veto",
+                body: "The Minneapolis City Council failed to override Mayor Jacob Frey’s veto of an ordinance that would require autonomous vehicles — such as ones run by Waymo — to have a person in them while operating.",
+                category: "tech",
+                tags: ["Driverless","rideshares","Minneapolis"],
+                url: "https://www.fox9.com/news/driverless-rideshares-minneapolis-city-council-fails-override-mayors-ordinance-veto"
+            },
+            {
                 date: "2026-10-13",
                 title: "Elon Musk accuses Waymo cars of being pet destroyers in robotaxi dig",
                 body: "Elon Musk accused Waymo cars of being \"pet destroyers\" while touting a Tesla robotaxi update designed to detect animals in tough nighttime driving conditions.",
