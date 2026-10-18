@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-16",
+                title: "Waymo to launch first phase of driverless taxi testing in Toronto with service expected in 2028",
+                body: "Autonomous vehicle operator Waymo is officially coming to Canada with the driverless ride-hailing service expected to launch in Toronto in 2028, the company says.",
+                category: "launch",
+                tags: ["Waymo","launch","first"],
+                url: "https://www.cbc.ca/news/canada/toronto/waymo-autonomous-driving-robotaxi-toronto-2028-9.7383437"
+            },
+            {
+                date: "2026-10-16",
+                title: "Runnin’ through the 6 with my Waymos.",
+                body: "Waymo announced that it’s coming to Canada — Toronto to be exact — with the goal of welcoming the first riders in 2028. The robotaxi company, flush with cash but still unprofitable, is increasingly looking at cities outside the US as it seeks to scale its operations. Waymo says it will start with data-gathering, manually driven cars before transitioning to fully autonomous ones. And once it starts its commercial service, Toronto-based Element Fleet Management will handle all the charging, cleani",
+                category: "funding",
+                tags: ["Runnin","through","Waymos"],
+                url: "https://www.theverge.com/transportation/1012941/runnin-through-the-6-with-my-waymos"
+            },
+            {
+                date: "2026-10-16",
+                title: "Self-driving taxi company Waymo to launch in Toronto, plans to begin service in 2028",
+                body: "California-based Alphabet subsidiary approved to participate in Ontario’s autonomous vehicle pilot program",
+                category: "launch",
+                tags: ["Selfdriving","taxi","company"],
+                url: "https://www.theglobeandmail.com/business/article-waymo-to-launch-in-toronto-begin-service-in-2028/"
+            },
+            {
                 date: "2026-10-15",
                 title: "Driverless rideshares: Minneapolis City Council fails to override mayor's ordinance veto",
                 body: "The Minneapolis City Council failed to override Mayor Jacob Frey’s veto of an ordinance that would require autonomous vehicles — such as ones run by Waymo — to have a person in them while operating.",
