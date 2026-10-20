@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-19",
+                title: "St. Paul seeks study of autonomous vehicles",
+                body: "The council calls for a regulatory framework in advance of Waymo's arrival.",
+                category: "regulation",
+                tags: ["Paul","seeks","study"],
+                url: "https://www.twincities.com/2026/10/19/st-paul-study-autonomous-vehicles/"
+            },
+            {
+                date: "2026-10-19",
+                title: "Is Waymo a threat to national security of US?",
+                body: "Waymo's order of thousands of Chinese-built electric vehicles to expand its US robotaxi fleet has raised national security and fair competition concerns among US lawmakers.",
+                category: "funding",
+                tags: ["Waymo","threat","national"],
+                url: "https://www.newsbytesapp.com/news/business/waymo-s-chinese-ev-order-sparks-national-security-concerns-in-us/story"
+            },
+            {
+                date: "2026-10-19",
+                title: "Waymo has ordered thousands of Chinese-made cars to expand its US robotaxi fleet",
+                body: "Alphabet-owned Waymo is using Chinese-built vehicles to rapidly expand its nationwide robotaxi fleet – a controversial strategy that risks drawing the ire of US lawmakers who want to ban Chinese vehicles entirely.",
+                category: "expansion",
+                tags: ["Waymo","ordered","thousands"],
+                url: "https://nypost.com/2026/10/19/business/waymo-has-ordered-thousands-of-chinese-made-cars-to-expand-its-us-robotaxi-fleet/"
+            },
+            {
                 date: "2026-10-16",
                 title: "Waymo to launch first phase of driverless taxi testing in Toronto with service expected in 2028",
                 body: "Autonomous vehicle operator Waymo is officially coming to Canada with the driverless ride-hailing service expected to launch in Toronto in 2028, the company says.",
