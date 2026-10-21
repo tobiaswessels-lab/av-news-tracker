@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-20",
+                title: "Waymo plans to boost self-driving fleet to 20K vehicles by next year: report",
+                body: "Waymo is reportedly planning to boost the size of its robotaxi fleet to 20,000 vehicles by the end of next year – an increase meant to fuel the Alphabet-owned firm’s nationwide expansion.",
+                category: "tech",
+                tags: ["Waymo","plans","boost"],
+                url: "https://nypost.com/2026/10/20/business/waymo-plans-to-boost-self-driving-fleet-to-20k-vehicles-by-next-year-report/"
+            },
+            {
+                date: "2026-10-20",
+                title: "Waymo to launch autonomous ride-hailing in Madrid next year",
+                body: "Waymo, Alphabet's autonomous driving unit, plans to launch a fully autonomous ride-hailing service in Spain's Madrid region in 2027, its first deployment in the country, it said on Tuesday.\n...",
+                category: "launch",
+                tags: ["Waymo","launch","autonomous"],
+                url: "https://www.marketscreener.com/news/waymo-to-launch-autonomous-ride-hailing-in-madrid-next-year-ce785cd8db8bf523"
+            },
+            {
                 date: "2026-10-19",
                 title: "St. Paul seeks study of autonomous vehicles",
                 body: "The council calls for a regulatory framework in advance of Waymo's arrival.",
