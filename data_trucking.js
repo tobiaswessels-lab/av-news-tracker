@@ -305,6 +305,22 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-10-20",
+                title: "PACCAR builds a fleet app platform into Kenworth, Peterbilt",
+                body: "PACCAR Connect brings factory touchscreens, remote diagnostics and Platform Science's app marketplace to Kenworth and Peterbilt trucks in early 2027.",
+                category: "tech",
+                tags: ["PACCAR","builds","fleet"],
+                url: "https://www.freightwaves.com/news/paccar-connect-kenworth-peterbilt-launch"
+            },
+            {
+                date: "2026-10-20",
+                title: "Bernstein Keeps Their Buy Rating on Paccar (PCAR)",
+                body: "In a report released today, from Bernstein maintained a Buy rating on Paccar, with a price target of $121.00. In addition to Bernstein, Paccar...",
+                category: "tech",
+                tags: ["Bernstein","Keeps","Their"],
+                url: "https://markets.businessinsider.com/news/stocks/bernstein-keeps-their-buy-rating-on-paccar-pcar-1036642085"
+            },
+            {
                 date: "2026-10-02",
                 title: "Trump touts truck tariffs at Peterbilt plant in Texas",
                 body: "President Donald Trump told Peterbilt workers in Denton on Thursday that tariffs and regulatory rollbacks are helping reverse years of heavy-truck manufacturing moving outside the U.S.",
