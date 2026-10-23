@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-21",
+                title: "Tesla Posted Video of Its Robotaxi Avoiding Collisions With Rivals",
+                body: "Tesla posted video clips of its robotaxi slowing down for a Waymo robotaxi and an Avride vehicle driving into its path.",
+                category: "tech",
+                tags: ["Tesla","Posted","Video"],
+                url: "https://www.businessinsider.com/tesla-robotaxi-avoiding-collision-rivals-waymo-avride-video-2026-10"
+            },
+            {
                 date: "2026-10-20",
                 title: "Waymo plans to boost self-driving fleet to 20K vehicles by next year: report",
                 body: "Waymo is reportedly planning to boost the size of its robotaxi fleet to 20,000 vehicles by the end of next year – an increase meant to fuel the Alphabet-owned firm’s nationwide expansion.",
