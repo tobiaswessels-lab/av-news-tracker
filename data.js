@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-22",
+                title: "Elon Musk's Tesla eyes transportation 'domination' as Cybercab expansion heats up competition with Waymo",
+                body: "Elon Musk's Tesla is gearing up to expand its gold-colored Cybercab robotaxi service beyond Austin, Tex., next month, with an exec saying the automaker is planning transportation \"domination.\"",
+                category: "expansion",
+                tags: ["Elon","Musks","Tesla"],
+                url: "https://nypost.com/2026/10/22/business/elon-musks-tesla-eyes-transportation-domination-as-cybercab-expansion-heats-up-competition-with-waymo/"
+            },
+            {
                 date: "2026-10-21",
                 title: "Tesla Posted Video of Its Robotaxi Avoiding Collisions With Rivals",
                 body: "Tesla posted video clips of its robotaxi slowing down for a Waymo robotaxi and an Avride vehicle driving into its path.",
