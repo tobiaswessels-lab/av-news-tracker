@@ -592,6 +592,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-10-24",
+                title: "Tata Motors stands firm on ₹1,531-per-share Iveco bid as investor questions valuation: All you need to know",
+                body: "Tata Motors has refused to raise its offer to buy Italian truck maker Iveco while investor who owns 3.8% of Iveco claims the price is too low. Tata Motors is expected to buy more than 80% of the company's shares by the deadline.",
+                category: "funding",
+                tags: ["Tata","Motors","stands"],
+                url: "https://www.livemint.com/companies/tata-motors-stands-firm-on-1-531-per-share-iveco-bid-as-investor-questions-valuation-all-you-need-to-know-11792865438375.html"
+            },
+            {
                 date: "2026-10-10",
                 title: "Tata Motors raises Iveco takeover offer price to 14.40 euro per share",
                 body: "NEW DELHI, Oct 10:  Tata Motors Ltd said it has increased the takeover offer price for Italian truck maker Iveco Group NV by 0.30 euro per share to 14.40 euro per share, citing delay in authorisation process. In 2025, Tata...",
