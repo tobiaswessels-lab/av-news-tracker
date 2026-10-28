@@ -592,6 +592,30 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-10-27",
+                title: "Tata Motors, Amazon join forces to expand electric truck fleet in India",
+                body: "‘I congratulate Tata Motors and Amazon on this significant collaboration to deploy 3,000 electric trucks across Amazon's transportation network in India,’ says heavy industries minister Kumaraswamy",
+                category: "partnership",
+                tags: ["Tata","Motors","Amazon"],
+                url: "https://www.telegraphindia.com/business/tata-motors-amazon-join-forces-to-expand-electric-truck-fleet-in-india/cid/2186495"
+            },
+            {
+                date: "2026-10-27",
+                title: "Tata Motors partners with Amazon to deploy 3,000 electric trucks",
+                body: "Tata Motors and Amazon to deploy 3,000 electric trucks in India. Largest EV truck deployment by an e-commerce company in the country. Plan includes electrifying the 2,800-km Delhi–Bengaluru–Chennai corridor. Initial rollout begins in Delhi during the festive season. Carrier partners will own and operate the vehicles supplied by Tata Motors.",
+                category: "partnership",
+                tags: ["Tata","Motors","partners"],
+                url: "https://scanx.trade/stock-market-news/companies/amazon-tata-motors-partner-deploy-around-3-500-electric-trucks/54630093"
+            },
+            {
+                date: "2026-10-27",
+                title: "Tata Motors takes control of Iveco in €3.9 bn deal, eyes global truck market",
+                body: "Tata Group’s second biggest acquisition will create the world’s fourth largest CV maker, with analysts betting on a JLR-style turnaround in trucks",
+                category: "partnership",
+                tags: ["Tata","Motors","takes"],
+                url: "https://www.forbesindia.com/article/business/automobile/tata-motors-takes-control-of-iveco-in-e3-9-bn-deal-eyes-global-truck-market/2999867/1"
+            },
+            {
                 date: "2026-10-24",
                 title: "Tata Motors stands firm on ₹1,531-per-share Iveco bid as investor questions valuation: All you need to know",
                 body: "Tata Motors has refused to raise its offer to buy Italian truck maker Iveco while investor who owns 3.8% of Iveco claims the price is too low. Tata Motors is expected to buy more than 80% of the company's shares by the deadline.",

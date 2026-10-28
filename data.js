@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-27",
+                title: "Stalled in D.C., Waymo turns to Virginia",
+                body: "With its future unclear in the capital, the robotaxi company is also mapping roads in Northern Virginia and Baltimore.",
+                category: "tech",
+                tags: ["Stalled","Waymo","turns"],
+                url: "https://www.washingtonpost.com/technology/2026/10/27/stalled-dc-waymo-turns-virginia/"
+            },
+            {
                 date: "2026-10-22",
                 title: "Elon Musk's Tesla eyes transportation 'domination' as Cybercab expansion heats up competition with Waymo",
                 body: "Elon Musk's Tesla is gearing up to expand its gold-colored Cybercab robotaxi service beyond Austin, Tex., next month, with an exec saying the automaker is planning transportation \"domination.\"",
