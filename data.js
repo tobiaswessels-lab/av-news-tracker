@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-28",
+                title: "Waymo for Business now sends robotaxi receipts straight to Ramp",
+                body: "‘An easier way to incorporate Waymo into work travel’: Waymo for Business now sends ride receipts straight to Ramp, ending manual expense filing.",
+                category: "tech",
+                tags: ["Waymo","Business","sends"],
+                url: "https://thenextweb.com/news/waymo-for-business-ramp-expense-integration"
+            },
+            {
                 date: "2026-10-27",
                 title: "Stalled in D.C., Waymo turns to Virginia",
                 body: "With its future unclear in the capital, the robotaxi company is also mapping roads in Northern Virginia and Baltimore.",
