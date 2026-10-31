@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-30",
+                title: "Waymo’s next robotaxi is a purpose-built Toyota bZ4X",
+                body: "Waymo and Toyota are partnering to build autonomous bZ4X robotaxis on the factory line in Japan, launching service in Tokyo in 2027 before expanding to the UK.",
+                category: "partnership",
+                tags: ["Waymos","next","robotaxi"],
+                url: "https://www.theverge.com/transportation/1023112/waymos-next-robotaxi-is-a-purpose-built-toyota-bz4x"
+            },
+            {
+                date: "2026-10-30",
+                title: "Waymo teams up with Toyota to bring self-driving robotaxis to Japan, UK next in line",
+                body: "Waymo is joining forces with Toyota to bring its autonomous driving technology to more international markets, starting with Japan in 2027. The partnership will see Toyota build electric bZ4X vehicles equipped with Waymo's self-driving system, with the UK also emerging as a potential market for future robotaxi operations.",
+                category: "partnership",
+                tags: ["Waymo","teams","Toyota"],
+                url: "https://www.firstpost.com/auto/waymo-teams-up-with-toyota-to-bring-self-driving-robotaxis-to-japan-uk-next-in-line-14056623.html"
+            },
+            {
+                date: "2026-10-30",
+                title: "Waymo And Toyota Will Soon Start Testing Their Robotaxis In Japan",
+                body: "Waymo and Toyota will start testing autonomous bZ4X vehicles in Japan next year. (edited)",
+                category: "launch",
+                tags: ["Waymo","Toyota","Soon"],
+                url: "https://www.engadget.com/2301972/waymo-toyota-soon-start-testing-bz4x-robotaxis-japan/"
+            },
+            {
                 date: "2026-10-28",
                 title: "Waymo for Business now sends robotaxi receipts straight to Ramp",
                 body: "‘An easier way to incorporate Waymo into work travel’: Waymo for Business now sends ride receipts straight to Ramp, ending manual expense filing.",
