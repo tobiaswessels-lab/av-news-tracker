@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-10-31",
+                title: "Waymo in Japan: Driverless taxis launch planned for 2027 with Toyota partnership, local bZ4X EVs to be fitted with self-driving technology; UK expansion next",
+                body: "Toyota Waymo partnership: Toyota and Waymo will begin testing a fleet of autonomous bZ4X electric vehicles in Japan in 2027, with expansion to the UK and other markets planned later. Toyota will manufacture and equip the vehicles at its Aichi plant, while Waymo will provide its fully autonomous driving technology.",
+                category: "partnership",
+                tags: ["Waymo","Japan","Driverless"],
+                url: "https://economictimes.indiatimes.com/news/new-updates/waymo-in-japan-driverless-taxis-launch-planned-for-2027-with-toyota-partnership-local-bz4x-evs-to-be-fitted-with-self-driving-technology-uk-expansion-next/articleshow/135397478.cms"
+            },
+            {
                 date: "2026-10-30",
                 title: "Waymo’s next robotaxi is a purpose-built Toyota bZ4X",
                 body: "Waymo and Toyota are partnering to build autonomous bZ4X robotaxis on the factory line in Japan, launching service in Tokyo in 2027 before expanding to the UK.",
