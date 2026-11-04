@@ -592,6 +592,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-11-03",
+                title: "Tata Motors, Iveco to explore bringing select European truck models to India through CKD route",
+                body: "Tata Motors plans to bring select Iveco commercial vehicle models to India through local assembly while exploring opportunities to deploy its own products in overseas markets, alongside collaboration in batteries, components and vehicle technology",
+                category: "partnership",
+                tags: ["Tata","Motors","Iveco"],
+                url: "https://www.moneycontrol.com/automobile/tata-motors-iveco-to-explore-bringing-select-european-truck-models-to-india-through-ckd-route-article-14067866.html"
+            },
+            {
                 date: "2026-10-27",
                 title: "Tata Motors, Amazon join forces to expand electric truck fleet in India",
                 body: "‘I congratulate Tata Motors and Amazon on this significant collaboration to deploy 3,000 electric trucks across Amazon's transportation network in India,’ says heavy industries minister Kumaraswamy",

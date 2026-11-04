@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-03",
+                title: "Waymo expands to Torrance, Manhattan Beach and other corners of L.A. County",
+                body: "The robotaxi company Waymo is expanding its Los Angeles service area into South Bay and adding popular destinations such as Universal Studios.",
+                category: "expansion",
+                tags: ["Waymo","expands","Torrance"],
+                url: "https://www.latimes.com/business/story/2026-11-03/waymo-expands-to-torrance-manhattan-beach-other-corners-of-la-county"
+            },
+            {
+                date: "2026-11-02",
+                title: "Toyota to build Waymo self-driving taxis for Japan, UK and beyond",
+                body: "A trip to London or Tokyo could soon include a ride in an autonomous Toyota bZ4X SUV driven by Waymo's self-driving tech.",
+                category: "tech",
+                tags: ["Toyota","build","Waymo"],
+                url: "https://7news.com.au/motoring/toyota-to-build-waymo-self-driving-taxis-for-japan-uk-and-beyond-c-23107101"
+            },
+            {
+                date: "2026-11-02",
+                title: "Toyota to build Waymo self-driving taxis for Japan, UK and beyond",
+                body: "A trip to London or Tokyo could soon include a ride in an autonomous Toyota bZ4X SUV driven by Waymo's self-driving tech.",
+                category: "tech",
+                tags: ["Toyota","build","Waymo"],
+                url: "https://www.perthnow.com.au/lifestyle/motoring/toyota-to-build-waymo-self-driving-taxis-for-japan-uk-and-beyond-c-23107098"
+            },
+            {
                 date: "2026-10-31",
                 title: "Waymo in Japan: Driverless taxis launch planned for 2027 with Toyota partnership, local bZ4X EVs to be fitted with self-driving technology; UK expansion next",
                 body: "Toyota Waymo partnership: Toyota and Waymo will begin testing a fleet of autonomous bZ4X electric vehicles in Japan in 2027, with expansion to the UK and other markets planned later. Toyota will manufacture and equip the vehicles at its Aichi plant, while Waymo will provide its fully autonomous driving technology.",
