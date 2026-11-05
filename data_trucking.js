@@ -305,6 +305,30 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-11-04",
+                title: "Overpass strike shuts Highway 99 southbound at Ladner Trunk Road",
+                body: "A Kenworth tractor-trailer unit caused 'visible damage' and forced the shutdown of lanes on the highway and the overpass itself.",
+                category: "tech",
+                tags: ["Overpass","strike","shuts"],
+                url: "https://theprovince.com/news/overpass-strike-shuts-highway-99-southbound-at-ladner-trunk-road/wcm/a88db467-00be-4e3d-985e-91d9ed183661"
+            },
+            {
+                date: "2026-11-04",
+                title: "Overpass strike shuts Highway 99 southbound at Ladner Trunk Road",
+                body: "A Kenworth tractor-trailer unit caused 'visible damage' and forced the shutdown of lanes on the highway and the overpass itself.",
+                category: "tech",
+                tags: ["Overpass","strike","shuts"],
+                url: "https://vancouversun.com/news/overpass-strike-shuts-highway-99-southbound-at-ladner-trunk-road"
+            },
+            {
+                date: "2026-11-04",
+                title: "Overpass strike shuts Highway 99 southbound at Ladner Trunk Road",
+                body: "A Kenworth tractor-trailer unit caused 'visible damage' and forced the shutdown of lanes on the highway and the overpass itself.",
+                category: "tech",
+                tags: ["Overpass","strike","shuts"],
+                url: "https://theprovince.com/news/overpass-strike-shuts-highway-99-southbound-at-ladner-trunk-road"
+            },
+            {
                 date: "2026-10-20",
                 title: "PACCAR builds a fleet app platform into Kenworth, Peterbilt",
                 body: "PACCAR Connect brings factory touchscreens, remote diagnostics and Platform Science's app marketplace to Kenworth and Peterbilt trucks in early 2027.",

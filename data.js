@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-04",
+                title: "Waymo co-CEO addresses scrapped Uber deal as rivalry between rideshare giants heats up",
+                body: "Tekedra Mawakana said the plan to end an exclusive robotaxi partnership with Uber in Atlanta and Austin came after customer feedback for more consistency when ordering self-driving rides.",
+                category: "partnership",
+                tags: ["Waymo","coCEO","addresses"],
+                url: "https://nypost.com/2026/11/04/business/waymo-co-ceo-addresses-scrapped-uber-deal-as-rivalry-between-rideshare-giants-heats-up/"
+            },
+            {
+                date: "2026-11-04",
+                title: "Waymo confirms it will start splitting with Uber in January 2028",
+                body: "The split will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network.",
+                category: "partnership",
+                tags: ["Waymo","confirms","start"],
+                url: "https://techcrunch.com/2026/11/04/waymo-confirms-it-will-start-splitting-with-uber-in-january-2028/"
+            },
+            {
+                date: "2026-11-04",
+                title: "Waymo confirms it's shaking up its Uber relationship in January 2028",
+                body: "The change will set up direct competition in those markets, as Uber has many other autonomous vehicle partners on its network.",
+                category: "partnership",
+                tags: ["Waymo","confirms","shaking"],
+                url: "https://techcrunch.com/2026/11/04/waymo-confirms-its-shaking-up-its-uber-relationship-in-january-2028/"
+            },
+            {
                 date: "2026-11-03",
                 title: "Waymo expands to Torrance, Manhattan Beach and other corners of L.A. County",
                 body: "The robotaxi company Waymo is expanding its Los Angeles service area into South Bay and adding popular destinations such as Universal Studios.",
