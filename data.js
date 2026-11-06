@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-05",
+                title: "Lyft to Expand Waymo Robotaxi Fleet in Nashville by Year-End",
+                body: "US News is a recognized leader in college, grad school, hospital, mutual fund, and car rankings. Track elected officials, research health conditions, and find news you can use in politics, business, health, and education.",
+                category: "funding",
+                tags: ["Lyft","Expand","Waymo"],
+                url: "https://www.usnews.com/news/top-news/articles/2026-11-05/lyft-to-expand-waymo-robotaxi-fleet-in-nashville-by-year-end"
+            },
+            {
                 date: "2026-11-04",
                 title: "Waymo co-CEO addresses scrapped Uber deal as rivalry between rideshare giants heats up",
                 body: "Tekedra Mawakana said the plan to end an exclusive robotaxi partnership with Uber in Atlanta and Austin came after customer feedback for more consistency when ordering self-driving rides.",

@@ -305,6 +305,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-11-05",
+                title: "Behind The Capitol Christmas Tree Is A Kenworth, Four Drivers, And A 2,000 Mile Haul Only Trucking Can Pull Off",
+                body: "Every December a towering evergreen rises on the West Lawn of the U.S. Capitol and gets called the People's Tree, but before a child from its home state",
+                category: "tech",
+                tags: ["Behind","Capitol","Christmas"],
+                url: "https://www.freightwaves.com/news/behind-the-capitol-christmas-tree-is-a-kenworth-four-drivers-and-a-2000-mile-haul-only-trucking-can-pull-off"
+            },
+            {
                 date: "2026-11-04",
                 title: "Overpass strike shuts Highway 99 southbound at Ladner Trunk Road",
                 body: "A Kenworth tractor-trailer unit caused 'visible damage' and forced the shutdown of lanes on the highway and the overpass itself.",
