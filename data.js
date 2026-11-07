@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-06",
+                title: "Snow, ice and no driver? Waymo's robotaxis face the ultimate winter test",
+                body: "Waymo is preparing its autonomous vehicles for extreme weather through real-world, closed-course and simulated testing, including upcoming heavy-snow evaluations in Alaska.",
+                category: "funding",
+                tags: ["Snow","driver","Waymos"],
+                url: "https://www.foxweather.com/extreme-weather/self-driving-cars-prepare-alaska-perilous-winter-climate"
+            },
+            {
                 date: "2026-11-05",
                 title: "Lyft to Expand Waymo Robotaxi Fleet in Nashville by Year-End",
                 body: "US News is a recognized leader in college, grad school, hospital, mutual fund, and car rankings. Track elected officials, research health conditions, and find news you can use in politics, business, health, and education.",
