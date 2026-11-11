@@ -305,6 +305,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-11-10",
+                title: "Public input meeting set for Kenworth sidewalk project",
+                body: "Hickory and NCDOT will host a Nov. 18 open house for the Kenworth sidewalk project, offering residents details, discussion with staff, and accessibility support.",
+                category: "tech",
+                tags: ["Public","input","meeting"],
+                url: "https://journalnow.com/news/community/article_b59503a5-b17e-546f-b26b-d80bf0155ca5.html"
+            },
+            {
                 date: "2026-11-05",
                 title: "Behind The Capitol Christmas Tree Is A Kenworth, Four Drivers, And A 2,000 Mile Haul Only Trucking Can Pull Off",
                 body: "Every December a towering evergreen rises on the West Lawn of the U.S. Capitol and gets called the People's Tree, but before a child from its home state",
