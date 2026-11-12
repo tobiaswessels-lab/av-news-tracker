@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-10",
+                title: "Drivers keep hitting Waymos and taking off",
+                body: "People keep crashing into Waymo's autonomous vehicles, experts provide two possible reasons why",
+                category: "safety",
+                tags: ["Drivers","keep","hitting"],
+                url: "https://www.wistv.com/2026/11/10/drivers-keep-hitting-waymos-taking-off-police-records-show/"
+            },
+            {
+                date: "2026-11-10",
+                title: "Drivers keep hitting Waymos and taking off",
+                body: "People keep crashing into Waymo's autonomous vehicles, experts provide two possible reasons why",
+                category: "safety",
+                tags: ["Drivers","keep","hitting"],
+                url: "https://www.weau.com/2026/11/10/drivers-keep-hitting-waymos-taking-off-police-records-show/"
+            },
+            {
+                date: "2026-11-10",
+                title: "Drivers keep hitting Waymos and taking off",
+                body: "People keep crashing into Waymo's autonomous vehicles, experts provide two possible reasons why",
+                category: "safety",
+                tags: ["Drivers","keep","hitting"],
+                url: "https://www.live5news.com/2026/11/10/drivers-keep-hitting-waymos-taking-off-police-records-show/"
+            },
+            {
                 date: "2026-11-06",
                 title: "Snow, ice and no driver? Waymo's robotaxis face the ultimate winter test",
                 body: "Waymo is preparing its autonomous vehicles for extreme weather through real-world, closed-course and simulated testing, including upcoming heavy-snow evaluations in Alaska.",
