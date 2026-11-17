@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-16",
+                title: "Ivy City rally targets Waymo charging site after DC robotaxi bill stalls",
+                body: "Ivy City residents protested a planned Waymo charging site near Crummell School after a D.C. Council committee declined to advance a driverless ride bill.",
+                category: "tech",
+                tags: ["City","rally","targets"],
+                url: "https://wjla.com/news/local/ivy-city-waymo-charging-facility-northeast-washington-dc-alexander-crummell-school-empower-protest-robotaxi-driverless-cars-council-transportation-committee-autonomous-vehicles-public-safety-jobs"
+            },
+            {
                 date: "2026-11-10",
                 title: "Drivers keep hitting Waymos and taking off",
                 body: "People keep crashing into Waymo's autonomous vehicles, experts provide two possible reasons why",
