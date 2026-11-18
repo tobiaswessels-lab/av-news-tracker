@@ -210,6 +210,30 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-18",
+                title: "Waymo pauses robotaxi rides on freeways after California bars its driverless vehicles, citing an 'imminent hazard'",
+                body: "California has barred Waymo from testing or operating driverless vehicles on state freeways, citing repeated incursions into active construction zones and an imminent public safety hazard. Waymo has paused freeway operations in its other markets and is reviewing performance.",
+                category: "safety",
+                tags: ["Waymo","pauses","robotaxi"],
+                url: "https://www.livemint.com/companies/news/waymo-pauses-robotaxi-rides-on-us-freeways-after-california-bans-autonomous-vehicles-for-posing-an-imminent-hazard-11794967322655.html"
+            },
+            {
+                date: "2026-11-18",
+                title: "California DMV bars Waymo from driving on freeways",
+                body: "Waymo's autonomous taxis can no longer operate on California's freeways due to an order from the state Department of Motor Vehicles.",
+                category: "regulation",
+                tags: ["California","bars","Waymo"],
+                url: "https://www.latimes.com/business/story/2026-11-17/california-dmv-bars-waymo-from-driving-on-freeways"
+            },
+            {
+                date: "2026-11-18",
+                title: "Waymo halts robotaxi rides on U.S. freeways after California ban",
+                body: "Suspension marks setback for Waymo, which has been pushing for rapid expansion after years of slow and steady growth",
+                category: "expansion",
+                tags: ["Waymo","halts","robotaxi"],
+                url: "https://www.theglobeandmail.com/business/article-waymo-robotaxi-freeways-california-ban/"
+            },
+            {
                 date: "2026-11-16",
                 title: "Ivy City rally targets Waymo charging site after DC robotaxi bill stalls",
                 body: "Ivy City residents protested a planned Waymo charging site near Crummell School after a D.C. Council committee declined to advance a driverless ride bill.",
