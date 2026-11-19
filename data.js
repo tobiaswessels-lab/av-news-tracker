@@ -211,6 +211,30 @@ const companies = [
         news: [
             {
                 date: "2026-11-18",
+                title: "Waymo pulls driverless taxis from freeways across the US after California ban",
+                body: "The autonomous driving company suspended driverless taxi rides on US highways days after California banned the vehicles on its own freeways",
+                category: "tech",
+                tags: ["Waymo","pulls","driverless"],
+                url: "https://www.theguardian.com/technology/2026/nov/18/waymo-pulls-driverless-taxis-us-freeways"
+            },
+            {
+                date: "2026-11-18",
+                title: "California drivers trapped as Waymo vehicles stall in flooded roadways",
+                body: "Social media videos show San Francisco drivers stuck in flooded roads as Waymo autonomous vehicles have difficulty navigating streets amid heavy rainfall in the Bay Area.",
+                category: "tech",
+                tags: ["California","drivers","trapped"],
+                url: "https://nypost.com/2026/11/18/us-news/california-drivers-trapped-as-waymo-vehicles-stall-in-flooded-roadways/"
+            },
+            {
+                date: "2026-11-18",
+                title: "Waymo suspends freeway rides across US after California imposes safety restrictions",
+                body: "Waymo has temporarily withdrawn its robotaxis from freeways across all 15 US markets after California regulators barred the Alphabet-owned company from operating on state highways. The decision follows repeated incidents involving construction zones and highway patrol vehicles, raising fresh questions about the reliability of its autonomous driving technology.",
+                category: "safety",
+                tags: ["Waymo","suspends","freeway"],
+                url: "https://www.firstpost.com/tech/waymo-suspends-freeway-rides-across-us-after-california-imposes-safety-restrictions-14060986.html"
+            },
+            {
+                date: "2026-11-18",
                 title: "Waymo pauses robotaxi rides on freeways after California bars its driverless vehicles, citing an 'imminent hazard'",
                 body: "California has barred Waymo from testing or operating driverless vehicles on state freeways, citing repeated incursions into active construction zones and an imminent public safety hazard. Waymo has paused freeway operations in its other markets and is reviewing performance.",
                 category: "safety",
