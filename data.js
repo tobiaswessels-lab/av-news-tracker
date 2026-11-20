@@ -210,6 +210,22 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-19",
+                title: "Regional: Waymo Resumes Service In Bay Area Following Storm Disruptions",
+                body: "Waymo announced Thursday that its cars are back on the roads in the Bay Area after the autonomous vehicle company paused service across the region Wednesday amid stormy weather and flooding.",
+                category: "tech",
+                tags: ["Regional","Waymo","Resumes"],
+                url: "https://www.sfgate.com/news/bayarea/article/regional-waymo-resumes-service-in-bay-area-22540112.php"
+            },
+            {
+                date: "2026-11-19",
+                title: "In Denver, Waymo soon will be joined by self-driving trucks, vehicles",
+                body: "Denver will soon have more autonomous vehicles on its roads as Waymo expands -- despite some friction on the roads -- and other self-driving cars enter the market.",
+                category: "expansion",
+                tags: ["Denver","Waymo","soon"],
+                url: "https://www.dailycamera.com/2026/11/19/waymo-driverless-vehicles-expansion-tickets/"
+            },
+            {
                 date: "2026-11-18",
                 title: "Waymo pulls driverless taxis from freeways across the US after California ban",
                 body: "The autonomous driving company suspended driverless taxi rides on US highways days after California banned the vehicles on its own freeways",
