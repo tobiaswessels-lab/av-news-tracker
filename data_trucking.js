@@ -632,6 +632,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-11-20",
+                title: "45 Organizations Recognized by Arogya World as its 2026 Healthy Workplaces",
+                body: "• Tata Motors Enters Hall of Fame • Companies from India, Malaysia, Singapore, Thailand, and Bangladesh participate Bengaluru, November 20, 2026 – Tata Motors was inducted today into Arogya World's Healthy Workplace Hall of Fame. Daimler Truck Innovation Center India,...",
+                category: "tech",
+                tags: ["Organizations","Recognized","Arogya"],
+                url: "https://www.tribuneindia.com/news/business/45-organizations-recognized-by-arogya-world-as-its-2026-healthy-workplaces/"
+            },
+            {
                 date: "2026-11-03",
                 title: "Tata Motors, Iveco to explore bringing select European truck models to India through CKD route",
                 body: "Tata Motors plans to bring select Iveco commercial vehicle models to India through local assembly while exploring opportunities to deploy its own products in overseas markets, alongside collaboration in batteries, components and vehicle technology",

@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-20",
+                title: "Why the robots are ditching Uber",
+                body: "Waymo and Serve Robotics are ending their exclusive deals with Uber, threatening the ridehail giant’s ambition to become the default app for autonomous vehicles and robot delivery.",
+                category: "partnership",
+                tags: ["robots","ditching","Uber"],
+                url: "https://www.theverge.com/transportation/1037667/waymo-serve-robotics-ditch-uber-autonomous-partnerships"
+            },
+            {
                 date: "2026-11-19",
                 title: "Regional: Waymo Resumes Service In Bay Area Following Storm Disruptions",
                 body: "Waymo announced Thursday that its cars are back on the roads in the Bay Area after the autonomous vehicle company paused service across the region Wednesday amid stormy weather and flooding.",
