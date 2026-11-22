@@ -305,6 +305,14 @@ const truckingCompanies = [
         color: "#C8102E",
         news: [
             {
+                date: "2026-11-19",
+                title: "PACCAR recalls 6,185 trucks over radar braking fault",
+                body: "PACCAR is recalling 6,185 new Kenworth and Peterbilt trucks whose radar can trigger braking for slow left-lane traffic. Owner letters go out Jan. 10, 2027.",
+                category: "safety",
+                tags: ["PACCAR","recalls","6185"],
+                url: "https://www.freightwaves.com/news/paccar-kenworth-peterbilt-radar-braking-recall"
+            },
+            {
                 date: "2026-11-10",
                 title: "Public input meeting set for Kenworth sidewalk project",
                 body: "Hickory and NCDOT will host a Nov. 18 open house for the Kenworth sidewalk project, offering residents details, discussion with staff, and accessibility support.",
