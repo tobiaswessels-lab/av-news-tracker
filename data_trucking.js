@@ -640,6 +640,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-11-21",
+                title: "Indore Car Fire: Container Truck Carrying Cars Hits High-Tension Line, 3 Tata Motors Cars Gutted | VIDEO",
+                body: "Three Tata Motors cars were gutted after a container truck carrying vehicles from Haryana caught fire near President Hotel on Indore",
+                category: "tech",
+                tags: ["Indore","Fire","Container"],
+                url: "https://www.freepressjournal.in/indore/indore-car-fire-container-truck-carrying-cars-hits-high-tension-line-3-tata-motors-cars-gutted-video"
+            },
+            {
                 date: "2026-11-20",
                 title: "45 Organizations Recognized by Arogya World as its 2026 Healthy Workplaces",
                 body: "• Tata Motors Enters Hall of Fame • Companies from India, Malaysia, Singapore, Thailand, and Bangladesh participate Bengaluru, November 20, 2026 – Tata Motors was inducted today into Arogya World's Healthy Workplace Hall of Fame. Daimler Truck Innovation Center India,...",
