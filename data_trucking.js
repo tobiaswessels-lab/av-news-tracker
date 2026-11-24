@@ -640,6 +640,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-11-23",
+                title: "With Ashok Leyland truck unit in Singur, BJP-led West Bengal says it's ready for business",
+                body: "West Bengal News: Nearly 20 years after the Left Front's Tata Motors project collapsed in Singur amid Trinamool Congress-backed farmer protests, the BJP-led government is looking to bring industry back in the same town. CM Suvendu Adhikari said the Bengal government was negotiating to acquire 997 acres for an Ashok Leyland truck-manufacturing plant in Singur.",
+                category: "tech",
+                tags: ["Ashok","Leyland","truck"],
+                url: "https://www.indiatoday.in/india/story/west-bengal-news-ashok-leyland-singur-suvendu-adhikari-sukanta-majumdar-tata-motors-lefy-front-itspc-3044879-2026-11-23"
+            },
+            {
                 date: "2026-11-21",
                 title: "Indore Car Fire: Container Truck Carrying Cars Hits High-Tension Line, 3 Tata Motors Cars Gutted | VIDEO",
                 body: "Three Tata Motors cars were gutted after a container truck carrying vehicles from Haryana caught fire near President Hotel on Indore",
