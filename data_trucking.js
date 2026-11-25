@@ -640,6 +640,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-11-25",
+                title: "Ashok Leyland may set up a truck plant in Singur, where Tata wanted to make Nano",
+                body: "Ashok Leyland is likely to set up a new truck plant in Singur, West Bengal, where Tata Motors once started building a factory for the Nano, but couldn't finish.",
+                category: "launch",
+                tags: ["Ashok","Leyland","truck"],
+                url: "https://www.hindustantimes.com/car-bike/ashok-leyland-may-set-up-a-truck-plant-in-singur-where-tata-wanted-to-make-nano-101795578933428.html"
+            },
+            {
                 date: "2026-11-23",
                 title: "With Ashok Leyland truck unit in Singur, BJP-led West Bengal says it's ready for business",
                 body: "West Bengal News: Nearly 20 years after the Left Front's Tata Motors project collapsed in Singur amid Trinamool Congress-backed farmer protests, the BJP-led government is looking to bring industry back in the same town. CM Suvendu Adhikari said the Bengal government was negotiating to acquire 997 acres for an Ashok Leyland truck-manufacturing plant in Singur.",
