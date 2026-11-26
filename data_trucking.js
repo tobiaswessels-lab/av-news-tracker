@@ -640,6 +640,14 @@ const truckingCompanies = [
         color: "#486AAE",
         news: [
             {
+                date: "2026-11-26",
+                title: "Singur's 997 acres: Said Tata to Nano 20 years ago, will welcome Ashok Leyland now",
+                body: "Singur was where then West Bengal CM Buddhadeb Bhattacharya's ambitious industrialisation drive unravelled in 2006, forcing Tata Motors to abandon its Nano factory. Two decades later, CM Suvendu Adhikari is looking to turn the same 997 acres in Singur into an industrial hub, starting with an Ashok Leyland truck-manufacturing factory.",
+                category: "launch",
+                tags: ["Singurs","acres","Said"],
+                url: "https://www.indiatoday.in/india/story/west-bengal-news-suvendu-adhikari-singur-ashok-leyland-buddhadeb-bhattacharjee-and-ratan-tata-nandigram-itspc-3046644-2026-11-26"
+            },
+            {
                 date: "2026-11-25",
                 title: "Ashok Leyland may set up a truck plant in Singur, where Tata wanted to make Nano",
                 body: "Ashok Leyland is likely to set up a new truck plant in Singur, West Bengal, where Tata Motors once started building a factory for the Nano, but couldn't finish.",

@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-26",
+                title: "Waymo Passenger Finds Loaded Handgun Riding Shotgun In Autonomous Taxi",
+                body: "A Waymo passenger in San Francisco found a handgun in one of the company’s autonomous taxis while taking a ride.",
+                category: "tech",
+                tags: ["Waymo","Passenger","Finds"],
+                url: "https://www.newsweek.com/waymo-passenger-finds-loaded-handgun-riding-shotgun-in-autonomous-taxi-12769433"
+            },
+            {
                 date: "2026-11-20",
                 title: "Why the robots are ditching Uber",
                 body: "Waymo and Serve Robotics are ending their exclusive deals with Uber, threatening the ridehail giant’s ambition to become the default app for autonomous vehicles and robot delivery.",
