@@ -211,6 +211,30 @@ const companies = [
         news: [
             {
                 date: "2026-11-26",
+                title: "San Francisco Treat: Passenger Finds Loaded Handgun on Back Seat of Self-Driving Waymo Taxi",
+                body: "A San Francisco man says he found a loaded handgun hidden in the back seat of a driverless Waymo Tuesday night, the latest in a string of incidents involving the robotaxi service.",
+                category: "safety",
+                tags: ["Francisco","Treat","Passenger"],
+                url: "https://www.breitbart.com/tech/2026/11/26/san-francisco-treat-passenger-finds-loaded-handgun-on-back-seat-of-self-driving-waymo-taxi/"
+            },
+            {
+                date: "2026-11-26",
+                title: "San Francisco Treat: Passenger Finds Loaded Handgun on Back Seat of Self-Driving Waymo Taxi",
+                body: "A San Francisco man says he found a loaded handgun hidden in the back seat of a driverless Waymo Tuesday night, the latest in a string of incidents involving the robotaxi service.",
+                category: "safety",
+                tags: ["Francisco","Treat","Passenger"],
+                url: "https://www.breitbart.com/politics/2026/11/26/san-francisco-treat-passenger-finds-loaded-handgun-on-back-seat-of-self-driving-waymo-taxi/"
+            },
+            {
+                date: "2026-11-26",
+                title: "Waymo conquered city streets",
+                body: "Waymo has paused US freeway rides after a California DMV ban and 11 construction-zone violations exposed high-speed blind spots in its autonomous driving.",
+                category: "regulation",
+                tags: ["Waymo","conquered","city"],
+                url: "https://www.theverge.com/transportation/1042151/waymo-highway-ban-ai-safety-recalls"
+            },
+            {
+                date: "2026-11-26",
                 title: "Waymo Passenger Finds Loaded Handgun Riding Shotgun In Autonomous Taxi",
                 body: "A Waymo passenger in San Francisco found a handgun in one of the company’s autonomous taxis while taking a ride.",
                 category: "tech",
