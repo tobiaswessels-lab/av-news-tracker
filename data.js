@@ -210,6 +210,14 @@ const companies = [
         color: "#4285F4",
         news: [
             {
+                date: "2026-11-27",
+                title: "Waymo Self-Driving Cars, History of Its Robotaxi Fleet",
+                body: "Waymo began as Google's secret Self-Driving Car project in 2008. Take a look at every vehicle that helped build its robotaxi fleet.",
+                category: "tech",
+                tags: ["Waymo","SelfDriving","Cars"],
+                url: "https://www.businessinsider.com/waymo-robotaxi-self-driving-cars-fleet-history-2026-11"
+            },
+            {
                 date: "2026-11-26",
                 title: "San Francisco Treat: Passenger Finds Loaded Handgun on Back Seat of Self-Driving Waymo Taxi",
                 body: "A San Francisco man says he found a loaded handgun hidden in the back seat of a driverless Waymo Tuesday night, the latest in a string of incidents involving the robotaxi service.",
